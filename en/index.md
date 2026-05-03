@@ -9,14 +9,14 @@ Welcome to The Senior Forge Codex. This strategic compendium documents the deep 
 
 ## Chapters
 
-1. **[Kotlin Core](/en/01-kotlin-core/)**
-2. **[Coroutines & Flow](/en/02-coroutines-flow/)**
-3. **[Jetpack Compose](/en/03-jetpack-compose/)**
-4. **[Android Framework & Lifecycle](/en/04-android-framework/)**
-5. **[Architecture & Design Patterns](/en/05-architecture/)**
-6. **[Dependency Injection](/en/06-dependency-injection/)**
-7. **[Networking & Data](/en/07-networking-data/)**
-8. **[Testing & CI/CD](/en/08-testing-cicd/)**
-9. **[Performance & Security](/en/09-performance-security/)**
-10. **[Artificial Intelligence](/en/10-ai/)**
+1. **[Kotlin Core]({{ "/en/01-kotlin-core/" | relative_url }})**
+2. **[Coroutines & Flow]({{ "/en/02-coroutines-flow/" | relative_url }})**
+3. **[Jetpack Compose]({{ "/en/03-jetpack-compose/" | relative_url }})**
+4. **[Android Framework & Lifecycle]({{ "/en/04-android-framework/" | relative_url }})**
+5. **[Architecture & Design Patterns]({{ "/en/05-architecture/" | relative_url }})**
+6. **[Dependency Injection]({{ "/en/06-dependency-injection/" | relative_url }})**
+7. **[Networking & Data]({{ "/en/07-networking-data/" | relative_url }})**
+8. **[Testing & CI/CD]({{ "/en/08-testing-cicd/" | relative_url }})**
+9. **[Performance & Security]({{ "/en/09-performance-security/" | relative_url }})**
+10. **[Artificial Intelligence]({{ "/en/10-ai/" | relative_url }})**
 

@@ -7,4 +7,4 @@ title: Dependency Injection
 
 No items are written in this section yet.
 
-[Back to Chapters](/)
+[Back to Chapters]({{ "/" | relative_url }})

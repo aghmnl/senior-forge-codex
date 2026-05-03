@@ -3,8 +3,8 @@ tagline: The definitive reference for the path to Android Seniority.
 description: >-
   The Senior Forge Codex: The Path to Seniority. A technical reference manual for Senior Android Developer interviews.
 
-url: 'https://aghmnl.github.io' # Replace with your actual URL
-baseurl: ''
+url: 'https://aghmnl.github.io'
+baseurl: '/senior-forge-codex'
 
 author: aghmnl
 github_username: aghmnl

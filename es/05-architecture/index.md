@@ -1,5 +1,7 @@
+---
 layout: default
 title: Arquitectura y Patrones de Diseño
+---
 
 # Arquitectura y Patrones de Diseño
 

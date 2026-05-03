@@ -1,5 +1,7 @@
+---
 layout: default
 title: Dependency Injection
+---
 
 # Dependency Injection
 

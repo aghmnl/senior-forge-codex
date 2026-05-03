@@ -1,5 +1,7 @@
+---
 layout: default
 title: Networking y Datos
+---
 
 # Networking y Datos
 

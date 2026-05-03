@@ -1,5 +1,7 @@
+---
 layout: default
 title: Artificial Intelligence
+---
 
 # Artificial Intelligence
 

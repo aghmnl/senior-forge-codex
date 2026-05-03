@@ -1,5 +1,7 @@
+---
 layout: default
 title: Android Framework y Ciclo de Vida
+---
 
 # Android Framework y Ciclo de Vida
 

@@ -1,5 +1,7 @@
+---
 layout: default
 title: Inteligencia Artificial
+---
 
 # Inteligencia Artificial
 

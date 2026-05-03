@@ -1,5 +1,7 @@
+---
 layout: default
 title: Kotlin Core
+---
 
 # Kotlin Core
 

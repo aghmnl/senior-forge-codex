@@ -1,5 +1,7 @@
+---
 layout: default
 title: Architecture & Design Patterns
+---
 
 # Architecture & Design Patterns
 

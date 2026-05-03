@@ -22,4 +22,3 @@ Welcome to The Senior Forge Codex. This strategic compendium documents the deep 
 
 ---
 
-[Switch to Español (ES)](/es/)

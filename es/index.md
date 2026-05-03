@@ -22,4 +22,3 @@ Bienvenido al Senior Forge Codex. Este es un compendio estratégico diseñado pa
 
 ---
 
-[Cambiar a English (EN)](/)

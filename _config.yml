@@ -1,40 +1,46 @@
 title: The Senior Forge Codex
+tagline: A technical reference manual for Senior Android Developer interviews.
 description: >-
   A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
-  This theory also serves as a comprehensive resource for technical interviews for Senior Android Developer positions.
+  Maintained by aghmnl.
+
+url: 'https://aghmnl.github.io' # Replace with your actual URL
+baseurl: ''
+
 author: aghmnl
-owner_name: aghmnl
 github_username: aghmnl
-remote_theme: pages-themes/midnight
-baseurl: ""
-url: ""
+
+theme: jekyll-theme-chirpy
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-paginate
 
 defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
   - scope:
       path: "en"
     values:
       lang: en
-      layout: default
   - scope:
       path: "es"
     values:
       lang: es
-      layout: default
 
-# Exclusion list
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - .jekyll-cache
-  - .sass-cache
-  - .jekyll-metadata
-
-sass:
-  style: compressed
-  quiet_deps: true
+# Chirpy Specific Configuration
+# (Add more as needed, but this is a base start)
+paginate: 10
+timezone: UTC
+lang: en # default language

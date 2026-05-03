@@ -1,10 +1,14 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4.1"
-gem "jekyll-remote-theme"
-gem "webrick", "~> 1.8"
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-chirpy", "~> 7.1"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-include-cache"
+  gem "jekyll-paginate"
 end
+
+gem "webrick", "~> 1.8"

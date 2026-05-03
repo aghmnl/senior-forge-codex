@@ -5,6 +5,7 @@ title: Kotlin Core
 
 # Kotlin Core
 
-No items are written in this section yet.
+1. **[Sealed Classes & Interfaces]({{ "/en/01-kotlin-core/sealed-classes-interfaces.md" | relative_url }})**
 
+---
 [Back to Chapters]({{ "/" | relative_url }})

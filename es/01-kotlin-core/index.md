@@ -5,6 +5,7 @@ title: Kotlin Core
 
 # Kotlin Core
 
-Todavía no se han escrito artículos en esta sección.
+1. **[Sealed Classes & Interfaces]({{ "/es/01-kotlin-core/sealed-classes-interfaces.md" | relative_url }})**
 
+---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

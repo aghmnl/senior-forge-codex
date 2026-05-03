@@ -7,6 +7,8 @@ permalink: /
 
 Welcome to The Senior Forge Codex. This strategic compendium documents the deep theory required for Android mastery. It serves as the definitive technical reference for The Senior Forge articles and as a comprehensive study guide for Senior Android Developer interviews.
 
+**Maintained by: aghmnl**
+
 ## Chapters
 
 1. **[Kotlin Core](/en/01-kotlin-core/)**
@@ -21,5 +23,4 @@ Welcome to The Senior Forge Codex. This strategic compendium documents the deep 
 10. **[Artificial Intelligence](/en/10-ai/)**
 
 ---
-
 [Switch to Español (ES)](/es/)

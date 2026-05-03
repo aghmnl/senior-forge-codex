@@ -5,7 +5,7 @@
 <header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
     <nav id="breadcrumb" aria-label="Breadcrumb">
-      {%- assign paths = page.url | split: '/' | compact -%}
+      {%- assign paths = page.url | split: '/' -%}
       
       <span>
         <a href="{{ '/' | relative_url }}">
@@ -14,14 +14,11 @@
       </span>
 
       {%- for item in paths -%}
-        {%- if item == "en" or item == "es" -%}
+        {%- if item == "" or item == "en" or item == "es" -%}
           {%- continue -%}
         {%- endif -%}
 
         {%- if forloop.last -%}
-          {%- if page.url == "/" or page.url == "/es/" -%}
-            {%- continue -%}
-          {%- endif -%}
           <span>{{ page.title }}</span>
         {%- else -%}
           {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{%- if paths[i] != "" -%}{{ paths[i] }}/{%- endif -%}{%- endfor -%}{%- endcapture -%}

@@ -24,7 +24,7 @@
           {%- endif -%}
           <span>{{ page.title }}</span>
         {%- else -%}
-          {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{{ paths[i] }}/{%- endfor -%}{%- endcapture -%}
+          {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{%- if paths[i] != "" -%}{{ paths[i] }}/{%- endif -%}{%- endfor -%}{%- endcapture -%}
           <span>
             <a href="{{ path_url | relative_url }}">
               {{ item | replace: '-', ' ' | capitalize }}

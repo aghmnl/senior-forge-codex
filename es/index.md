@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Senior Forge Codex
+title: The Senior Forge Codex
 tagline: La referencia definitiva hacia el seniority en Android.
 permalink: /es/
 ---

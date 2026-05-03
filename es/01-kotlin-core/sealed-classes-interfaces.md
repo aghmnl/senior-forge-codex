@@ -29,7 +29,7 @@ sealed interface UIState {
 // El compilador garantiza que manejamos todos los casos
 fun render(state: UIState) {
     when (state) {
-        is UIState.Loading -> showLoader()
+        UIState.Loading -> showLoader()
         is UIState.Success -> showData(state.data) // Smart cast automático
         is UIState.Error -> showError(state.message)
     }

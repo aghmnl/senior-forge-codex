@@ -1,6 +1,10 @@
 title: The Senior Forge Codex
-description: A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
-remote_theme: jekyll/jekyll-theme-midnight
+description: >-
+  A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
+  Maintained by aghmnl. This theory serves as a comprehensive resource for technical interviews for Senior Android Developer positions.
+author:
+  name: aghmnl
+remote_theme: pages-themes/midnight
 baseurl: ""
 url: ""
 
@@ -29,3 +33,7 @@ exclude:
   - .jekyll-cache
   - .sass-cache
   - .jekyll-metadata
+
+sass:
+  style: compressed
+  quiet_deps: true

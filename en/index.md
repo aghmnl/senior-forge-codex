@@ -8,6 +8,10 @@ permalink: /en/
 
 Welcome to the **Technical Codex**. This is a strategic compendium of theoretical topics created by an Android developer to document the deep theory required for seniority. It serves as a permanent reference for the articles and concepts explored in **The Senior Forge**.
 
+**Maintained by: aghmnl**
+
+*Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions.*
+
 ## Chapters
 
 1. **[Kotlin Core](/en/01-kotlin-core/)**

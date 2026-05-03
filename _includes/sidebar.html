@@ -37,9 +37,10 @@
 
   </ul><!-- .nav -->
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
     <div class="w-100 ps-3 mb-2 text-muted small">
-      {{ site.data.translations[lang].maintained_by }}: <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener">aghmnl</a></strong>
+      <span>{{ site.data.translations[lang].maintained_by }}:</span>
+      <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset">aghmnl</a></strong>
     </div>
 
     {% unless site.theme_mode %}

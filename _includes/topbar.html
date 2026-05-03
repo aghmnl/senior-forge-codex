@@ -19,10 +19,19 @@
 
       <!-- Logic for sub-items -->
       {% for item in paths %}
-        {% if forloop.first %}
+        {% if item == "en" or item == "es" %}
           {% continue %}
         {% endif %}
         
+        {% if forloop.first and page.url == "/" %}
+           {% continue %}
+        {% endif %}
+        
+        <!-- Avoid showing "Senior Forge Codex" or "The Senior Forge Codex" as a breadcrumb segment if it's the current page -->
+        {% if forloop.last and (page.url == "/" or page.url == "/es/") %}
+          {% continue %}
+        {% endif %}
+
         <span>
           {% if forloop.last %}
             {{ page.title }}

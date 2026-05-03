@@ -3,6 +3,14 @@ layout: default
 title: Language Selection | Selección de Idioma
 ---
 
+# The Senior Forge Codex
+
+A compendium of theoretical topics serving as a reference for **The Senior Forge** articles on the journey to seniority.
+
+**Maintained by: aghmnl**
+
+*Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions.*
+
 Please select your language / Por favor seleccione su idioma:
 
 ## [English (EN)](/en/)

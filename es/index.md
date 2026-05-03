@@ -4,7 +4,13 @@ title: Inicio (ES)
 permalink: /es/
 ---
 
-_Nota: Este Codex está diseñado como una guía de estudio exhaustiva para entrevistas técnicas de posiciones Senior Android Developer._
+# Codex Técnico: El Camino hacia la Seniority
+
+Bienvenido al **Codex Técnico**. Este es un compendio estratégico de temas teóricos creado por un desarrollador Android para documentar la teoría profunda necesaria para alcanzar el nivel senior. Sirve como referencia permanente para los artículos y conceptos explorados en **The Senior Forge**.
+
+**Mantenido por: aghmnl**
+
+*Nota: Este Codex está diseñado como una guía de estudio exhaustiva para entrevistas técnicas de posiciones Senior Android Developer.*
 
 ## Capítulos
 
@@ -20,5 +26,4 @@ _Nota: Este Codex está diseñado como una guía de estudio exhaustiva para entr
 10. **[Inteligencia Artificial](/es/10-ai/)**
 
 ---
-
 [Volver a Selección de Idioma](/)

@@ -4,7 +4,13 @@ title: Home (EN)
 permalink: /en/
 ---
 
-_Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions._
+# Technical Codex: The Path to Seniority
+
+Welcome to the **Technical Codex**. This is a strategic compendium of theoretical topics created by an Android developer to document the deep theory required for seniority. It serves as a permanent reference for the articles and concepts explored in **The Senior Forge**.
+
+**Maintained by: aghmnl**
+
+*Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions.*
 
 ## Chapters
 
@@ -20,5 +26,4 @@ _Note: This Codex is designed as a comprehensive study guide for technical inter
 10. **[Artificial Intelligence](/en/10-ai/)**
 
 ---
-
 [Back to Language Selection](/)

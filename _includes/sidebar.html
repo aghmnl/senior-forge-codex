@@ -20,14 +20,16 @@
     <h1 class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </h1>
-    <p class="site-subtitle fst-italic mb-0">{{ page.tagline | default: site.tagline }}</p>
+    
+    {% assign lang = page.lang | default: "en" %}
+    <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
   </div><!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
     <li class="nav-item{% if page.layout == 'home' %} active{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
-        <span>{{ site.data.locales[include.lang].tabs.home | default: "HOME" }}</span>
+        <span>{{ site.data.locales[lang].tabs.home | default: "HOME" }}</span>
       </a>
     </li>
 
@@ -35,7 +37,7 @@
       <li class="nav-item{% if page.url == tab.url %} active{% endif %}">
         <a href="{{ tab.url | relative_url }}" class="nav-link">
           <i class="fa-fw {{ tab.icon }}"></i>
-          <span>{{ site.data.locales[include.lang].tabs[tab.url] | default: tab.title | upcase }}</span>
+          <span>{{ site.data.locales[lang].tabs[tab.url] | default: tab.title | upcase }}</span>
         </a>
       </li>
     {% endfor %}
@@ -44,7 +46,7 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     <div class="w-100 ps-3 mb-2 text-muted small">
-      Maintained by: <strong>{{ site.author }}</strong>
+      {{ site.data.translations[lang].maintained_by }}: <strong>{{ site.author }}</strong>
     </div>
 
     {% unless site.theme_mode %}

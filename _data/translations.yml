@@ -1,8 +1,6 @@
 en:
-  description: >-
-    A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
-    Maintained by aghmnl. This theory serves as a comprehensive resource for technical interviews for Senior Android Developer positions.
+  tagline: "The definitive reference for the path to Android Seniority."
+  maintained_by: "Maintained by"
 es:
-  description: >-
-    Un compendio de temas teóricos que sirve como referencia para los artículos de The Senior Forge en el camino hacia la veteranía.
-    Mantenido por aghmnl. Esta teoría sirve como un recurso exhaustivo para entrevistas técnicas de posiciones Senior Android Developer.
+  tagline: "La referencia definitiva hacia el seniority en Android."
+  maintained_by: "Mantenido por"

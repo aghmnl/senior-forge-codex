@@ -16,7 +16,7 @@
     <li class="nav-item{% if page.url == '/' or page.url == '/es/' %} active{% endif %}">
       <a href="{% if lang == 'en' %}{{ '/' | relative_url }}{% else %}{{ '/es/' | relative_url }}{% endif %}" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
-        <span>{{ site.data.locales[lang].tabs.home | default: "HOME" }}</span>
+        <span>{{ site.data.locales[lang].tabs.home | default: "Home" }}</span>
       </a>
     </li>
 

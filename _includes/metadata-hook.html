@@ -1,0 +1,34 @@
+<style>
+  /* Increase Sidebar Width */
+  :root {
+    --sidebar-width: 310px;
+    --sidebar-width-large: 350px;
+  }
+
+  #sidebar {
+    width: var(--sidebar-width) !important;
+  }
+
+  #main-wrapper {
+    margin-left: var(--sidebar-width) !important;
+  }
+
+  @media (min-width: 1650px) {
+    #sidebar {
+      width: var(--sidebar-width-large) !important;
+    }
+    #main-wrapper {
+      margin-left: var(--sidebar-width-large) !important;
+    }
+  }
+
+  /* Extra Top Padding for Topbar */
+  #topbar-wrapper {
+    padding-top: 8rem !important; /* Pushes the flag, breadcrumbs and search down */
+  }
+
+  /* Ensure the sidebar title stays at top despite sidebar padding adjustments */
+  #sidebar.pt-0 {
+    padding-top: 0 !important;
+  }
+</style>

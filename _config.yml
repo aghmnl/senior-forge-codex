@@ -13,11 +13,9 @@ github_username: aghmnl
 theme: jekyll-theme-chirpy
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
-  - jekyll-paginate
 
 defaults:
   - scope:
@@ -41,6 +39,5 @@ defaults:
 
 # Chirpy Specific Configuration
 # (Add more as needed, but this is a base start)
-paginate: 10
 timezone: UTC
 lang: en # default language

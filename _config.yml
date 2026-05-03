@@ -1,9 +1,10 @@
 title: The Senior Forge Codex
 description: >-
   A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
-  Maintained by aghmnl. This theory serves as a comprehensive resource for technical interviews for Senior Android Developer positions.
-author:
-  name: aghmnl
+  This theory also serves as a comprehensive resource for technical interviews for Senior Android Developer positions.
+author: aghmnl
+owner_name: aghmnl
+github_username: aghmnl
 remote_theme: pages-themes/midnight
 baseurl: ""
 url: ""

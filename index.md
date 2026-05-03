@@ -3,10 +3,6 @@ layout: default
 title: Language Selection | Selección de Idioma
 ---
 
-# The Senior Forge Codex
-
-A compendium of theoretical topics serving as a reference for **The Senior Forge** articles on the journey to seniority.
-
 Please select your language / Por favor seleccione su idioma:
 
 ## [English (EN)](/en/)

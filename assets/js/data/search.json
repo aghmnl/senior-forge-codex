@@ -1,0 +1,30 @@
+---
+layout: compress
+swcache: true
+---
+
+[
+  {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": {{ post.url | relative_url | jsonify }},
+      "categories": {{ post.categories | join: ', ' | jsonify }},
+      "tags": {{ post.tags | join: ', ' | jsonify }},
+      "date": {{ post.date | date: site.data.locales[include.lang].date_format | default: "%Y-%m-%d" | jsonify }},
+      "snippet": {{ post.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  {% if site.posts.size > 0 and site.pages.size > 0 %},{% endif %}
+  {% for page in site.pages %}
+    {% if page.title and page.url != "/" %}
+    {
+      "title": {{ page.title | jsonify }},
+      "url": {{ page.url | relative_url | jsonify }},
+      "categories": "",
+      "tags": "",
+      "date": "",
+      "snippet": {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]

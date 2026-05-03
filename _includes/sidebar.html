@@ -41,7 +41,7 @@
 
     {% for chapter in site.data.translations[lang].chapters %}
       <li class="nav-item{% if page.url == chapter.url %} active{% endif %}">
-        <a href="{{ chapter.url | relative_url }}" class="nav-link">
+        <a href="{{ chapter.url | relative_url }}" class="nav-link py-1">
           <i class="fa-fw fas fa-book-open"></i>
           <span>{{ chapter.title }}</span>
         </a>

@@ -26,18 +26,24 @@
   </div><!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
-    <li class="nav-item{% if page.layout == 'home' %} active{% endif %}">
-      <a href="{{ '/' | relative_url }}" class="nav-link">
+    <li class="nav-item{% if page.url == '/' or page.url == '/es/' %} active{% endif %}">
+      <a href="{% if lang == 'en' %}{{ '/' | relative_url }}{% else %}{{ '/es/' | relative_url }}{% endif %}" class="nav-link">
         <i class="fa-fw fas fa-home"></i>
         <span>{{ site.data.locales[lang].tabs.home | default: "HOME" }}</span>
       </a>
     </li>
 
-    {% for tab in site.tabs %}
-      <li class="nav-item{% if page.url == tab.url %} active{% endif %}">
-        <a href="{{ tab.url | relative_url }}" class="nav-link">
-          <i class="fa-fw {{ tab.icon }}"></i>
-          <span>{{ site.data.locales[lang].tabs[tab.url] | default: tab.title | upcase }}</span>
+    <li class="nav-item mt-3">
+        <span class="nav-link disabled text-muted text-uppercase small fw-bold">
+            {{ site.data.translations[lang].chapters_title }}
+        </span>
+    </li>
+
+    {% for chapter in site.data.translations[lang].chapters %}
+      <li class="nav-item{% if page.url == chapter.url %} active{% endif %}">
+        <a href="{{ chapter.url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-book-open"></i>
+          <span>{{ chapter.title }}</span>
         </a>
       </li>
     {% endfor %}

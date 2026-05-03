@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Dependency Injection
+title: Inyección de Dependencias
 ---
 
-# Dependency Injection
+# Inyección de Dependencias
 
 Todavía no se han escrito artículos en esta sección.
 

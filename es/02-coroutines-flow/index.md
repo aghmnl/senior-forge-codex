@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Coroutines & Flow
+title: Corrutinas y Flow
 ---
 
-# Coroutines & Flow
+# Corrutinas y Flow
 
 Todavía no se han escrito artículos en esta sección.
 

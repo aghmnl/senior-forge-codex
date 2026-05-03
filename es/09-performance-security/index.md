@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Performance & Security
+title: Performance y Seguridad
 ---
 
-# Performance & Security
+# Performance y Seguridad
 
 Todavía no se han escrito artículos en esta sección.
 

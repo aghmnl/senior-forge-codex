@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Networking & Data
+title: Networking y Datos
 ---
 
-# Networking & Data
+# Networking y Datos
 
 Todavía no se han escrito artículos en esta sección.
 

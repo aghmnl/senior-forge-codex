@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Android Framework & Lifecycle
+title: Android Framework y Ciclo de Vida
 ---
 
-# Android Framework & Lifecycle
+# Android Framework y Ciclo de Vida
 
 Todavía no se han escrito artículos en esta sección.
 

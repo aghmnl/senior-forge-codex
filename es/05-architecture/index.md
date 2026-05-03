@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Architecture & Design Patterns
+title: Arquitectura y Patrones de Diseño
 ---
 
-# Architecture & Design Patterns
+# Arquitectura y Patrones de Diseño
 
 Todavía no se han escrito artículos en esta sección.
 

@@ -1,22 +1,20 @@
 ---
-layout: default
+layout: page
 title: Language Selection | Selección de Idioma
 ---
 
 # The Senior Forge Codex
+## The Path to Seniority
 
-A compendium of theoretical topics serving as a reference for **The Senior Forge** articles on the journey to seniority.
+Welcome to The Senior Forge Codex. This strategic compendium documents the deep theory required for Android mastery. It serves as the definitive technical reference for The Senior Forge articles and as a comprehensive study guide for Senior Android Developer interviews.
 
-**Maintained by: aghmnl**
+---
 
-*Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions.*
+Bienvenido al Senior Forge Codex. Este es un compendio estratégico diseñado para documentar la teoría profunda necesaria en el camino a la maestría en Android. Funciona como la referencia técnica permanente para los artículos de The Senior Forge y como una guía de estudio exhaustiva para afrontar con éxito entrevistas de nivel Senior Android Developer.
+
+---
 
 Please select your language / Por favor seleccione su idioma:
 
 ## [English (EN)](/en/)
-A technical reference manual for Android developers documenting the deep theory required for seniority.
-
----
-
 ## [Español (ES)](/es/)
-Un manual de referencia técnica para desarrolladores Android que documenta la teoría profunda necesaria para alcanzar el nivel senior.

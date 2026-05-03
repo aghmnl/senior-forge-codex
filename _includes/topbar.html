@@ -43,12 +43,23 @@
     <div class="d-flex align-items-center">
       <!-- Language Switcher -->
       <div id="language-switcher" class="me-2">
-        {%- if page.url == "/" or page.lang == "en" -%}
-          <a href="/es/" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
+        {%- assign current_url = page.url -%}
+        {%- if page.lang == "en" or current_url == "/" -%}
+          {%- if current_url == "/" -%}
+            {%- assign target_url = "/es/" -%}
+          {%- else -%}
+            {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
+          {%- endif -%}
+          <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
             🇪🇸
           </a>
         {%- elsif page.lang == "es" -%}
-          <a href="/" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
+          {%- if current_url == "/es/" -%}
+            {%- assign target_url = "/" -%}
+          {%- else -%}
+            {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+          {%- endif -%}
+          <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
             🇬🇧
           </a>
         {%- endif -%}

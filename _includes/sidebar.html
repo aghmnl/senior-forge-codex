@@ -46,11 +46,35 @@
       <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
       </button>
-
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
     {% endunless %}
+
+    <!-- Sidebar Language Switcher -->
+    <div class="mx-2">
+      {%- assign current_url = page.url -%}
+      {%- if page.lang == "en" or current_url == "/" -%}
+        {%- if current_url == "/" -%}
+          {%- assign target_url = "/es/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
+          🇪🇸
+        </a>
+      {%- elsif page.lang == "es" -%}
+        {%- if current_url == "/es/" -%}
+          {%- assign target_url = "/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
+          🇬🇧
+        </a>
+      {%- endif -%}
+    </div>
+
+    {% if site.data.contact.size > 0 %}
+      <span class="icon-border"></span>
+    {% endif %}
 
     {% for entry in site.data.contact %}
       {% case entry.type %}

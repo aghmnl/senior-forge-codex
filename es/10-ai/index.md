@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Ai
+title: Artificial Intelligence
 ---
 
-# Ai
+# Artificial Intelligence
 
 Todavía no se han escrito artículos en esta sección.
 

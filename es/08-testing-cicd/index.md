@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Testing Cicd
+title: Testing & CI/CD
 ---
 
-# Testing Cicd
+# Testing & CI/CD
 
 Todavía no se han escrito artículos en esta sección.
 

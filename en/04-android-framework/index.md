@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Android Framework
+title: Android Framework & Lifecycle
 ---
 
-# Android Framework
+# Android Framework & Lifecycle
 
 No items are written in this section yet.
 

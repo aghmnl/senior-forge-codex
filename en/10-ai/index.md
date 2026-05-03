@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Ai
+title: Artificial Intelligence
 ---
 
-# Ai
+# Artificial Intelligence
 
 No items are written in this section yet.
 

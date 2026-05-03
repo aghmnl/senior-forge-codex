@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Performance Security
+title: Performance & Security
 ---
 
-# Performance Security
+# Performance & Security
 
 No items are written in this section yet.
 

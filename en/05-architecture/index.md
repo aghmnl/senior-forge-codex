@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Architecture
+title: Architecture & Design Patterns
 ---
 
-# Architecture
+# Architecture & Design Patterns
 
 No items are written in this section yet.
 

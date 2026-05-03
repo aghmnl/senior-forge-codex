@@ -3,6 +3,7 @@ layout: page
 title: The Senior Forge Codex
 tagline: The definitive reference for the path to Android Seniority.
 permalink: /
+lang: en
 ---
 
 Welcome to The Senior Forge Codex. This strategic compendium documents the deep theory required for Android mastery. It serves as the definitive technical reference for The Senior Forge articles and as a comprehensive study guide for Senior Android Developer interviews.

@@ -1,9 +1,11 @@
 ---
 layout: page
-title: The Senior Forge Codex
+title: Senior Forge Codex
 tagline: La referencia definitiva hacia el seniority en Android.
 permalink: /es/
+lang: es
 ---
+
 
 Bienvenido al Senior Forge Codex. Este es un compendio estratégico diseñado para documentar la teoría profunda necesaria en el camino a la maestría en Android. Funciona como la referencia técnica permanente para los artículos de The Senior Forge y como una guía de estudio exhaustiva para afrontar con éxito entrevistas de nivel Senior Android Developer.
 

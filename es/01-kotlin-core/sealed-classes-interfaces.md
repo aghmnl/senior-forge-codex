@@ -2,6 +2,7 @@
 layout: page
 title: Sealed Classes & Interfaces
 lang: es
+permalink: /es/01-kotlin-core/sealed-classes-interfaces/
 ---
 
 # Sealed Classes & Interfaces

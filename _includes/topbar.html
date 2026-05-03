@@ -4,45 +4,10 @@
 
 <header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
   <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
-    <nav id="breadcrumb" aria-label="Breadcrumb">
-      {%- assign paths = page.url | split: '/' -%}
-      
-      <span>
-        <a href="{{ '/' | relative_url }}">
-          {{ site.data.locales[include.lang].tabs.home | default: "Home" }}
-        </a>
-      </span>
-
-      {%- for item in paths -%}
-        {%- if item == "" or item == "en" or item == "es" -%}
-          {%- continue -%}
-        {%- endif -%}
-
-        {%- if forloop.last -%}
-          <span>{{ page.title }}</span>
-        {%- else -%}
-          {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{%- if paths[i] != "" -%}{{ paths[i] }}/{%- endif -%}{%- endfor -%}{%- endcapture -%}
-          <span>
-            <a href="{{ path_url | relative_url }}">
-              {{ item | replace: '-', ' ' | capitalize }}
-            </a>
-          </span>
-        {%- endif -%}
-      {%- endfor -%}
-    </nav>
-    <!-- endof #breadcrumb -->
-
-    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
-      <i class="fas fa-bars fa-fw"></i>
-    </button>
-
-    <div id="topbar-title">
-      {{ page.title }}
-    </div>
-
+    
     <div class="d-flex align-items-center">
-      <!-- Language Switcher -->
-      <div id="language-switcher" class="me-2">
+      <!-- Language Switcher (Left Position) -->
+      <div id="language-switcher" class="me-3">
         {%- assign current_url = page.url -%}
         {%- if page.lang == "en" or current_url == "/" -%}
           {%- if current_url == "/" -%}
@@ -65,6 +30,44 @@
         {%- endif -%}
       </div>
 
+      <nav id="breadcrumb" aria-label="Breadcrumb">
+        {%- assign paths = page.url | split: '/' -%}
+        
+        <span>
+          <a href="{{ '/' | relative_url }}">
+            {{ site.data.locales[include.lang].tabs.home | default: "Home" }}
+          </a>
+        </span>
+
+        {%- for item in paths -%}
+          {%- if item == "" or item == "en" or item == "es" -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {%- if forloop.last -%}
+            <span>{{ page.title }}</span>
+          {%- else -%}
+            {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{%- if paths[i] != "" -%}{{ paths[i] }}/{%- endif -%}{%- endfor -%}{%- endcapture -%}
+            <span>
+              <a href="{{ path_url | relative_url }}">
+                {{ item | replace: '-', ' ' | capitalize }}
+              </a>
+            </span>
+          {%- endif -%}
+        {%- endfor -%}
+      </nav>
+    </div>
+    <!-- endof #breadcrumb -->
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      {{ page.title }}
+    </div>
+
+    <div class="d-flex align-items-center">
       <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
         <i class="fas fa-search fa-fw"></i>
       </button>

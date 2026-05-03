@@ -4,9 +4,7 @@ title: Home (EN)
 permalink: /en/
 ---
 
-**Maintained by: aghmnl**
-
-*Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions.*
+_Note: This Codex is designed as a comprehensive study guide for technical interviews for Senior Android Developer positions._
 
 ## Chapters
 
@@ -22,4 +20,5 @@ permalink: /en/
 10. **[Artificial Intelligence](/en/10-ai/)**
 
 ---
+
 [Back to Language Selection](/)

@@ -4,9 +4,7 @@ title: Inicio (ES)
 permalink: /es/
 ---
 
-**Mantenido por: aghmnl**
-
-*Nota: Este Codex está diseñado como una guía de estudio exhaustiva para entrevistas técnicas de posiciones Senior Android Developer.*
+_Nota: Este Codex está diseñado como una guía de estudio exhaustiva para entrevistas técnicas de posiciones Senior Android Developer._
 
 ## Capítulos
 
@@ -22,4 +20,5 @@ permalink: /es/
 10. **[Inteligencia Artificial](/es/10-ai/)**
 
 ---
+
 [Volver a Selección de Idioma](/)

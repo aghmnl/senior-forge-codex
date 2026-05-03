@@ -1,13 +1,18 @@
 ---
-layout: home
-title: The Senior Forge
+layout: default
+title: Language Selection | Selección de Idioma
 ---
 
-# Welcome to The Senior Forge Codex
+# The Senior Forge Codex
 
-This site serves as the theoretical companion to the **FollowApp Suite**, a private monorepo of 14 Android applications. Here, the journey to Android seniority is documented through 100 technical topics.
+A compendium of theoretical topics serving as a reference for **The Senior Forge** articles on the journey to seniority.
 
-Please select your language:
+Please select your language / Por favor seleccione su idioma:
 
-- [English (EN)](/en/)
-- [Español (ES)](/es/)
+## [English (EN)](/en/)
+A technical reference manual for Android developers documenting the deep theory required for seniority.
+
+---
+
+## [Español (ES)](/es/)
+Un manual de referencia técnica para desarrolladores Android que documenta la teoría profunda necesaria para alcanzar el nivel senior.

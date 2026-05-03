@@ -1,21 +1,25 @@
 ---
-layout: page
-title: The Senior Forge - English
+layout: default
+title: Home (EN)
 permalink: /en/
 ---
 
-# The Senior Forge Codex
+# Technical Codex: The Path to Seniority
 
-Welcome to the English version of the Codex. This platform is a comprehensive documentation of the journey towards Android seniority.
+Welcome to the **Technical Codex**. This is a strategic compendium of theoretical topics created by an Android developer to document the deep theory required for seniority. It serves as a permanent reference for the articles and concepts explored in **The Senior Forge**.
 
-## About the Project
-**The Senior Forge** is a strategic repository of knowledge where theory meets practice. It serves as the theoretical foundation for the **FollowApp Suite**, a private monorepo consisting of 14 professional Android applications. Every concept explored here is empirically validated and implemented within the suite's architecture.
+## Chapters
 
-## About the Author
-I am an Android Developer currently forging my path toward seniority. My focus is on building scalable, maintainable, and robust mobile infrastructures. This Codex represents my commitment to continuous learning and technical excellence in the Android ecosystem.
+1. **[Kotlin Core](/en/01-kotlin-core/)**
+2. **[Coroutines & Flow](/en/02-coroutines-flow/)**
+3. **[Jetpack Compose](/en/03-jetpack-compose/)**
+4. **[Android Framework & Lifecycle](/en/04-android-framework/)**
+5. **[Architecture & Design Patterns](/en/05-architecture/)**
+6. **[Dependency Injection](/en/06-dependency-injection/)**
+7. **[Networking & Data](/en/07-networking-data/)**
+8. **[Testing & CI/CD](/en/08-testing-cicd/)**
+9. **[Performance & Security](/en/09-performance-security/)**
+10. **[Artificial Intelligence](/en/10-ai/)**
 
 ---
-
-### Navigation
-- [Technical Topics (Coming Soon)](#)
-- [Back to Language Selection](/)
+[Back to Language Selection](/)

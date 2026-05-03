@@ -1,51 +1,31 @@
-title: The Senior Forge
-description: The Codex for 'The Senior Forge', a documentation of the journey to Android seniority.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title: The Senior Forge Codex
+description: A compendium of theoretical topics serving as a reference for The Senior Forge articles on the journey to seniority.
+remote_theme: jekyll/jekyll-theme-midnight
+baseurl: ""
+url: ""
 
-author:
-  name: Senior Forge Author
-  email: author@example.com
-
-# Build settings
-theme: minima
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude` key here will be automatically added to
-# the internal "default list".
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 defaults:
   - scope:
       path: "en"
     values:
       lang: en
+      layout: default
   - scope:
       path: "es"
     values:
       lang: es
-  - scope:
-      path: "_posts/en"
-    values:
-      lang: en
-      permalink: /en/:year/:month/:day/:title/
-  - scope:
-      path: "_posts/es"
-    values:
-      lang: es
-      permalink: /es/:year/:month/:day/:title/
+      layout: default
+
+# Exclusion list
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache
+  - .sass-cache
+  - .jekyll-metadata

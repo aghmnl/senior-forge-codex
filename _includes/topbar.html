@@ -8,38 +8,32 @@
     class="d-flex align-items-center justify-content-between px-lg-3 h-100"
   >
     <nav id="breadcrumb" aria-label="Breadcrumb">
-      {% assign paths = page.url | split: '/' %}
+      {% assign paths = page.url | split: '/' | compact %}
+      
+      <!-- Home is always the first link -->
+      <span>
+        <a href="{{ '/' | relative_url }}">
+          {{ site.data.locales[include.lang].tabs.home | default: "Home" }}
+        </a>
+      </span>
 
-      {% if paths.size == 0 or paths.size == 1 %}
-        <!-- index page -->
-        <span>{{ site.data.locales[include.lang].tabs.home | default: "Home" }}</span>
-
-      {% else %}
-        {% for item in paths %}
-          {% if forloop.first %}
-            <span>
-              <a href="{{ '/' | relative_url }}">
-                {{ site.data.locales[include.lang].tabs.home | default: "Home" }}
-              </a>
-            </span>
-
-          {% elsif forloop.last %}
-            {% if page.collection == 'posts' %}
-              <span>{{ site.data.locales[include.lang].tabs.posts | default: "Posts" }}</span>
-            {% else %}
-              <span>{{ page.title }}</span>
-            {% endif %}
-
-          {% elsif item == 'posts' %}
-            <span>
-              <a href="{{ '/posts' | relative_url }}">
-                {{ site.data.locales[include.lang].tabs.posts | default: "Posts" }}
-              </a>
-            </span>
+      <!-- Logic for sub-items -->
+      {% for item in paths %}
+        {% if forloop.first %}
+          {% continue %}
+        {% endif %}
+        
+        <span>
+          {% if forloop.last %}
+            {{ page.title }}
+          {% else %}
+            {% capture path_url %}/{% for i in (0..forloop.index0) %}{{ paths[i] }}/{% endfor %}{% endcapture %}
+            <a href="{{ path_url | relative_url }}">
+              {{ item | replace: '-', ' ' | capitalize }}
+            </a>
           {% endif %}
-        {% endfor %}
-
-      {% endif %}
+        </span>
+      {% endfor %}
     </nav>
     <!-- endof #breadcrumb -->
 
@@ -54,12 +48,12 @@
     <div class="d-flex align-items-center">
       <!-- Language Switcher -->
       <div id="language-switcher" class="me-2">
-        {% if page.lang == "en" %}
+        {% if page.url == "/" or page.lang == "en" %}
           <a href="/es/" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
             🇪🇸
           </a>
         {% elsif page.lang == "es" %}
-          <a href="/en/" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
+          <a href="/" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
             🇬🇧
           </a>
         {% endif %}

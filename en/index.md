@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Chapters
+title: The Senior Forge Codex
 tagline: The definitive reference for the path to Android Seniority.
-permalink: /en/
+permalink: /
 ---
 
 # The Senior Forge Codex
 ## The Path to Seniority
 
 Welcome to The Senior Forge Codex. This strategic compendium documents the deep theory required for Android mastery. It serves as the definitive technical reference for The Senior Forge articles and as a comprehensive study guide for Senior Android Developer interviews.
+
+**Maintained by: aghmnl**
 
 ## Chapters
 
@@ -24,4 +26,4 @@ Welcome to The Senior Forge Codex. This strategic compendium documents the deep 
 10. **[Artificial Intelligence](/en/10-ai/)**
 
 ---
-[Back to Language Selection](/)
+[Switch to Español (ES)](/es/)

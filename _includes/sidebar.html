@@ -7,10 +7,11 @@
     <h1 class="site-title mt-0">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </h1>
-    
+
     {% assign lang = page.lang | default: "en" %}
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
-  </div><!-- .profile-wrapper -->
+  </div>
+  <!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
     <li class="nav-item{% if page.url == '/' or page.url == '/es/' %} active{% endif %}">
@@ -21,96 +22,60 @@
     </li>
 
     <li class="nav-item mt-3">
-        <span class="nav-link disabled text-muted text-uppercase small fw-bold">
-            {{ site.data.translations[lang].chapters_title }}
-        </span>
+      <span class="nav-link disabled text-muted text-uppercase small fw-bold"> {{ site.data.translations[lang].chapters_title }} </span>
     </li>
 
-    {% for chapter in site.data.translations[lang].chapters %}
-      {%- assign is_active = false -%}
-      {%- if page.url == chapter.url or (page.url contains chapter.url and page.url != "/" and page.url != "/es/") -%}
-        {%- assign is_active = true -%}
+    {% for chapter in site.data.translations[lang].chapters %} {%- assign is_active = false -%} {%- if page.url == chapter.url or (page.url contains chapter.url and page.url != "/" and page.url !=
+    "/es/") -%} {%- assign is_active = true -%} {%- endif -%}
+
+    <li class="nav-item{% if is_active %} active{% endif %}">
+      <a href="{{ chapter.url | relative_url }}" class="nav-link py-1">
+        <i class="fa-fw fas fa-book-open"></i>
+        <span>{{ chapter.title }}</span>
+      </a>
+
+      {%- if is_active and page.url != chapter.url -%}
+      <!-- Show current article as a sub-item with pure indentation -->
+      <div class="nav-item active-sub-item w-100 ms-2">
+        <span class="nav-link py-1 ps-5 small fw-medium" style="opacity: 0.9; line-height: 1.2; background: transparent !important; border: none !important"> {{ page.title }} </span>
+      </div>
       {%- endif -%}
-
-      <li class="nav-item{% if is_active %} active{% endif %}">
-        <a href="{{ chapter.url | relative_url }}" class="nav-link py-1">
-          <i class="fa-fw fas fa-book-open"></i>
-          <span>{{ chapter.title }}</span>
-        </a>
-        
-        {%- if is_active and page.url != chapter.url -%}
-          <!-- Show current article as a sub-item with pure indentation -->
-          <div class="nav-item active-sub-item w-100 ms-2">
-              <span class="nav-link py-1 ps-5 small fw-medium" style="opacity: 0.9; line-height: 1.2; background: transparent !important; border: none !important;">
-                {{ page.title }}
-              </span>
-          </div>
-        {%- endif -%}
-      </li>
+    </li>
     {% endfor %}
-
-  </ul><!-- .nav -->
+  </ul>
+  <!-- .nav -->
 
   <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
-    <div class="w-100 ps-3 mb-2 text-muted small d-flex align-items-baseline">
-      <span class="me-2">{{ site.data.translations[lang].maintained_by }}:</span>
-      <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset">aghmnl</a></strong>
+    <div class="w-100 ps-3 mb-2 text-muted small d-flex align-items-center">
+      <span class="me-1">{{ site.data.translations[lang].maintained_by }}:</span>
+      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset fw-bold">aghmnl</a>
     </div>
 
     <div class="d-flex justify-content-center align-items-center w-100">
       {% unless site.theme_mode %}
-        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fas fa-adjust"></i>
-        </button>
+      <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
+        <i class="fas fa-adjust"></i>
+      </button>
       {% endunless %}
 
       <!-- Sidebar Language Switcher -->
-      {%- assign current_url = page.url -%}
-      {%- if page.lang == "en" or current_url == "/" -%}
-        {%- if current_url == "/" -%}
-          {%- assign target_url = "/es/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
-          🇪🇸
-        </a>
-      {%- elsif page.lang == "es" -%}
-        {%- if current_url == "/es/" -%}
-          {%- assign target_url = "/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
-          🇬🇧
-        </a>
-      {%- endif -%}
-
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
-
-      {% for entry in site.data.contact %}
-        {% case entry.type %}
-          {% when 'github', 'twitter' %}
-            {% capture url %}https://{{ entry.type }}.com/{{ entry.id }}{% endcapture %}
-          {% when 'email' %}
-            {% capture url %}mailto:{{ entry.id }}{% endcapture %}
-          {% when 'rss' %}
-            {% capture url %}{{ '/feed.xml' | relative_url }}{% endcapture %}
-          {% else %}
-            {% assign url = entry.id %}
-        {% endcase %}
-
-        {% if url %}
-          <a href="{{ url }}" aria-label="{{ entry.type }}"
-            {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
-            <i class="fa-fw {{ entry.icon }}"></i>
-          </a>
-        {% endif %}
-      {% endfor %}
+      {%- assign current_url = page.url -%} {%- if page.lang == "en" or current_url == "/" -%} {%- if current_url == "/" -%} {%- assign target_url = "/es/" -%} {%- else -%} {%- assign target_url =
+      current_url | replace_first: "/en/", "/es/" -%} {%- endif -%}
+      <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px"> 🇪🇸 </a>
+      {%- elsif page.lang == "es" -%} {%- if current_url == "/es/" -%} {%- assign target_url = "/" -%} {%- else -%} {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%} {%- endif
+      -%}
+      <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px"> 🇬🇧 </a>
+      {%- endif -%} {% if site.data.contact.size > 0 %}
+      <span class="icon-border"></span>
+      {% endif %} {% for entry in site.data.contact %} {% case entry.type %} {% when 'github', 'twitter' %} {% capture url %}https://{{ entry.type }}.com/{{ entry.id }}{% endcapture %} {% when 'email'
+      %} {% capture url %}mailto:{{ entry.id }}{% endcapture %} {% when 'rss' %} {% capture url %}{{ '/feed.xml' | relative_url }}{% endcapture %} {% else %} {% assign url = entry.id %} {% endcase %}
+      {% if url %}
+      <a href="{{ url }}" aria-label="{{ entry.type }}" {% unless entry.noblank %}target="_blank" rel="noopener" {% endunless %}>
+        <i class="fa-fw {{ entry.icon }}"></i>
+      </a>
+      {% endif %} {% endfor %}
     </div>
-
-  </div><!-- .sidebar-bottom -->
-
-</aside><!-- #sidebar -->
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->

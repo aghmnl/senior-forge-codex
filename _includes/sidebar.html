@@ -27,11 +27,27 @@
     </li>
 
     {% for chapter in site.data.translations[lang].chapters %}
-      <li class="nav-item{% if page.url == chapter.url %} active{% endif %}">
+      {%- assign is_active = false -%}
+      {%- if page.url == chapter.url or (page.url contains chapter.url and page.url != "/" and page.url != "/es/") -%}
+        {%- assign is_active = true -%}
+      {%- endif -%}
+
+      <li class="nav-item{% if is_active %} active{% endif %}">
         <a href="{{ chapter.url | relative_url }}" class="nav-link py-1">
           <i class="fa-fw fas fa-book-open"></i>
           <span>{{ chapter.title }}</span>
         </a>
+        
+        {%- if is_active and page.url != chapter.url -%}
+          <!-- Show current article as a sub-item -->
+          <ul class="nav flex-column ps-4 mb-1">
+            <li class="nav-item">
+              <span class="nav-link py-0 small fw-bold" style="opacity: 0.8; font-size: 0.85rem;">
+                <i class="fas fa-angle-right me-1"></i> {{ page.title }}
+              </span>
+            </li>
+          </ul>
+        {%- endif -%}
       </li>
     {% endfor %}
 

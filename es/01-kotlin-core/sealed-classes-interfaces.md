@@ -18,6 +18,7 @@ Para un Senior, el valor no está solo en la restricción, sino en la mantenibil
 *   **Modelado Atómico**: Son la piedra angular del patrón MVI, permitiendo que la UI reaccione a un único "Estado de Verdad" de forma predecible.
 
 ## Code in Action
+
 ```kotlin
 // Modelado de estados de UI siguiendo principios Senior
 sealed interface UIState {

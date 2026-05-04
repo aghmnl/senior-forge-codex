@@ -3,8 +3,8 @@ tagline: The definitive reference for the path to Android Seniority.
 description: >-
   The Senior Forge Codex: The Path to Seniority. A technical reference manual for Senior Android Developer interviews.
 
-url: 'https://aghmnl.github.io'
-baseurl: '/senior-forge-codex'
+url: "https://aghmnl.github.io"
+baseurl: "/senior-forge-codex"
 
 author: aghmnl
 github_username: aghmnl
@@ -18,12 +18,12 @@ plugins:
 
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post
   - scope:
-      path: ''
+      path: ""
       type: pages
     values:
       layout: page
@@ -40,3 +40,14 @@ defaults:
 # (Add more as needed, but this is a base start)
 timezone: UTC
 lang: en # default language
+
+# Markdown engine
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true # Si querés números de línea

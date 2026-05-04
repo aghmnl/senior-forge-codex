@@ -58,7 +58,7 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
+        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
           🇪🇸
         </a>
       {%- elsif page.lang == "es" -%}
@@ -67,7 +67,7 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
+        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
           🇬🇧
         </a>
       {%- endif -%}

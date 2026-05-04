@@ -39,9 +39,9 @@
         </a>
         
         {%- if is_active and page.url != chapter.url -%}
-          <!-- Show current article as a sub-item with clear indentation -->
+          <!-- Show current article as a sub-item with pure indentation -->
           <div class="nav-item active-sub-item w-100 ms-2">
-              <span class="nav-link py-1 ps-5 small fw-medium" style="opacity: 0.9; line-height: 1.2; border-left: 2px solid var(--sidebar-active-color);">
+              <span class="nav-link py-1 ps-5 small fw-medium" style="opacity: 0.9; line-height: 1.2; background: transparent !important; border: none !important;">
                 {{ page.title }}
               </span>
           </div>

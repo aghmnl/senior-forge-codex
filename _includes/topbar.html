@@ -9,7 +9,8 @@
       <!-- Language Switcher (Left Position) -->
       <div id="language-switcher" class="me-3">
         {%- assign current_url = page.url -%}
-        {%- if page.lang == "en" or current_url == "/" -%}
+        {%- assign lang = page.lang | default: "en" -%}
+        {%- if lang == "en" or current_url == "/" -%}
           {%- if current_url == "/" -%}
             {%- assign target_url = "/es/" -%}
           {%- else -%}
@@ -18,7 +19,7 @@
           <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
             🇪🇸
           </a>
-        {%- elsif page.lang == "es" -%}
+        {%- elsif lang == "es" -%}
           {%- if current_url == "/es/" -%}
             {%- assign target_url = "/" -%}
           {%- else -%}
@@ -32,10 +33,11 @@
 
       <nav id="breadcrumb" aria-label="Breadcrumb">
         {%- assign paths = page.url | split: '/' -%}
+        {%- assign lang = page.lang | default: "en" -%}
         
         <span>
           <a href="{{ '/' | relative_url }}">
-            {{ site.data.locales[include.lang].tabs.home | default: "Home" }}
+            {{ site.data.locales[lang].tabs.home | default: "Home" }}
           </a>
         </span>
 
@@ -48,9 +50,20 @@
             <span>{{ page.title }}</span>
           {%- else -%}
             {%- capture path_url -%}/{%- for i in (0..forloop.index0) -%}{%- if paths[i] != "" -%}{{ paths[i] }}/{%- endif -%}{%- endfor -%}{%- endcapture -%}
+            {%- assign pretty_item = item | replace: '-', ' ' | capitalize -%}
+            
+            {%- comment -%} Try to find a pretty title for the chapter folder {%- endcomment -%}
+            {%- assign chapter_url = "/" | append: lang | append: "/" | append: item | append: "/" -%}
+            {%- for ch in site.data.translations[lang].chapters -%}
+              {%- if ch.url == chapter_url -%}
+                {%- assign pretty_item = ch.title -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+
             <span>
               <a href="{{ path_url | relative_url }}">
-                {{ item | replace: '-', ' ' | capitalize }}
+                {{ pretty_item }}
               </a>
             </span>
           {%- endif -%}
@@ -81,11 +94,11 @@
         type="search"
         aria-label="search"
         autocomplete="off"
-        placeholder="{{ site.data.locales[include.lang].search.placeholder | default: 'Search...' }}"
+        placeholder="{{ site.data.locales[lang].search.placeholder | default: 'Search...' }}"
       >
     </search>
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
-      {{ site.data.locales[include.lang].search.cancel | default: "Cancel" }}
+      {{ site.data.locales[lang].search.cancel | default: "Cancel" }}
     </button>
   </div>
 </header>

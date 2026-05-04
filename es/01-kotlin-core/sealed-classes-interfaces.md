@@ -5,8 +5,6 @@ lang: es
 permalink: /es/01-kotlin-core/sealed-classes-interfaces/
 ---
 
-# Sealed Classes & Interfaces
-
 ## The Theory (El Qué)
 Las Sealed Classes e Interfaces permiten representar jerarquías de clases restringidas. A diferencia de una interfaz o clase abstracta común, todos los subtipos de un elemento sealed deben conocerse en tiempo de compilación. Esto significa que el compilador tiene un control total sobre quién puede extender estas clases, lo que permite el uso de expresiones `when` exhaustivas. Mientras que las clases selladas pueden mantener un estado (mediante propiedades), las interfaces selladas (introducidas en Kotlin 1.5) permiten una mayor flexibilidad al permitir que una clase implemente múltiples jerarquías selladas.
 

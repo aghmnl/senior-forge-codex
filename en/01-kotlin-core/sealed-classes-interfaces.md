@@ -5,8 +5,6 @@ lang: en
 permalink: /en/01-kotlin-core/sealed-classes-interfaces/
 ---
 
-# Sealed Classes & Interfaces
-
 ## The Theory (The What)
 
 Sealed Classes and Interfaces represent restricted class hierarchies where all subclasses are known at compile time. This restriction provides the compiler with a complete list of all possible subtypes, enabling exhaustive `when` expressions without the need for a default `else` branch. While sealed classes can hold state through properties, sealed interfaces (introduced in Kotlin 1.5) offer enhanced flexibility, allowing a single class to implement multiple sealed hierarchies.

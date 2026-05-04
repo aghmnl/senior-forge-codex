@@ -6,6 +6,7 @@ title: Kotlin Core
 # Kotlin Core
 
 1. **[Sealed Classes & Interfaces]({{ "/es/01-kotlin-core/sealed-classes-interfaces/" | relative_url }})**
+2. **[Scope Functions]({{ "/es/01-kotlin-core/scope-functions/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

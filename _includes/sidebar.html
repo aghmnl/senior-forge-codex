@@ -39,14 +39,12 @@
         </a>
         
         {%- if is_active and page.url != chapter.url -%}
-          <!-- Show current article as a sub-item -->
-          <ul class="nav flex-column ps-4 mb-1">
-            <li class="nav-item">
-              <span class="nav-link py-0 small fw-bold" style="opacity: 0.8; font-size: 0.85rem;">
-                <i class="fas fa-angle-right me-1"></i> {{ page.title }}
+          <!-- Show current article as a sub-item with full width and subtle indentation -->
+          <div class="nav-item active-sub-item w-100">
+              <span class="nav-link py-1 ps-4 small fw-medium" style="opacity: 0.9; line-height: 1.2; border-left: 2px solid var(--sidebar-active-color);">
+                {{ page.title }}
               </span>
-            </li>
-          </ul>
+          </div>
         {%- endif -%}
       </li>
     {% endfor %}

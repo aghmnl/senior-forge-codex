@@ -43,7 +43,7 @@
       <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset">aghmnl</a></strong>
     </div>
 
-    <div class="d-flex align-items-center w-100">
+    <div class="d-flex justify-content-center align-items-center w-100">
       {% unless site.theme_mode %}
         <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
           <i class="fas fa-adjust"></i>
@@ -51,28 +51,26 @@
       {% endunless %}
 
       <!-- Sidebar Language Switcher -->
-      <div class="ms-1">
-        {%- assign current_url = page.url -%}
-        {%- if page.lang == "en" or current_url == "/" -%}
-          {%- if current_url == "/" -%}
-            {%- assign target_url = "/es/" -%}
-          {%- else -%}
-            {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-          {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
-            🇪🇸
-          </a>
-        {%- elsif page.lang == "es" -%}
-          {%- if current_url == "/es/" -%}
-            {%- assign target_url = "/" -%}
-          {%- else -%}
-            {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-          {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
-            🇬🇧
-          </a>
+      {%- assign current_url = page.url -%}
+      {%- if page.lang == "en" or current_url == "/" -%}
+        {%- if current_url == "/" -%}
+          {%- assign target_url = "/es/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
-      </div>
+        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
+          🇪🇸
+        </a>
+      {%- elsif page.lang == "es" -%}
+        {%- if current_url == "/es/" -%}
+          {%- assign target_url = "/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
+          🇬🇧
+        </a>
+      {%- endif -%}
 
       {% if site.data.contact.size > 0 %}
         <span class="icon-border"></span>

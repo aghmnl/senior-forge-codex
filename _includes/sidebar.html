@@ -39,7 +39,7 @@
 
   <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
     <div class="w-100 ps-3 mb-2 text-muted small d-flex align-items-baseline">
-      <span class="me-1">{{ site.data.translations[lang].maintained_by }}:</span>
+      <span class="me-2">{{ site.data.translations[lang].maintained_by }}:</span>
       <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset">aghmnl</a></strong>
     </div>
 
@@ -51,7 +51,7 @@
       {% endunless %}
 
       <!-- Sidebar Language Switcher -->
-      <div class="ms-2">
+      <div class="ms-1">
         {%- assign current_url = page.url -%}
         {%- if page.lang == "en" or current_url == "/" -%}
           {%- if current_url == "/" -%}
@@ -59,7 +59,7 @@
           {%- else -%}
             {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
           {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.2rem; text-decoration: none;">
+          <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
             🇪🇸
           </a>
         {%- elsif page.lang == "es" -%}
@@ -68,7 +68,7 @@
           {%- else -%}
             {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
           {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.2rem; text-decoration: none;">
+          <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
             🇬🇧
           </a>
         {%- endif -%}

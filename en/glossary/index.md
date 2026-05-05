@@ -11,34 +11,61 @@ permalink: /en/glossary/
     {{ site.data.translations.en.glossary_description }}
   </p>
 
-  <div class="w-100" style="max-width: 500px;">
+  <div class="w-100" style="max-width: 600px;">
     <div class="input-group input-group-lg shadow-sm">
       <span class="input-group-text bg-transparent border-end-0">
         <i class="fas fa-search text-muted"></i>
       </span>
-      <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms">
+      <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
+    </div>
+    <div id="glossary-search-results" class="mt-4 w-100">
+      <!-- Search results will be mirrored here -->
     </div>
   </div>
 </div>
 
-<div id="glossary-list" class="mt-5">
-  <!-- This section can be used to list categories or common terms if needed -->
-</div>
-
 <script>
-  // Bridge the glossary search with the top-bar search for a unified experience
-  document.getElementById('glossary-search').addEventListener('input', function(e) {
-    const topSearch = document.getElementById('search-input');
-    if (topSearch) {
-      topSearch.value = e.target.value;
-      // Trigger the same event as the top search to invoke the Chirpy search engine
-      topSearch.dispatchEvent(new Event('input', { bubbles: true }));
-      
-      // Focus the top search to show the results dropdown
-      if (e.target.value.length > 0) {
-        document.getElementById('search-trigger').click();
-        topSearch.focus();
-      }
+  document.addEventListener('DOMContentLoaded', function() {
+    const glossaryInput = document.getElementById('glossary-search');
+    const topSearchInput = document.getElementById('search-input');
+    const topSearchResults = document.getElementById('search-results');
+    const glossaryResults = document.getElementById('glossary-search-results');
+
+    if (glossaryInput && topSearchInput) {
+      glossaryInput.addEventListener('input', function(e) {
+        const query = e.target.value;
+        
+        // Sync with top search
+        topSearchInput.value = query;
+        topSearchInput.dispatchEvent(new Event('input', { bubbles: true }));
+
+        // Use a small timeout to let Chirpy's search engine render the results
+        setTimeout(() => {
+          if (query.length > 0) {
+            // Mirror the results found in the top-bar search panel
+            const resultsContent = topSearchResults.querySelector('.content');
+            if (resultsContent) {
+              glossaryResults.innerHTML = resultsContent.innerHTML;
+              
+              // Remove unwanted headers or empty messages if necessary
+              const emptyMsg = glossaryResults.querySelector('.text-muted');
+              if (emptyMsg && emptyMsg.innerText.includes('No results')) {
+                 // Keep it or style it
+              }
+            }
+          } else {
+            glossaryResults.innerHTML = '';
+          }
+        }, 100);
+      });
+
+      // Also handle the 'Enter' key to follow the first result if needed
+      glossaryInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          const firstResult = glossaryResults.querySelector('a');
+          if (firstResult) firstResult.click();
+        }
+      });
     }
   });
 </script>

@@ -9,6 +9,7 @@ title: Kotlin Core
 2. **[Scope Functions]({{ "/en/01-kotlin-core/scope-functions/" | relative_url }})**
 3. **[Extension Functions]({{ "/en/01-kotlin-core/extension-functions/" | relative_url }})**
 4. **[Lateinit vs Lazy]({{ "/en/01-kotlin-core/lateinit-vs-lazy/" | relative_url }})**
+5. **[Higher-Order Functions & Lambdas]({{ "/en/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }})**
 
 ---
 [Back to Chapters]({{ "/" | relative_url }})

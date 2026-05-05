@@ -19,6 +19,7 @@ permalink: /en/glossary/
       <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
     </div>
     <div id="glossary-search-results" class="mt-4 w-100">
+      <div id="search-status" class="small text-muted mb-3" style="display:none;"></div>
       <!-- Search results will be mirrored here -->
     </div>
   </div>
@@ -28,15 +29,24 @@ permalink: /en/glossary/
   (function() {
     const searchInput = document.getElementById('glossary-search');
     const resultsContainer = document.getElementById('glossary-search-results');
+    const status = document.getElementById('search-status');
     let searchData = null;
 
     async function loadSearchData() {
       if (!searchData) {
         try {
-          const response = await fetch('{{ "/assets/js/data/search.json" | relative_url }}');
+          console.log("Glossary: Attempting to fetch search index...");
+          // Cache busting to ensure we get the latest JSON fix
+          const url = '{{ "/assets/js/data/search.json" | relative_url }}' + '?v=' + Date.now();
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("HTTP " + response.status);
           searchData = await response.json();
+          console.log("Glossary: Search index loaded successfully. Entries:", searchData.length);
+          status.innerText = "Search index ready.";
         } catch (e) {
-          console.error("Failed to load search index", e);
+          console.error("Glossary: Failed to load search index", e);
+          status.style.display = "block";
+          status.innerText = "Error loading search: " + e.message;
         }
       }
       return searchData;
@@ -58,14 +68,18 @@ permalink: /en/glossary/
     }
 
     if (searchInput) {
+      // Pre-load data as soon as user focuses or types
+      searchInput.addEventListener('focus', loadSearchData);
+      
       searchInput.addEventListener('input', async (e) => {
         const query = e.target.value.toLowerCase().trim();
+        console.log("Glossary: Searching for:", query);
         const data = await loadSearchData();
         
         if (!data) return;
 
         if (query.length === 0) {
-          resultsContainer.innerHTML = '';
+          resultsContainer.innerHTML = '<div id="search-status" class="small text-muted mb-3">Search index ready.</div>';
           return;
         }
 
@@ -75,6 +89,8 @@ permalink: /en/glossary/
           (item.tags && item.tags.toLowerCase().includes(query))
         );
 
+        console.log("Glossary: Found results:", filtered.length);
+
         if (filtered.length > 0) {
           resultsContainer.innerHTML = filtered.map(renderResult).join('');
         } else {
@@ -82,7 +98,6 @@ permalink: /en/glossary/
         }
       });
 
-      // Handle Enter key
       searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           const firstLink = resultsContainer.querySelector('a');

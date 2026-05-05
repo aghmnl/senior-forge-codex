@@ -19,6 +19,7 @@ permalink: /es/glosario/
       <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Buscar términos (ej. Corrutinas, Mutex...)" aria-label="Buscar términos del glosario" autofocus>
     </div>
     <div id="glossary-search-results" class="mt-4 w-100">
+      <div id="search-status" class="small text-muted mb-3" style="display:none;"></div>
       <!-- Los resultados de búsqueda se reflejarán aquí -->
     </div>
   </div>
@@ -28,15 +29,24 @@ permalink: /es/glosario/
   (function() {
     const searchInput = document.getElementById('glossary-search');
     const resultsContainer = document.getElementById('glossary-search-results');
+    const status = document.getElementById('search-status');
     let searchData = null;
 
     async function loadSearchData() {
       if (!searchData) {
         try {
-          const response = await fetch('{{ "/assets/js/data/search.json" | relative_url }}');
+          console.log("Glosario: Intentando cargar el índice de búsqueda...");
+          // Cache busting para asegurar que obtenemos el JSON corregido
+          const url = '{{ "/assets/js/data/search.json" | relative_url }}' + '?v=' + Date.now();
+          const response = await fetch(url);
+          if (!response.ok) throw new Error("HTTP " + response.status);
           searchData = await response.json();
+          console.log("Glosario: Índice cargado con éxito. Entradas:", searchData.length);
+          status.innerText = "Índice de búsqueda listo.";
         } catch (e) {
-          console.error("Error al cargar el índice de búsqueda", e);
+          console.error("Glosario: Error al cargar el índice", e);
+          status.style.display = "block";
+          status.innerText = "Error cargando búsqueda: " + e.message;
         }
       }
       return searchData;
@@ -58,14 +68,18 @@ permalink: /es/glosario/
     }
 
     if (searchInput) {
+      // Pre-cargar datos al enfocar o escribir
+      searchInput.addEventListener('focus', loadSearchData);
+      
       searchInput.addEventListener('input', async (e) => {
         const query = e.target.value.toLowerCase().trim();
+        console.log("Glosario: Buscando:", query);
         const data = await loadSearchData();
         
         if (!data) return;
 
         if (query.length === 0) {
-          resultsContainer.innerHTML = '';
+          resultsContainer.innerHTML = '<div id="search-status" class="small text-muted mb-3">Índice de búsqueda listo.</div>';
           return;
         }
 
@@ -75,6 +89,8 @@ permalink: /es/glosario/
           (item.tags && item.tags.toLowerCase().includes(query))
         );
 
+        console.log("Glosario: Resultados encontrados:", filtered.length);
+
         if (filtered.length > 0) {
           resultsContainer.innerHTML = filtered.map(renderResult).join('');
         } else {
@@ -82,7 +98,6 @@ permalink: /es/glosario/
         }
       });
 
-      // Manejar la tecla Enter
       searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
           const firstLink = resultsContainer.querySelector('a');

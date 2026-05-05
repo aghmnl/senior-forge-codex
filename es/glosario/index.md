@@ -24,42 +24,45 @@ permalink: /es/glosario/
   </div>
 </div>
 
+{% capture result_elem %}
+  <article class="px-1 px-sm-2 px-lg-4 px-xl-0 mb-5">
+    <header>
+      <h2 class="h4 mb-1"><a href="{url}">{title}</a></h2>
+      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1 small">
+        {categories}
+        {tags}
+      </div>
+    </header>
+    <p class="text-muted small">{snippet}</p>
+  </article>
+{% endcapture %}
+
+{% capture not_found %}<p class="mt-5 text-center text-muted">{{ site.data.locales.es.search.no_results }}</p>{% endcapture %}
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const glossaryInput = document.getElementById('glossary-search');
-    const topSearchInput = document.getElementById('search-input');
-    const topSearchResults = document.getElementById('search-results');
-    const glossaryResults = document.getElementById('glossary-search-results');
-
-    if (glossaryInput && topSearchInput) {
-      glossaryInput.addEventListener('input', function(e) {
-        const query = e.target.value;
-        
-        // Sincronizar con la búsqueda superior
-        topSearchInput.value = query;
-        topSearchInput.dispatchEvent(new Event('input', { bubbles: true }));
-
-        // Usar un pequeño retraso para permitir que el motor de Chirpy renderice los resultados
-        setTimeout(() => {
-          if (query.length > 0) {
-            // Reflejar los resultados encontrados en el panel de búsqueda superior
-            const resultsContent = topSearchResults.querySelector('.content');
-            if (resultsContent) {
-              glossaryResults.innerHTML = resultsContent.innerHTML;
-            }
-          } else {
-            glossaryResults.innerHTML = '';
+  // Esperar a que el tema cargue SimpleJekyllSearch
+  function initGlossarySearch() {
+    if (typeof SimpleJekyllSearch === 'function') {
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('glossary-search'),
+        resultsContainer: document.getElementById('glossary-search-results'),
+        json: '{{ "/assets/js/data/search.json" | relative_url }}',
+        searchResultTemplate: '{{ result_elem | strip_newlines }}',
+        noResultsText: '{{ not_found }}',
+        templateMiddleware: function(prop, value, template) {
+          if (prop === 'categories') {
+            return value === '' ? '' : `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
           }
-        }, 100);
-      });
-
-      // Manejar la tecla 'Enter' para seguir el primer resultado
-      glossaryInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-          const firstResult = glossaryResults.querySelector('a');
-          if (firstResult) firstResult.click();
+          if (prop === 'tags') {
+            return value === '' ? '' : `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+          }
         }
       });
+    } else {
+      // Reintentar si aún no se ha cargado
+      setTimeout(initGlossarySearch, 100);
     }
-  });
+  }
+  
+  document.addEventListener('DOMContentLoaded', initGlossarySearch);
 </script>

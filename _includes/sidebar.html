@@ -76,6 +76,8 @@
       {%- if page.lang == "en" or current_url == "/" -%}
         {%- if current_url == "/" -%}
           {%- assign target_url = "/es/" -%}
+        {%- elsif current_url contains "/en/glossary/" -%}
+          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
@@ -85,6 +87,8 @@
       {%- elsif page.lang == "es" -%}
         {%- if current_url == "/es/" -%}
           {%- assign target_url = "/" -%}
+        {%- elsif current_url contains "/es/glosario/" -%}
+          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
         {%- endif -%}

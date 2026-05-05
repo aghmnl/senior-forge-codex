@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wiki: Garbage Collector (GC)"
+title: "Garbage Collector (GC)"
 date: 2026-05-04 12:00:00 +0000
 categories: [es, glossary]
 lang: es

@@ -20,6 +20,13 @@
       </a>
     </li>
 
+    <li class="nav-item{% if page.url contains '/glossary/' %} active{% endif %}">
+      <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="nav-link">
+        <i class="fa-fw fas fa-list-ul"></i>
+        <span>{{ site.data.translations[lang].glossary_title }}</span>
+      </a>
+    </li>
+
     <li class="nav-item mt-3">
         <span class="nav-link disabled text-muted text-uppercase small fw-bold">
             {{ site.data.translations[lang].chapters_title }}

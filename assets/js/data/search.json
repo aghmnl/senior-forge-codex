@@ -6,7 +6,11 @@ swcache: true
 [
   {% for post in site.posts %}
     {
-      "title": {{ post.title | jsonify }},
+      {%- assign title = post.title -%}
+      {%- if post.categories contains 'glossary' -%}
+        {%- assign title = title | prepend: '[GLOSSARY] ' -%}
+      {%- endif -%}
+      "title": {{ title | jsonify }},
       "url": {{ post.url | relative_url | jsonify }},
       "categories": {{ post.categories | join: ', ' | jsonify }},
       "tags": {{ post.tags | join: ', ' | jsonify }},
@@ -18,7 +22,11 @@ swcache: true
   {% for page in site.pages %}
     {% if page.title and page.url != "/" %}
     {
-      "title": {{ page.title | jsonify }},
+      {%- assign title = page.title -%}
+      {%- if page.url contains '/glossary/' and page.layout != 'page' -%}
+        {%- assign title = title | prepend: '[GLOSSARY] ' -%}
+      {%- endif -%}
+      "title": {{ title | jsonify }},
       "url": {{ page.url | relative_url | jsonify }},
       "categories": "",
       "tags": "",

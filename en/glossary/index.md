@@ -24,45 +24,71 @@ permalink: /en/glossary/
   </div>
 </div>
 
-{% capture result_elem %}
-  <article class="px-1 px-sm-2 px-lg-4 px-xl-0 mb-5">
-    <header>
-      <h2 class="h4 mb-1"><a href="{url}">{title}</a></h2>
-      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1 small">
-        {categories}
-        {tags}
-      </div>
-    </header>
-    <p class="text-muted small">{snippet}</p>
-  </article>
-{% endcapture %}
-
-{% capture not_found %}<p class="mt-5 text-center text-muted">{{ site.data.locales.en.search.no_results }}</p>{% endcapture %}
-
 <script>
-  // Wait for SimpleJekyllSearch to be loaded by the theme
-  function initGlossarySearch() {
-    if (typeof SimpleJekyllSearch === 'function') {
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('glossary-search'),
-        resultsContainer: document.getElementById('glossary-search-results'),
-        json: '{{ "/assets/js/data/search.json" | relative_url }}',
-        searchResultTemplate: '{{ result_elem | strip_newlines }}',
-        noResultsText: '{{ not_found }}',
-        templateMiddleware: function(prop, value, template) {
-          if (prop === 'categories') {
-            return value === '' ? '' : `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
-          }
-          if (prop === 'tags') {
-            return value === '' ? '' : `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
-          }
+  (function() {
+    const searchInput = document.getElementById('glossary-search');
+    const resultsContainer = document.getElementById('glossary-search-results');
+    let searchData = null;
+
+    async function loadSearchData() {
+      if (!searchData) {
+        try {
+          const response = await fetch('{{ "/assets/js/data/search.json" | relative_url }}');
+          searchData = await response.json();
+        } catch (e) {
+          console.error("Failed to load search index", e);
+        }
+      }
+      return searchData;
+    }
+
+    function renderResult(item) {
+      return `
+        <article class="px-1 px-sm-2 px-lg-4 px-xl-0 mb-5">
+          <header>
+            <h2 class="h4 mb-1"><a href="${item.url}">${item.title}</a></h2>
+            <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1 small">
+              ${item.categories ? `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${item.categories}</div>` : ''}
+              ${item.tags ? `<div><i class="fa fa-tag fa-fw"></i>${item.tags}</div>` : ''}
+            </div>
+          </header>
+          <p class="text-muted small">${item.snippet}</p>
+        </article>
+      `;
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', async (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const data = await loadSearchData();
+        
+        if (!data) return;
+
+        if (query.length === 0) {
+          resultsContainer.innerHTML = '';
+          return;
+        }
+
+        const filtered = data.filter(item => 
+          item.title.toLowerCase().includes(query) || 
+          (item.snippet && item.snippet.toLowerCase().includes(query)) ||
+          (item.tags && item.tags.toLowerCase().includes(query))
+        );
+
+        if (filtered.length > 0) {
+          resultsContainer.innerHTML = filtered.map(renderResult).join('');
+        } else {
+          resultsContainer.innerHTML = `<p class="mt-5 text-center text-muted">{{ site.data.locales.en.search.no_results }}</p>`;
         }
       });
-    } else {
-      // Retry if not yet loaded
-      setTimeout(initGlossarySearch, 100);
+
+      // Handle Enter key
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const firstLink = resultsContainer.querySelector('a');
+          if (firstLink) firstLink.click();
+        }
+      });
     }
-  }
-  
-  document.addEventListener('DOMContentLoaded', initGlossarySearch);
+  })();
 </script>

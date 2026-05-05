@@ -4,35 +4,48 @@ swcache: true
 ---
 
 [
-  {% for post in site.posts %}
-    {
-      {%- assign title = post.title -%}
-      {%- if post.categories contains 'glossary' -%}
-        {%- assign title = title | prepend: '[GLOSSARY] ' -%}
-      {%- endif -%}
-      "title": {{ title | jsonify }},
-      "url": {{ post.url | relative_url | jsonify }},
-      "categories": {{ post.categories | join: ', ' | jsonify }},
-      "tags": {{ post.tags | join: ', ' | jsonify }},
-      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
-      "snippet": {{ post.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-  {% if site.posts.size > 0 and site.pages.size > 0 %},{% endif %}
-  {% for page in site.pages %}
-    {% if page.title and page.url != "/" %}
-    {
-      {%- assign title = page.title -%}
-      {%- if page.url contains '/glossary/' and page.layout != 'page' -%}
-        {%- assign title = title | prepend: '[GLOSSARY] ' -%}
-      {%- endif -%}
-      "title": {{ title | jsonify }},
-      "url": {{ page.url | relative_url | jsonify }},
-      "categories": "",
-      "tags": "",
-      "date": "",
-      "snippet": {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endif %}
-  {% endfor %}
+  {%- assign items = "" | split: "" -%}
+  {%- for post in site.posts -%}
+    {%- capture item -%}
+      {
+        {%- assign title = post.title -%}
+        {%- if post.categories contains 'glossary' -%}
+          {%- assign title = title | prepend: '[GLOSSARY] ' -%}
+        {%- endif -%}
+        "title": {{ title | jsonify }},
+        "url": {{ post.url | relative_url | jsonify }},
+        "categories": {{ post.categories | join: ', ' | jsonify }},
+        "tags": {{ post.tags | join: ', ' | jsonify }},
+        "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+        "snippet": {{ post.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+      }
+    {%- endcapture -%}
+    {%- assign items = items | push: item -%}
+  {%- endfor -%}
+
+  {%- for page in site.pages -%}
+    {%- if page.title and page.url != "/" -%}
+      {%- capture item -%}
+        {
+          {%- assign title = page.title -%}
+          {%- if page.url contains '/glossary/' or page.url contains '/glosario/' -%}
+            {%- unless page.layout == 'page' and page.url contains 'index.html' -%}
+              {%- assign title = title | prepend: '[GLOSSARY] ' -%}
+            {%- endunless -%}
+          {%- endif -%}
+          "title": {{ title | jsonify }},
+          "url": {{ page.url | relative_url | jsonify }},
+          "categories": "",
+          "tags": "",
+          "date": "",
+          "snippet": {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+        }
+      {%- endcapture -%}
+      {%- assign items = items | push: item -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for item in items -%}
+    {{ item }}{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
 ]

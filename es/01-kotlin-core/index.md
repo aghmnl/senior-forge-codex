@@ -10,6 +10,7 @@ title: Kotlin Core
 3. **[Extension Functions]({{ "/es/01-kotlin-core/extension-functions/" | relative_url }})**
 4. **[Lateinit vs Lazy]({{ "/es/01-kotlin-core/lateinit-vs-lazy/" | relative_url }})**
 5. **[Higher-Order Functions y Lambdas]({{ "/es/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }})**
+6. **[Generics, Varianza y Reificación]({{ "/es/01-kotlin-core/generics-variance-reification/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

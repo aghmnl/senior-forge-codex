@@ -36,6 +36,11 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 - Create both language versions.
 - Update both chapter `index.md` files.
 
+### Step 4b: Cross-link Glossary Entries
+- If the article references a concept that has a glossary entry (e.g., Garbage Collector, JVM), add a link to it using `{{ "/en/glossary/<slug>/" | relative_url }}`.
+- If the concept doesn't have a glossary entry yet but is worth explaining, create one in `_posts/en/glossary/` and `_posts/es/glossary/`.
+- Glossary entries are extra topics outside the 100 — they are not scheduled or tracked, but they enrich the knowledge base.
+
 ### Step 5: Daily Self-Evaluation
 - After studying the topic, the learner must answer the **Interview Prep (The Hot Seat)** question from memory, without reading the article.
 - This tests whether the topic was truly understood, not just read.

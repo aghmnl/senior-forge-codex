@@ -17,7 +17,7 @@ swcache: true
         "categories": {{ post.categories | join: ', ' | jsonify }},
         "tags": {{ post.tags | join: ', ' | jsonify }},
         "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
-        "snippet": {{ post.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+        "content": {{ post.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
       }
     {%- endcapture -%}
     {%- assign items = items | push: item -%}
@@ -38,7 +38,7 @@ swcache: true
           "categories": "",
           "tags": "",
           "date": "",
-          "snippet": {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
+          "content": {{ page.content | strip_html | strip_newlines | truncate: 200 | jsonify }}
         }
       {%- endcapture -%}
       {%- assign items = items | push: item -%}

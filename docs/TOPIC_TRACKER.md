@@ -1,6 +1,7 @@
 # Senior Forge Codex: Topic Tracker
 
-> Master checklist of the 100 topics for Senior Android Developer mastery.
+> Master checklist of topics for Senior Android Developer mastery.
+> The list starts at 100 and grows as new interview-worthy topics emerge.
 > Target: all topics learned and documented by **March 2027**.
 
 ## Status Legend
@@ -13,10 +14,11 @@
 
 ## Progress Summary
 
-**Completed:** 0 / 100 (studied & evaluated)
-**Articles written:** 6 / 100
-**Last updated:** 2026-08-18
-**Projected end date:** 09-feb-2027
+**Completed:** 0 / 101 (studied & evaluated)
+**Articles written:** 7 / 101
+**Last topic #:** 101
+**Last updated:** 2026-08-19
+**Projected end date:** 10-feb-2027
 
 ---
 
@@ -92,7 +94,7 @@
 | 51  | Context Hierarchy                       | —       | 16-nov  | :black_square_button: | —            | —         | —           |
 | 52  | Process Death                           | —       | 17-nov  | :black_square_button: | —            | —         | —           |
 
-## V. Arquitectura & Patrones (0/10)
+## V. Arquitectura & Patrones (0/11)
 
 | #   | Topic                          | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
 | --- | ------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
@@ -106,6 +108,7 @@
 | 60  | Use Cases (Interactors)        | —       | 01-dic  | :black_square_button: | —            | —         | —           |
 | 61  | Dependency Inversion           | —       | 02-dic  | :black_square_button: | —            | —         | —           |
 | 62  | MVP (legacy)                   | —       | 03-dic  | :black_square_button: | —            | —         | —           |
+| 101 | UI State Modeling: Sealed vs Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/05-architecture/ui-state-modeling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/05-architecture/ui-state-modeling/) | 10-feb  | :black_square_button: | 2026-08-19   | —         | —           |
 
 ## VI. Inyección de Dependencias (0/5)
 
@@ -198,3 +201,4 @@
 - Topics 1-6 have articles already written (dates from git history) but have not been studied or evaluated yet.
 - Schedule: Mon-Thu for new topics, Fri reserved for catch-up and weekly evaluation.
 - Topics may be updated as Android ecosystem evolves.
+- New interview-worthy topics are numbered from `Last topic #` + 1 and inserted into their corresponding chapter section, with dates appended at the end of the schedule. Update `Last topic #` and `Projected end date` in the summary.

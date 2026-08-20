@@ -133,8 +133,9 @@ A topic is considered **mastered** after 3 consecutive PASS results across space
 - **100 topics** at 1/day, Monday through Thursday only.
 - Fridays are reserved for catch-up (if a day was missed) and weekly evaluation.
 - Start date: 19-ago-2026 (topic #1).
-- Projected end date: **09-feb-2027**.
-- This leaves Feb-March 2027 for deep review cycles and mastery consolidation.
+- Projected end date: recalculated as topics are added (see `docs/TOPIC_TRACKER.md`).
+- New interview-worthy topics are appended beyond #100 with dates at the end of the schedule.
+- Glossary entries (supporting concepts) are added without dates or evaluation pressure.
 
 ---
 

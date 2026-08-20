@@ -88,6 +88,7 @@ To add a new item, use the following checklist:
    - **Bullet Points**: Use the dash `-` style.
 3. **Internal Navigation**: Always add a `[Back to Chapters]({{ "correct-path" | relative_url }})` link at the bottom.
 4. **Localization**: Ensure you create both versions and update the respective `index.md` in the chapter folder.
+5. **Glossary entries** live in `_posts/[en|es]/glossary/` and use `layout: post`. Jekyll requires files inside `_posts/` to follow the `YYYY-MM-DD-slug.md` naming convention — without the date prefix, Jekyll will not process the file. The date does not appear in the final URL; the permalink in front matter controls that.
 
 ---
 **Maintained by: aghmnl**

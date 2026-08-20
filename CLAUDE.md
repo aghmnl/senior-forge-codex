@@ -36,7 +36,7 @@ Concepts that fall outside the 100 main topics are documented as **glossary entr
 - Glossary entries live in `_posts/en/glossary/` and `_posts/es/glossary/` (bilingual, layout: `post`).
 - Permalink pattern: `/en/glossary/<slug>/` and `/es/glossary/<slug>/`.
 - Format: same article structure (Theory, Senior Nuance, code if applicable), with a "Back to Glossary" link.
-- **Cross-linking rule:** When writing or updating a main topic article (the 100 topics), link any concept that has a glossary entry. Use the Liquid `relative_url` filter: `[Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }})`. This makes the Codex a connected knowledge base, not isolated pages.
+- **Cross-linking rule:** When writing or updating any article (topic or glossary), link any concept that already has its own article — whether it is another topic or a glossary entry. Use the Liquid `relative_url` filter: `[Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }})`, `[Data Objects]({{ "/en/01-kotlin-core/data-objects/" | relative_url }})`. This makes the Codex a connected knowledge base, not isolated pages.
 - Glossary entries are not scheduled or tracked in `TOPIC_TRACKER.md` — they are added organically as needed.
 
 ## Git Workflow

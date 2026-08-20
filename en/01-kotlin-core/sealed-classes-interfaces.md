@@ -7,14 +7,14 @@ permalink: /en/01-kotlin-core/sealed-classes-interfaces/
 
 ## The Theory (The What)
 
-Sealed Classes and Interfaces represent restricted class hierarchies where all subclasses are known at compile time. This restriction provides the compiler with a complete list of all possible subtypes, enabling exhaustive `when` expressions without the need for a default `else` branch. While sealed classes can hold state through properties, sealed interfaces (introduced in Kotlin 1.5) offer enhanced flexibility, allowing a single class to implement multiple sealed hierarchies.
+Sealed Classes and Interfaces represent restricted class hierarchies where all subclasses are known at [compile time]({{ "/en/glossary/compile-time/" | relative_url }}). This restriction provides the compiler with a complete list of all possible subtypes, enabling exhaustive [`when` expressions]({{ "/en/glossary/when-expression/" | relative_url }}) without the need for a default `else` branch. While sealed classes can hold state through properties, sealed interfaces (introduced in Kotlin 1.5) offer enhanced flexibility, allowing a single class to implement multiple sealed hierarchies.
 
 ## The Senior Perspective (The Why)
 
 A Senior Engineer values these structures for state robustness and long-term maintainability.
 
-- **Compile-time Safety**: By avoiding the `else` block in `when` statements, we force the compiler to flag errors if a new state (e.g., a specific API error) is added in the future but not handled in the UI logic.
-- **Memory Efficiency**: Using `data object` for stateless members (like `Loading` or `Idle`) is a best practice to prevent redundant object allocations while gaining built-in `equals` and `toString` support.
+- **Compile-time Safety**: By avoiding the `else` block in [`when`]({{ "/en/glossary/when-expression/" | relative_url }}) statements, we force the compiler to flag errors if a new state (e.g., a specific API error) is added in the future but not handled in the UI logic.
+- **Memory Efficiency**: Using [`data object`]({{ "/en/01-kotlin-core/data-objects/" | relative_url }}) for stateless members (like `Loading` or `Idle`) is a best practice to prevent redundant object allocations while gaining built-in `equals` and `toString` support.
 - **Architectural Foundation**: They are the essential building blocks for MVI (Model-View-Intent), ensuring the UI reacts to a Single Source of Truth in a predictable manner.
 
 ## Code in Action
@@ -31,7 +31,7 @@ sealed interface UIState {
 fun handleState(state: UIState) {
     when (state) {
         UIState.Loading -> startShimmer()
-        is UIState.Success -> display(state.items) // Automatic smart casting
+        is UIState.Success -> display(state.items) // Automatic smart cast
         is UIState.Error -> log(state.exception.message)
     }
 }

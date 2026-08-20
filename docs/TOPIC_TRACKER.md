@@ -15,7 +15,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 7 / 101
+**Articles written:** 10 / 101
 **Last topic #:** 101
 **Last updated:** 2026-08-19
 **Projected end date:** 10-feb-2027
@@ -33,9 +33,9 @@
 | 5   | Higher-Order Functions y Lambdas                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/higher-order-functions-lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/higher-order-functions-lambdas/) | 26-ago  | :black_square_button: | 2026-05-05   | —         | —           |
 | 6   | Generics: Varianza y Reificación (in, out, reified)  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/generics-variance-reification/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/generics-variance-reification/)   | 27-ago  | :black_square_button: | 2026-08-18   | —         | —           |
 | 7   | Collections y Mutabilidad                            | —                                                                                                                                                                                                         | 31-ago  | :black_square_button: | —            | —         | —           |
-| 8   | Data Classes: copy, equals, toString                 | —                                                                                                                                                                                                         | 01-sep  | :black_square_button: | —            | —         | —           |
-| 9   | Data Objects: Singleton y ahorro de memoria          | —                                                                                                                                                                                                         | 02-sep  | :black_square_button: | —            | —         | —           |
-| 10  | Smart Casts                                          | —                                                                                                                                                                                                         | 03-sep  | :black_square_button: | —            | —         | —           |
+| 8   | Data Classes: copy, equals, toString                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-classes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-classes/)                                     | 01-sep  | :black_square_button: | 2026-08-19   | —         | —           |
+| 9   | Data Objects: Singleton y ahorro de memoria          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-objects/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-objects/)                                     | 02-sep  | :black_square_button: | 2026-08-19   | —         | —           |
+| 10  | Smart Casts                                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/smart-casts/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/smart-casts/)                                       | 03-sep  | :black_square_button: | 2026-08-19   | —         | —           |
 | 11  | Delegated Properties (by lazy, by viewModels)        | —                                                                                                                                                                                                         | 07-sep  | :black_square_button: | —            | —         | —           |
 | 12  | Inmutabilidad y estados atómicos para UI             | —                                                                                                                                                                                                         | 08-sep  | :black_square_button: | —            | —         | —           |
 | 13  | Null Safety: Elvis y Safe calls                      | —                                                                                                                                                                                                         | 09-sep  | :black_square_button: | —            | —         | —           |

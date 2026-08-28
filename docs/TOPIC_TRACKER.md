@@ -16,7 +16,6 @@
 
 **Completed:** 0 / 101 (studied & evaluated)
 **Articles written:** 10 / 101
-**Last topic #:** 101
 **Last updated:** 2026-08-28
 **Projected end date:** 10-feb-2027
 
@@ -24,164 +23,164 @@
 
 ## I. Kotlin Core (0/13)
 
-| #   | Topic                                                | Article                                                                                                                                                                                                   | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 13  | Null Safety: Elvis y Safe calls                      | —                                                                                                                                                                                                         | 19-ago  | :black_square_button: | —            | —         | —           |
-| 10  | Smart Casts                                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/smart-casts/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/smart-casts/)                                       | 20-ago  | :black_square_button: | 2026-08-19   | —         | —           |
-| 8   | Data Classes: copy, equals, toString                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-classes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-classes/)                                     | 24-ago  | :black_square_button: | 2026-08-19   | —         | —           |
-| 9   | Data Objects: Singleton y ahorro de memoria          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-objects/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-objects/)                                     | 25-ago  | :black_square_button: | 2026-08-19   | —         | —           |
-| 1   | Sealed Classes y Interfaces                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/sealed-classes-interfaces/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/sealed-classes-interfaces/)           | 26-ago  | :black_square_button: | 2026-05-03   | —         | —           |
-| 3   | Extension Functions                                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/extension-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/extension-functions/)                       | 27-ago  | :black_square_button: | 2026-05-03   | —         | —           |
-| 5   | Higher-Order Functions y Lambdas                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/higher-order-functions-lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/higher-order-functions-lambdas/) | 31-ago  | :black_square_button: | 2026-05-05   | —         | —           |
-| 2   | Scope Functions (let, run, apply, also, with)        | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/scope-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/scope-functions/)                               | 01-sep  | :black_square_button: | 2026-05-03   | —         | —           |
-| 4   | Lateinit vs Lazy                                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/lateinit-vs-lazy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/lateinit-vs-lazy/)                             | 02-sep  | :black_square_button: | 2026-05-03   | —         | —           |
-| 11  | Delegated Properties (by lazy, by viewModels)        | —                                                                                                                                                                                                         | 03-sep  | :black_square_button: | —            | —         | —           |
-| 6   | Generics: Varianza y Reificación (in, out, reified)  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/generics-variance-reification/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/generics-variance-reification/)   | 07-sep  | :black_square_button: | 2026-08-18   | —         | —           |
-| 7   | Collections y Mutabilidad                            | —                                                                                                                                                                                                         | 08-sep  | :black_square_button: | —            | —         | —           |
-| 12  | Inmutabilidad y estados atómicos para UI             | —                                                                                                                                                                                                         | 09-sep  | :black_square_button: | —            | —         | —           |
+| Topic                                                | Article                                                                                                                                                                                                   | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Null Safety: Elvis y Safe calls                      | —                                                                                                                                                                                                         | 19-ago  | :black_square_button: | —            | —         | —           |
+| Smart Casts                                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/smart-casts/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/smart-casts/)                                       | 20-ago  | :black_square_button: | 2026-08-19   | —         | —           |
+| Data Classes: copy, equals, toString                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-classes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-classes/)                                     | 24-ago  | :black_square_button: | 2026-08-19   | —         | —           |
+| Data Objects: Singleton y ahorro de memoria          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-objects/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-objects/)                                     | 25-ago  | :black_square_button: | 2026-08-19   | —         | —           |
+| Sealed Classes y Interfaces                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/sealed-classes-interfaces/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/sealed-classes-interfaces/)           | 26-ago  | :black_square_button: | 2026-05-03   | —         | —           |
+| Extension Functions                                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/extension-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/extension-functions/)                       | 27-ago  | :black_square_button: | 2026-05-03   | —         | —           |
+| Higher-Order Functions y Lambdas                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/higher-order-functions-lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/higher-order-functions-lambdas/) | 31-ago  | :black_square_button: | 2026-05-05   | —         | —           |
+| Scope Functions (let, run, apply, also, with)        | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/scope-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/scope-functions/)                               | 01-sep  | :black_square_button: | 2026-05-03   | —         | —           |
+| Lateinit vs Lazy                                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/lateinit-vs-lazy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/lateinit-vs-lazy/)                             | 02-sep  | :black_square_button: | 2026-05-03   | —         | —           |
+| Delegated Properties (by lazy, by viewModels)        | —                                                                                                                                                                                                         | 03-sep  | :black_square_button: | —            | —         | —           |
+| Generics: Varianza y Reificación (in, out, reified)  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/generics-variance-reification/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/generics-variance-reification/)   | 07-sep  | :black_square_button: | 2026-08-18   | —         | —           |
+| Collections y Mutabilidad                            | —                                                                                                                                                                                                         | 08-sep  | :black_square_button: | —            | —         | —           |
+| Inmutabilidad y estados atómicos para UI             | —                                                                                                                                                                                                         | 09-sep  | :black_square_button: | —            | —         | —           |
 
 ## II. Coroutines & Flows (0/16)
 
-| #   | Topic                                     | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ----------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 16  | Suspend functions                         | —       | 10-sep  | :black_square_button: | —            | —         | —           |
-| 14  | Context y Dispatchers (Main, IO, Default) | —       | 14-sep  | :black_square_button: | —            | —         | —           |
-| 15  | Structured Concurrency                    | —       | 15-sep  | :black_square_button: | —            | —         | —           |
-| 17  | Launch vs Async/Await                     | —       | 16-sep  | :black_square_button: | —            | —         | —           |
-| 18  | Main-Safety                               | —       | 17-sep  | :black_square_button: | —            | —         | —           |
-| 19  | withContext vs flowOn                     | —       | 21-sep  | :black_square_button: | —            | —         | —           |
-| 20  | Flow (Cold Streams)                       | —       | 22-sep  | :black_square_button: | —            | —         | —           |
-| 29  | Manejo de errores: try-catch y .catch     | —       | 23-sep  | :black_square_button: | —            | —         | —           |
-| 24  | StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —         | —           |
-| 25  | SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —         | —           |
-| 26  | shareIn y stateIn                         | —       | 29-sep  | :black_square_button: | —            | —         | —           |
-| 28  | MutableStateFlow.update {}                | —       | 30-sep  | :black_square_button: | —            | —         | —           |
-| 21  | Channel (Hot Streams)                     | —       | 01-oct  | :black_square_button: | —            | —         | —           |
-| 22  | trySend() vs send()                       | —       | 05-oct  | :black_square_button: | —            | —         | —           |
-| 23  | receiveAsFlow()                           | —       | 06-oct  | :black_square_button: | —            | —         | —           |
-| 27  | callbackFlow                              | —       | 07-oct  | :black_square_button: | —            | —         | —           |
+| Topic                                     | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ----------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Suspend functions                         | —       | 10-sep  | :black_square_button: | —            | —         | —           |
+| Context y Dispatchers (Main, IO, Default) | —       | 14-sep  | :black_square_button: | —            | —         | —           |
+| Structured Concurrency                    | —       | 15-sep  | :black_square_button: | —            | —         | —           |
+| Launch vs Async/Await                     | —       | 16-sep  | :black_square_button: | —            | —         | —           |
+| Main-Safety                               | —       | 17-sep  | :black_square_button: | —            | —         | —           |
+| withContext vs flowOn                     | —       | 21-sep  | :black_square_button: | —            | —         | —           |
+| Flow (Cold Streams)                       | —       | 22-sep  | :black_square_button: | —            | —         | —           |
+| Manejo de errores: try-catch y .catch     | —       | 23-sep  | :black_square_button: | —            | —         | —           |
+| StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —         | —           |
+| SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —         | —           |
+| shareIn y stateIn                         | —       | 29-sep  | :black_square_button: | —            | —         | —           |
+| MutableStateFlow.update {}                | —       | 30-sep  | :black_square_button: | —            | —         | —           |
+| Channel (Hot Streams)                     | —       | 01-oct  | :black_square_button: | —            | —         | —           |
+| trySend() vs send()                       | —       | 05-oct  | :black_square_button: | —            | —         | —           |
+| receiveAsFlow()                           | —       | 06-oct  | :black_square_button: | —            | —         | —           |
+| callbackFlow                              | —       | 07-oct  | :black_square_button: | —            | —         | —           |
 
 ## III. Jetpack Compose (0/14)
 
-| #   | Topic                                           | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 30  | Recomposition y Stability                       | —       | 08-oct  | :black_square_button: | —            | —         | —           |
-| 32  | remember y rememberSaveable                     | —       | 12-oct  | :black_square_button: | —            | —         | —           |
-| 31  | State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —         | —           |
-| 40  | Modifiers: orden y alineación                   | —       | 14-oct  | :black_square_button: | —            | —         | —           |
-| 41  | Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —         | —           |
-| 36  | innerPadding en Scaffold                        | —       | 19-oct  | :black_square_button: | —            | —         | —           |
-| 33  | LaunchedEffect(Unit)                            | —       | 20-oct  | :black_square_button: | —            | —         | —           |
-| 34  | DisposableEffect                                | —       | 21-oct  | :black_square_button: | —            | —         | —           |
-| 37  | collectAsStateWithLifecycle                     | —       | 22-oct  | :black_square_button: | —            | —         | —           |
-| 38  | DerivedStateOf                                  | —       | 26-oct  | :black_square_button: | —            | —         | —           |
-| 39  | CompositionLocal                                | —       | 27-oct  | :black_square_button: | —            | —         | —           |
-| 35  | LocalContext.current                            | —       | 28-oct  | :black_square_button: | —            | —         | —           |
-| 43  | Navigation Compose                              | —       | 29-oct  | :black_square_button: | —            | —         | —           |
-| 42  | Accesibilidad: Semántica y Content Descriptions | —       | 02-nov  | :black_square_button: | —            | —         | —           |
+| Topic                                           | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Recomposition y Stability                       | —       | 08-oct  | :black_square_button: | —            | —         | —           |
+| remember y rememberSaveable                     | —       | 12-oct  | :black_square_button: | —            | —         | —           |
+| State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —         | —           |
+| Modifiers: orden y alineación                   | —       | 14-oct  | :black_square_button: | —            | —         | —           |
+| Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —         | —           |
+| innerPadding en Scaffold                        | —       | 19-oct  | :black_square_button: | —            | —         | —           |
+| LaunchedEffect(Unit)                            | —       | 20-oct  | :black_square_button: | —            | —         | —           |
+| DisposableEffect                                | —       | 21-oct  | :black_square_button: | —            | —         | —           |
+| collectAsStateWithLifecycle                     | —       | 22-oct  | :black_square_button: | —            | —         | —           |
+| DerivedStateOf                                  | —       | 26-oct  | :black_square_button: | —            | —         | —           |
+| CompositionLocal                                | —       | 27-oct  | :black_square_button: | —            | —         | —           |
+| LocalContext.current                            | —       | 28-oct  | :black_square_button: | —            | —         | —           |
+| Navigation Compose                              | —       | 29-oct  | :black_square_button: | —            | —         | —           |
+| Accesibilidad: Semántica y Content Descriptions | —       | 02-nov  | :black_square_button: | —            | —         | —           |
 
 ## IV. Android Framework & Lifecycle (0/9)
 
-| #   | Topic                                   | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | --------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 44  | Activity vs Fragment                    | —       | 03-nov  | :black_square_button: | —            | —         | —           |
-| 45  | Lifecycle del Fragment                  | —       | 04-nov  | :black_square_button: | —            | —         | —           |
-| 46  | Config Changes                          | —       | 05-nov  | :black_square_button: | —            | —         | —           |
-| 52  | Process Death                           | —       | 09-nov  | :black_square_button: | —            | —         | —           |
-| 51  | Context Hierarchy                       | —       | 10-nov  | :black_square_button: | —            | —         | —           |
-| 50  | Manifest                                | —       | 11-nov  | :black_square_button: | —            | —         | —           |
-| 47  | Intents explícitos e implícitos         | —       | 12-nov  | :black_square_button: | —            | —         | —           |
-| 48  | Servicios y WorkManager                 | —       | 16-nov  | :black_square_button: | —            | —         | —           |
-| 49  | Broadcast Receivers y Content Providers | —       | 17-nov  | :black_square_button: | —            | —         | —           |
+| Topic                                   | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| --------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Activity vs Fragment                    | —       | 03-nov  | :black_square_button: | —            | —         | —           |
+| Lifecycle del Fragment                  | —       | 04-nov  | :black_square_button: | —            | —         | —           |
+| Config Changes                          | —       | 05-nov  | :black_square_button: | —            | —         | —           |
+| Process Death                           | —       | 09-nov  | :black_square_button: | —            | —         | —           |
+| Context Hierarchy                       | —       | 10-nov  | :black_square_button: | —            | —         | —           |
+| Manifest                                | —       | 11-nov  | :black_square_button: | —            | —         | —           |
+| Intents explícitos e implícitos         | —       | 12-nov  | :black_square_button: | —            | —         | —           |
+| Servicios y WorkManager                 | —       | 16-nov  | :black_square_button: | —            | —         | —           |
+| Broadcast Receivers y Content Providers | —       | 17-nov  | :black_square_button: | —            | —         | —           |
 
 ## V. Arquitectura & Patrones (0/11)
 
-| #   | Topic                          | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 56  | SOLID en Android               | —       | 18-nov  | :black_square_button: | —            | —         | —           |
-| 53  | Clean Architecture             | —       | 19-nov  | :black_square_button: | —            | —         | —           |
-| 61  | Dependency Inversion           | —       | 23-nov  | :black_square_button: | —            | —         | —           |
-| 59  | Patrón Repository              | —       | 24-nov  | :black_square_button: | —            | —         | —           |
-| 60  | Use Cases (Interactors)        | —       | 25-nov  | :black_square_button: | —            | —         | —           |
-| 57  | Single Source of Truth (SSoT)  | —       | 26-nov  | :black_square_button: | —            | —         | —           |
-| 55  | MVVM vs MVI                    | —       | 30-nov  | :black_square_button: | —            | —         | —           |
-| 54  | MVI (Unidirectional Data Flow) | —       | 01-dic  | :black_square_button: | —            | —         | —           |
-| 101 | UI State Modeling: Sealed vs Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/05-architecture/ui-state-modeling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/05-architecture/ui-state-modeling/) | 02-dic  | :black_square_button: | 2026-08-19   | —         | —           |
-| 58  | Singleton y Factory            | —       | 03-dic  | :black_square_button: | —            | —         | —           |
-| 62  | MVP (legacy)                   | —       | 10-feb  | :black_square_button: | —            | —         | —           |
+| Topic                                        | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| -------------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| SOLID en Android                             | —       | 18-nov  | :black_square_button: | —            | —         | —           |
+| Clean Architecture                           | —       | 19-nov  | :black_square_button: | —            | —         | —           |
+| Dependency Inversion                         | —       | 23-nov  | :black_square_button: | —            | —         | —           |
+| Patrón Repository                            | —       | 24-nov  | :black_square_button: | —            | —         | —           |
+| Use Cases (Interactors)                      | —       | 25-nov  | :black_square_button: | —            | —         | —           |
+| Single Source of Truth (SSoT)                | —       | 26-nov  | :black_square_button: | —            | —         | —           |
+| MVVM vs MVI                                  | —       | 30-nov  | :black_square_button: | —            | —         | —           |
+| MVI (Unidirectional Data Flow)               | —       | 01-dic  | :black_square_button: | —            | —         | —           |
+| UI State Modeling: Sealed vs Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/05-architecture/ui-state-modeling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/05-architecture/ui-state-modeling/) | 02-dic  | :black_square_button: | 2026-08-19   | —         | —           |
+| Singleton y Factory                          | —       | 03-dic  | :black_square_button: | —            | —         | —           |
+| MVP (legacy)                                 | —       | 10-feb  | :black_square_button: | —            | —         | —           |
 
 ## VI. Inyección de Dependencias (0/5)
 
-| #   | Topic                                      | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ------------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 63  | Concepto de DI                             | —       | 07-dic  | :black_square_button: | —            | —         | —           |
-| 64  | Hilt: @HiltAndroidApp y @AndroidEntryPoint | —       | 08-dic  | :black_square_button: | —            | —         | —           |
-| 65  | @Binds vs @Provides                        | —       | 09-dic  | :black_square_button: | —            | —         | —           |
-| 66  | Hilt Scopes                                | —       | 10-dic  | :black_square_button: | —            | —         | —           |
-| 67  | Dagger 2 vs Hilt                           | —       | 14-dic  | :black_square_button: | —            | —         | —           |
+| Topic                                      | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ------------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Concepto de DI                             | —       | 07-dic  | :black_square_button: | —            | —         | —           |
+| Hilt: @HiltAndroidApp y @AndroidEntryPoint | —       | 08-dic  | :black_square_button: | —            | —         | —           |
+| @Binds vs @Provides                        | —       | 09-dic  | :black_square_button: | —            | —         | —           |
+| Hilt Scopes                                | —       | 10-dic  | :black_square_button: | —            | —         | —           |
+| Dagger 2 vs Hilt                           | —       | 14-dic  | :black_square_button: | —            | —         | —           |
 
 ## VII. Datos & Networking (0/7)
 
-| #   | Topic                               | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ----------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 68  | API Rest y GraphQL                  | —       | 15-dic  | :black_square_button: | —            | —         | —           |
-| 70  | OkHttp e Interceptors               | —       | 16-dic  | :black_square_button: | —            | —         | —           |
-| 69  | Retrofit                            | —       | 17-dic  | :black_square_button: | —            | —         | —           |
-| 71  | Room y SQL                          | —       | 21-dic  | :black_square_button: | —            | —         | —           |
-| 72  | Consultas complejas: @Query y JOINs | —       | 22-dic  | :black_square_button: | —            | —         | —           |
-| 73  | SharedPreferences y DataStore       | —       | 23-dic  | :black_square_button: | —            | —         | —           |
-| 74  | WireMock                            | —       | 24-dic  | :black_square_button: | —            | —         | —           |
+| Topic                               | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ----------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| API Rest y GraphQL                  | —       | 15-dic  | :black_square_button: | —            | —         | —           |
+| OkHttp e Interceptors               | —       | 16-dic  | :black_square_button: | —            | —         | —           |
+| Retrofit                            | —       | 17-dic  | :black_square_button: | —            | —         | —           |
+| Room y SQL                          | —       | 21-dic  | :black_square_button: | —            | —         | —           |
+| Consultas complejas: @Query y JOINs | —       | 22-dic  | :black_square_button: | —            | —         | —           |
+| SharedPreferences y DataStore       | —       | 23-dic  | :black_square_button: | —            | —         | —           |
+| WireMock                            | —       | 24-dic  | :black_square_button: | —            | —         | —           |
 
 ## VIII. Testing & Calidad (0/5)
 
-| #   | Topic                                    | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ---------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 75  | Unit Tests (JUnit)                       | —       | 28-dic  | :black_square_button: | —            | —         | —           |
-| 76  | Test Fakes vs Mocks                      | —       | 29-dic  | :black_square_button: | —            | —         | —           |
-| 77  | Testing de Corrutinas                    | —       | 30-dic  | :black_square_button: | —            | —         | —           |
-| 78  | Espresso                                 | —       | 31-dic  | :black_square_button: | —            | —         | —           |
-| 79  | Análisis Estático (Ktlint, Detekt, Lint) | —       | 04-ene  | :black_square_button: | —            | —         | —           |
+| Topic                                    | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ---------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Unit Tests (JUnit)                       | —       | 28-dic  | :black_square_button: | —            | —         | —           |
+| Test Fakes vs Mocks                      | —       | 29-dic  | :black_square_button: | —            | —         | —           |
+| Testing de Corrutinas                    | —       | 30-dic  | :black_square_button: | —            | —         | —           |
+| Espresso                                 | —       | 31-dic  | :black_square_button: | —            | —         | —           |
+| Análisis Estático (Ktlint, Detekt, Lint) | —       | 04-ene  | :black_square_button: | —            | —         | —           |
 
 ## IX. GitHub & CI/CD (0/4)
 
-| #   | Topic                                | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 81  | Merge vs Rebase vs Squash            | —       | 05-ene  | :black_square_button: | —            | —         | —           |
-| 82  | GitFlow y Trunk-based                | —       | 06-ene  | :black_square_button: | —            | —         | —           |
-| 83  | Pull Request Templates y Code Owners | —       | 07-ene  | :black_square_button: | —            | —         | —           |
-| 80  | GitHub Actions                       | —       | 11-ene  | :black_square_button: | —            | —         | —           |
+| Topic                                | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Merge vs Rebase vs Squash            | —       | 05-ene  | :black_square_button: | —            | —         | —           |
+| GitFlow y Trunk-based                | —       | 06-ene  | :black_square_button: | —            | —         | —           |
+| Pull Request Templates y Code Owners | —       | 07-ene  | :black_square_button: | —            | —         | —           |
+| GitHub Actions                       | —       | 11-ene  | :black_square_button: | —            | —         | —           |
 
 ## X. Gradle & Build System (0/3)
 
-| #   | Topic                                | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 84  | Build Variants                       | —       | 12-ene  | :black_square_button: | —            | —         | —           |
-| 85  | Source Sets                          | —       | 13-ene  | :black_square_button: | —            | —         | —           |
-| 86  | Version Catalog (libs.versions.toml) | —       | 14-ene  | :black_square_button: | —            | —         | —           |
+| Topic                                | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ------------------------------------ | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Build Variants                       | —       | 12-ene  | :black_square_button: | —            | —         | —           |
+| Source Sets                          | —       | 13-ene  | :black_square_button: | —            | —         | —           |
+| Version Catalog (libs.versions.toml) | —       | 14-ene  | :black_square_button: | —            | —         | —           |
 
 ## XI. Performance & Seguridad (0/6)
 
-| #   | Topic                     | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 87  | Memory Leaks (LeakCanary) | —       | 18-ene  | :black_square_button: | —            | —         | —           |
-| 88  | ANR                       | —       | 19-ene  | :black_square_button: | —            | —         | —           |
-| 91  | R8/Proguard               | —       | 20-ene  | :black_square_button: | —            | —         | —           |
-| 89  | Eficiencia Energética     | —       | 21-ene  | :black_square_button: | —            | —         | —           |
-| 90  | Android Keystore          | —       | 25-ene  | :black_square_button: | —            | —         | —           |
-| 92  | SSL Pinning               | —       | 26-ene  | :black_square_button: | —            | —         | —           |
+| Topic                     | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Memory Leaks (LeakCanary) | —       | 18-ene  | :black_square_button: | —            | —         | —           |
+| ANR                       | —       | 19-ene  | :black_square_button: | —            | —         | —           |
+| R8/Proguard               | —       | 20-ene  | :black_square_button: | —            | —         | —           |
+| Eficiencia Energética     | —       | 21-ene  | :black_square_button: | —            | —         | —           |
+| Android Keystore          | —       | 25-ene  | :black_square_button: | —            | —         | —           |
+| SSL Pinning               | —       | 26-ene  | :black_square_button: | —            | —         | —           |
 
 ## XII. Inteligencia Artificial (0/8)
 
-| #   | Topic                                          | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
-| --- | ---------------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| 93  | Modelos Cloud vs Edge                          | —       | 27-ene  | :black_square_button: | —            | —         | —           |
-| 94  | Tokens y Ventana de Contexto                   | —       | 28-ene  | :black_square_button: | —            | —         | —           |
-| 100 | Parámetros de Generación (Temp, Top-P, Top-K) | —       | 01-feb  | :black_square_button: | —            | —         | —           |
-| 95  | Prompting (System vs User)                     | —       | 02-feb  | :black_square_button: | —            | —         | —           |
-| 97  | Skills / Tool Use (Function Calling)           | —       | 03-feb  | :black_square_button: | —            | —         | —           |
-| 99  | RAG (Retrieval-Augmented Generation)           | —       | 04-feb  | :black_square_button: | —            | —         | —           |
-| 96  | Agentes e IA Agéntica                          | —       | 08-feb  | :black_square_button: | —            | —         | —           |
-| 98  | Model Context Protocol (MCP)                   | —       | 09-feb  | :black_square_button: | —            | —         | —           |
+| Topic                                          | Article | Planned | Status                | Article Date | Last Eval | Eval Result |
+| ---------------------------------------------- | ------- | ------- | --------------------- | ------------ | --------- | ----------- |
+| Modelos Cloud vs Edge                          | —       | 27-ene  | :black_square_button: | —            | —         | —           |
+| Tokens y Ventana de Contexto                   | —       | 28-ene  | :black_square_button: | —            | —         | —           |
+| Parámetros de Generación (Temp, Top-P, Top-K) | —       | 01-feb  | :black_square_button: | —            | —         | —           |
+| Prompting (System vs User)                     | —       | 02-feb  | :black_square_button: | —            | —         | —           |
+| Skills / Tool Use (Function Calling)           | —       | 03-feb  | :black_square_button: | —            | —         | —           |
+| RAG (Retrieval-Augmented Generation)           | —       | 04-feb  | :black_square_button: | —            | —         | —           |
+| Agentes e IA Agéntica                          | —       | 08-feb  | :black_square_button: | —            | —         | —           |
+| Model Context Protocol (MCP)                   | —       | 09-feb  | :black_square_button: | —            | —         | —           |
 
 ---
 
@@ -202,4 +201,4 @@
 - Articles use `order` field in frontmatter for sidebar display order within each chapter.
 - Schedule: Mon-Thu for new topics, Fri reserved for catch-up and weekly evaluation.
 - Topics may be updated as Android ecosystem evolves.
-- New interview-worthy topics are numbered from `Last topic #` + 1 and inserted into their corresponding chapter section, with dates appended at the end of the schedule. Update `Last topic #` and `Projected end date` in the summary.
+- New interview-worthy topics are inserted into their corresponding chapter section, with dates appended at the end of the schedule. Update topic count and `Projected end date` in the summary.

@@ -22,9 +22,9 @@
 
 ## Growing the Topic List
 
-The initial 100 topics can grow. When a new concept emerges that is genuinely interview-worthy (not just a glossary term), it is added as a numbered topic **inside the chapter section it belongs to** in `docs/TOPIC_TRACKER.md`, with a date appended at the end of the schedule. The `Last topic #` and `Projected end date` in the summary are updated accordingly.
+The initial 100 topics can grow. When a new concept emerges that is genuinely interview-worthy (not just a glossary term), it is added **inside the chapter section it belongs to** in `docs/TOPIC_TRACKER.md`, with a date appended at the end of the schedule. Update topic count and `Projected end date` in the summary.
 
-- **Numbered topic** → full article (EN + ES), planned date, evaluation, Interview Prep Q&A.
+- **Topic** → full article (EN + ES), planned date, evaluation, Interview Prep Q&A.
 - **Glossary entry** → reference concept, no date or evaluation, cross-linked from main topics.
 
 The distinction: if it could be asked as a standalone interview question with a "Senior Answer", it's a topic. If it's a supporting concept referenced by multiple topics, it's glossary.

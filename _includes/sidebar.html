@@ -71,7 +71,7 @@
         </button>
       {% endunless %}
 
-      <!-- Sidebar Language Switcher -->
+      <!-- Language Toggle EN/ES -->
       {%- assign current_url = page.url -%}
       {%- if page.lang == "en" or current_url == "/" -%}
         {%- if current_url == "/" -%}
@@ -81,8 +81,8 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
-          🇪🇸
+        <a href="{{ target_url | relative_url }}" class="lang-toggle mx-3" title="Cambiar a Español">
+          <span class="lang-active">EN</span><span class="lang-sep">/</span><span class="lang-inactive">ES</span>
         </a>
       {%- elsif page.lang == "es" -%}
         {%- if current_url == "/es/" -%}
@@ -92,8 +92,8 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="btn btn-link nav-link mx-3" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 0 10px;">
-          🇬🇧
+        <a href="{{ target_url | relative_url }}" class="lang-toggle mx-3" title="Switch to English">
+          <span class="lang-inactive">EN</span><span class="lang-sep">/</span><span class="lang-active">ES</span>
         </a>
       {%- endif -%}
 

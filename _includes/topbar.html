@@ -6,35 +6,6 @@
   <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
     
     <div class="d-flex align-items-center">
-      <!-- Language Switcher (Left Position) -->
-      <div id="language-switcher" class="me-3">
-        {%- assign current_url = page.url -%}
-        {%- assign lang = page.lang | default: "en" -%}
-        {%- if lang == "en" or current_url == "/" -%}
-          {%- if current_url == "/" -%}
-            {%- assign target_url = "/es/" -%}
-          {%- elsif current_url contains "/en/glossary/" -%}
-            {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
-          {%- else -%}
-            {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-          {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Cambiar a Español" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
-            🇪🇸
-          </a>
-        {%- elsif lang == "es" -%}
-          {%- if current_url == "/es/" -%}
-            {%- assign target_url = "/" -%}
-          {%- elsif current_url contains "/es/glosario/" -%}
-            {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
-          {%- else -%}
-            {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-          {%- endif -%}
-          <a href="{{ target_url | relative_url }}" title="Switch to English" style="font-size: 1.5rem; text-decoration: none; padding: 10px; display: inline-block; line-height: 1;">
-            🇬🇧
-          </a>
-        {%- endif -%}
-      </div>
-
       <nav id="breadcrumb" aria-label="Breadcrumb">
         {%- assign paths = page.url | split: '/' -%}
         {%- assign lang = page.lang | default: "en" -%}

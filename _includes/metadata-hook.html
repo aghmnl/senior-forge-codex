@@ -22,10 +22,23 @@
     }
   }
 
-  /* Extra Top Padding for Topbar */
-  #topbar-wrapper {
-    padding-top: 4rem !important; /* Pushes the flag, breadcrumbs and search down */
+  /* Language Toggle */
+  .lang-toggle {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    transition: opacity 0.2s;
   }
+  .lang-toggle:hover { opacity: 0.8; }
+  .lang-active { color: var(--heading-color, #fff); }
+  .lang-inactive { color: var(--text-muted-color, rgba(255,255,255,0.5)); }
+  .lang-sep { color: var(--text-muted-color, rgba(255,255,255,0.5)); margin: 0 1px; }
 
   /* Ensure the sidebar title stays at top despite sidebar padding adjustments */
   #sidebar.pt-0 {

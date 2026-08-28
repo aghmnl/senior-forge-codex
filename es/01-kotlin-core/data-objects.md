@@ -8,16 +8,16 @@ order: 4
 
 ## The Theory (El Qué)
 
-Un `data object` (introducido en Kotlin 1.9) combina la garantía de singleton de `object` con los métodos `toString()`, `equals()` y `hashCode()` generados por el compilador como en una `data class`. A diferencia de un `object` simple, que produce un `toString()` por defecto como `Loading@3a71f4dd`, un `data object` genera una representación limpia y legible usando solo el nombre de la clase — por ejemplo, `Loading`. No se generan funciones `copy()` ni `componentN()`, ya que los singletons no tienen propiedades de constructor para copiar o desestructurar.
+Un `data object` (introducido en Kotlin 1.9) combina la garantía de [singleton]({{ "/es/glosario/singleton/" | relative_url }}) de `object` con los métodos `toString()`, `equals()` y `hashCode()` generados por el compilador como en una `data class`. A diferencia de un `object` simple, que produce un `toString()` por defecto como `Loading@3a71f4dd`, un `data object` genera una representación limpia y legible usando solo el nombre de la clase — por ejemplo, `Loading`. No se generan funciones `copy()` ni `componentN()`, ya que los [singletons]({{ "/es/glosario/singleton/" | relative_url }}) no tienen propiedades de constructor para copiar o [desestructurar]({{ "/es/glosario/destructuring/" | relative_url }}).
 
 ## The Senior Perspective (El Porqué)
 
-Para un ingeniero Senior, `data object` resuelve un dolor específico en jerarquías selladas y modelado de estado.
+Para un ingeniero Senior, `data object` resuelve un dolor específico en [jerarquías selladas]({{ "/es/glosario/sealed-hierarchy/" | relative_url }}) y modelado de estado.
 
-- **Logging y Debugging Limpio**: En jerarquías de sealed class, los miembros sin estado como `Loading` o `Idle` declarados como `object` simple producen un toString inútil (`Loading@3a71f4dd`). Un `data object` garantiza una representación legible sin necesidad de sobrescribir manualmente.
-- **Garantía de Singleton**: A diferencia de `data class`, un `data object` es un verdadero singleton — existe exactamente una instancia. Esto significa cero asignaciones innecesarias para estados que no llevan datos, lo cual importa en patrones de emisión de estado de alta frecuencia (ej. actualizaciones de StateFlow).
-- **Igualdad Consistente**: `equals()` siempre retorna `true` cuando se compara un `data object` consigo mismo (igualdad referencial y estructural son idénticas para singletons). Esto previene bugs sutiles al mezclar verificaciones `==` y `===` en expresiones `when` u operaciones de colecciones.
-- **Best Practice en Sealed Hierarchies**: La convención moderna es usar `data object` para miembros sin estado y `data class` para miembros con estado dentro de una jerarquía sellada.
+- **Logging y Debugging Limpio**: En [jerarquías selladas]({{ "/es/glosario/sealed-hierarchy/" | relative_url }}), los miembros sin estado como `Loading` o `Idle` declarados como `object` simple producen un toString inútil (`Loading@3a71f4dd`). Un `data object` garantiza una representación legible sin necesidad de sobrescribir manualmente.
+- **Garantía de [Singleton]({{ "/es/glosario/singleton/" | relative_url }})**: A diferencia de `data class`, un `data object` es un verdadero [singleton]({{ "/es/glosario/singleton/" | relative_url }}) — existe exactamente una instancia. Esto significa cero asignaciones innecesarias para estados que no llevan datos, lo cual importa en patrones de emisión de estado de alta frecuencia (ej. actualizaciones de StateFlow).
+- **Igualdad Consistente**: `equals()` siempre retorna `true` cuando se compara un `data object` consigo mismo (igualdad referencial y estructural son idénticas para [singletons]({{ "/es/glosario/singleton/" | relative_url }})). Esto previene bugs sutiles al mezclar verificaciones `==` y `===` en expresiones `when` u operaciones de [colecciones]({{ "/es/glosario/collections/" | relative_url }}).
+- **Best Practice en [Sealed Hierarchies]({{ "/es/glosario/sealed-hierarchy/" | relative_url }})**: La convención moderna es usar `data object` para miembros sin estado y `data class` para miembros con estado dentro de una [jerarquía sellada]({{ "/es/glosario/sealed-hierarchy/" | relative_url }}).
 
 ## Code in Action
 
@@ -70,7 +70,7 @@ fun main() {
 
 **Pregunta**: ¿Por qué preferir `data object` sobre un `object` simple para miembros sin estado de una jerarquía sellada?
 
-**Respuesta Senior**: Un `object` simple genera un `toString()` por defecto que incluye la dirección de memoria (ej. `Loading@3a71f4dd`), lo cual no sirve para logging ni debugging. Un `data object` genera un `toString()` limpio usando solo el nombre de la clase, además de implementaciones consistentes de `equals()` y `hashCode()`. Como los miembros sin estado de jerarquías selladas se loguean, comparan y emiten a través de Flows frecuentemente, el `data object` provee el comportamiento correcto y legible por defecto sin sobrescrituras manuales.
+**Respuesta Senior**: Un `object` simple genera un `toString()` por defecto que incluye la dirección de memoria (ej. `Loading@3a71f4dd`), lo cual no sirve para logging ni debugging. Un `data object` genera un `toString()` limpio usando solo el nombre de la clase, además de implementaciones consistentes de `equals()` y `hashCode()`. Como los miembros sin estado de [jerarquías selladas]({{ "/es/glosario/sealed-hierarchy/" | relative_url }}) se loguean, comparan y emiten a través de Flows frecuentemente, el `data object` provee el comportamiento correcto y legible por defecto sin sobrescrituras manuales.
 
 ---
 

@@ -8,16 +8,16 @@ order: 4
 
 ## The Theory (The What)
 
-A `data object` (introduced in Kotlin 1.9) combines the singleton guarantee of `object` with the compiler-generated `toString()`, `equals()`, and `hashCode()` methods of a `data class`. Unlike a plain `object`, which produces a default `toString()` like `Loading@3a71f4dd`, a `data object` generates a clean, readable `toString()` using the class name — e.g., `Loading`. No `copy()` or `componentN()` functions are generated, as singletons have no constructor properties to copy or destructure.
+A `data object` (introduced in Kotlin 1.9) combines the [singleton]({{ "/en/glossary/singleton/" | relative_url }}) guarantee of `object` with the compiler-generated `toString()`, `equals()`, and `hashCode()` methods of a `data class`. Unlike a plain `object`, which produces a default `toString()` like `Loading@3a71f4dd`, a `data object` generates a clean, readable `toString()` using the class name — e.g., `Loading`. No `copy()` or `componentN()` functions are generated, as [singletons]({{ "/en/glossary/singleton/" | relative_url }}) have no constructor properties to copy or [destructure]({{ "/en/glossary/destructuring/" | relative_url }}).
 
 ## The Senior Perspective (The Why)
 
-For a Senior Engineer, `data object` solves a specific pain point in sealed hierarchies and state modeling.
+For a Senior Engineer, `data object` solves a specific pain point in [sealed hierarchies]({{ "/en/glossary/sealed-hierarchy/" | relative_url }}) and state modeling.
 
-- **Clean Logging and Debugging**: In sealed class hierarchies, stateless members like `Loading` or `Idle` declared as plain `object` produce unhelpful toString output (`Loading@3a71f4dd`). A `data object` guarantees a human-readable representation without manual overrides.
-- **Singleton Guarantee**: Unlike `data class`, a `data object` is a true singleton — there is exactly one instance. This means no unnecessary allocations for states that carry no data, which matters in high-frequency state emission patterns (e.g., StateFlow updates).
-- **Consistent Equality**: `equals()` always returns `true` when comparing a `data object` to itself (referential and structural equality are identical for singletons). This prevents subtle bugs when mixing `==` and `===` checks in `when` expressions or collection operations.
-- **Sealed Hierarchy Best Practice**: The modern convention is to use `data object` for stateless members and `data class` for stateful members of a sealed hierarchy.
+- **Clean Logging and Debugging**: In [sealed hierarchy]({{ "/en/glossary/sealed-hierarchy/" | relative_url }}) classes, stateless members like `Loading` or `Idle` declared as plain `object` produce unhelpful toString output (`Loading@3a71f4dd`). A `data object` guarantees a human-readable representation without manual overrides.
+- **[Singleton]({{ "/en/glossary/singleton/" | relative_url }}) Guarantee**: Unlike `data class`, a `data object` is a true [singleton]({{ "/en/glossary/singleton/" | relative_url }}) — there is exactly one instance. This means no unnecessary allocations for states that carry no data, which matters in high-frequency state emission patterns (e.g., StateFlow updates).
+- **Consistent Equality**: `equals()` always returns `true` when comparing a `data object` to itself (referential and structural equality are identical for [singletons]({{ "/en/glossary/singleton/" | relative_url }})). This prevents subtle bugs when mixing `==` and `===` checks in `when` expressions or [collection]({{ "/en/glossary/collections/" | relative_url }}) operations.
+- **[Sealed Hierarchy]({{ "/en/glossary/sealed-hierarchy/" | relative_url }}) Best Practice**: The modern convention is to use `data object` for stateless members and `data class` for stateful members of a [sealed hierarchy]({{ "/en/glossary/sealed-hierarchy/" | relative_url }}).
 
 ## Code in Action
 
@@ -70,7 +70,7 @@ fun main() {
 
 **Question**: Why should you prefer `data object` over plain `object` for stateless members of a sealed hierarchy?
 
-**Senior Answer**: A plain `object` generates a default `toString()` that includes the memory address (e.g., `Loading@3a71f4dd`), which is unhelpful for logging and debugging. A `data object` generates a clean `toString()` using just the class name, plus consistent `equals()` and `hashCode()` implementations. Since stateless members of a sealed hierarchy are frequently logged, compared, and emitted through Flows, the `data object` provides correct, readable behavior out of the box without manual overrides.
+**Senior Answer**: A plain `object` generates a default `toString()` that includes the memory address (e.g., `Loading@3a71f4dd`), which is unhelpful for logging and debugging. A `data object` generates a clean `toString()` using just the class name, plus consistent `equals()` and `hashCode()` implementations. Since stateless members of a [sealed hierarchy]({{ "/en/glossary/sealed-hierarchy/" | relative_url }}) are frequently logged, compared, and emitted through Flows, the `data object` provides correct, readable behavior out of the box without manual overrides.
 
 ---
 

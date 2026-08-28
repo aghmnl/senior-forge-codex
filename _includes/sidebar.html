@@ -75,10 +75,19 @@
     </div>
 
     <div class="d-flex justify-content-center align-items-center w-100">
-      {% unless site.theme_mode %}
+      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
         <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fas fa-adjust"></i>
+          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+          <i class="fa-solid fa-display" data-theme-mode="system"></i>
         </button>
+        <ul class="dropdown-menu"></ul>
+        <script>
+          document.getElementById('mode-toggle').addEventListener('click', function(e) {
+            e.stopPropagation();
+            Theme.update(Theme.isDark ? 'light' : 'dark');
+          });
+        </script>
       {% endunless %}
 
       <!-- Language Toggle EN/ES -->

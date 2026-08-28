@@ -22,27 +22,47 @@ Para un ingeniero Senior, `data object` resuelve un dolor específico en jerarqu
 ## Code in Action
 
 ```kotlin
-sealed interface DownloadState {
-    data object Idle : DownloadState
-    data object Downloading : DownloadState
-    data class Progress(val percent: Int) : DownloadState
-    data class Completed(val filePath: String) : DownloadState
-    data class Failed(val error: Throwable) : DownloadState
+// De FollowApp Suite — RecurrenceRule.kt
+// Jerarquía sellada mixta: data object para hojas sin estado,
+// data class para hojas que llevan datos
+sealed class RecurrenceEnd {
+    data object Never : RecurrenceEnd()
+    data class AfterOccurrences(val remaining: Int) : RecurrenceEnd()
+    data class UntilDate(val date: Long) : RecurrenceEnd()
 }
 
-fun logState(state: DownloadState) {
-    // data object da un toString limpio: "Idle", "Downloading"
-    // data class da un toString estructurado: "Progress(percent=42)"
-    println("Estado actual: $state")
+// De FollowApp Suite — ArchiveUiState.kt
+// data object (Kotlin 1.9+): toString limpio, equals consistente
+sealed class ArchiveBulkAction {
+    data object Unarchive : ArchiveBulkAction()
+    data object Delete : ArchiveBulkAction()
+}
+
+// De FollowApp Suite — BulkSelection.kt
+// Contraste: object simple (pre-1.9) — mismo patrón, pero toString
+// produce "Archive@3a71f4dd" en vez de "Archive"
+sealed class BulkAction {
+    data class Complete(val isCompleted: Boolean) : BulkAction()
+    object Archive : BulkAction()   // pre-1.9: sin toString limpio
+    object Delete : BulkAction()
+}
+
+// De FollowApp Suite — FilterState.kt
+// ADT sellado con singletons object para variantes sin estado
+sealed class ScaleFilterState {
+    object Off : ScaleFilterState()
+    data class Include(val values: Set<String>) : ScaleFilterState()
+    object Exclude : ScaleFilterState()
 }
 
 fun main() {
-    val a = DownloadState.Idle
-    val b = DownloadState.Idle
+    // data object: logging legible
+    println(RecurrenceEnd.Never)           // "Never"
+    println(ArchiveBulkAction.Unarchive)   // "Unarchive"
 
-    println(a === b) // true — misma instancia singleton
-    println(a == b)  // true — igualdad estructural
-    println(a)       // "Idle" — toString limpio del data object
+    // object simple: logging inútil
+    println(BulkAction.Archive)            // "Archive@3a71f4dd"
+    println(ScaleFilterState.Off)          // "Off@7c53a9eb"
 }
 ```
 

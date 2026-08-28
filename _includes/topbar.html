@@ -11,7 +11,7 @@
         {%- assign lang = page.lang | default: "en" -%}
         
         <span>
-          <a href="{{ '/' | relative_url }}">
+          <a href="{% if lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             {{ site.data.locales[lang].tabs.home | default: "Home" }}
           </a>
         </span>

@@ -16,7 +16,7 @@
 ## Workflow Reference
 
 - Follow the daily routine defined in `docs/DAILY_WORKFLOW.md`.
-- Real code examples come from **FollowApp Suite** (`/Users/agus/Documents/Entorno/FollowApps/Android/Suite`). If a topic is not found there, mark as "Not found in FAS" and use a standalone example.
+- **ALWAYS use real code examples from FollowApp Suite** (`/Users/agus/Documents/Entorno/FollowApps/Android/Suite`). When writing or updating any article, search FAS for relevant usages FIRST — do not use generic/invented examples unless no match exists in FAS. If a topic is not found there, mark as "Not found in FAS" and use a standalone example. Each code snippet must include a `// From FollowApp Suite — FileName.kt` comment identifying its origin.
 - After each topic, the learner answers the Interview Prep Q&A from memory as a daily self-evaluation.
 - Weekly evaluations are cumulative and use spaced repetition (see `docs/DAILY_WORKFLOW.md`).
 

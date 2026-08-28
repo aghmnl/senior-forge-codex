@@ -60,7 +60,7 @@ val (language, themeMode, contrastLevel) = runBlocking {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: A developer adds a `timestamp` property to the body of a `data class` and notices that two objects with different timestamps are considered equal. Why?
 

@@ -90,7 +90,7 @@ fun onCascadeConfirmed() {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: Why should `!!` never appear in production code, and what does a Senior do instead?
 

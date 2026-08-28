@@ -7,11 +7,11 @@ lang: es
 permalink: /es/glosario/garbage-collector/
 ---
 
-## La Teoría (El Qué)
+## The Theory (El Qué)
 
 El **Garbage Collector (GC)** es un sistema automatizado de gestión de memoria dentro del Android Runtime (ART) y la Java Virtual Machine (JVM). Su responsabilidad principal es identificar objetos en el heap que ya no son alcanzables por la aplicación y reclamar su memoria, previniendo memory leaks y errores de desasignación manual de memoria.
 
-## El Matiz Senior
+## The Senior Nuance (El Matiz Senior)
 
 Para un Desarrollador Android Senior, el GC no es solo un proceso en segundo plano sino un factor de rendimiento:
 - **GC Generacional**: ART usa un enfoque generacional, dividiendo el heap en diferentes regiones (Young, Old) según el tiempo de vida de los objetos para optimizar la frecuencia de recolección.

@@ -75,7 +75,7 @@ fun onSearchQueryChanged(query: String) {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: Your team is building a task management screen with search, filters, bulk selection, inline editing, and a loading indicator. A colleague proposes modeling the UI state as `sealed interface TasksState { Loading, Loaded, Error }`. What is your recommendation and why?
 

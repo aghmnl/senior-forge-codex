@@ -7,7 +7,7 @@ lang: es
 permalink: /es/glosario/polymorphism/
 ---
 
-## La Teoría (El Qué)
+## The Theory (El Qué)
 
 **Polimorfismo** (del griego: "muchas formas") es un principio fundamental de la programación orientada a objetos donde una única interfaz o tipo de referencia puede representar diferentes implementaciones subyacentes. En Kotlin y la JVM, el polimorfismo se manifiesta en tres formas principales:
 
@@ -15,7 +15,7 @@ permalink: /es/glosario/polymorphism/
 - **Polimorfismo Ad-hoc**: Sobrecarga de funciones — múltiples funciones con el mismo nombre pero diferentes firmas de parámetros. Se resuelve en [compile time]({{ "/es/glosario/compile-time/" | relative_url }}).
 - **Polimorfismo Paramétrico**: Generics — una única clase o función trabaja con cualquier parámetro de tipo (`List<T>`). En la JVM, los parámetros de tipo se borran en runtime (type erasure), excepto cuando se usan funciones inline `reified` de Kotlin.
 
-## El Matiz Senior
+## The Senior Nuance (El Matiz Senior)
 
 - En Android, el polimorfismo está en todas partes: `ViewModel`, `Fragment`, `RecyclerView.Adapter` están todos diseñados alrededor del polimorfismo de subtipo. Entender el dispatch por vtable ayuda a explicar por qué `final` (o las clases cerradas por defecto de Kotlin) pueden ser una ventaja de rendimiento.
 - Las sealed classes combinan polimorfismo con exhaustividad — el compilador conoce todos los subtipos, así que las expresiones `when` son seguras sin `else`.

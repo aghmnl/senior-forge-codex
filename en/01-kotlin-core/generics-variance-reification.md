@@ -59,7 +59,7 @@ fun example() {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: Why can't we use reified types in regular functions, and what happens to them at the bytecode level?
 

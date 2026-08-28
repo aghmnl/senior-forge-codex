@@ -44,7 +44,7 @@ fun handleInput(input: String?) {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: If you define an extension function String.lastChar() and a library update introduces a member function String.lastChar() with the exact same signature, what happens to your code?
 

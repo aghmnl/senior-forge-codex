@@ -42,7 +42,7 @@ class ProductDetailViewModel(
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: What happens internally when you access a lazy property for the first time, and how does it differ from a lateinit property in terms of bytecode?
 

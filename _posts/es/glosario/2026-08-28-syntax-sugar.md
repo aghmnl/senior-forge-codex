@@ -7,11 +7,11 @@ lang: es
 permalink: /es/glosario/syntax-sugar/
 ---
 
-## La Teoría (El Qué)
+## The Theory (El Qué)
 
 **Syntax sugar** es sintaxis del lenguaje que no agrega capacidades nuevas sino que hace que las existentes sean más fáciles de leer y escribir. El compilador la transforma (desugar) en la construcción subyacente. En Kotlin, `data class` es syntax sugar para escribir manualmente `equals()`, `hashCode()`, `toString()`, `copy()` y `componentN()`. El operador `?.` [safe call]({{ "/es/glosario/safe-call/" | relative_url }}) es syntax sugar para una verificación `if (x != null) x.member else null`.
 
-## El Matiz Senior
+## The Senior Nuance (El Matiz Senior)
 
 - Reconocer el syntax sugar te ayuda a entender lo que realmente genera el compilador — y dónde la abstracción tiene fugas. `data class` genera métodos solo a partir de los parámetros del constructor primario; las propiedades del body se excluyen. Si no conocés la forma desazucarada, este comportamiento sorprende.
 - Las coroutines de Kotlin son un ejemplo más profundo: las funciones `suspend` parecen sincrónicas pero se transforman en una máquina de estados con callbacks. Entender la forma desazucarada es esencial para debuggear stack traces, uso de memoria y comportamiento de cancelación.

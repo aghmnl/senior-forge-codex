@@ -42,7 +42,7 @@ class ProductDetailViewModel(
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: ¿Qué ocurre internamente cuando accedes a una propiedad lazy por primera vez y en qué se diferencia de una propiedad lateinit a nivel de bytecode?
 

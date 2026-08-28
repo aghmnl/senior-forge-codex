@@ -37,7 +37,16 @@ Concepts that fall outside the 100 main topics are documented as **glossary entr
 - Permalink pattern: `/en/glossary/<slug>/` and `/es/glosario/<slug>/`.
 - See `docs/GLOSSARY_INDEX.md` for the full inventory of entries with links and FAS coverage status.
 - Format: same article structure (Theory, Senior Nuance, code if applicable), with a "Back to Glossary" link.
-- **Cross-linking rule:** When writing or updating any article (topic or glossary), link any concept that already has its own article — whether it is another topic or a glossary entry. Use the Liquid `relative_url` filter: `[Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }})`, `[Data Objects]({{ "/en/01-kotlin-core/data-objects/" | relative_url }})`. This makes the Codex a connected knowledge base, not isolated pages.
+- **Cross-linking rule:** When writing or updating any article (topic or glossary), link **every occurrence** of a concept that already has its own article — whether it is another topic or a glossary entry. Do not link only the first mention; every time the term appears in the text, it must be a link. Use the Liquid `relative_url` filter: `[Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }})`, `[Data Objects]({{ "/en/01-kotlin-core/data-objects/" | relative_url }})`. This makes the Codex a connected knowledge base, not isolated pages.
+- **Section headings — canonical set:**
+  - **English topic articles:** `## The Theory (The What)` · `## The Senior Perspective (The Why)` · `## Code in Action` · `## The Interview (The Hot Seat)`
+  - **Spanish topic articles:** `## The Theory (El Qué)` · `## The Senior Perspective (El Porqué)` · `## Code in Action` · `## The Interview (En el banquillo)`
+  - **English glossary entries:** `## The Theory (The What)` · `## The Senior Nuance`
+  - **Spanish glossary entries:** `## The Theory (El Qué)` · `## The Senior Nuance (El Matiz Senior)`
+  - These are the only valid section headings. Always use them exactly as listed — no variations, no translations beyond what is shown.
+- **Glossary naming rule:** Glossary entries are listed by their **English name only** in `docs/GLOSSARY_INDEX.md` and `docs/TOPIC_TRACKER.md`. No Spanish translations in entry names. The glossary index is sorted **alphabetically** by English name. No numbering column.
+- **Topic naming rule:** All topic names in `docs/TOPIC_TRACKER.md` must be in **English only**. No Spanish titles.
+- **Terminology in Spanish articles:** Always use the **English technical term** (Runtime, Scope, Cast, Flow, etc.) since it is the industry standard. On first mention in an article, optionally clarify in parentheses: "el Runtime (tiempo de ejecución)". After that, always use the English term. This keeps articles aligned with how terms are used in interviews and codebases.
 - Glossary entries are not scheduled or tracked in `TOPIC_TRACKER.md` — they are added organically as needed.
 
 ## Git Workflow

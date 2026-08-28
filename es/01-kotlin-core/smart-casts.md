@@ -65,7 +65,7 @@ val until = (rule.end as? RecurrenceEnd.UntilDate)?.date
 return if (until != null && candidate > until) null else candidate
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: ¿Por qué el compilador de Kotlin rechaza hacer smart cast en una propiedad `var` después de una verificación `is`?
 

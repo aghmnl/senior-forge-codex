@@ -66,7 +66,7 @@ fun main() {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: Why should you prefer `data object` over plain `object` for stateless members of a sealed hierarchy?
 

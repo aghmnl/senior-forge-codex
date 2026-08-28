@@ -102,7 +102,7 @@ val displayLabel = notification.run {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: When would you strictly prefer `run` over `let`, and what is the risk of using `apply` for data transformations?
 

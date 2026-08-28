@@ -36,7 +36,7 @@ fun render(state: UIState) {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 **Pregunta**: ¿Cuándo elegirías una Sealed Interface sobre una Sealed Class?
 
 **Respuesta Senior**: Elegiría una Sealed Interface cuando necesite que una clase implemente múltiples jerarquías selladas (herencia múltiple de comportamiento) o cuando no necesite almacenar un estado protegido o constructores específicos que solo una clase abstracta puede proveer. Las interfaces selladas son más ligeras y flexibles para arquitecturas modulares.

@@ -6,7 +6,7 @@ permalink: /es/01-kotlin-core/null-safety-elvis-safe-calls/
 order: 1
 ---
 
-## La Teoría (El Qué)
+## The Theory (El Qué)
 
 El sistema de tipos de Kotlin distingue entre tipos nullable (`String?`) y no-nullable (`String`) en [tiempo de compilación]({{ "/es/glosario/compile-time/" | relative_url }}). Esto elimina la mayoría de los crashes por [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) que afectan a las bases de código Java. Los operadores clave son:
 
@@ -15,7 +15,7 @@ El sistema de tipos de Kotlin distingue entre tipos nullable (`String?`) y no-nu
 - **[Assertion]({{ "/es/glosario/assertion/" | relative_url }}) de no-null (`!!`)**: Fuerza un tipo nullable a no-nullable, lanzando [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) si es `null`. **No debería usarse nunca en código de producción.**
 - **[Cast]({{ "/es/glosario/cast/" | relative_url }}) seguro (`as?`)**: Intenta un cast y devuelve `null` en caso de fallo en lugar de lanzar [ClassCastException]({{ "/es/glosario/class-cast-exception/" | relative_url }}).
 
-## La Perspectiva Senior (El Por Qué)
+## The Senior Perspective (El Porqué)
 
 Para un Desarrollador Senior, la null safety no es [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}) — es una herramienta de diseño que codifica invariantes del dominio en el sistema de tipos.
 
@@ -32,7 +32,7 @@ Para un Desarrollador Senior, la null safety no es [syntax sugar]({{ "/es/glosar
 
 El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de [assertions]({{ "/es/glosario/assertion/" | relative_url }}).
 
-## Código en Acción
+## Code in Action
 
 ```kotlin
 // De FollowApp Suite — BillingConnector
@@ -90,7 +90,7 @@ fun onCascadeConfirmed() {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: ¿Por qué `!!` nunca debería aparecer en código de producción, y qué hace un Senior en su lugar?
 

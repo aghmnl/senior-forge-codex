@@ -47,7 +47,7 @@ fun fetchAndDisplay() {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: Why would you avoid using the inline keyword for every single higher-order function in a large project?
 

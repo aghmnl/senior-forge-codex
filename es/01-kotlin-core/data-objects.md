@@ -66,7 +66,7 @@ fun main() {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: ¿Por qué preferir `data object` sobre un `object` simple para miembros sin estado de una jerarquía sellada?
 

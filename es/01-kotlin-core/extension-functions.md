@@ -44,7 +44,7 @@ fun handleInput(input: String?) {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: Si defines una función de extensión String.lastChar() y una actualización de librería introduce un método miembro String.lastChar() con la misma firma, ¿qué sucede con tu código?
 

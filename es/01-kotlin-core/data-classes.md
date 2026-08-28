@@ -12,7 +12,7 @@ Una `data class` en Kotlin es una clase cuyo propósito principal es almacenar d
 
 ## The Senior Perspective (El Porqué)
 
-Un ingeniero Senior no ve las `data class` solo como azúcar sintáctico, sino como un contrato y una decisión de diseño con implicaciones reales.
+Un ingeniero Senior no ve las `data class` solo como [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}), sino como un contrato y una decisión de diseño con implicaciones reales.
 
 - **Igualdad Estructural por Defecto**: `equals()` y `hashCode()` se generan únicamente a partir de las propiedades del constructor primario. Las propiedades declaradas en el cuerpo de la clase se excluyen — un detalle sutil pero crítico cuando se usan data classes como claves en mapas o elementos en sets.
 - **Modelado Inmutable con `copy()`**: La función `copy()` permite crear copias modificadas sin mutar el original, lo cual es fundamental para arquitecturas de flujo unidireccional (MVI, Redux). Combinada con propiedades `val`, hace que las transiciones de estado sean explícitas y seguras.
@@ -60,7 +60,7 @@ val (language, themeMode, contrastLevel) = runBlocking {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: Un desarrollador agrega una propiedad `timestamp` en el cuerpo de una `data class` y nota que dos objetos con timestamps diferentes se consideran iguales. ¿Por qué?
 

@@ -38,7 +38,7 @@ fun handleState(state: UIState) {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## The Interview (The Hot Seat)
 
 **Question**: What is the primary advantage of a Sealed Interface over an Abstract Class in a restricted hierarchy?
 

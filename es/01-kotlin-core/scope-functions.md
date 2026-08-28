@@ -27,7 +27,7 @@ Estas funciones no introducen capacidades técnicas nuevas, sino que ofrecen una
 
 ## The Senior Perspective (El Porqué)
 
-Un desarrollador Senior ve las scope functions como herramientas de [señalización de intención]({{ "/es/glosario/intent-signaling/" | relative_url }}), no como simple azúcar sintáctico. Elegir la función incorrecta es un code smell común que degrada la mantenibilidad.
+Un desarrollador Senior ve las scope functions como herramientas de [señalización de intención]({{ "/es/glosario/intent-signaling/" | relative_url }}), no como simple [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}). Elegir la función incorrecta es un code smell común que degrada la mantenibilidad.
 
 - **Claridad de Intención**: Cada scope function comunica un propósito diferente. Usar `apply` señala "estoy configurando este objeto"; usar `let` señala "estoy transformando este valor". Elegir la correcta hace que el código se auto-documente.
 - **Evitar el Anidamiento**: Anidar múltiples scope functions es un antipatrón significativo. Oscurece el contexto de `this` o `it`, haciendo el código propenso a errores lógicos y reduciendo la legibilidad.
@@ -102,7 +102,7 @@ val displayLabel = notification.run {
 }
 ```
 
-## Preparación para Entrevistas (En el banquillo)
+## The Interview (En el banquillo)
 
 **Pregunta**: ¿Cuándo preferirías estrictamente `run` sobre `let`, y cuál es el riesgo de usar `apply` para transformaciones de datos?
 

@@ -59,7 +59,7 @@ fun example() {
 }
 ```
 
-## Interview Prep (En el banquillo)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: ¿Por qué no podemos usar tipos reified en funciones normales y qué sucede con ellos a nivel de bytecode?
 

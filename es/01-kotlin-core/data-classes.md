@@ -51,7 +51,7 @@ fun main() {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: Un desarrollador agrega una propiedad `timestamp` en el cuerpo de una `data class` y nota que dos objetos con timestamps diferentes se consideran iguales. ¿Por qué?
 

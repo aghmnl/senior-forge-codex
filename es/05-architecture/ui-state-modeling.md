@@ -75,7 +75,7 @@ fun onSearchQueryChanged(query: String) {
 }
 ```
 
-## Interview Prep (En el banquillo)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: Tu equipo está construyendo una pantalla de gestión de tareas con búsqueda, filtros, selección masiva, edición inline y un indicador de carga. Un colega propone modelar el estado de UI como `sealed interface TasksState { Loading, Loaded, Error }`. ¿Cuál es tu recomendación y por qué?
 

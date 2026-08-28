@@ -64,7 +64,7 @@ class Example {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: ¿Por qué el compilador de Kotlin rechaza hacer smart cast en una propiedad `var` después de una verificación `is`?
 

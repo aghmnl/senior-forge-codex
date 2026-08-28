@@ -15,7 +15,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 10 / 101
+**Articles written:** 11 / 101
 **Last updated:** 2026-08-28
 **Projected end date:** 10-feb-2027
 
@@ -25,7 +25,7 @@
 
 | Topic                                                | Article                                                                                                                                                                                                   | Planned | Status                | Article Date | Last Eval | Eval Result |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------------- | ------------ | --------- | ----------- |
-| Null Safety: Elvis y Safe calls                      | —                                                                                                                                                                                                         | 19-ago  | :black_square_button: | —            | —         | —           |
+| Null Safety: Elvis y Safe calls                      | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/null-safety-elvis-safe-calls/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/null-safety-elvis-safe-calls/)     | 19-ago  | :black_square_button: | 2026-08-28   | —         | —           |
 | Smart Casts                                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/smart-casts/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/smart-casts/)                                       | 20-ago  | :black_square_button: | 2026-08-19   | —         | —           |
 | Data Classes: copy, equals, toString                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-classes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-classes/)                                     | 24-ago  | :black_square_button: | 2026-08-19   | —         | —           |
 | Data Objects: Singleton y ahorro de memoria          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-objects/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-objects/)                                     | 25-ago  | :black_square_button: | 2026-08-19   | —         | —           |

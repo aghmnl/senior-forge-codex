@@ -102,7 +102,7 @@ val displayLabel = notification.run {
 }
 ```
 
-## Interview Prep (The Hot Seat)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: ¿Cuándo preferirías estrictamente `run` sobre `let`, y cuál es el riesgo de usar `apply` para transformaciones de datos?
 

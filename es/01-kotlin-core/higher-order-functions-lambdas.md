@@ -47,7 +47,7 @@ fun fetchAndDisplay() {
 }
 ```
 
-## Interview Prep (En el banquillo)
+## Preparación para Entrevistas (En el banquillo)
 
 **Pregunta**: ¿Por qué evitarías usar la palabra clave inline para absolutamente todas las funciones de orden superior en un proyecto grande?
 

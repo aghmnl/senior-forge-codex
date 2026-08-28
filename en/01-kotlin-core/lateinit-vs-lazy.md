@@ -3,6 +3,7 @@ layout: page
 title: Lateinit vs Lazy
 lang: en
 permalink: /en/01-kotlin-core/lateinit-vs-lazy/
+order: 9
 ---
 
 ## The Theory (The What)

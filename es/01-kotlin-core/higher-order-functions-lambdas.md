@@ -3,6 +3,7 @@ layout: page
 title: Higher-Order Functions y Lambdas
 lang: es
 permalink: /es/01-kotlin-core/higher-order-functions-lambdas/
+order: 7
 ---
 
 ## The Theory (El Qué)

@@ -3,6 +3,7 @@ layout: page
 title: Sealed Classes & Interfaces
 lang: en
 permalink: /en/01-kotlin-core/sealed-classes-interfaces/
+order: 5
 ---
 
 ## The Theory (The What)

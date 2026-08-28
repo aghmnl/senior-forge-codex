@@ -40,6 +40,28 @@
   .lang-inactive { color: var(--text-muted-color, rgba(255,255,255,0.5)); }
   .lang-sep { color: var(--text-muted-color, rgba(255,255,255,0.5)); margin: 0 1px; }
 
+  /* Chapter article sub-items */
+  .chapter-articles {
+    padding-left: 0.5rem;
+    border-left: 1px solid var(--sidebar-muted-color, rgba(255,255,255,0.15));
+  }
+  .chapter-article-link {
+    display: block;
+    padding: 3px 0 3px 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    text-decoration: none;
+    color: var(--sidebar-muted-color, rgba(255,255,255,0.5));
+    transition: color 0.2s;
+  }
+  a.chapter-article-link:hover {
+    color: var(--sidebar-active-color, #fff);
+  }
+  span.chapter-article-link.active {
+    color: var(--sidebar-active-color, #fff);
+    font-weight: 600;
+  }
+
   /* Ensure the sidebar title stays at top despite sidebar padding adjustments */
   #sidebar.pt-0 {
     padding-top: 0 !important;

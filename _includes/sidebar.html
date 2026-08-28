@@ -46,12 +46,22 @@
         </a>
         
         {%- if is_active and page.url != chapter.url -%}
-          <!-- Show current article as a sub-item with pure indentation -->
-          <div class="nav-item active-sub-item w-100 ms-2">
-              <span class="nav-link py-1 ps-5 small fw-medium" style="opacity: 0.9; line-height: 1.2; background: transparent !important; border: none !important;">
-                {{ page.title }}
-              </span>
-          </div>
+          {%- assign chapter_pages = "" | split: "" -%}
+          {%- for p in site.pages -%}
+            {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
+              {%- assign chapter_pages = chapter_pages | push: p -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- assign chapter_pages = chapter_pages | sort: "order" -%}
+          <ul class="chapter-articles list-unstyled w-100 ms-4 mt-1 mb-0">
+            {%- for p in chapter_pages -%}
+              {%- if p.url == page.url -%}
+                <li><span class="chapter-article-link active">{{ p.title }}</span></li>
+              {%- else -%}
+                <li><a href="{{ p.url | relative_url }}" class="chapter-article-link">{{ p.title }}</a></li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
         {%- endif -%}
       </li>
     {% endfor %}

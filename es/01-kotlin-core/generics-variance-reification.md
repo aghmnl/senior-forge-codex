@@ -3,6 +3,7 @@ layout: page
 title: Generics, Varianza y Reificación
 lang: es
 permalink: /es/01-kotlin-core/generics-variance-reification/
+order: 11
 ---
 
 ## The Theory (El Qué)

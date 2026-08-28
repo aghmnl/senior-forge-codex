@@ -3,6 +3,7 @@ layout: page
 title: "Data Objects: Singleton & Memory Efficiency"
 lang: en
 permalink: /en/01-kotlin-core/data-objects/
+order: 4
 ---
 
 ## The Theory (The What)

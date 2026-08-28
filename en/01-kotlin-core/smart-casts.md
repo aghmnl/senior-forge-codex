@@ -22,46 +22,47 @@ A Senior Engineer leverages smart casts not only for cleaner code, but understan
 ## Code in Action
 
 ```kotlin
-sealed interface NetworkResult {
-    data class Success(val data: List<String>) : NetworkResult
-    data class Error(val code: Int, val message: String) : NetworkResult
-    data object Loading : NetworkResult
+// From FollowApp Suite — FilterState.kt
+// The sealed hierarchy that enables the smart casts below
+sealed class ScaleFilterState {
+    object Off : ScaleFilterState()
+    data class Include(val values: Set<String>) : ScaleFilterState()
+    object Exclude : ScaleFilterState()
 }
 
-fun handleResult(result: NetworkResult) {
-    when (result) {
-        is NetworkResult.Success -> {
-            // Smart cast: result is now NetworkResult.Success
-            println("Got ${result.data.size} items")
-        }
-        is NetworkResult.Error -> {
-            // Smart cast: result is now NetworkResult.Error
-            println("Error ${result.code}: ${result.message}")
-        }
-        NetworkResult.Loading -> println("Loading...")
-    }
-}
-
-// Smart cast with null checks
-fun processName(name: String?) {
-    if (name != null) {
-        // Smart cast: name is now String (non-null)
-        println(name.uppercase())
-    }
-}
-
-// Smart cast FAILS on var — intentional safety
-class Example {
-    var status: NetworkResult = NetworkResult.Loading
-
-    fun check() {
-        if (status is NetworkResult.Success) {
-            // Compilation error: smart cast impossible because
-            // 'status' is a mutable property that could change
-            // println(status.data) // Won't compile
+// From FollowApp Suite — PresetMapper.kt
+// when + is: the compiler smart-casts `state` to Include,
+// granting direct access to `state.values`
+fun serializeScaleFilters(filters: Map<String, ScaleFilterState>): String {
+    val json = JSONObject()
+    filters.forEach { (key, state) ->
+        when (state) {
+            is ScaleFilterState.Off -> json.put(key, JSONObject().put("type", "OFF"))
+            is ScaleFilterState.Include -> {
+                val arr = JSONArray(state.values.toList())  // smart cast
+                json.put(key, JSONObject().put("type", "INCLUDE").put("values", arr))
+            }
+            is ScaleFilterState.Exclude -> json.put(key, JSONObject().put("type", "EXCLUDE"))
         }
     }
+    return json.toString()
 }
+
+// From FollowApp Suite — CleanUpPresetsUseCase.kt
+// is inside if: after the check, filter.values is accessible
+if (filter is ScaleFilterState.Include && oldValue in filter.values) {
+    val updatedValues = filter.values - oldValue + newValue
+}
+
+// From FollowApp Suite — TasksViewModel.kt
+// as? safe cast: returns null if the LabelValue is Scale (not Tag)
+val taskLabels = (task.customLabels["labels"] as? LabelValue.Tag)
+    ?.values?.toSet() ?: emptySet()
+
+// From FollowApp Suite — RecurrenceCalculator.kt
+// as? + null-check smart cast: until becomes Long (non-null) after the check
+val until = (rule.end as? RecurrenceEnd.UntilDate)?.date
+return if (until != null && candidate > until) null else candidate
 ```
 
 ## Interview Prep (The Hot Seat)

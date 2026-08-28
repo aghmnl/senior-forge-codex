@@ -3,7 +3,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
+
 
 # OS X
 .DS_Store

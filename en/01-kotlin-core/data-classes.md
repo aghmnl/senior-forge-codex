@@ -22,32 +22,41 @@ A Senior Engineer sees `data class` not just as syntactic sugar, but as a contra
 ## Code in Action
 
 ```kotlin
-data class UserProfile(
-    val id: String,
-    val name: String,
-    val email: String,
-    val isVerified: Boolean = false
-) {
-    // This property is NOT included in equals/hashCode/toString/copy
-    val displayName: String get() = "$name (${if (isVerified) "verified" else "unverified"})"
+// From FollowApp Suite — RecurrenceRule.kt
+// A non-trivial data class with defaults, a sealed end-condition,
+// and an optional pattern — all in the primary constructor
+data class RecurrenceRule(
+    val frequency: RecurrenceFrequency,
+    val interval: Int = 1,
+    val weekdays: Set<DayOfWeek> = emptySet(),
+    val end: RecurrenceEnd = RecurrenceEnd.Never,
+    val pattern: RecurrencePattern? = null
+)
+
+// From FollowApp Suite — CleanUpPresetsUseCase.kt
+// copy() for immutable state updates: only the affected fields change
+fun onLabelRenamed(preset: Preset, oldName: String, newName: String) {
+    val newLabelFilters = if (oldName in preset.labelFilters) {
+        preset.labelFilters - oldName + (newName to preset.labelFilters.getValue(oldName))
+    } else preset.labelFilters
+
+    presetRepository.save(
+        preset.copy(
+            labelFilters = newLabelFilters,
+            scaleFilters = newScaleFilters,
+            groupBy = newGroupBy
+        )
+    )
 }
 
-fun main() {
-    val user = UserProfile("1", "Alice", "alice@example.com")
-
-    // copy() for immutable state transitions
-    val verified = user.copy(isVerified = true)
-
-    // Structural equality — compares constructor properties
-    println(user == verified) // false (isVerified differs)
-
-    // toString() auto-generated
-    println(verified)
-    // UserProfile(id=1, name=Alice, email=alice@example.com, isVerified=true)
-
-    // Destructuring
-    val (id, name, email) = user
-    println("$name's email: $email") // Alice's email: alice@example.com
+// From FollowApp Suite — MyTasksApplication.kt
+// Destructuring a Triple (itself a data class) to extract three settings
+val (language, themeMode, contrastLevel) = runBlocking {
+    Triple(
+        languagePreferences.getLanguage().first(),
+        themePreferences.getThemeMode().first(),
+        themePreferences.getContrastLevel().first()
+    )
 }
 ```
 

@@ -1,5 +1,9 @@
 # Senior Forge Codex — Project Rules
 
+## Mission
+
+**Senior Forge Codex** is a strategic compendium designed to document the deep theory needed on the path to Android mastery. It serves as the permanent technical reference for The Senior Forge articles and as an exhaustive study guide to successfully face **Senior Android Developer** interviews. Every article, glossary entry, code example, and cross-link exists to build a connected, interview-ready knowledge base — not isolated pages.
+
 ## Language
 
 - All interaction with the user is in **Spanish** (castellano). Do not switch to English in conversation.

@@ -9,6 +9,11 @@ baseurl: "/senior-forge-codex"
 author: aghmnl
 github_username: aghmnl
 
+social:
+  name: aghmnl
+  links:
+    - https://github.com/aghmnl
+
 theme: jekyll-theme-chirpy
 
 plugins:

@@ -3,6 +3,7 @@ layout: page
 title: Extension Functions
 lang: en
 permalink: /en/01-kotlin-core/extension-functions/
+order: 6
 ---
 
 ## The Theory (The What)

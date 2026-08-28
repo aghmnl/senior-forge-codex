@@ -3,6 +3,7 @@ layout: page
 title: Smart Casts
 lang: es
 permalink: /es/01-kotlin-core/smart-casts/
+order: 2
 ---
 
 ## The Theory (El Qué)

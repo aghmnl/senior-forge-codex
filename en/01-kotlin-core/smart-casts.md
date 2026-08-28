@@ -3,6 +3,7 @@ layout: page
 title: Smart Casts
 lang: en
 permalink: /en/01-kotlin-core/smart-casts/
+order: 2
 ---
 
 ## The Theory (The What)

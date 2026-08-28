@@ -3,6 +3,7 @@ layout: page
 title: "Data Classes: copy, equals, toString"
 lang: en
 permalink: /en/01-kotlin-core/data-classes/
+order: 3
 ---
 
 ## The Theory (The What)

@@ -3,6 +3,7 @@ layout: page
 title: Scope Functions
 lang: es
 permalink: /es/01-kotlin-core/scope-functions/
+order: 8
 ---
 
 ## The Theory (El Qué)

@@ -91,3 +91,33 @@ permalink: /es/glosario/
     }
   })();
 </script>
+
+{% assign glossary_posts = '' | split: '' %}
+{% for p in site.categories['glosario'] %}
+  {% if p.lang == 'es' %}
+    {% assign glossary_posts = glossary_posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% if glossary_posts.size > 0 %}
+<aside id="glossary-browse" aria-labelledby="glossary-browse-label" class="mt-5">
+  <h3 class="mb-4" id="glossary-browse-label">
+    {{ site.data.locales.es.post.relate_posts | default: "Lecturas adicionales" }}
+  </h3>
+  <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+    {% for post in glossary_posts limit: 6 %}
+      <article class="col">
+        <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+          <div class="card-body">
+            {% include datetime.html date=post.date lang='es' %}
+            <h4 class="pt-0 my-2">{{ post.title }}</h4>
+            <div class="text-muted">
+              <p>{% include post-summary.html %}</p>
+            </div>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </nav>
+</aside>
+{% endif %}

@@ -5,23 +5,20 @@ lang: en
 permalink: /en/glossary/
 ---
 
-<div class="d-flex flex-column align-items-center justify-content-center py-5">
-  <h2 class="mb-3 text-center">{{ site.data.translations.en.glossary_title }}</h2>
-  <p class="text-muted text-center mb-5" style="max-width: 600px;">
-    {{ site.data.translations.en.glossary_description }}
-  </p>
+<p class="text-muted mb-4">
+  {{ site.data.translations.en.glossary_description }}
+</p>
 
-  <div class="w-100" style="max-width: 600px;">
-    <div class="input-group input-group-lg shadow-sm">
-      <span class="input-group-text bg-transparent border-end-0">
-        <i class="fas fa-search text-muted"></i>
-      </span>
-      <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
-    </div>
-    <div id="glossary-search-results" class="mt-4 w-100">
-      <!-- Search results will appear here -->
-    </div>
+<div class="mb-4" style="max-width: 600px;">
+  <div class="input-group input-group-lg shadow-sm">
+    <span class="input-group-text bg-transparent border-end-0">
+      <i class="fas fa-search text-muted"></i>
+    </span>
+    <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
   </div>
+</div>
+
+<div id="glossary-search-results" class="mt-4">
 </div>
 
 <script>

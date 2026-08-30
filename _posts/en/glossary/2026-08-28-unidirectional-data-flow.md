@@ -29,8 +29,8 @@ _uiState.update {
 ## The Senior Nuance
 
 - UDF makes [state transitions]({{ "/en/glossary/state-transitions/" | relative_url }}) predictable: given the same current state and the same action, the result is always the same. This makes debugging, testing, and time-travel debugging straightforward.
-- The `copy()` function on `data class` is what makes UDF practical in Kotlin: you produce a new state from the old one without [mutation]({{ "/en/glossary/mutation/" | relative_url }}), and `StateFlow` / `LiveData` notifies observers of the change.
-- UDF does not require a framework. A `ViewModel` with a `MutableStateFlow`, `data class` state, and `copy()` is already a complete UDF implementation. Libraries like Orbit, MVIKotlin, or Circuit add structure but not capability.
+- The `copy()` function on `data class` is what makes UDF practical in Kotlin: you produce a new state from the old one without [mutation]({{ "/en/glossary/mutation/" | relative_url }}), and [StateFlow]({{ "/en/glossary/stateflow/" | relative_url }}) / `LiveData` notifies observers of the change.
+- UDF does not require a framework. A `ViewModel` with a `MutableStateFlow`, `data class` state, and `copy()` is already a complete UDF implementation. See [state emission patterns]({{ "/en/glossary/state-emission-patterns/" | relative_url }}) for the atomic update mechanics. Libraries like Orbit, MVIKotlin, or Circuit add structure but not capability.
 
 ---
 

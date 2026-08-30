@@ -118,7 +118,7 @@ permalink: /en/glossary/
             {% include datetime.html date=post.date lang='en' %}
             <h4 class="pt-0 my-2">{{ post.title }}</h4>
             <div class="text-muted">
-              <p>{% include post-summary.html %}</p>
+              <p>{% assign summary = post.content | markdownify | strip_html | strip_newlines | strip %}{% assign summary = summary | replace: 'The Theory (The What)', '' | replace: 'The Theory (El Qué)', '' | replace: 'The Senior Nuance', '' | replace: 'The Senior Nuance (El Matiz Senior)', '' | strip | truncate: 200 %}{{ summary }}</p>
             </div>
           </div>
         </a>

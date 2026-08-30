@@ -57,22 +57,50 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 
 Every week (suggested: Friday or weekend), a structured evaluation session covers the accumulated topics. Each evaluation is documented as a markdown file in the `evals/` folder.
 
+### How It Works
+
+Claude asks interview-style questions. The learner answers **in writing, in the chat, without consulting the articles**. After each answer, Claude grades it with brief feedback. At the end, a summary table is generated and saved to `evals/`.
+
 ### What Gets Evaluated
 1. **All topics learned that week** (the 5-7 new ones).
 2. **Flagged topics from prior weeks** — any topic previously marked as not-passed.
 3. **Random review topics** — a small random sample (1-3) of previously passed topics, to ensure long-term retention.
 
-### Evaluation Format
-- Simulated interview questions: explain the concept, its tradeoffs, and when you'd use it.
-- Code challenges: read a snippet and identify what's happening, or write a small example.
-- "Why" questions: the kind that separate mid from senior ("Why would you choose X over Y in this architecture?").
+### Question Categories
 
-### Scoring
-| Score | Meaning | Action |
-|-------|---------|--------|
-| **PASS** | Solid explanation, correct details, senior-level reasoning | Topic moves to the "passed" pool for random future re-evaluation |
-| **PARTIAL** | Got the idea but missed key details or tradeoffs | Re-evaluated next week alongside new topics |
-| **FAIL** | Couldn't explain it clearly or had significant errors | Re-evaluated next week with priority; review the article again before eval |
+Each topic is evaluated with a mix of these three question types:
+
+| Category | What it tests | Example |
+|----------|--------------|---------|
+| **Conceptual** | Deep understanding of the concept and its production relevance | "Explain what X is and why it matters in production" |
+| **Code** | Practical application — read, write, or debug a snippet | "What does this code do? What problem does it have?" |
+| **Tradeoff/Design** | Senior-level judgment and architectural reasoning | "Why would you choose X over Y in this scenario?" |
+
+### Number of Questions Per Topic
+
+| Evaluation type | Questions per topic |
+|----------------|-------------------|
+| **New topics** | 2-3 (mix of all categories) |
+| **Re-evaluation (PARTIAL/FAIL)** | 1-2 (focused on what failed) |
+| **Random retention check** | 1 (quick) |
+
+### Scoring (Per Question, 1–5)
+
+| Score | Meaning |
+|-------|---------|
+| **5** | Senior answer: precise, complete, mentions tradeoffs and edge cases |
+| **4** | Correct and solid, but missing some Senior-level nuance or detail |
+| **3** | Understands the concept but explanation is incomplete or imprecise |
+| **2** | General idea is right but significant errors |
+| **1** | Cannot explain it or fundamental errors |
+
+### Topic Result (Average of Question Scores)
+
+| Average | Result | Action |
+|---------|--------|--------|
+| **4.0+** | **PASS** | Topic moves to the long-term retention pool |
+| **3.0–3.9** | **PARTIAL** | Re-evaluated next week alongside new topics |
+| **< 3.0** | **FAIL** | Re-evaluated next week with priority; review the article before eval |
 
 ### After the Evaluation
 - Create an eval record in `evals/` (e.g., `evals/2026-W34.md`).
@@ -92,16 +120,16 @@ Each weekly evaluation is saved as a markdown file:
 **Date:** YYYY-MM-DD
 
 ## New Topics
-| # | Topic | Score | Notes |
-|---|-------|-------|-------|
+| # | Topic | Q1 | Q2 | Q3 | Avg | Result | Notes |
+|---|-------|----|----|----|-----|--------|-------|
 
 ## Review (Flagged from Prior Weeks)
-| # | Topic | Previous Score | New Score | Notes |
-|---|-------|---------------|-----------|-------|
+| # | Topic | Previous Result | Q1 | Q2 | Avg | Result | Notes |
+|---|-------|----------------|----|----|-----|--------|-------|
 
 ## Random Re-evaluation
-| # | Topic | Score | Notes |
-|---|-------|-------|-------|
+| # | Topic | Q1 | Avg | Result | Notes |
+|---|-------|----|-----|--------|-------|
 
 ## Summary
 - Topics passed: X
@@ -157,3 +185,4 @@ A topic is considered **mastered** after 3 consecutive PASS results across space
 |------|--------|
 | 2026-08-18 | Initial workflow definition |
 | 2026-08-18 | Added: daily Q&A self-eval, evals/ folder, FollowApp "not found" handling, docs reorganization |
+| 2026-08-28 | Detailed evaluation criteria: 1-5 scoring scale, question categories (Conceptual/Code/Tradeoff), pass threshold (4.0+), questions-per-topic counts, updated eval record format with per-question scores |

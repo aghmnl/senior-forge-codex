@@ -8,18 +8,22 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (51 total)
+## Entries (59 total)
 
 | Entry | Article | FAS |
 |-------|---------|:---:|
+| Abstract Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/abstract-class/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/abstract-class/) | Full |
+| Algebraic Data Types (ADTs) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/algebraic-data-types/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/algebraic-data-types/) | Full |
+| Allocations | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/allocations/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/allocations/) | Full |
 | Annotation Processing | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/annotation-processing/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/annotation-processing/) | Full |
 | AOT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/aot-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/aot-compilation/) | None |
 | Assertion | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/assertion/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/assertion/) | None |
 | Bytecode | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/bytecode/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/bytecode/) | None |
 | Cast | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cast/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cast/) | None |
-| Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collections/) | Full |
 | ClassCastException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/class-cast-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/class-cast-exception/) | None |
+| Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collections/) | Full |
 | Compile Time | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compile-time/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compile-time/) | None |
+| Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constructor/) | Full |
 | Context (Programming) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/context-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/context-programming/) | None |
 | Data Transformation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-transformation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-transformation/) | None |
 | Decorator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/decorator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/decorator/) | None |
@@ -39,6 +43,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Lambdas | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lambdas/) | Full |
 | Maps | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/maps/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/maps/) | Full |
 | Multiple Return Patterns | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/multiple-return-patterns/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/multiple-return-patterns/) | Full |
+| MVI Pattern | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mvi-pattern/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mvi-pattern/) | Full |
 | Mutation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mutation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mutation/) | Full |
 | NullPointerException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/null-pointer-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/null-pointer-exception/) | None |
 | Overload Resolution | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/overload-resolution/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/overload-resolution/) | None |
@@ -46,6 +51,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Polymorphism | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/polymorphism/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/polymorphism/) | None |
 | Primary Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primary-constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primary-constructor/) | Full |
 | Primitives | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primitives/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primitives/) | Full |
+| Protected State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/protected-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/protected-state/) | None |
 | Receiver Type | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receiver-type/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receiver-type/) | Full |
 | Reified | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/reified/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/reified/) | None |
 | Runtime | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/runtime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/runtime/) | None |
@@ -57,6 +63,8 @@ Single source of truth for all glossary entries. Each row links to both language
 | Singleton | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/singleton/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/singleton/) | Full |
 | Source Code | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/source-code/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/source-code/) | None |
 | Stack Trace | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stack-trace/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stack-trace/) | None |
+| State Emission Patterns | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-emission-patterns/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-emission-patterns/) | Full |
+| StateFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stateflow/) | Full |
 | State Transitions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-transitions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-transitions/) | Full |
 | Static Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/static-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/static-dispatch/) | None |
 | Syntax Sugar | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/syntax-sugar/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/syntax-sugar/) | None |
@@ -66,6 +74,6 @@ Single source of truth for all glossary entries. Each row links to both language
 
 ## Coverage Summary
 
-- **Total entries:** 51
-- **With FAS code:** 24 (47%)
-- **Without FAS code:** 27 (53%)
+- **Total entries:** 59
+- **With FAS code:** 31 (53%)
+- **Without FAS code:** 28 (47%)

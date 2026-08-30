@@ -9,7 +9,7 @@ title: Kotlin Core
 2. **[Smart Casts]({{ "/es/01-kotlin-core/smart-casts/" | relative_url }})**
 3. **[Data Classes: copy, equals, toString]({{ "/es/01-kotlin-core/data-classes/" | relative_url }})**
 4. **[Data Objects: Singleton y Eficiencia de Memoria]({{ "/es/01-kotlin-core/data-objects/" | relative_url }})**
-5. **[Sealed Classes & Interfaces]({{ "/es/01-kotlin-core/sealed-classes-interfaces/" | relative_url }})**
+5. **[Sealed Classes vs Sealed Interfaces]({{ "/es/01-kotlin-core/sealed-classes-interfaces/" | relative_url }})**
 6. **[Extension Functions]({{ "/es/01-kotlin-core/extension-functions/" | relative_url }})**
 7. **[Higher-Order Functions y Lambdas]({{ "/es/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }})**
 8. **[Scope Functions]({{ "/es/01-kotlin-core/scope-functions/" | relative_url }})**

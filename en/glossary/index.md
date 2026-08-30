@@ -100,6 +100,15 @@ permalink: /en/glossary/
 {% endfor %}
 
 {% if glossary_posts.size > 0 %}
+<style>
+  #glossary-browse .card-body .text-muted p {
+    margin: 0 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 4;
+  }
+</style>
 <aside id="glossary-browse" aria-labelledby="glossary-browse-label" class="mt-5">
   <h3 class="mb-4" id="glossary-browse-label">
     {{ site.data.locales.en.post.relate_posts | default: "Further Reading" }}

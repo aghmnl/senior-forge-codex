@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (96 total)
+## Entries (97 total)
 
 | Entry | Article | FAS |
 |-------|---------|:---:|
@@ -90,6 +90,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Scope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/scope/) | None |
 | Sealed Hierarchy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-hierarchy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-hierarchy/) | Full |
 | Sets | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sets/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sets/) | Full |
+| Single Responsibility Principle | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/single-responsibility-principle/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/single-responsibility-principle/) | None |
 | Singleton | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/singleton/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/singleton/) | Full |
 | Source Code | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/source-code/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/source-code/) | None |
 | Stack Trace | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stack-trace/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stack-trace/) | None |
@@ -110,6 +111,6 @@ Single source of truth for all glossary entries. Each row links to both language
 
 ## Coverage Summary
 
-- **Total entries:** 96
-- **With FAS code:** 46 (48%)
-- **Without FAS code:** 50 (52%)
+- **Total entries:** 97
+- **With FAS code:** 46 (47%)
+- **Without FAS code:** 51 (53%)

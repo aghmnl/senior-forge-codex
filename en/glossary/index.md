@@ -5,23 +5,20 @@ lang: en
 permalink: /en/glossary/
 ---
 
-<div class="d-flex flex-column align-items-center justify-content-center py-5">
-  <h2 class="mb-3 text-center">{{ site.data.translations.en.glossary_title }}</h2>
-  <p class="text-muted text-center mb-5" style="max-width: 600px;">
-    {{ site.data.translations.en.glossary_description }}
-  </p>
+<p class="text-muted mb-4">
+  {{ site.data.translations.en.glossary_description }}
+</p>
 
-  <div class="w-100" style="max-width: 600px;">
-    <div class="input-group input-group-lg shadow-sm">
-      <span class="input-group-text bg-transparent border-end-0">
-        <i class="fas fa-search text-muted"></i>
-      </span>
-      <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
-    </div>
-    <div id="glossary-search-results" class="mt-4 w-100">
-      <!-- Search results will appear here -->
-    </div>
+<div class="mb-4" style="max-width: 600px;">
+  <div class="input-group input-group-lg shadow-sm">
+    <span class="input-group-text bg-transparent border-end-0">
+      <i class="fas fa-search text-muted"></i>
+    </span>
+    <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Search terms (e.g. Coroutines, Mutex...)" aria-label="Search glossary terms" autofocus>
   </div>
+</div>
+
+<div id="glossary-search-results" class="mt-4">
 </div>
 
 <script>
@@ -91,3 +88,42 @@ permalink: /en/glossary/
     }
   })();
 </script>
+
+{% assign glossary_posts = '' | split: '' %}
+{% for p in site.categories['glossary'] %}
+  {% if p.lang == 'en' %}
+    {% assign glossary_posts = glossary_posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% if glossary_posts.size > 0 %}
+<style>
+  #glossary-browse .card-body .text-muted p {
+    margin: 0 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 4;
+  }
+</style>
+<aside id="glossary-browse" aria-labelledby="glossary-browse-label" class="mt-5">
+  <h3 class="mb-4" id="glossary-browse-label">
+    {{ site.data.locales.en.post.relate_posts | default: "Further Reading" }}
+  </h3>
+  <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+    {% for post in glossary_posts limit: 6 %}
+      <article class="col">
+        <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+          <div class="card-body">
+            {% include datetime.html date=post.date lang='en' %}
+            <h4 class="pt-0 my-2">{{ post.title }}</h4>
+            <div class="text-muted">
+              <p>{% assign summary = post.content | markdownify | strip_html | strip_newlines | strip %}{% assign summary = summary | replace: 'The Theory (The What)', '' | replace: 'The Theory (El Qué)', '' | replace: 'The Senior Nuance', '' | replace: 'The Senior Nuance (El Matiz Senior)', '' | strip | truncate: 200 %}{{ summary }}</p>
+            </div>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </nav>
+</aside>
+{% endif %}

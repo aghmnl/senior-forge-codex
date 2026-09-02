@@ -62,6 +62,11 @@
     font-weight: 600;
   }
 
+  /* Show 4 lines in related-posts cards instead of Chirpy's default 2 */
+  #related-posts .post-preview .text-muted p {
+    -webkit-line-clamp: 4 !important;
+  }
+
   /* Ensure the sidebar title stays at top despite sidebar padding adjustments */
   #sidebar.pt-0 {
     padding-top: 0 !important;

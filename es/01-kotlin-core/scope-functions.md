@@ -8,7 +8,7 @@ order: 8
 
 ## The Theory (El Qué)
 
-Las [scope]({{ "/es/glosario/scope/" | relative_url }}) functions (`let`, `run`, `with`, `apply` y `also`) ejecutan un bloque de código dentro del [contexto]({{ "/es/glosario/context-programming/" | relative_url }}) de un objeto. Son [funciones de orden superior]({{ "/es/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }}) integradas en la biblioteca estándar de Kotlin. Su diferencia principal radica en dos factores:
+Las scope functions (`let`, `run`, `with`, `apply` y `also`) ejecutan un bloque de código dentro del [contexto]({{ "/es/glosario/context-programming/" | relative_url }}) de un objeto. Son [funciones de orden superior]({{ "/es/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }}) integradas en la biblioteca estándar de Kotlin. Su diferencia principal radica en dos factores:
 
 - **Cómo se referencia al objeto de contexto**: como `this` ([receiver]({{ "/es/glosario/receiver-type/" | relative_url }}) implícito) o como `it` (argumento de la [lambda]({{ "/es/glosario/lambdas/" | relative_url }})).
 - **Qué devuelve la función**: el objeto de contexto en sí, o el resultado de la [lambda]({{ "/es/glosario/lambdas/" | relative_url }}).
@@ -17,22 +17,22 @@ Estas funciones no introducen capacidades técnicas nuevas, sino que ofrecen una
 
 ### Referencia Rápida
 
-| Función  | Ref. objeto | Devuelve          | Uso típico                                |
-|----------|------------|-------------------|-------------------------------------------|
-| `let`    | `it`       | Resultado lambda  | Cadenas [null-safe]({{ "/es/01-kotlin-core/null-safety-elvis-safe-calls/" | relative_url }}), transformaciones |
-| `run`    | `this`     | Resultado lambda  | Computación con scope, inicialización     |
-| `with`   | `this`     | Resultado lambda  | Múltiples operaciones sobre mismo objeto  |
-| `apply`  | `this`     | Objeto contexto   | Configuración de objetos, builders        |
-| `also`   | `it`       | Objeto contexto   | Efectos secundarios (logging, caching)    |
+| Función | Ref. objeto | Devuelve         | Uso típico                                                                |
+| ------- | ----------- | ---------------- | ------------------------------------------------------------------------- | ---------------------------------- |
+| `let`   | `it`        | Resultado lambda | Cadenas [null-safe]({{ "/es/01-kotlin-core/null-safety-elvis-safe-calls/" | relative_url }}), transformaciones |
+| `run`   | `this`      | Resultado lambda | Computación con scope, inicialización                                     |
+| `with`  | `this`      | Resultado lambda | Múltiples operaciones sobre mismo objeto                                  |
+| `apply` | `this`      | Objeto contexto  | Configuración de objetos, builders                                        |
+| `also`  | `it`        | Objeto contexto  | Efectos secundarios (logging, caching)                                    |
 
 ## The Senior Perspective (El Porqué)
 
-Un desarrollador Senior ve las [scope]({{ "/es/glosario/scope/" | relative_url }}) functions como herramientas de [señalización de intención]({{ "/es/glosario/intent-signaling/" | relative_url }}), no como simple [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}). Elegir la función incorrecta es un code smell común que degrada la mantenibilidad.
+Un desarrollador Senior ve las scope functions como herramientas de [señalización de intención]({{ "/es/glosario/intent-signaling/" | relative_url }}), no como simple [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}). Elegir la función incorrecta es un code smell común que degrada la mantenibilidad.
 
-- **Claridad de Intención**: Cada [scope]({{ "/es/glosario/scope/" | relative_url }}) function comunica un propósito diferente. Usar `apply` señala "estoy configurando este objeto"; usar `let` señala "estoy transformando este valor". Elegir la correcta hace que el código se auto-documente.
-- **Evitar el Anidamiento**: Anidar múltiples [scope]({{ "/es/glosario/scope/" | relative_url }}) functions es un antipatrón significativo. Oscurece el contexto de `this` o `it`, haciendo el código propenso a errores lógicos y reduciendo la legibilidad. Cuando te encuentres anidando, extrae el bloque interno a una función con nombre.
+- **Claridad de Intención**: Cada scope function comunica un propósito diferente. Usar `apply` señala "estoy configurando este objeto"; usar `let` señala "estoy transformando este valor". Elegir la correcta hace que el código se auto-documente.
+- **Evitar el Anidamiento**: Anidar múltiples scope functions es un antipatrón significativo. Oscurece el contexto de `this` o `it`, haciendo el código propenso a errores lógicos y reduciendo la legibilidad. Cuando te encuentres anidando, extrae el bloque interno a una función con nombre.
 - **Efectos Secundarios vs. Transformaciones**: Usar `also` específicamente para efectos secundarios (como logging o caching) que no alteran el flujo primario del objeto, asegurando una separación clara de responsabilidades. Es el equivalente en scope functions del [Single Responsibility Principle]({{ "/es/glosario/single-responsibility-principle/" | relative_url }}).
-- **Rendimiento**: Las cinco [scope]({{ "/es/glosario/scope/" | relative_url }}) functions están declaradas como [inline]({{ "/es/glosario/inline-functions/" | relative_url }}) en la biblioteca estándar, lo que significa que la [lambda]({{ "/es/glosario/lambdas/" | relative_url }}) se inlinea en el call site — cero overhead de [allocation]({{ "/es/glosario/allocations/" | relative_url }}) de objetos, cero presión sobre el [Garbage Collector]({{ "/es/glosario/garbage-collector/" | relative_url }}). Úsalas libremente en hot paths.
+- **Rendimiento**: Las cinco scope functions están declaradas como [inline]({{ "/es/glosario/inline-functions/" | relative_url }}) en la biblioteca estándar, lo que significa que la [lambda]({{ "/es/glosario/lambdas/" | relative_url }}) se inlinea en el call site — cero overhead de [allocation]({{ "/es/glosario/allocations/" | relative_url }}) de objetos, cero presión sobre el [Garbage Collector]({{ "/es/glosario/garbage-collector/" | relative_url }}). Úsalas libremente en hot paths.
 
 ## Code in Action
 

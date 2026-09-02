@@ -8,7 +8,7 @@ order: 8
 
 ## The Theory (The What)
 
-[Scope]({{ "/en/glossary/scope/" | relative_url }}) functions (`let`, `run`, `with`, `apply`, and `also`) execute a block of code within the [context]({{ "/en/glossary/context-programming/" | relative_url }}) of an object. They are [higher-order functions]({{ "/en/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }}) built into the Kotlin standard library. Their primary distinction lies in two factors:
+Scope functions (`let`, `run`, `with`, `apply`, and `also`) execute a block of code within the [context]({{ "/en/glossary/context-programming/" | relative_url }}) of an object. They are [higher-order functions]({{ "/en/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }}) built into the Kotlin standard library. Their primary distinction lies in two factors:
 
 - **How the context object is referenced**: as `this` (implicit [receiver]({{ "/en/glossary/receiver-type/" | relative_url }})) or as `it` ([lambda]({{ "/en/glossary/lambdas/" | relative_url }}) argument).
 - **What the function returns**: the context object itself, or the result of the [lambda]({{ "/en/glossary/lambdas/" | relative_url }}).
@@ -17,22 +17,22 @@ These functions do not introduce new technical capabilities but provide a concis
 
 ### Quick Reference
 
-| Function | Object ref | Returns        | Typical use                          |
-|----------|-----------|----------------|--------------------------------------|
-| `let`    | `it`      | Lambda result  | [Null-safe]({{ "/en/01-kotlin-core/null-safety-elvis-safe-calls/" | relative_url }}) chains, transformations |
-| `run`    | `this`    | Lambda result  | Scoped computation, initialization   |
-| `with`   | `this`    | Lambda result  | Multiple operations on same object   |
-| `apply`  | `this`    | Context object | Object configuration, builder setup  |
-| `also`   | `it`      | Context object | Side effects (logging, caching)      |
+| Function | Object ref | Returns        | Typical use                                                       |
+| -------- | ---------- | -------------- | ----------------------------------------------------------------- | ---------------------------------------- |
+| `let`    | `it`       | Lambda result  | [Null-safe]({{ "/en/01-kotlin-core/null-safety-elvis-safe-calls/" | relative_url }}) chains, transformations |
+| `run`    | `this`     | Lambda result  | Scoped computation, initialization                                |
+| `with`   | `this`     | Lambda result  | Multiple operations on same object                                |
+| `apply`  | `this`     | Context object | Object configuration, builder setup                               |
+| `also`   | `it`       | Context object | Side effects (logging, caching)                                   |
 
 ## The Senior Perspective (The Why)
 
-A Senior Developer views [scope]({{ "/en/glossary/scope/" | relative_url }}) functions as tools for [intent signaling]({{ "/en/glossary/intent-signaling/" | relative_url }}) rather than just [syntactic sugar]({{ "/en/glossary/syntax-sugar/" | relative_url }}). Choosing the wrong function is a common code smell that degrades maintainability.
+A Senior Developer views scope functions as tools for [intent signaling]({{ "/en/glossary/intent-signaling/" | relative_url }}) rather than just [syntactic sugar]({{ "/en/glossary/syntax-sugar/" | relative_url }}). Choosing the wrong function is a common code smell that degrades maintainability.
 
-- **Intent Clarity**: Each [scope]({{ "/en/glossary/scope/" | relative_url }}) function communicates a different purpose. Using `apply` signals "I am configuring this object"; using `let` signals "I am transforming this value". Picking the right one makes the code self-documenting.
-- **Avoiding Nested Scopes**: Nesting multiple [scope]({{ "/en/glossary/scope/" | relative_url }}) functions is a significant anti-pattern. It obscures the context of `this` or `it`, making the code prone to logic errors and reducing readability. When you find yourself nesting, extract the inner block into a named function.
+- **Intent Clarity**: Each scope function communicates a different purpose. Using `apply` signals "I am configuring this object"; using `let` signals "I am transforming this value". Picking the right one makes the code self-documenting.
+- **Avoiding Nested Scopes**: Nesting multiple scope functions is a significant anti-pattern. It obscures the context of `this` or `it`, making the code prone to logic errors and reducing readability. When you find yourself nesting, extract the inner block into a named function.
 - **Side Effects vs. Transformations**: Use `also` specifically for side effects (like logging or caching) that do not alter the object's primary flow, ensuring a clear separation of concerns. This is the scope function equivalent of the [Single Responsibility Principle]({{ "/en/glossary/single-responsibility-principle/" | relative_url }}).
-- **Performance**: All five [scope]({{ "/en/glossary/scope/" | relative_url }}) functions are declared as [inline]({{ "/en/glossary/inline-functions/" | relative_url }}) in the standard library, which means the [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) is inlined at the call site — zero object [allocation]({{ "/en/glossary/allocations/" | relative_url }}) overhead, zero [Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }}) pressure. Use them freely in hot paths.
+- **Performance**: All five scope functions are declared as [inline]({{ "/en/glossary/inline-functions/" | relative_url }}) in the standard library, which means the [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) is inlined at the call site — zero object [allocation]({{ "/en/glossary/allocations/" | relative_url }}) overhead, zero [Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }}) pressure. Use them freely in hot paths.
 
 ## Code in Action
 

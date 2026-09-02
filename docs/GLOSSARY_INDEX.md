@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (97 total)
+## Entries (102 total)
 
 | Entry | Article | FAS |
 |-------|---------|:---:|
@@ -33,12 +33,14 @@ Single source of truth for all glossary entries. Each row links to both language
 | Coroutines | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutines/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutines/) | Full |
 | Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constructor/) | Full |
 | Context | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/context-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/context-programming/) | None |
+| Dagger | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dagger/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dagger/) | Full |
 | Crossinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/crossinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/crossinline/) | None |
 | Data Transformation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-transformation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-transformation/) | None |
 | Decorator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/decorator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/decorator/) | None |
 | Dependency Graph | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dependency-graph/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dependency-graph/) | Full |
 | Destructuring | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/destructuring/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/destructuring/) | Full |
 | DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl/) | Full |
+| @Before | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/junit-before/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/junit-before/) | Full |
 | @DslMarker | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl-marker/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl-marker/) | None |
 | Event Handlers | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/event-handlers/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/event-handlers/) | Full |
 | Event Wiring | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/event-wiring/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/event-wiring/) | Full |
@@ -65,7 +67,9 @@ Single source of truth for all glossary entries. Each row links to both language
 | @LayoutScopeMarker | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/layout-scope-marker/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/layout-scope-marker/) | None |
 | Ktor Routing | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/ktor-routing/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/ktor-routing/) | None |
 | Lambda with Receiver | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lambda-with-receiver/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lambda-with-receiver/) | Full |
+| LazyThreadSafetyMode | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lazy-thread-safety-mode/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lazy-thread-safety-mode/) | None |
 | Lambdas | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lambdas/) | Full |
+| Lifecycle Event | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lifecycle-event/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lifecycle-event/) | Full |
 | Lifecycle-Aware | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lifecycle-aware/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lifecycle-aware/) | Full |
 | Maps | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/maps/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/maps/) | Full |
 | Memory Leaks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/memory-leaks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/memory-leaks/) | None |
@@ -98,6 +102,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | StateFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stateflow/) | Full |
 | State Transitions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-transitions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-transitions/) | Full |
 | Static Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/static-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/static-dispatch/) | None |
+| Synchronized Block | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/synchronized-block/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/synchronized-block/) | None |
 | Suspend Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/suspend-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/suspend-functions/) | Full |
 | Syntax Sugar | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/syntax-sugar/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/syntax-sugar/) | None |
 | this@label | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/this-at-label/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/this-at-label/) | Full |
@@ -111,6 +116,6 @@ Single source of truth for all glossary entries. Each row links to both language
 
 ## Coverage Summary
 
-- **Total entries:** 97
-- **With FAS code:** 46 (47%)
-- **Without FAS code:** 51 (53%)
+- **Total entries:** 102
+- **With FAS code:** 49 (48%)
+- **Without FAS code:** 53 (52%)

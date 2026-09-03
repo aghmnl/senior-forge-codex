@@ -1,0 +1,152 @@
+<!--
+  Jekyll Simple Search loader (customized)
+  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+-->
+
+{% capture result_elem %}
+  <article class="search-card search-card--{type}">
+    <a href="{url}" class="search-card-link">
+      <h2 class="search-card-title">{title}</h2>
+      <p class="search-card-content">{content}</p>
+      <span class="search-card-badge" data-type="{type}"></span>
+    </a>
+  </article>
+{% endcapture %}
+
+{% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
+
+<script>
+  {% comment %} Note: dependent library will be loaded in `js-selector.html` {% endcomment %}
+  document.addEventListener('DOMContentLoaded', () => {
+    var currentLang = window.location.pathname.indexOf('/es/') !== -1 ? 'es' : 'en';
+    fetch('{{ '/assets/js/data/search.json' | relative_url }}')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var filtered = data.filter(function(item) { return item.lang === currentLang; });
+        SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('search-results'),
+          json: filtered,
+          searchResultTemplate: '{{ result_elem | strip_newlines }}',
+          noResultsText: '{{ not_found }}',
+          limit: 30,
+          templateMiddleware: function(prop, value, template) {
+            if (prop === 'categories' || prop === 'tags') {
+              return '';
+            }
+          }
+        });
+      });
+  });
+</script>
+
+<style>
+  #search-results {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media all and (min-width: 1200px) {
+    #search-results {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  #search-results > article {
+    width: auto !important;
+    margin: 0 !important;
+    position: static !important;
+    right: auto !important;
+    border: none !important;
+    border-bottom: none !important;
+  }
+  #search-results > article::after,
+  #search-results > article::before {
+    display: none !important;
+  }
+  #search-results a:hover,
+  #search-results .search-card-link:hover {
+    border-bottom: none !important;
+    text-decoration: none !important;
+  }
+
+  .search-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 0.75rem;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .search-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+  }
+
+  .search-card-link {
+    display: block;
+    padding: 1.25rem;
+    text-decoration: none !important;
+    color: inherit !important;
+    border-bottom: none !important;
+  }
+
+  #search-results > article h2 {
+    line-height: 1.3 !important;
+  }
+  .search-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 0.25rem 0;
+    color: var(--heading-color);
+  }
+  .search-card:hover .search-card-title {
+    color: var(--link-color);
+  }
+
+  .search-card-badge[data-type="glossary"]::after {
+    content: "glossary";
+    display: inline-block;
+    font-size: 0.55rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted-color, #868e96);
+    background: var(--card-hover-bg, #e9ecef);
+    padding: 0.05rem 0.35rem;
+    border-radius: 0.15rem;
+    margin-top: 0.4rem;
+    line-height: 1.2;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .search-card:hover .search-card-badge[data-type="glossary"]::after {
+    background: var(--link-color, #0056b3);
+    color: #fff;
+  }
+
+  .search-card-content {
+    font-size: 0.85rem;
+    color: var(--text-muted-color);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Glossary cards: subtler */
+  .search-card--glossary .search-card-title {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .search-card--glossary .search-card-content {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
+
+  @media all and (max-width: 768px) {
+    #search-results {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

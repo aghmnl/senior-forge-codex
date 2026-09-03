@@ -4,22 +4,30 @@
 
 <aside id="sidebar" class="d-flex flex-column align-items-end pt-0" {{ prefer_mode }}>
   <div class="profile-wrapper pt-0">
-    <h1 class="site-title mt-0">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h1>
-    
     {% assign lang = page.lang | default: "en" %}
+
+    <div id="sidebar-search" class="w-100 px-3 mb-4">
+      <div class="sidebar-search-box position-relative">
+        <i class="fas fa-search fa-fw sidebar-search-icon"></i>
+        <input
+          class="form-control sidebar-search-input"
+          id="sidebar-search-input"
+          type="search"
+          aria-label="search"
+          autocomplete="off"
+          placeholder="{{ site.data.locales[lang].search.placeholder | default: 'Search...' }}"
+        >
+      </div>
+    </div>
+
+    <h1 class="site-title mt-0">
+      <a href="{% if lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ site.title }}</a>
+    </h1>
+
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
   </div><!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
-    <li class="nav-item{% if page.url == '/' or page.url == '/es/' %} active{% endif %}">
-      <a href="{% if lang == 'en' %}{{ '/' | relative_url }}{% else %}{{ '/es/' | relative_url }}{% endif %}" class="nav-link">
-        <i class="fa-fw fas fa-home"></i>
-        <span>{{ site.data.locales[lang].tabs.home | default: "Home" }}</span>
-      </a>
-    </li>
-
     <li class="nav-item{% if page.url contains '/glossary/' %} active{% endif %}">
       <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="nav-link">
         <i class="fa-fw fas fa-list-ul"></i>
@@ -68,13 +76,10 @@
 
   </ul><!-- .nav -->
 
-  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
-    <div class="w-100 ps-3 mb-2 text-muted small d-flex align-items-baseline">
-      <span class="me-3">{{ site.data.translations[lang].maintained_by }}:</span>
-      <strong><a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-reset">aghmnl</a></strong>
-    </div>
-
-    <div class="d-flex justify-content-center align-items-center w-100">
+  <div class="sidebar-bottom d-flex justify-content-center align-items-center w-100" style="gap: 1rem;">
+      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
+        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
+      </a>
       {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
         <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
           <i class="fa-regular fa-sun" data-theme-mode="light"></i>
@@ -100,7 +105,7 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle mx-3" title="Cambiar a Español">
+        <a href="{{ target_url | relative_url }}" class="lang-toggle ms-3" title="Cambiar a Español">
           <span class="lang-active">EN</span><span class="lang-sep">/</span><span class="lang-inactive">ES</span>
         </a>
       {%- elsif page.lang == "es" -%}
@@ -111,14 +116,10 @@
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
         {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle mx-3" title="Switch to English">
+        <a href="{{ target_url | relative_url }}" class="lang-toggle ms-3" title="Switch to English">
           <span class="lang-inactive">EN</span><span class="lang-sep">/</span><span class="lang-active">ES</span>
         </a>
       {%- endif -%}
-
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
 
       {% for entry in site.data.contact %}
         {% case entry.type %}
@@ -133,14 +134,70 @@
         {% endcase %}
 
         {% if url %}
-          <a href="{{ url }}" aria-label="{{ entry.type }}"
+          <a href="{{ url }}" aria-label="{{ entry.type }}" class="ms-2"
             {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
             <i class="fa-fw {{ entry.icon }}"></i>
           </a>
         {% endif %}
       {% endfor %}
-    </div>
 
   </div><!-- .sidebar-bottom -->
 
+<style>
+  #sidebar-search { margin-top: 0; padding-top: 0; }
+  .sidebar-search-box {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar-search-icon {
+    position: absolute;
+    left: 0.6rem;
+    color: var(--text-muted-color, #868e96);
+    pointer-events: none;
+    font-size: 0.85rem;
+  }
+  .sidebar-search-input {
+    padding-left: 2rem;
+    font-size: 0.85rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--card-bg, #f8f9fa);
+    border: 1px solid var(--card-border-color, #dee2e6);
+    color: var(--text-color);
+  }
+  .sidebar-bottom #mode-toggle {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    color: var(--text-muted-color, #868e96);
+    font-size: 0.85rem;
+  }
+  .sidebar-bottom #mode-toggle:hover {
+    color: var(--sidebar-active-color, #fff);
+  }
+  .sidebar-search-input:focus {
+    background-color: var(--card-bg, #fff);
+    border-color: var(--link-color, #0056b3);
+    box-shadow: 0 0 0 0.15rem rgba(0, 86, 179, 0.15);
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sidebarInput = document.getElementById('sidebar-search-input');
+    var topbarInput = document.getElementById('search-input');
+    if (sidebarInput && topbarInput) {
+      sidebarInput.addEventListener('input', function() {
+        topbarInput.value = this.value;
+        topbarInput.dispatchEvent(new Event('input', { bubbles: true }));
+      });
+      topbarInput.addEventListener('input', function() {
+        if (sidebarInput !== document.activeElement) {
+          sidebarInput.value = this.value;
+        }
+      });
+    }
+  });
+</script>
 </aside><!-- #sidebar -->

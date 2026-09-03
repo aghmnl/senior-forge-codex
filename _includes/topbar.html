@@ -2,7 +2,7 @@
   The Top Bar
 -->
 
-<header id="topbar-wrapper" class="flex-shrink-0 pb-3" aria-label="Top Bar">
+<header id="topbar-wrapper" class="flex-shrink-0 py-1" aria-label="Top Bar">
   <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
     
     <div class="d-flex align-items-center">
@@ -76,4 +76,13 @@
       {{ site.data.locales[lang].search.cancel | default: "Cancel" }}
     </button>
   </div>
+  <style>
+    @media all and (min-width: 850px) {
+      #search { display: none !important; }
+      #topbar-wrapper { height: auto !important; min-height: 2rem; margin-top: 1.25rem !important; padding-bottom: 1.5rem !important; }
+      #topbar #breadcrumb { margin-bottom: 0; }
+      h1.dynamic-title, main > h1:first-child { margin-top: 0.25rem !important; margin-bottom: 0.5rem !important; }
+      .access { margin-top: 1rem !important; }
+    }
+  </style>
 </header>

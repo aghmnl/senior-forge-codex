@@ -1,6 +1,7 @@
 en:
   tagline: "The definitive reference for the path to Android Seniority."
   maintained_by: "Maintained by"
+  by_author: "by"
   chapters_title: "Chapters"
   glossary_title: "Glossary"
   glossary_description: "Atomic definitions of technical terms found throughout the Codex."
@@ -28,6 +29,7 @@ en:
 es:
   tagline: "La referencia definitiva hacia el seniority en Android."
   maintained_by: "Mantenido por"
+  by_author: "por"
   chapters_title: "Capítulos"
   glossary_title: "Glosario"
   glossary_description: "Definiciones atómicas de términos técnicos encontrados a lo largo del Codex."

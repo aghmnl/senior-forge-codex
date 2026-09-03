@@ -18,8 +18,16 @@ permalink: /es/glosario/
   </div>
 </div>
 
-<div id="glossary-search-results" class="mt-4">
+<div id="glossary-search-results" class="mt-4" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
 </div>
+<style>
+  @media all and (min-width: 1200px) {
+    #glossary-search-results { grid-template-columns: repeat(3, 1fr) !important; }
+  }
+  @media all and (max-width: 768px) {
+    #glossary-search-results { grid-template-columns: 1fr !important; }
+  }
+</style>
 
 <script>
   (function() {
@@ -41,16 +49,15 @@ permalink: /es/glosario/
     }
 
     function renderResult(item) {
+      const typeClass = item.type === 'glossary' ? 'search-card--glossary' : '';
+      const badge = item.type === 'glossary' ? '<span class="search-card-badge" data-type="glossary"></span>' : '';
       return `
-        <article class="px-1 px-sm-2 px-lg-4 px-xl-0 mb-5">
-          <header>
-            <h2 class="h4 mb-1"><a href="${item.url}">${item.title}</a></h2>
-            <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1 small">
-              ${item.categories ? `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${item.categories}</div>` : ''}
-              ${item.tags ? `<div><i class="fa fa-tag fa-fw"></i>${item.tags}</div>` : ''}
-            </div>
-          </header>
-          <p class="text-muted small">${item.snippet || ''}</p>
+        <article class="search-card ${typeClass}">
+          <a href="${item.url}" class="search-card-link">
+            <h2 class="search-card-title">${item.title}</h2>
+            <p class="search-card-content">${item.content || item.snippet || ''}</p>
+            ${badge}
+          </a>
         </article>
       `;
     }
@@ -66,10 +73,12 @@ permalink: /es/glosario/
           return;
         }
 
-        const filtered = data.filter(item => 
-          item.title.toLowerCase().includes(query) || 
+        const filtered = data.filter(item =>
+          item.lang === 'es' &&
+          (item.title.toLowerCase().includes(query) || 
+          (item.content && item.content.toLowerCase().includes(query)) ||
           (item.snippet && item.snippet.toLowerCase().includes(query)) ||
-          (item.tags && item.tags.toLowerCase().includes(query))
+          (item.tags && item.tags.toLowerCase().includes(query)))
         );
 
         if (filtered.length > 0) {
@@ -115,7 +124,6 @@ permalink: /es/glosario/
       <article class="col">
         <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
           <div class="card-body">
-            {% include datetime.html date=post.date lang='es' %}
             <h4 class="pt-0 my-2">{{ post.title }}</h4>
             <div class="text-muted">
               <p>{% assign summary = post.content | markdownify | strip_html | strip_newlines | strip %}{% assign summary = summary | replace: 'The Theory (El Qué)', '' | replace: 'The Theory (The What)', '' | replace: 'The Senior Nuance (El Matiz Senior)', '' | replace: 'The Senior Nuance', '' | strip | truncate: 200 %}{{ summary }}</p>

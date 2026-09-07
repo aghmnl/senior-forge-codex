@@ -41,6 +41,18 @@
 </script>
 
 <style>
+  @media all and (max-width: calc(850px - 1px)) {
+    #search-result-wrapper .content {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    #search-result-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
   #search-results {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
@@ -144,7 +156,7 @@
     -webkit-line-clamp: 2;
   }
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 599px) {
     #search-results {
       grid-template-columns: 1fr !important;
     }

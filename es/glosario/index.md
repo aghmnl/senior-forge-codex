@@ -10,21 +10,16 @@ permalink: /es/glosario/
 </p>
 
 <div class="mb-4" style="max-width: 600px;">
-  <div class="input-group input-group-lg shadow-sm">
-    <span class="input-group-text bg-transparent border-end-0">
-      <i class="fas fa-search text-muted"></i>
-    </span>
-    <input type="text" id="glossary-search" class="form-control border-start-0" placeholder="Buscar términos (ej. Corrutinas, Mutex...)" aria-label="Buscar términos del glosario" autofocus>
-  </div>
+  <input type="text" id="glossary-search" class="form-control form-control-lg shadow-sm" placeholder="Buscar términos (ej. Corrutinas, Mutex...)" aria-label="Buscar términos del glosario" autofocus>
 </div>
 
 <div id="glossary-search-results" class="mt-4" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
 </div>
 <style>
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1650px) {
     #glossary-search-results { grid-template-columns: repeat(3, 1fr) !important; }
   }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 600px) {
     #glossary-search-results { grid-template-columns: 1fr !important; }
   }
 </style>
@@ -119,7 +114,7 @@ permalink: /es/glosario/
   <h3 class="mb-4" id="glossary-browse-label">
     {{ site.data.locales.es.post.relate_posts | default: "Lecturas adicionales" }}
   </h3>
-  <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+  <nav class="row row-cols-1 row-cols-xl-3 g-4 mb-4 glossary-grid">
     {% for post in glossary_posts limit: 6 %}
       <article class="col">
         <a href="{{ post.url | relative_url }}" class="post-preview card h-100">

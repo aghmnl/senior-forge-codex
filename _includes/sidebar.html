@@ -8,7 +8,6 @@
 
     <div id="sidebar-search" class="w-100 px-3 mb-4">
       <div class="sidebar-search-box position-relative">
-        <i class="fas fa-search fa-fw sidebar-search-icon"></i>
         <input
           class="form-control sidebar-search-input"
           id="sidebar-search-input"
@@ -27,14 +26,65 @@
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
   </div><!-- .profile-wrapper -->
 
-  <ul class="nav flex-column flex-nowrap w-100 ps-2">
-    <li class="nav-item{% if page.url contains '/glossary/' %} active{% endif %}">
-      <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="nav-link">
-        <i class="fa-fw fas fa-list-ul"></i>
-        <span>{{ site.data.translations[lang].glossary_title }}</span>
-      </a>
-    </li>
+  <div class="sidebar-meta d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
+      <!-- Language Toggle EN/ES — show only current language -->
+      {%- assign current_url = page.url -%}
+      {%- if page.lang == "en" or current_url == "/" -%}
+        {%- if current_url == "/" -%}
+          {%- assign target_url = "/es/" -%}
+        {%- elsif current_url contains "/en/glossary/" -%}
+          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
+          <span class="lang-active">EN</span>
+        </a>
+      {%- elsif page.lang == "es" -%}
+        {%- if current_url == "/es/" -%}
+          {%- assign target_url = "/" -%}
+        {%- elsif current_url contains "/es/glosario/" -%}
+          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
+          <span class="lang-active">ES</span>
+        </a>
+      {%- endif -%}
 
+      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
+          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+        </button>
+        <script>
+          (function() {
+            var btn = document.getElementById('mode-toggle');
+            function updateIcon() {
+              var icons = btn.querySelectorAll('i');
+              var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
+                || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+              icons[0].style.display = isDark ? 'none' : '';
+              icons[1].style.display = isDark ? '' : 'none';
+            }
+            updateIcon();
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              Theme.update(Theme.isDark ? 'light' : 'dark');
+              setTimeout(updateIcon, 50);
+            });
+            new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
+          })();
+        </script>
+      {% endunless %}
+
+      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
+        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
+      </a>
+  </div><!-- .sidebar-meta -->
+
+  <ul class="nav flex-column flex-nowrap w-100 ps-2">
     <li class="nav-item mt-3">
         <span class="nav-link disabled text-muted text-uppercase small fw-bold">
             {{ site.data.translations[lang].chapters_title }}
@@ -76,71 +126,31 @@
 
   </ul><!-- .nav -->
 
-  <div class="sidebar-bottom d-flex justify-content-center align-items-center w-100" style="gap: 1rem;">
-      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
-        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
-      </a>
-      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
-        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
-          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
-          <i class="fa-solid fa-display" data-theme-mode="system"></i>
-        </button>
-        <ul class="dropdown-menu"></ul>
-        <script>
-          document.getElementById('mode-toggle').addEventListener('click', function(e) {
-            e.stopPropagation();
-            Theme.update(Theme.isDark ? 'light' : 'dark');
-          });
-        </script>
-      {% endunless %}
+  <div class="sidebar-bottom d-flex align-items-center w-100" style="gap: 1rem; padding-left: 3rem !important;">
+    <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="sidebar-glossary-link{% if page.url contains '/glossary/' %} active{% endif %}">
+      <i class="fa-fw fas fa-list-ul"></i>
+      <span>{{ site.data.translations[lang].glossary_title }}</span>
+    </a>
 
-      <!-- Language Toggle EN/ES -->
-      {%- assign current_url = page.url -%}
-      {%- if page.lang == "en" or current_url == "/" -%}
-        {%- if current_url == "/" -%}
-          {%- assign target_url = "/es/" -%}
-        {%- elsif current_url contains "/en/glossary/" -%}
-          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle ms-3" title="Cambiar a Español">
-          <span class="lang-active">EN</span><span class="lang-sep">/</span><span class="lang-inactive">ES</span>
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {% capture url %}https://{{ entry.type }}.com/{{ entry.id }}{% endcapture %}
+        {% when 'email' %}
+          {% capture url %}mailto:{{ entry.id }}{% endcapture %}
+        {% when 'rss' %}
+          {% capture url %}{{ '/feed.xml' | relative_url }}{% endcapture %}
+        {% else %}
+          {% assign url = entry.id %}
+      {% endcase %}
+
+      {% if url %}
+        <a href="{{ url }}" aria-label="{{ entry.type }}" class="ms-2"
+          {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
+          <i class="fa-fw {{ entry.icon }}"></i>
         </a>
-      {%- elsif page.lang == "es" -%}
-        {%- if current_url == "/es/" -%}
-          {%- assign target_url = "/" -%}
-        {%- elsif current_url contains "/es/glosario/" -%}
-          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle ms-3" title="Switch to English">
-          <span class="lang-inactive">EN</span><span class="lang-sep">/</span><span class="lang-active">ES</span>
-        </a>
-      {%- endif -%}
-
-      {% for entry in site.data.contact %}
-        {% case entry.type %}
-          {% when 'github', 'twitter' %}
-            {% capture url %}https://{{ entry.type }}.com/{{ entry.id }}{% endcapture %}
-          {% when 'email' %}
-            {% capture url %}mailto:{{ entry.id }}{% endcapture %}
-          {% when 'rss' %}
-            {% capture url %}{{ '/feed.xml' | relative_url }}{% endcapture %}
-          {% else %}
-            {% assign url = entry.id %}
-        {% endcase %}
-
-        {% if url %}
-          <a href="{{ url }}" aria-label="{{ entry.type }}" class="ms-2"
-            {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
-            <i class="fa-fw {{ entry.icon }}"></i>
-          </a>
-        {% endif %}
-      {% endfor %}
-
+      {% endif %}
+    {% endfor %}
   </div><!-- .sidebar-bottom -->
 
 <style>
@@ -149,15 +159,8 @@
     display: flex;
     align-items: center;
   }
-  .sidebar-search-icon {
-    position: absolute;
-    left: 0.6rem;
-    color: var(--text-muted-color, #868e96);
-    pointer-events: none;
-    font-size: 0.85rem;
-  }
   .sidebar-search-input {
-    padding-left: 2rem;
+    padding-left: 0.75rem;
     font-size: 0.85rem;
     height: 2rem;
     border-radius: 0.5rem;
@@ -165,7 +168,7 @@
     border: 1px solid var(--card-border-color, #dee2e6);
     color: var(--text-color);
   }
-  .sidebar-bottom #mode-toggle {
+  .sidebar-meta #mode-toggle {
     background: none;
     border: none;
     border-radius: 0;
@@ -174,8 +177,29 @@
     color: var(--text-muted-color, #868e96);
     font-size: 0.85rem;
   }
-  .sidebar-bottom #mode-toggle:hover {
+  .sidebar-meta #mode-toggle:hover {
     color: var(--sidebar-active-color, #fff);
+  }
+  .sidebar-glossary-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--sidebar-muted-color, rgba(255,255,255,0.5));
+    font-size: 1.1rem;
+    background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+    transition: color 0.2s;
+  }
+  .sidebar-glossary-link:hover,
+  .sidebar-glossary-link.active {
+    color: var(--sidebar-active-color, #fff);
+    background: none !important;
   }
   .sidebar-search-input:focus {
     background-color: var(--card-bg, #fff);

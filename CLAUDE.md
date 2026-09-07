@@ -55,4 +55,5 @@ Concepts that fall outside the 100 main topics are documented as **glossary entr
 
 ## Git Workflow
 
+- **NEVER push directly to main.** All changes go through a feature branch + Pull Request. Create a branch (`git checkout -b feat/...`), push the branch, and open a PR with `gh pr create`. No exceptions.
 - **NEVER commit until the developer explicitly says so.** Prepare changes, show them, and wait for explicit approval ("commit", "commitea", "push it"). A general instruction like "implement this" is NOT commit approval.

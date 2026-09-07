@@ -103,7 +103,7 @@ val MountainFlag: ImageVector
 
 ### `lazy` with thread safety mode — single-thread optimization
 
-When a property is accessed exclusively from the UI thread, [`LazyThreadSafetyMode.NONE`]({{ "/en/glossary/lazy-thread-safety-mode/" | relative_url }}) skips the [`synchronized` block]({{ "/en/glossary/synchronized-block/" | relative_url }}) and avoids the overhead of thread-safe initialization.
+When a property is accessed exclusively from the UI thread, [`LazyThreadSafetyMode.NONE`]({{ "/en/glossary/lazy-thread-safety-mode/" | relative_url }}) skips the [`synchronized` block]({{ "/en/glossary/synchronized-block/" | relative_url }}) and avoids the [overhead]({{ "/en/glossary/overhead/" | relative_url }}) of thread-safe initialization.
 
 ```kotlin
 // Standalone example — no FAS match found
@@ -119,7 +119,7 @@ class TaskDetailScreen(private val repository: TaskRepository) {
 
 **Question**: What happens internally when you access a `lazy` property for the first time, and how does it differ from a `lateinit` property in terms of [bytecode]({{ "/en/glossary/bytecode/" | relative_url }})?
 
-**Senior Answer**: When a `lazy` property is accessed, the delegated `getValue()` method is called. It checks an internal `_value` field; if it's the `UNINITIALIZED_VALUE` sentinel, it executes the initialization [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) within a [`synchronized` block]({{ "/en/glossary/synchronized-block/" | relative_url }}) (by default) to ensure thread safety, stores the result, and returns it. All subsequent accesses skip the [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) and return the cached value directly. In contrast, `lateinit` does not use delegation at all; the compiler generates a direct field access but adds a null-check at the [bytecode]({{ "/en/glossary/bytecode/" | relative_url }}) level — if the backing field is `null`, it throws `UninitializedPropertyAccessException`. The key [Runtime]({{ "/en/glossary/runtime/" | relative_url }}) difference: `lazy` pays for a delegate object [allocation]({{ "/en/glossary/allocations/" | relative_url }}) plus synchronization overhead, while `lateinit` has zero overhead beyond the null-check.
+**Senior Answer**: When a `lazy` property is accessed, the delegated `getValue()` method is called. It checks an internal `_value` field; if it's the `UNINITIALIZED_VALUE` sentinel, it executes the initialization [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) within a [`synchronized` block]({{ "/en/glossary/synchronized-block/" | relative_url }}) (by default) to ensure thread safety, stores the result, and returns it. All subsequent accesses skip the [lambda]({{ "/en/glossary/lambdas/" | relative_url }}) and return the cached value directly. In contrast, `lateinit` does not use delegation at all; the compiler generates a direct field access but adds a null-check at the [bytecode]({{ "/en/glossary/bytecode/" | relative_url }}) level — if the backing field is `null`, it throws `UninitializedPropertyAccessException`. The key [Runtime]({{ "/en/glossary/runtime/" | relative_url }}) difference: `lazy` pays for a delegate object [allocation]({{ "/en/glossary/allocations/" | relative_url }}) plus synchronization [overhead]({{ "/en/glossary/overhead/" | relative_url }}), while `lateinit` has zero [overhead]({{ "/en/glossary/overhead/" | relative_url }}) beyond the null-check.
 
 ---
 

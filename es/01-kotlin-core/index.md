@@ -14,7 +14,8 @@ title: Kotlin Core
 7. **[Higher-Order Functions y Lambdas]({{ "/es/01-kotlin-core/higher-order-functions-lambdas/" | relative_url }})**
 8. **[Scope Functions]({{ "/es/01-kotlin-core/scope-functions/" | relative_url }})**
 9. **[Lateinit vs Lazy]({{ "/es/01-kotlin-core/lateinit-vs-lazy/" | relative_url }})**
-10. **[Generics, Varianza y Reificación]({{ "/es/01-kotlin-core/generics-variance-reification/" | relative_url }})**
+10. **[Delegated Properties (by lazy, by viewModels)]({{ "/es/01-kotlin-core/delegated-properties/" | relative_url }})**
+11. **[Generics, Varianza y Reificación]({{ "/es/01-kotlin-core/generics-variance-reification/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

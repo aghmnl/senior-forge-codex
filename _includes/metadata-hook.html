@@ -5,20 +5,109 @@
     --sidebar-width-large: 350px;
   }
 
-  #sidebar {
-    width: var(--sidebar-width) !important;
-  }
-
-  #main-wrapper {
-    margin-left: var(--sidebar-width) !important;
-  }
-
-  @media (min-width: 1650px) {
+  @media (min-width: 850px) {
     #sidebar {
-      width: var(--sidebar-width-large) !important;
+      width: var(--sidebar-width) !important;
     }
     #main-wrapper {
-      margin-left: var(--sidebar-width-large) !important;
+      margin-left: var(--sidebar-width) !important;
+    }
+  }
+
+  @media (max-width: calc(850px - 1px)) {
+    #sidebar {
+      transform: translateX(calc(-1 * var(--sidebar-width)));
+      -webkit-transform: translateX(calc(-1 * var(--sidebar-width)));
+    }
+    #topbar > div:first-child {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: calc(850px - 1px)) {
+    #sidebar-trigger {
+      padding-left: 0 !important;
+    }
+  }
+
+  /* Prevent breadcrumb truncation between 850-1199px */
+  @media (min-width: 850px) and (max-width: calc(1200px - 1px)) {
+    #topbar #breadcrumb {
+      width: auto !important;
+      overflow: visible !important;
+      text-overflow: unset !important;
+      white-space: normal !important;
+    }
+  }
+
+  /* Align breadcrumb with body text — override px-lg-3 with consistent value */
+  @media (min-width: 850px) {
+    #topbar {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+  }
+
+  /* --- Breakpoint overrides: consolidate to 1200 / 850 / 600 --- */
+
+  /* Kill 1650px breakpoint — force pre-1650 values */
+  @media (min-width: 1650px) {
+    #sidebar { width: var(--sidebar-width) !important; }
+    #main-wrapper { margin-left: var(--sidebar-width) !important; }
+    #main-wrapper > .container { max-width: 1320px !important; padding-left: 12px !important; padding-right: 12px !important; }
+    #sidebar .profile-wrapper { margin-top: 3rem !important; margin-bottom: 1rem !important; padding-left: 2.5rem !important; }
+    #sidebar ul li.nav-item { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+    #sidebar .sidebar-bottom { padding-left: 2rem !important; margin-bottom: 1.5rem !important; }
+    #sidebar .sidebar-bottom > a:not(:last-child) { margin-right: 0.8rem !important; }
+    main.col-12 { padding-right: 24px !important; }
+    #tail-wrapper { padding-right: 24px !important; }
+    search { margin-right: 4rem !important; }
+  }
+
+  /* Kill 1400px breakpoint — neutralize px-xxl-5 padding jump */
+  @media (min-width: 1400px) {
+    #main-wrapper > .container {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
+  }
+
+  /* Move 992px col-lg effect into 1200px range */
+  @media (min-width: 992px) and (max-width: calc(1200px - 1px)) {
+    #main-wrapper > .container .col-lg-11 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  /* Neutralize container breakpoints for all mobile/tablet (up to sidebar appearance) */
+  @media (max-width: calc(850px - 1px)) {
+    #main-wrapper > .container {
+      max-width: none !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    #topbar { max-width: none !important; }
+  }
+
+  /* Zone: <850px — unified mobile/tablet padding (no jump at 600px) */
+  @media (max-width: calc(850px - 1px)) {
+    main, #topbar-wrapper {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+
+  /* Glossary grid: 2 columns at 600px, 3 columns at 1650px */
+  @media (min-width: 600px) {
+    .glossary-grid > * {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+  @media (min-width: 1650px) {
+    .glossary-grid > * {
+      width: 33.3333%;
     }
   }
 

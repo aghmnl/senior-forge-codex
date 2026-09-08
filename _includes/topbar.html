@@ -68,7 +68,7 @@
         type="search"
         aria-label="search"
         autocomplete="off"
-        placeholder="{{ site.data.locales[lang].search.placeholder | default: 'Search...' }}"
+        placeholder="{{ site.data.locales[lang].search.hint | default: 'Search' | capitalize }}..."
       >
     </search>
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">

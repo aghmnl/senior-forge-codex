@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (148 total)
+## Entries (152 total)
 
 | Entry | Article | FAS |
 |-------|---------|:---:|
@@ -79,6 +79,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Invariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/invariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/invariance/) | Full |
 | JIT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jit-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jit-compilation/) | None |
 | JVM | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm/) | Full |
+| @JvmOverloads | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm-overloads/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm-overloads/) | None |
 | @JvmStatic | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm-static/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm-static/) | None |
 | kapt | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/kapt/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/kapt/) | None |
 | Keyword | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/keyword/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/keyword/) | None |
@@ -96,12 +97,14 @@ Single source of truth for all glossary entries. Each row links to both language
 | Mapper Function | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mapper-function/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mapper-function/) | Full |
 | Mapper Pattern | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mapper-pattern/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mapper-pattern/) | Full |
 | Memory Leaks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/memory-leaks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/memory-leaks/) | None |
+| Method Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/method-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/method-dispatch/) | Full |
 | @Module | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/module-annotation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/module-annotation/) | Full |
 | Moshi | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/moshi/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/moshi/) | None |
 | Multiple Return Patterns | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/multiple-return-patterns/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/multiple-return-patterns/) | Full |
 | MVI Pattern | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mvi-pattern/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mvi-pattern/) | Full |
 | Mutation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mutation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mutation/) | Full |
 | Navigation Component | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/navigation-component/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/navigation-component/) | None |
+| Object-Oriented Programming | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/object-oriented-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/object-oriented-programming/) | Full |
 | Observable State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/observable-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/observable-state/) | None |
 | Overhead | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/overhead/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/overhead/) | None |
 | Noinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/noinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/noinline/) | None |
@@ -145,6 +148,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | State Transitions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-transitions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-transitions/) | Full |
 | Static Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/static-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/static-dispatch/) | None |
 | Stubs | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stubs/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stubs/) | None |
+| Subclass | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/subclass/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/subclass/) | Full |
 | Synchronized Block | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/synchronized-block/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/synchronized-block/) | None |
 | Suspend Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/suspend-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/suspend-functions/) | Full |
 | Syntax Sugar | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/syntax-sugar/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/syntax-sugar/) | None |

@@ -125,6 +125,28 @@
     transition: opacity 0.2s;
   }
   .lang-toggle:hover { opacity: 0.8; }
+  /* Error page: sober "back home" button (Bootstrap's outline hover is too loud) */
+  .btn-home {
+    display: inline-block;
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: var(--link-color);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  /* The theme forces `color: #d2603a !important` on every .content link hover,
+     which reads as a jarring orange on a button — override it explicitly. */
+  .content a.btn-home:hover,
+  .content a.btn-home:not(.img-link):hover {
+    background-color: var(--card-hover-bg);
+    border: 1px solid var(--link-color) !important;
+    color: var(--link-color) !important;
+    text-decoration: none !important;
+  }
+
   .lang-active { color: var(--heading-color, #fff); }
   .lang-inactive { color: var(--text-muted-color, rgba(255,255,255,0.5)); }
   .lang-sep { color: var(--text-muted-color, rgba(255,255,255,0.5)); margin: 0 1px; }

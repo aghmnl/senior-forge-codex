@@ -14,7 +14,7 @@
           type="search"
           aria-label="search"
           autocomplete="off"
-          placeholder="{{ site.data.locales[lang].search.placeholder | default: 'Search...' }}"
+          placeholder="{{ site.data.locales[lang].search.hint | default: 'Search' | capitalize }}..."
         >
       </div>
     </div>
@@ -25,64 +25,6 @@
 
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
   </div><!-- .profile-wrapper -->
-
-  <div class="sidebar-meta d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
-      <!-- Language Toggle EN/ES — show only current language -->
-      {%- assign current_url = page.url -%}
-      {%- if page.lang == "en" or current_url == "/" -%}
-        {%- if current_url == "/" -%}
-          {%- assign target_url = "/es/" -%}
-        {%- elsif current_url contains "/en/glossary/" -%}
-          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
-          <span class="lang-active">EN</span>
-        </a>
-      {%- elsif page.lang == "es" -%}
-        {%- if current_url == "/es/" -%}
-          {%- assign target_url = "/" -%}
-        {%- elsif current_url contains "/es/glosario/" -%}
-          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
-          <span class="lang-active">ES</span>
-        </a>
-      {%- endif -%}
-
-      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
-        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
-          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
-        </button>
-        <script>
-          (function() {
-            var btn = document.getElementById('mode-toggle');
-            function updateIcon() {
-              var icons = btn.querySelectorAll('i');
-              var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
-                || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-              icons[0].style.display = isDark ? 'none' : '';
-              icons[1].style.display = isDark ? '' : 'none';
-            }
-            updateIcon();
-            btn.addEventListener('click', function(e) {
-              e.stopPropagation();
-              Theme.update(Theme.isDark ? 'light' : 'dark');
-              setTimeout(updateIcon, 50);
-            });
-            new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
-          })();
-        </script>
-      {% endunless %}
-
-      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
-        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
-      </a>
-  </div><!-- .sidebar-meta -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
     <li class="nav-item mt-3">
@@ -152,6 +94,64 @@
       {% endif %}
     {% endfor %}
   </div><!-- .sidebar-bottom -->
+
+  <div class="sidebar-meta d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
+      <!-- Language Toggle EN/ES — show only current language -->
+      {%- assign current_url = page.url -%}
+      {%- if page.lang == "en" or current_url == "/" -%}
+        {%- if current_url == "/" -%}
+          {%- assign target_url = "/es/" -%}
+        {%- elsif current_url contains "/en/glossary/" -%}
+          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
+          <span class="lang-active">EN</span>
+        </a>
+      {%- elsif page.lang == "es" -%}
+        {%- if current_url == "/es/" -%}
+          {%- assign target_url = "/" -%}
+        {%- elsif current_url contains "/es/glosario/" -%}
+          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
+        {%- else -%}
+          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+        {%- endif -%}
+        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
+          <span class="lang-active">ES</span>
+        </a>
+      {%- endif -%}
+
+      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
+          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+        </button>
+        <script>
+          (function() {
+            var btn = document.getElementById('mode-toggle');
+            function updateIcon() {
+              var icons = btn.querySelectorAll('i');
+              var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
+                || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+              icons[0].style.display = isDark ? 'none' : '';
+              icons[1].style.display = isDark ? '' : 'none';
+            }
+            updateIcon();
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              Theme.update(Theme.isDark ? 'light' : 'dark');
+              setTimeout(updateIcon, 50);
+            });
+            new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
+          })();
+        </script>
+      {% endunless %}
+
+      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
+        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
+      </a>
+  </div><!-- .sidebar-meta -->
 
 <style>
   #sidebar-search { margin-top: 0; padding-top: 0; }

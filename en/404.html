@@ -1,0 +1,15 @@
+---
+layout: page
+title: "404: Page not found"
+permalink: /en/404.html
+lang: en
+sitemap: false
+---
+
+<p class="lead">
+  {{ site.data.locales.en.not_found.statement | default: "Sorry, we've misplaced that URL or it's pointing to something that doesn't exist." }}
+</p>
+
+<p class="mt-4">
+  <a class="btn-home" href="{{ '/' | relative_url }}">Back to Home</a>
+</p>

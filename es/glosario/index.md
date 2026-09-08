@@ -10,7 +10,7 @@ permalink: /es/glosario/
 </p>
 
 <div class="mb-4" style="max-width: 600px;">
-  <input type="text" id="glossary-search" class="form-control form-control-lg shadow-sm" placeholder="Buscar términos (ej. Corrutinas, Mutex...)" aria-label="Buscar términos del glosario" autofocus>
+  <input type="text" id="glossary-search" class="form-control form-control-lg shadow-sm" placeholder="Buscar términos (ej. Coroutines, Collections...)" aria-label="Buscar términos del glosario" autofocus>
 </div>
 
 <div id="glossary-search-results" class="mt-4" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">

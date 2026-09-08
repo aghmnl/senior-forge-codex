@@ -1,0 +1,50 @@
+---
+layout: null
+permalink: /404.html
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>404 — Senior Forge Codex</title>
+    <script>
+      /*
+        GitHub Pages serves this single file for every missing path, so the
+        language has to be resolved on the client and the request handed to the
+        matching localized error page. Detection order:
+          1. the requested path (/es/... or /en/...)
+          2. the browser's preferred language
+          3. English
+      */
+      (function () {
+        var base = {{ site.baseurl | default: '' | jsonify }};
+        var path = window.location.pathname;
+        var lang;
+
+        if (path.indexOf(base + '/es/') === 0) {
+          lang = 'es';
+        } else if (path.indexOf(base + '/en/') === 0) {
+          lang = 'en';
+        } else {
+          lang = (navigator.language || 'en').toLowerCase().indexOf('es') === 0 ? 'es' : 'en';
+        }
+
+        window.location.replace(base + '/' + lang + '/404.html');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <h1>404</h1>
+      <p>Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
+      <p>Lo sentimos, hemos perdido esa URL o apunta a algo que no existe.</p>
+      <p>
+        <a href="{{ '/en/404.html' | relative_url }}">English</a> ·
+        <a href="{{ '/es/404.html' | relative_url }}">Español</a>
+      </p>
+    </noscript>
+  </body>
+</html>

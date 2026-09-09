@@ -28,6 +28,8 @@ A nivel de [bytecode]({{ "/es/glosario/bytecode/" | relative_url }}), un backing
 - El patrón de backing property (`private var _items` + public `val items get() = _items`) es común para exponer vistas de solo lectura de estado mutable. En ViewModels [MVI]({{ "/es/glosario/mvi-pattern/" | relative_url }}), es el patrón estándar para [protected state]({{ "/es/glosario/protected-state/" | relative_url }}): `private val _uiState = MutableStateFlow(...)` con un public `val uiState: StateFlow<T> = _uiState.asStateFlow()`.
 - Cuando el setter custom de una propiedad usa `field = value`, almacena el valor directamente. Cuando llama a `this.property = value` en su lugar, invoca recursivamente al setter — un error común que causa `StackOverflowError`.
 
+**Documentación oficial:** [Backing fields](https://kotlinlang.org/docs/properties.html#backing-fields)
+
 ---
 
 [Volver al Glosario]({{ "/es/glosario/" | relative_url }})

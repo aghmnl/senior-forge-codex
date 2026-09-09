@@ -17,8 +17,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 12 / 101
-**Last updated:** 2026-09-07
+**Articles written:** 13 / 101
+**Last updated:** 2026-09-08
 **Projected end date:** 10-feb-2027
 
 ---
@@ -38,7 +38,7 @@
 | Lateinit vs Lazy                                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/lateinit-vs-lazy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/lateinit-vs-lazy/)                             | 02-sep  | :black_square_button: | 2026-09-02   | Full | —         | —           |
 | Delegated Properties (by lazy, by viewModels)        | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/delegated-properties/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/delegated-properties/)                     | 03-sep  | :black_square_button: | 2026-09-03   | Full | —         | —           |
 | Generics: Variance & Reification (in, out, reified) | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/generics-variance-reification/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/generics-variance-reification/)   | 07-sep  | :black_square_button: | 2026-09-07   | Full | —         | —           |
-| Collections & Mutability                             | —                                                                                                                                                                                                         | 08-sep  | :black_square_button: | —            | —    | —         | —           |
+| Collections & Mutability                             | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/collections-mutability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/collections-mutability/)                 | 08-sep  | :black_square_button: | 2026-09-08   | Full | —         | —           |
 | Immutability & Atomic State for UI                   | —                                                                                                                                                                                                         | 09-sep  | :black_square_button: | —            | —    | —         | —           |
 
 ## II. Coroutines & Flows (0/16)

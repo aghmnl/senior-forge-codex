@@ -28,6 +28,8 @@ At the [bytecode]({{ "/en/glossary/bytecode/" | relative_url }}) level, a backin
 - The backing property pattern (`private var _items` + public `val items get() = _items`) is common for exposing read-only views of mutable state. In [MVI]({{ "/en/glossary/mvi-pattern/" | relative_url }}) ViewModels, this is the standard pattern for [protected state]({{ "/en/glossary/protected-state/" | relative_url }}): `private val _uiState = MutableStateFlow(...)` with a public `val uiState: StateFlow<T> = _uiState.asStateFlow()`.
 - When a property's custom setter uses `field = value`, it stores the value directly. When it calls `this.property = value` instead, it recursively calls the setter — a common mistake that causes a `StackOverflowError`.
 
+**Kotlin docs:** [Backing fields](https://kotlinlang.org/docs/properties.html#backing-fields)
+
 ---
 
 [Back to Glossary]({{ "/en/glossary/" | relative_url }})

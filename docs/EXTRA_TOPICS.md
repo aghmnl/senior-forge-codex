@@ -191,5 +191,5 @@
 
 **Total extra topics: 111**
 
-> To promote a topic to the main tracker, follow the rules in `CLAUDE.md` under "Growing the Topic List".
+> To promote a topic to the main tracker, follow the rules in `AGENTS.md` under "Growing the Topic List".
 > To add it as a glossary entry instead, follow the glossary rules.

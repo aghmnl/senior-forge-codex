@@ -5,6 +5,7 @@ title: Corrutinas y Flow
 
 # Corrutinas y Flow
 
-Todavía no se han escrito artículos en esta sección.
+1. **[Suspend Functions]({{ "/es/02-coroutines-flow/suspend-functions/" | relative_url }})**
 
+---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

@@ -17,7 +17,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 14 / 101
+**Articles written:** 15 / 101
 **Last updated:** 2026-09-10
 **Projected end date:** 10-feb-2027
 
@@ -39,7 +39,7 @@
 | Delegated Properties (by lazy, by viewModels)        | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/delegated-properties/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/delegated-properties/)                     | 03-sep  | :black_square_button: | 2026-09-03   | Full | —         | —           |
 | Generics: Variance & Reification (in, out, reified) | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/generics-variance-reification/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/generics-variance-reification/)   | 07-sep  | :black_square_button: | 2026-09-07   | Full | —         | —           |
 | Collections & Mutability                             | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/collections-mutability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/collections-mutability/)                 | 08-sep  | :black_square_button: | 2026-09-08   | Full | —         | —           |
-| Immutability & Atomic State for UI                   | —                                                                                                                                                                                                         | 09-sep  | :black_square_button: | —            | —    | —         | —           |
+| Immutability & Atomic State for UI                   | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/immutability-atomic-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/immutability-atomic-state/)           | 09-sep  | :black_square_button: | 2026-09-09   | Full | —         | —           |
 
 ## II. Coroutines & Flows (0/16)
 

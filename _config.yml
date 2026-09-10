@@ -44,6 +44,7 @@ defaults:
 # Chirpy Specific Configuration
 # (Add more as needed, but this is a base start)
 timezone: UTC
+future: true # publish posts dated later today (local preview before 12:00 UTC)
 lang: en # default language
 
 # Markdown engine

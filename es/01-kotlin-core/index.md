@@ -17,6 +17,7 @@ title: Kotlin Core
 10. **[Delegated Properties (by lazy, by viewModels)]({{ "/es/01-kotlin-core/delegated-properties/" | relative_url }})**
 11. **[Generics, Varianza y Reificación]({{ "/es/01-kotlin-core/generics-variance-reification/" | relative_url }})**
 12. **[Collections y Mutabilidad]({{ "/es/01-kotlin-core/collections-mutability/" | relative_url }})**
+13. **[Inmutabilidad y Estado Atómico para UI]({{ "/es/01-kotlin-core/immutability-atomic-state/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

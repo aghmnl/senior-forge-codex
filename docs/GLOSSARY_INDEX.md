@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (202 total)
+## Entries (215 total)
 
 | Entry | Article | FAS |
 |-------|---------|:---:|
@@ -33,7 +33,9 @@ Single source of truth for all glossary entries. Each row links to both language
 | ArrayList | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/arraylist/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/arraylist/) | Full |
 | asSequence | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/as-sequence/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/as-sequence/) | Full |
 | Assertion | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/assertion/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/assertion/) | None |
+| asStateFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/as-state-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/as-state-flow/) | Full |
 | Async Operations | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/async-operations/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/async-operations/) | Full |
+| Atomicity | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/atomicity/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/atomicity/) | None |
 | Autoboxing | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/autoboxing/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/autoboxing/) | None |
 | Back Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/back-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/back-stack/) | None |
 | Backing Field | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backing-field/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backing-field/) | None |
@@ -55,9 +57,11 @@ Single source of truth for all glossary entries. Each row links to both language
 | Collection Operators | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collection-operators/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collection-operators/) | None |
 | Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collections/) | Full |
 | Companion Object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/companion-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/companion-object/) | Full |
+| Compare-and-Set (CAS) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compare-and-set/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compare-and-set/) | None |
 | Compile Time | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compile-time/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compile-time/) | None |
 | Composition Lifetime | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composition-lifetime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composition-lifetime/) | None |
 | Concurrency | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/concurrency/) | Full |
+| Conflation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/conflation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/conflation/) | None |
 | Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constructor/) | Full |
 | contains | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/contains/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/contains/) | Full |
 | Context | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/context-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/context-programming/) | None |
@@ -65,6 +69,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Continuation-Passing Style (CPS) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/continuation-passing-style/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/continuation-passing-style/) | None |
 | Contravariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/contravariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/contravariance/) | None |
 | Cooperative Cancellation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cooperative-cancellation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cooperative-cancellation/) | Full |
+| copy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/copy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/copy/) | Full |
 | Coroutines | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutines/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutines/) | Full |
 | coroutineScope (builder) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutine-scope-builder/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutine-scope-builder/) | Full |
 | Covariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/covariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/covariance/) | Full |
@@ -76,8 +81,10 @@ Single source of truth for all glossary entries. Each row links to both language
 | Decorator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/decorator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/decorator/) | None |
 | Defensive Copy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/defensive-copy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/defensive-copy/) | Full |
 | Dependency Graph | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dependency-graph/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dependency-graph/) | Full |
+| Derived State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/derived-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/derived-state/) | Full |
 | Destructuring | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/destructuring/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/destructuring/) | Full |
 | Dispatcher | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dispatcher/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dispatcher/) | Full |
+| distinctUntilChanged | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/distinct-until-changed/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/distinct-until-changed/) | Full |
 | DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl/) | Full |
 | equals | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/equals/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/equals/) | Full |
 | Event Handlers | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/event-handlers/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/event-handlers/) | Full |
@@ -153,9 +160,11 @@ Single source of truth for all glossary entries. Each row links to both language
 | Protected State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/protected-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/protected-state/) | None |
 | put | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/put/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/put/) | Full |
 | R8 | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/r8/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/r8/) | None |
+| Race Condition | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/race-condition/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/race-condition/) | None |
 | Raw Types | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/raw-types/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/raw-types/) | None |
 | Read-Only View | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/read-only-view/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/read-only-view/) | Full |
 | Receiver Type | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receiver-type/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receiver-type/) | Full |
+| Recomposition | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/recomposition/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/recomposition/) | None |
 | Reified | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/reified/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/reified/) | None |
 | remove | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/remove/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/remove/) | Full |
 | Return Type | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/return-type/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/return-type/) | Full |
@@ -172,6 +181,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | setOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/set-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/set-of/) | Full |
 | Sets | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sets/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sets/) | Full |
 | Single Responsibility Principle | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/single-responsibility-principle/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/single-responsibility-principle/) | None |
+| Single Source of Truth | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/single-source-of-truth/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/single-source-of-truth/) | Full |
 | Singleton | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/singleton/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/singleton/) | Full |
 | Slot Table | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/slot-table/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/slot-table/) | None |
 | Snapshot State List | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/snapshot-state-list/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/snapshot-state-list/) | Full |
@@ -188,6 +198,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | State Transitions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-transitions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-transitions/) | Full |
 | StateFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stateflow/) | Full |
 | Static Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/static-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/static-dispatch/) | None |
+| Structural Sharing | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/structural-sharing/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/structural-sharing/) | None |
 | Stubs | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stubs/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stubs/) | None |
 | Subclass | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/subclass/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/subclass/) | Full |
 | Suspend Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/suspend-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/suspend-functions/) | Full |
@@ -207,7 +218,9 @@ Single source of truth for all glossary entries. Each row links to both language
 | Type Inference | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/type-inference/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/type-inference/) | Full |
 | Type Safety | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/type-safety/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/type-safety/) | Full |
 | Unidirectional Data Flow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/unidirectional-data-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/unidirectional-data-flow/) | Full |
+| update | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/update/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/update/) | Full |
 | Upper Bound | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/upper-bound/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/upper-bound/) | Full |
+| Value Semantics | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/value-semantics/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/value-semantics/) | Full |
 | Variance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/variance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/variance/) | None |
 | viewModelScope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel-scope/) | Full |
 | ViewModelStore | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel-store/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel-store/) | None |

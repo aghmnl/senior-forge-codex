@@ -21,7 +21,7 @@ layout: page
         <div class="card-body">
           <h4 class="pt-0 my-2">{{ post.title }}</h4>
           <div class="text-muted">
-            <p>{% include post-summary.html max_length=140 %}</p>
+            <p>{% include post-summary.html %}</p>
           </div>
         </div>
       </a>
@@ -31,6 +31,17 @@ layout: page
 
 <style>
   #tag-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  /* Same summary rules Chirpy scopes to #related-posts (_sass/pages/_post.scss), plus our 4-line clamp. */
+  #tag-cards .post-preview p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
   @media all and (min-width: 1650px) {
     #tag-cards { grid-template-columns: repeat(3, 1fr); }
   }

@@ -3,6 +3,7 @@ layout: post
 title: "Memory Leaks"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [memory, lifecycle, android-framework]
 lang: en
 permalink: /en/glossary/memory-leaks/
 ---

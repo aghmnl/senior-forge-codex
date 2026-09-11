@@ -3,6 +3,7 @@ layout: post
 title: "MutableMap"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, generics]
 lang: es
 permalink: /es/glosario/mutable-map/
 ---

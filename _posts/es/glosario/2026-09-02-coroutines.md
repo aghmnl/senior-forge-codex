@@ -3,6 +3,7 @@ layout: post
 title: "Coroutines"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [coroutines, concurrency, lifecycle]
 lang: es
 permalink: /es/glosario/coroutines/
 ---

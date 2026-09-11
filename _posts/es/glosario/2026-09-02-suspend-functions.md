@@ -3,6 +3,7 @@ layout: post
 title: "Suspend Functions"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [coroutines, concurrency, compiler]
 lang: es
 permalink: /es/glosario/suspend-functions/
 ---

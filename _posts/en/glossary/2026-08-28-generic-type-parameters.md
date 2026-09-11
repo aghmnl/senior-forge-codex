@@ -3,6 +3,7 @@ layout: post
 title: "Generic Type Parameters"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [generics, type-system, jvm]
 lang: en
 permalink: /en/glossary/generic-type-parameters/
 ---

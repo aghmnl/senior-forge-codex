@@ -3,6 +3,7 @@ layout: post
 title: "@LayoutScopeMarker"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [compose, dsl, scoping]
 lang: es
 permalink: /es/glosario/layout-scope-marker/
 ---

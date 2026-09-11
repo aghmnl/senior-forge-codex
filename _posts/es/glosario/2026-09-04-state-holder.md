@@ -3,6 +3,7 @@ layout: post
 title: "State Holder"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [state-management, compose, architecture]
 lang: es
 permalink: /es/glosario/state-holder/
 ---

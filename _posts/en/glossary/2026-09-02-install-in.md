@@ -3,6 +3,7 @@ layout: post
 title: "@InstallIn"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [di, scoping]
 lang: en
 permalink: /en/glossary/install-in/
 ---

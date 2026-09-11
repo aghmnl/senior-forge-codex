@@ -3,6 +3,7 @@ layout: post
 title: "toMutableList"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [collections, immutability]
 lang: en
 permalink: /en/glossary/to-mutable-list/
 ---

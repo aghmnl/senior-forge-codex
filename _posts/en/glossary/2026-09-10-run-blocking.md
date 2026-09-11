@@ -3,6 +3,7 @@ layout: post
 title: "runBlocking"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [coroutines, threading, testing]
 lang: en
 permalink: /en/glossary/run-blocking/
 ---

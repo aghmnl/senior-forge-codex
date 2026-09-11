@@ -3,6 +3,7 @@ layout: post
 title: "AOT Compilation"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [runtime, performance, compiler]
 lang: en
 permalink: /en/glossary/aot-compilation/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Resolución de Sobrecarga"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [dispatch, compiler, type-system]
 lang: es
 permalink: /es/glosario/overload-resolution/
 ---

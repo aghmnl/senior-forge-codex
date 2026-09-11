@@ -3,6 +3,7 @@ layout: post
 title: "coroutineScope (builder)"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [coroutines, concurrency, cancellation]
 lang: en
 permalink: /en/glossary/coroutine-scope-builder/
 ---

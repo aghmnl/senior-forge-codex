@@ -3,6 +3,7 @@ layout: post
 title: "Syntax Sugar"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [syntax, compiler]
 lang: es
 permalink: /es/glosario/syntax-sugar/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Source Code"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [compiler, jvm]
 lang: en
 permalink: /en/glossary/source-code/
 ---

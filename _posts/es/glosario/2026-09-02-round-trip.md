@@ -3,6 +3,7 @@ layout: post
 title: "Round-Trip"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [performance, architecture, persistence]
 lang: es
 permalink: /es/glosario/round-trip/
 ---

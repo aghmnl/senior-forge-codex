@@ -3,6 +3,7 @@ layout: post
 title: "Exhaustiveness"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [sealed-types, compiler, state-management]
 lang: es
 permalink: /es/glosario/exhaustiveness/
 ---

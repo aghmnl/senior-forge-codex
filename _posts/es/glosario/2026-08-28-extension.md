@@ -3,6 +3,7 @@ layout: post
 title: "Extension"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [syntax, oop, design-principles]
 lang: es
 permalink: /es/glosario/extension/
 ---

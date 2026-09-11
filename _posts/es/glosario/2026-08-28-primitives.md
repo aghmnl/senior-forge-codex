@@ -3,6 +3,7 @@ layout: post
 title: "Primitivos"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [jvm, memory, performance]
 lang: es
 permalink: /es/glosario/primitives/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "mutableStateListOf"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [compose, collections, state-management]
 lang: en
 permalink: /en/glossary/mutable-state-list-of/
 ---

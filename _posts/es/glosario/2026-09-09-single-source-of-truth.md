@@ -3,6 +3,7 @@ layout: post
 title: "Single Source of Truth"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [state-management, architecture, design-principles]
 lang: es
 permalink: /es/glosario/single-source-of-truth/
 ---

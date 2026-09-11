@@ -3,6 +3,7 @@ layout: post
 title: "Allocations"
 date: 2026-08-30 12:00:00 +0000
 categories: [es, glosario]
+tags: [memory, performance, jvm]
 lang: es
 permalink: /es/glosario/allocations/
 ---

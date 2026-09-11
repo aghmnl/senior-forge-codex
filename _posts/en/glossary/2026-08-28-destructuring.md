@@ -3,6 +3,7 @@ layout: post
 title: "Destructuring"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [syntax, data-classes]
 lang: en
 permalink: /en/glossary/destructuring/
 ---

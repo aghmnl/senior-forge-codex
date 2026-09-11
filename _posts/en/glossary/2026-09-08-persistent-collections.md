@@ -3,6 +3,7 @@ layout: post
 title: "Persistent Collections"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [collections, immutability, compose]
 lang: en
 permalink: /en/glossary/persistent-collections/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Funciones Inline"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [inlining, lambdas, performance]
 lang: es
 permalink: /es/glosario/inline-functions/
 ---

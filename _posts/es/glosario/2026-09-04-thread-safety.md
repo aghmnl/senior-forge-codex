@@ -3,6 +3,7 @@ layout: post
 title: "Thread Safety"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [concurrency, immutability, threading]
 lang: es
 permalink: /es/glosario/thread-safety/
 ---

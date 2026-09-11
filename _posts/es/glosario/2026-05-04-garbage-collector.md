@@ -3,6 +3,7 @@ layout: post
 title: "Garbage Collector (GC)"
 date: 2026-05-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [memory, jvm, performance]
 lang: es
 permalink: /es/glosario/garbage-collector/
 ---

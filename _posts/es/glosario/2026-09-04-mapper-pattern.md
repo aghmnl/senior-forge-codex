@@ -3,6 +3,7 @@ layout: post
 title: "Mapper Pattern"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [architecture, design-patterns, functional]
 lang: es
 permalink: /es/glosario/mapper-pattern/
 ---

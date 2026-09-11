@@ -3,6 +3,7 @@ layout: post
 title: "Lifecycle-Aware"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [lifecycle, android-framework, coroutines]
 lang: en
 permalink: /en/glossary/lifecycle-aware/
 ---

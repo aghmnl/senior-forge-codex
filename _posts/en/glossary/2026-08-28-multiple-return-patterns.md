@@ -3,6 +3,7 @@ layout: post
 title: "Multiple Return Patterns"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [data-classes, syntax, design-principles]
 lang: en
 permalink: /en/glossary/multiple-return-patterns/
 ---

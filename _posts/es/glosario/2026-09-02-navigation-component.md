@@ -3,6 +3,7 @@ layout: post
 title: "Navigation Component"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [navigation, android-framework, lifecycle]
 lang: es
 permalink: /es/glosario/navigation-component/
 ---

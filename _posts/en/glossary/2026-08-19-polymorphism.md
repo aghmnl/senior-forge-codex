@@ -3,6 +3,7 @@ layout: post
 title: "Polymorphism"
 date: 2026-08-19 12:00:00 +0000
 categories: [en, glossary]
+tags: [oop, dispatch, generics]
 lang: en
 permalink: /en/glossary/polymorphism/
 ---

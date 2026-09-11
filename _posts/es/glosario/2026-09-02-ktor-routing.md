@@ -3,6 +3,7 @@ layout: post
 title: "Ktor Routing"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [dsl, lambdas, coroutines]
 lang: es
 permalink: /es/glosario/ktor-routing/
 ---

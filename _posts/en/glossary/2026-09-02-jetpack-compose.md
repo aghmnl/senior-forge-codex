@@ -3,6 +3,7 @@ layout: post
 title: "Jetpack Compose"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [compose, dsl, lambdas]
 lang: en
 permalink: /en/glossary/jetpack-compose/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Protected State"
 date: 2026-08-30 12:00:00 +0000
 categories: [en, glossary]
+tags: [oop, sealed-types, scoping]
 lang: en
 permalink: /en/glossary/protected-state/
 ---

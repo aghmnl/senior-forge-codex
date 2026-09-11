@@ -3,6 +3,7 @@ layout: post
 title: "Type Erasure"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [generics, jvm, compiler]
 lang: es
 permalink: /es/glosario/type-erasure/
 ---

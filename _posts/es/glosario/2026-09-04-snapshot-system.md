@@ -3,6 +3,7 @@ layout: post
 title: "Snapshot System"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [compose, state-management, concurrency]
 lang: es
 permalink: /es/glosario/snapshot-system/
 ---

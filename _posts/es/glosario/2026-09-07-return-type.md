@@ -3,6 +3,7 @@ layout: post
 title: "Return Type"
 date: 2026-09-07 12:00:00 +0000
 categories: [es, glosario]
+tags: [type-system, generics, syntax]
 lang: es
 permalink: /es/glosario/return-type/
 ---

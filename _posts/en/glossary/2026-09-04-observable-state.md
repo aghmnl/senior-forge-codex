@@ -3,6 +3,7 @@ layout: post
 title: "Observable State"
 date: 2026-09-04 12:00:00 +0000
 categories: [en, glossary]
+tags: [state-management, compose, flow]
 lang: en
 permalink: /en/glossary/observable-state/
 ---

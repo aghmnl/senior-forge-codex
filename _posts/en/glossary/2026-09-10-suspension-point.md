@@ -3,6 +3,7 @@ layout: post
 title: "Suspension Point"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [coroutines, cancellation, threading]
 lang: en
 permalink: /en/glossary/suspension-point/
 ---

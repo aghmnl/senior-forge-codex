@@ -3,6 +3,7 @@ layout: post
 title: "@Composable"
 date: 2026-09-03 12:00:00 +0000
 categories: [en, glossary]
+tags: [compose, compiler]
 lang: en
 permalink: /en/glossary/composable/
 ---

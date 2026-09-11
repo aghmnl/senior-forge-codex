@@ -3,6 +3,7 @@ layout: post
 title: "Lambda with Receiver"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [lambdas, dsl, scoping]
 lang: es
 permalink: /es/glosario/lambda-with-receiver/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Overload Resolution"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [dispatch, compiler, type-system]
 lang: en
 permalink: /en/glossary/overload-resolution/
 ---

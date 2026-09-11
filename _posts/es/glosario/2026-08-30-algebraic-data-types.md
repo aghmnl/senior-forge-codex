@@ -3,6 +3,7 @@ layout: post
 title: "Algebraic Data Types (ADTs)"
 date: 2026-08-30 12:00:00 +0000
 categories: [es, glosario]
+tags: [sealed-types, type-system, state-management]
 lang: es
 permalink: /es/glosario/algebraic-data-types/
 ---

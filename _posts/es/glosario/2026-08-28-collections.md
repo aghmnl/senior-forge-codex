@@ -3,6 +3,7 @@ layout: post
 title: "Collections"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, immutability]
 lang: es
 permalink: /es/glosario/collections/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Companion Object"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [syntax, interop, design-patterns]
 lang: en
 permalink: /en/glossary/companion-object/
 ---

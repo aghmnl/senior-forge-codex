@@ -3,6 +3,7 @@ layout: post
 title: "Dispatcher"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [coroutines, threading]
 lang: es
 permalink: /es/glosario/dispatcher/
 ---

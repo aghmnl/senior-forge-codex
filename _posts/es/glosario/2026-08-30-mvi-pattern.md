@@ -3,6 +3,7 @@ layout: post
 title: "MVI Pattern"
 date: 2026-08-30 12:00:00 +0000
 categories: [es, glosario]
+tags: [architecture, state-management, sealed-types]
 lang: es
 permalink: /es/glosario/mvi-pattern/
 ---

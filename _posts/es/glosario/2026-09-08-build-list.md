@@ -3,6 +3,7 @@ layout: post
 title: "buildList"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, immutability, inlining]
 lang: es
 permalink: /es/glosario/build-list/
 ---

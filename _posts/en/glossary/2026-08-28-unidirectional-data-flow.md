@@ -3,6 +3,7 @@ layout: post
 title: "Unidirectional Data Flow"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [architecture, state-management, immutability]
 lang: en
 permalink: /en/glossary/unidirectional-data-flow/
 ---

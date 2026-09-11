@@ -3,6 +3,7 @@ layout: post
 title: "Collection Operators"
 date: 2026-09-04 12:00:00 +0000
 categories: [en, glossary]
+tags: [collections, functional]
 lang: en
 permalink: /en/glossary/collection-operators/
 ---

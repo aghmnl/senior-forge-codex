@@ -3,6 +3,7 @@ layout: post
 title: "ClassCastException"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [error-handling, type-system, generics]
 lang: es
 permalink: /es/glosario/class-cast-exception/
 ---

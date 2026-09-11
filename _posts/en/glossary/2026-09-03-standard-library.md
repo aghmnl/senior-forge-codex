@@ -3,6 +3,7 @@ layout: post
 title: "Standard Library"
 date: 2026-09-03 12:00:00 +0000
 categories: [en, glossary]
+tags: [collections, functional, inlining]
 lang: en
 permalink: /en/glossary/standard-library/
 ---

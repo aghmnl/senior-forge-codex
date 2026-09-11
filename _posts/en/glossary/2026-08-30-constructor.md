@@ -3,6 +3,7 @@ layout: post
 title: "Constructor"
 date: 2026-08-30 12:00:00 +0000
 categories: [en, glossary]
+tags: [oop, data-classes, syntax]
 lang: en
 permalink: /en/glossary/constructor/
 ---

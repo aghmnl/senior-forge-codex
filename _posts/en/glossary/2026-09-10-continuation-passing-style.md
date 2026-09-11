@@ -3,6 +3,7 @@ layout: post
 title: "Continuation-Passing Style (CPS)"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [coroutines, compiler]
 lang: en
 permalink: /en/glossary/continuation-passing-style/
 ---

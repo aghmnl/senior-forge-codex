@@ -3,6 +3,7 @@ layout: post
 title: "Crossinline"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [inlining, lambdas]
 lang: en
 permalink: /en/glossary/crossinline/
 ---

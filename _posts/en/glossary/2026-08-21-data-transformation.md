@@ -3,6 +3,7 @@ layout: post
 title: "Data Transformation"
 date: 2026-08-21 12:00:00 +0000
 categories: [en, glossary]
+tags: [functional, architecture, collections]
 lang: en
 permalink: /en/glossary/data-transformation/
 ---

@@ -1,22 +1,40 @@
 ---
 layout: page
-# Tag page: lists the glossary entries carrying `page.tag`, in the page's language.
+# Tag page: card grid of the glossary entries carrying `page.tag`, in the page's language.
+# Column breakpoints follow docs/BREAKPOINTS.md (1 col ≤600px, 2 cols, 3 cols ≥1650px).
 ---
 
 {% include lang.html %}
 
+{% assign posts = site.tags[page.tag] | where: 'lang', page.lang | sort: 'title' %}
+
 <div id="page-tag">
-  {% assign posts = site.tags[page.tag] | where: 'lang', page.lang | sort: 'title' %}
   <h1 class="ps-lg-2">
     <i class="fa fa-tag fa-fw text-muted"></i>
     {{ page.title }}
     <span class="lead text-muted ps-2">{{ posts | size }}</span>
   </h1>
-  <ul class="content ps-0">
+
+  <nav id="tag-cards" class="mt-4 mb-4">
     {% for post in posts %}
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
+      <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+        <div class="card-body">
+          <h4 class="pt-0 my-2">{{ post.title }}</h4>
+          <div class="text-muted">
+            <p>{% include post-summary.html max_length=140 %}</p>
+          </div>
+        </div>
+      </a>
     {% endfor %}
-  </ul>
+  </nav>
 </div>
+
+<style>
+  #tag-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  @media all and (min-width: 1650px) {
+    #tag-cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media all and (max-width: 600px) {
+    #tag-cards { grid-template-columns: 1fr; }
+  }
+</style>

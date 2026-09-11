@@ -33,6 +33,7 @@ These Chirpy/Bootstrap breakpoints are neutralized by overrides:
 - **Glossary cards:** 1 column.
 - **Glossary search results:** 1 column.
 - **Global search results (sidebar):** 1 column.
+- **Tag pages (`/en/tags/<tag>/`, `/es/etiquetas/<tag>/`):** 1 column.
 
 ### 600px — Mobile to Tablet
 
@@ -40,6 +41,7 @@ These Chirpy/Bootstrap breakpoints are neutralized by overrides:
 - **Glossary cards:** Switch from 1 to 2 columns.
 - **Glossary search results:** Switch from 1 to 2 columns.
 - **Global search results (sidebar):** Switch from 1 to 2 columns.
+- **Tag pages:** Switch from 1 to 2 columns.
 
 ### 850px — Tablet to Desktop
 
@@ -69,6 +71,7 @@ Not a layout breakpoint — the container is capped at 1320px so margins grow sy
 - **Glossary cards:** Switch from 2 to 3 columns.
 - **Glossary search results:** Switch from 2 to 3 columns.
 - **All sidebar internal spacing:** Frozen at pre-1650 values (profile, nav items, bottom icons).
+- **Tag pages:** Switch from 2 to 3 columns.
 
 ## File Reference
 
@@ -78,6 +81,7 @@ Not a layout breakpoint — the container is capped at 1320px so margins grow sy
 | `_includes/search-loader.html` | Global search results grid (sidebar search): column breakpoints and card styles |
 | `en/glossary/index.md` | Glossary search result grid breakpoints (inline `<style>`) |
 | `es/glosario/index.md` | Same as above, Spanish version |
+| `_layouts/tag.html` | Tag page card grid breakpoints (inline `<style>`), same thresholds as the glossary grid |
 
 ## Design Decisions
 

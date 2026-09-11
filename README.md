@@ -50,3 +50,9 @@ bundle install
 # Start the local server
 bundle exec jekyll serve
 ```
+
+## 📄 License
+
+- **Content** (articles, glossary, docs): All rights reserved.
+- **Site code** (layouts, includes, styles, scripts): [MIT](LICENSE).
+- Includes modified files from the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme (MIT, © Cotes Chung). See [LICENSE](LICENSE) for full notices.

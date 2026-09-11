@@ -1,0 +1,80 @@
+# Licensing
+
+This repository contains two kinds of material under different terms.
+
+## 1. Content — All Rights Reserved
+
+Copyright (c) 2026 Agustín Minetto (aghmnl). All rights reserved.
+
+The content of this repository — the articles, glossary entries, code examples inside
+them, documentation under `docs/`, evaluation records under `evals/`, and any other
+written material — is the original work of the author and may not be reproduced,
+distributed, or used to create derivative works without prior written permission.
+
+This covers everything under `en/`, `es/`, `_posts/`, `docs/`, `evals/`, `README.md`,
+`AGENTS.md`, `CLAUDE.md` and `CODEX_GUIDE.md`.
+
+## 2. Site Code — MIT License
+
+The site customization code — layouts, includes, data files, stylesheets, scripts and
+configuration under `_layouts/`, `_includes/`, `_data/`, `assets/`, `_config.yml` and
+`Gemfile` — is released under the MIT License.
+
+MIT License
+
+Copyright (c) 2026 Agustín Minetto (aghmnl)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## 3. Third-Party Notices
+
+### Jekyll Theme Chirpy
+
+Parts of the site code (`_layouts/`, `_includes/`, `_data/locales/`,
+`assets/js/data/search.json`) are modified copies of files from the
+[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) Jekyll theme, used and
+redistributed under the following license:
+
+The MIT License (MIT)
+
+Copyright (c) 2019 Cotes Chung
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+### Jekyll
+
+[Jekyll](https://jekyllrb.com/) and its plugins are consumed as Ruby gems and are not
+redistributed in this repository. They are licensed under the MIT License by their
+respective authors.

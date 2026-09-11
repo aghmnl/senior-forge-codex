@@ -1,7 +1,7 @@
 ---
 layout: page
 # Tag page: card grid of the glossary entries carrying `page.tag`, in the page's language.
-# Column breakpoints follow docs/BREAKPOINTS.md (1 col ≤600px, 2 cols, 3 cols ≥1650px).
+# Grid and card rules: `.codex-card-grid` in _includes/metadata-hook.html (see docs/BREAKPOINTS.md).
 ---
 
 {% include lang.html %}
@@ -15,7 +15,7 @@ layout: page
     <span class="lead text-muted ps-2">{{ posts | size }}</span>
   </h1>
 
-  <nav id="tag-cards" class="mt-4 mb-4">
+  <nav id="tag-cards" class="codex-card-grid mt-4 mb-4">
     {% for post in posts %}
       <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
         <div class="card-body">
@@ -28,24 +28,3 @@ layout: page
     {% endfor %}
   </nav>
 </div>
-
-<style>
-  #tag-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  /* Same summary rules Chirpy scopes to #related-posts (_sass/pages/_post.scss), plus our 4-line clamp. */
-  #tag-cards .post-preview p {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    white-space: break-spaces;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-  }
-  @media all and (min-width: 1650px) {
-    #tag-cards { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media all and (max-width: 600px) {
-    #tag-cards { grid-template-columns: 1fr; }
-  }
-</style>

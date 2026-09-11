@@ -101,31 +101,20 @@ permalink: /es/glosario/
 {% endfor %}
 
 {% if glossary_posts.size > 0 %}
-<style>
-  #glossary-browse .card-body .text-muted p {
-    margin: 0 !important;
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    overflow: hidden !important;
-    -webkit-line-clamp: 4;
-  }
-</style>
 <aside id="glossary-browse" aria-labelledby="glossary-browse-label" class="mt-5">
   <h3 class="mb-4" id="glossary-browse-label">
     {{ site.data.locales.es.post.relate_posts | default: "Lecturas adicionales" }}
   </h3>
-  <nav class="row row-cols-1 row-cols-xl-3 g-4 mb-4 glossary-grid">
+  <nav class="codex-card-grid mb-4">
     {% for post in glossary_posts limit: 6 %}
-      <article class="col">
-        <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
-          <div class="card-body">
-            <h4 class="pt-0 my-2">{{ post.title }}</h4>
-            <div class="text-muted">
-              <p>{% assign summary = post.content | markdownify | strip_html | strip_newlines | strip %}{% assign summary = summary | replace: 'The Theory (El Qué)', '' | replace: 'The Theory (The What)', '' | replace: 'The Senior Nuance (El Matiz Senior)', '' | replace: 'The Senior Nuance', '' | strip | truncate: 200 %}{{ summary }}</p>
-            </div>
+      <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+        <div class="card-body">
+          <h4 class="pt-0 my-2">{{ post.title }}</h4>
+          <div class="text-muted">
+            <p>{% assign summary = post.content | markdownify | strip_html | strip_newlines | strip %}{% assign summary = summary | replace: 'The Theory (El Qué)', '' | replace: 'The Theory (The What)', '' | replace: 'The Senior Nuance (El Matiz Senior)', '' | replace: 'The Senior Nuance', '' | strip | truncate: 200 %}{{ summary }}</p>
           </div>
-        </a>
-      </article>
+        </div>
+      </a>
     {% endfor %}
   </nav>
 </aside>

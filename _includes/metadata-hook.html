@@ -98,18 +98,6 @@
     }
   }
 
-  /* Glossary grid: 2 columns at 600px, 3 columns at 1650px */
-  @media (min-width: 600px) {
-    .glossary-grid > * {
-      flex: 0 0 auto;
-      width: 50%;
-    }
-  }
-  @media (min-width: 1650px) {
-    .glossary-grid > * {
-      width: 33.3333%;
-    }
-  }
 
   /* Language Toggle */
   .lang-toggle {
@@ -173,9 +161,31 @@
     font-weight: 600;
   }
 
-  /* Show 4 lines in related-posts cards instead of Chirpy's default 2 */
-  #related-posts .post-preview .text-muted p {
+  /* Shared card grid: related posts ("Further Reading"), the glossary index browse block and tag pages.
+     Breakpoints follow docs/BREAKPOINTS.md: 1 col ≤600px, 2 cols, 3 cols ≥1650px. */
+  .codex-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media all and (min-width: 1650px) {
+    .codex-card-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media all and (max-width: 600px) {
+    .codex-card-grid { grid-template-columns: 1fr; }
+  }
+  /* Summary text: Chirpy scopes these to #related-posts only; apply them to every grid card,
+     with a 4-line clamp instead of the theme's 2. */
+  .codex-card-grid .post-preview p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
     -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical;
   }
 
   /* Ensure the sidebar title stays at top despite sidebar padding adjustments */

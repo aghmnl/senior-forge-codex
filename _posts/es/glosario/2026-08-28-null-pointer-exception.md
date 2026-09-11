@@ -3,6 +3,7 @@ layout: post
 title: "NullPointerException"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [null-safety, error-handling, interop]
 lang: es
 permalink: /es/glosario/null-pointer-exception/
 ---

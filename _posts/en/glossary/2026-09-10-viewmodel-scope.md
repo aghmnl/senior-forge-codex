@@ -3,6 +3,7 @@ layout: post
 title: "viewModelScope"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [coroutines, lifecycle, cancellation]
 lang: en
 permalink: /en/glossary/viewmodel-scope/
 ---

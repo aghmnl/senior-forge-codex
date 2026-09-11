@@ -3,6 +3,7 @@ layout: post
 title: "Immutability"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [immutability, functional, concurrency]
 lang: es
 permalink: /es/glosario/immutability/
 ---

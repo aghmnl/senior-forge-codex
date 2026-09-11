@@ -3,6 +3,7 @@ layout: post
 title: "Compilación JIT"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [runtime, performance, jvm]
 lang: es
 permalink: /es/glosario/jit-compilation/
 ---

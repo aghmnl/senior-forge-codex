@@ -3,6 +3,7 @@ layout: post
 title: "Structural Sharing"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [immutability, memory, collections]
 lang: es
 permalink: /es/glosario/structural-sharing/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Code Bloat"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [inlining, performance, build-tools]
 lang: es
 permalink: /es/glosario/code-bloat/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "MutableList"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, immutability, concurrency]
 lang: es
 permalink: /es/glosario/mutable-list/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Derived State"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [state-management, data-classes, compose]
 lang: es
 permalink: /es/glosario/derived-state/
 ---

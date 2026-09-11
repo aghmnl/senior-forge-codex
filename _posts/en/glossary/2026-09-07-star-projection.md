@@ -3,6 +3,7 @@ layout: post
 title: "Star Projection"
 date: 2026-09-07 12:00:00 +0000
 categories: [en, glossary]
+tags: [generics, type-system]
 lang: en
 permalink: /en/glossary/star-projection/
 ---

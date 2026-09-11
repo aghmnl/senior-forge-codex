@@ -3,6 +3,7 @@ layout: post
 title: "Gradle Kotlin DSL"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [build-tools, dsl, lambdas]
 lang: en
 permalink: /en/glossary/gradle-kotlin-dsl/
 ---

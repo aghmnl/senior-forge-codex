@@ -3,6 +3,7 @@ layout: post
 title: "Value Semantics"
 date: 2026-09-09 12:00:00 +0000
 categories: [en, glossary]
+tags: [data-classes, immutability, state-management]
 lang: en
 permalink: /en/glossary/value-semantics/
 ---

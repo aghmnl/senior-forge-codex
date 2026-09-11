@@ -3,6 +3,7 @@ layout: post
 title: "Functional Style"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [functional, immutability, collections]
 lang: es
 permalink: /es/glosario/functional-style/
 ---

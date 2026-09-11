@@ -3,6 +3,7 @@ layout: post
 title: "Race Condition"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [concurrency, state-management, coroutines]
 lang: es
 permalink: /es/glosario/race-condition/
 ---

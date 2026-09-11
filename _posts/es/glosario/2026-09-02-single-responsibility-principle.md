@@ -3,6 +3,7 @@ layout: post
 title: "Single Responsibility Principle"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [design-principles, architecture, testing]
 lang: es
 permalink: /es/glosario/single-responsibility-principle/
 ---

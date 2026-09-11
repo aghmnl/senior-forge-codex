@@ -3,6 +3,7 @@ layout: post
 title: "Callback Hell"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [callbacks, coroutines]
 lang: es
 permalink: /es/glosario/callback-hell/
 ---

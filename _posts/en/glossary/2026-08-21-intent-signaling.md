@@ -3,6 +3,7 @@ layout: post
 title: "Intent Signaling"
 date: 2026-08-21 12:00:00 +0000
 categories: [en, glossary]
+tags: [design-principles, syntax]
 lang: en
 permalink: /en/glossary/intent-signaling/
 ---

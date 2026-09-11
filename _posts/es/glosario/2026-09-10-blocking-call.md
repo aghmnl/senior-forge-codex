@@ -3,6 +3,7 @@ layout: post
 title: "Blocking Call"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [threading, coroutines, performance]
 lang: es
 permalink: /es/glosario/blocking-call/
 ---

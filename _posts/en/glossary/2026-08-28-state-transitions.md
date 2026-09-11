@@ -3,6 +3,7 @@ layout: post
 title: "State Transitions"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [state-management, sealed-types, architecture]
 lang: en
 permalink: /en/glossary/state-transitions/
 ---

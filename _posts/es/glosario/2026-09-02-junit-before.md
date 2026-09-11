@@ -3,6 +3,7 @@ layout: post
 title: "@Before"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [testing, lifecycle]
 lang: es
 permalink: /es/glosario/junit-before/
 ---

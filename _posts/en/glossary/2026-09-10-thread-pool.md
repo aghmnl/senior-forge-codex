@@ -3,6 +3,7 @@ layout: post
 title: "Thread Pool"
 date: 2026-09-10 12:00:00 +0000
 categories: [en, glossary]
+tags: [threading, coroutines]
 lang: en
 permalink: /en/glossary/thread-pool/
 ---

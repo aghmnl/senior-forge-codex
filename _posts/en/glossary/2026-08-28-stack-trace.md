@@ -3,6 +3,7 @@ layout: post
 title: "Stack Trace"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [error-handling, jvm, coroutines]
 lang: en
 permalink: /en/glossary/stack-trace/
 ---

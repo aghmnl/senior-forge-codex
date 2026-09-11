@@ -3,6 +3,7 @@ layout: post
 title: "Snapshot State List"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [compose, collections, state-management]
 lang: es
 permalink: /es/glosario/snapshot-state-list/
 ---

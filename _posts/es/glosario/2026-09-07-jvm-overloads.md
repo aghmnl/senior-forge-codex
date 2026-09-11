@@ -3,6 +3,7 @@ layout: post
 title: "@JvmOverloads"
 date: 2026-09-07 12:00:00 +0000
 categories: [es, glosario]
+tags: [interop, dispatch, android-framework]
 lang: es
 permalink: /es/glosario/jvm-overloads/
 ---

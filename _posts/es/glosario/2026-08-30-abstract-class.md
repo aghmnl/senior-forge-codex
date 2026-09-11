@@ -3,6 +3,7 @@ layout: post
 title: "Abstract Class"
 date: 2026-08-30 12:00:00 +0000
 categories: [es, glosario]
+tags: [oop, sealed-types]
 lang: es
 permalink: /es/glosario/abstract-class/
 ---

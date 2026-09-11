@@ -3,6 +3,7 @@ layout: post
 title: "Android Runtime (ART)"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [runtime, memory, performance]
 lang: es
 permalink: /es/glosario/android-runtime/
 ---

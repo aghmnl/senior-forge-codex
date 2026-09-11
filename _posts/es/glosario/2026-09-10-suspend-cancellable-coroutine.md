@@ -3,6 +3,7 @@ layout: post
 title: "suspendCancellableCoroutine"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [coroutines, callbacks, cancellation]
 lang: es
 permalink: /es/glosario/suspend-cancellable-coroutine/
 ---

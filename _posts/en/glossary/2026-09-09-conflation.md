@@ -3,6 +3,7 @@ layout: post
 title: "Conflation"
 date: 2026-09-09 12:00:00 +0000
 categories: [en, glossary]
+tags: [flow, state-management]
 lang: en
 permalink: /en/glossary/conflation/
 ---

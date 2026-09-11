@@ -1,0 +1,11 @@
+{%- comment -%}
+  Builds the localized URL for a tag. Usage:
+    {% include tag-url.html tag=tag_name lang=lang %}  ->  captures into `tag_url`
+  Tags are internal identifiers (docs/GLOSSARY_TAGS.md); the visible label comes from _data/glossary_tags.yml.
+{%- endcomment -%}
+{%- if include.lang == 'es' -%}
+  {%- capture tag_url -%}/es/etiquetas/{{ include.tag }}/{%- endcapture -%}
+{%- else -%}
+  {%- capture tag_url -%}/en/tags/{{ include.tag }}/{%- endcapture -%}
+{%- endif -%}
+{%- assign tag_label = site.data.glossary_tags[include.tag][include.lang] | default: include.tag -%}

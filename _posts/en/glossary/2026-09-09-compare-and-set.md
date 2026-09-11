@@ -3,6 +3,7 @@ layout: post
 title: "Compare-and-Set (CAS)"
 date: 2026-09-09 12:00:00 +0000
 categories: [en, glossary]
+tags: [concurrency, threading, state-management]
 lang: en
 permalink: /en/glossary/compare-and-set/
 ---

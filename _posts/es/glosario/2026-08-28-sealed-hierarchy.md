@@ -3,6 +3,7 @@ layout: post
 title: "Sealed Hierarchy"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [sealed-types, oop, state-management]
 lang: es
 permalink: /es/glosario/sealed-hierarchy/
 ---

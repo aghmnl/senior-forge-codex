@@ -3,6 +3,7 @@ layout: post
 title: "LazyThreadSafetyMode"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [threading, delegation, concurrency]
 lang: es
 permalink: /es/glosario/lazy-thread-safety-mode/
 ---

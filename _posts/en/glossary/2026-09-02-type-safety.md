@@ -3,6 +3,7 @@ layout: post
 title: "Type Safety"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [type-system, null-safety, sealed-types]
 lang: en
 permalink: /en/glossary/type-safety/
 ---

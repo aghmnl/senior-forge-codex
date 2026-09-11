@@ -3,6 +3,7 @@ layout: post
 title: "Reflexión en Runtime"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [reflection, runtime, performance]
 lang: es
 permalink: /es/glosario/runtime-reflection/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "State Emission Patterns"
 date: 2026-08-30 12:00:00 +0000
 categories: [es, glosario]
+tags: [state-management, flow, concurrency]
 lang: es
 permalink: /es/glosario/state-emission-patterns/
 ---

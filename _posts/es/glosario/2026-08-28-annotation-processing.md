@@ -3,6 +3,7 @@ layout: post
 title: "Procesamiento de Anotaciones"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [compiler, build-tools, di]
 lang: es
 permalink: /es/glosario/annotation-processing/
 ---

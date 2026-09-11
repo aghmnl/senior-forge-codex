@@ -1,0 +1,131 @@
+# Display labels for glossary tags (see docs/GLOSSARY_TAGS.md).
+# Keys are the internal tag identifiers used in post front matter.
+android-framework:
+  en: "Android Framework"
+  es: "Android Framework"
+architecture:
+  en: "Architecture"
+  es: "Arquitectura"
+build-tools:
+  en: "Build Tools"
+  es: "Build Tools"
+callbacks:
+  en: "Callbacks"
+  es: "Callbacks"
+cancellation:
+  en: "Cancellation"
+  es: "Cancelación"
+collections:
+  en: "Collections"
+  es: "Collections"
+compiler:
+  en: "Compiler"
+  es: "Compilador"
+compose:
+  en: "Jetpack Compose"
+  es: "Jetpack Compose"
+concurrency:
+  en: "Concurrency"
+  es: "Concurrencia"
+coroutines:
+  en: "Coroutines"
+  es: "Coroutines"
+data-classes:
+  en: "Data Classes"
+  es: "Data Classes"
+delegation:
+  en: "Delegation"
+  es: "Delegación"
+design-patterns:
+  en: "Design Patterns"
+  es: "Patrones de diseño"
+design-principles:
+  en: "Design Principles"
+  es: "Principios de diseño"
+di:
+  en: "Dependency Injection"
+  es: "Inyección de dependencias"
+dispatch:
+  en: "Method Dispatch"
+  es: "Method Dispatch"
+dsl:
+  en: "DSL"
+  es: "DSL"
+error-handling:
+  en: "Error Handling"
+  es: "Manejo de errores"
+flow:
+  en: "Flow"
+  es: "Flow"
+functional:
+  en: "Functional Style"
+  es: "Estilo funcional"
+generics:
+  en: "Generics"
+  es: "Generics"
+immutability:
+  en: "Immutability"
+  es: "Inmutabilidad"
+inlining:
+  en: "Inlining"
+  es: "Inlining"
+interop:
+  en: "Java Interop"
+  es: "Interop con Java"
+jvm:
+  en: "JVM"
+  es: "JVM"
+lambdas:
+  en: "Lambdas"
+  es: "Lambdas"
+lifecycle:
+  en: "Lifecycle"
+  es: "Lifecycle"
+memory:
+  en: "Memory"
+  es: "Memoria"
+navigation:
+  en: "Navigation"
+  es: "Navegación"
+null-safety:
+  en: "Null Safety"
+  es: "Null Safety"
+oop:
+  en: "OOP"
+  es: "POO"
+performance:
+  en: "Performance"
+  es: "Performance"
+persistence:
+  en: "Persistence"
+  es: "Persistencia"
+reflection:
+  en: "Reflection"
+  es: "Reflection"
+runtime:
+  en: "Runtime"
+  es: "Runtime"
+scoping:
+  en: "Scoping"
+  es: "Scoping"
+sealed-types:
+  en: "Sealed Types"
+  es: "Sealed Types"
+serialization:
+  en: "Serialization"
+  es: "Serialización"
+state-management:
+  en: "State Management"
+  es: "Gestión de estado"
+syntax:
+  en: "Syntax"
+  es: "Sintaxis"
+testing:
+  en: "Testing"
+  es: "Testing"
+threading:
+  en: "Threading"
+  es: "Threading"
+type-system:
+  en: "Type System"
+  es: "Sistema de tipos"

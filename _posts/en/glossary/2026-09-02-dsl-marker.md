@@ -3,6 +3,7 @@ layout: post
 title: "@DslMarker"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [dsl, scoping, compose]
 lang: en
 permalink: /en/glossary/dsl-marker/
 ---

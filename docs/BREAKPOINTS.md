@@ -21,6 +21,7 @@ These Chirpy/Bootstrap breakpoints are neutralized by overrides:
 | **1400px** (Bootstrap XXL `px-xxl-5`) | Container padding jumped from 12px to 48px (3rem) | Override forces `padding: 12px` at ≥1400px |
 | **992px** (Bootstrap LG `col-lg-11`) | Content column narrowed to 96% flex | Override forces `flex: 0 0 100%` in the 992–1199px range, so the effect only starts at 1200px |
 | **768px** (Bootstrap MD) | Container went full-width with 0 padding | Override preserves `max-width: none` and 12px padding in the 601–768px range, so the real shift happens at 600px |
+| **768px / 1200px** (Bootstrap `row-cols-md-2` / `row-cols-xl-3` in related posts) | Related-post cards went 1→2→3 columns at 768px and 1200px | Replaced by the shared `.codex-card-grid` CSS grid (600px / 1650px) |
 
 ## What Happens at Each Breakpoint
 
@@ -33,6 +34,7 @@ These Chirpy/Bootstrap breakpoints are neutralized by overrides:
 - **Glossary cards:** 1 column.
 - **Glossary search results:** 1 column.
 - **Global search results (sidebar):** 1 column.
+- **Tag pages (`/en/tags/<tag>/`, `/es/etiquetas/<tag>/`) and related posts ("Further Reading"):** 1 column.
 
 ### 600px — Mobile to Tablet
 
@@ -40,6 +42,7 @@ These Chirpy/Bootstrap breakpoints are neutralized by overrides:
 - **Glossary cards:** Switch from 1 to 2 columns.
 - **Glossary search results:** Switch from 1 to 2 columns.
 - **Global search results (sidebar):** Switch from 1 to 2 columns.
+- **Tag pages and related posts:** Switch from 1 to 2 columns.
 
 ### 850px — Tablet to Desktop
 
@@ -69,6 +72,7 @@ Not a layout breakpoint — the container is capped at 1320px so margins grow sy
 - **Glossary cards:** Switch from 2 to 3 columns.
 - **Glossary search results:** Switch from 2 to 3 columns.
 - **All sidebar internal spacing:** Frozen at pre-1650 values (profile, nav items, bottom icons).
+- **Tag pages and related posts:** Switch from 2 to 3 columns.
 
 ## File Reference
 
@@ -78,6 +82,7 @@ Not a layout breakpoint — the container is capped at 1320px so margins grow sy
 | `_includes/search-loader.html` | Global search results grid (sidebar search): column breakpoints and card styles |
 | `en/glossary/index.md` | Glossary search result grid breakpoints (inline `<style>`) |
 | `es/glosario/index.md` | Same as above, Spanish version |
+| `_includes/metadata-hook.html` (`.codex-card-grid`) | Shared card grid for glossary index cards, related posts and tag pages: column breakpoints and summary typography |
 
 ## Design Decisions
 

@@ -3,6 +3,7 @@ layout: post
 title: "CancellationException"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [cancellation, coroutines, error-handling]
 lang: es
 permalink: /es/glosario/cancellation-exception/
 ---

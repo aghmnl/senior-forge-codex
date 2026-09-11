@@ -3,6 +3,7 @@ layout: post
 title: "Terminal Operations"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [collections, functional, performance]
 lang: en
 permalink: /en/glossary/terminal-operations/
 ---

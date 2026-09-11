@@ -3,6 +3,7 @@ layout: post
 title: "Compile Time"
 date: 2026-08-19 12:00:00 +0000
 categories: [en, glossary]
+tags: [compiler, type-system]
 lang: en
 permalink: /en/glossary/compile-time/
 ---

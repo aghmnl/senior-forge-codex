@@ -3,6 +3,7 @@ layout: post
 title: "KProperty"
 date: 2026-09-04 12:00:00 +0000
 categories: [en, glossary]
+tags: [delegation, reflection]
 lang: en
 permalink: /en/glossary/kproperty/
 ---

@@ -1,0 +1,30 @@
+---
+layout: page
+# Tag page: card grid of the glossary entries carrying `page.tag`, in the page's language.
+# Grid and card rules: `.codex-card-grid` in _includes/metadata-hook.html (see docs/BREAKPOINTS.md).
+---
+
+{% include lang.html %}
+
+{% assign posts = site.tags[page.tag] | where: 'lang', page.lang | sort: 'title' %}
+
+<div id="page-tag">
+  <h1 class="ps-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted ps-2">{{ posts | size }}</span>
+  </h1>
+
+  <nav id="tag-cards" class="codex-card-grid mt-4 mb-4">
+    {% for post in posts %}
+      <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+        <div class="card-body">
+          <h4 class="pt-0 my-2">{{ post.title }}</h4>
+          <div class="text-muted">
+            <p>{% include post-summary.html %}</p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </nav>
+</div>

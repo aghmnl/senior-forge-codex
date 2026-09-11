@@ -3,6 +3,7 @@ layout: post
 title: "Composition Lifetime"
 date: 2026-09-04 12:00:00 +0000
 categories: [en, glossary]
+tags: [compose, lifecycle, state-management]
 lang: en
 permalink: /en/glossary/composition-lifetime/
 ---

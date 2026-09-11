@@ -3,6 +3,7 @@ layout: post
 title: "Defensive Copy"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [immutability, collections, concurrency]
 lang: en
 permalink: /en/glossary/defensive-copy/
 ---

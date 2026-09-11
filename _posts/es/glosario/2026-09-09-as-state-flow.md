@@ -3,6 +3,7 @@ layout: post
 title: "asStateFlow"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [flow, state-management, architecture]
 lang: es
 permalink: /es/glosario/as-state-flow/
 ---

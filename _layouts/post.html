@@ -137,17 +137,14 @@ script_includes:
       </div>
     {% endif %}
 
-    <!-- tags -->
+
+    <!-- tags: localized links to per-language tag pages -->
     {% if page.tags.size > 0 %}
       <div class="post-tags">
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
-          <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
-            class="post-tag no-text-decoration"
-          >
-            {{- tag -}}
-          </a>
+          {% include tag-url.html tag=tag lang=lang %}
+          <a href="{{ tag_url | relative_url }}" class="post-tag no-text-decoration">{{- tag_label -}}</a>
         {% endfor %}
       </div>
     {% endif %}

@@ -3,6 +3,7 @@ layout: post
 title: "Operator Overloading"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [syntax, dsl, dispatch]
 lang: en
 permalink: /en/glossary/operator-overloading/
 ---

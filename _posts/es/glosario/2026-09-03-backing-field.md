@@ -3,6 +3,7 @@ layout: post
 title: "Backing Field"
 date: 2026-09-03 12:00:00 +0000
 categories: [es, glosario]
+tags: [syntax, delegation, state-management]
 lang: es
 permalink: /es/glosario/backing-field/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "distinctUntilChanged"
 date: 2026-09-09 12:00:00 +0000
 categories: [es, glosario]
+tags: [flow, state-management, immutability]
 lang: es
 permalink: /es/glosario/distinct-until-changed/
 ---

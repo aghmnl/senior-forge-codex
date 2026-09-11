@@ -3,6 +3,7 @@ layout: post
 title: "Context"
 date: 2026-08-21 12:00:00 +0000
 categories: [es, glosario]
+tags: [scoping, android-framework, coroutines]
 lang: es
 permalink: /es/glosario/context-programming/
 ---

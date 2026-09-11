@@ -3,6 +3,7 @@ layout: post
 title: "this@label"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [scoping, dsl, syntax]
 lang: es
 permalink: /es/glosario/this-at-label/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Data Layer"
 date: 2026-09-04 12:00:00 +0000
 categories: [en, glossary]
+tags: [architecture, persistence]
 lang: en
 permalink: /en/glossary/data-layer/
 ---

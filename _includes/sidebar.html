@@ -103,6 +103,8 @@
           {%- assign target_url = "/es/" -%}
         {%- elsif current_url contains "/en/glossary/" -%}
           {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
+        {%- elsif current_url contains "/en/tags/" -%}
+          {%- assign target_url = current_url | replace: "/en/tags/", "/es/etiquetas/" -%}
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
         {%- endif -%}
@@ -114,6 +116,8 @@
           {%- assign target_url = "/" -%}
         {%- elsif current_url contains "/es/glosario/" -%}
           {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
+        {%- elsif current_url contains "/es/etiquetas/" -%}
+          {%- assign target_url = current_url | replace: "/es/etiquetas/", "/en/tags/" -%}
         {%- else -%}
           {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
         {%- endif -%}

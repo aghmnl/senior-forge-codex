@@ -3,6 +3,7 @@ layout: post
 title: "Event Wiring"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [callbacks, compose, architecture]
 lang: en
 permalink: /en/glossary/event-wiring/
 ---

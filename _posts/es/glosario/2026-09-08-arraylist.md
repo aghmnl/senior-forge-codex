@@ -3,6 +3,7 @@ layout: post
 title: "ArrayList"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, performance, memory]
 lang: es
 permalink: /es/glosario/arraylist/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Guard Clause"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [design-principles, null-safety, syntax]
 lang: es
 permalink: /es/glosario/guard-clause/
 ---

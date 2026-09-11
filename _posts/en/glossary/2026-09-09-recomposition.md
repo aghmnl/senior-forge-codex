@@ -3,6 +3,7 @@ layout: post
 title: "Recomposition"
 date: 2026-09-09 12:00:00 +0000
 categories: [en, glossary]
+tags: [compose, state-management, immutability]
 lang: en
 permalink: /en/glossary/recomposition/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Cooperative Cancellation"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [cancellation, coroutines]
 lang: es
 permalink: /es/glosario/cooperative-cancellation/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Main Thread"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [threading, android-framework, performance]
 lang: es
 permalink: /es/glosario/main-thread/
 ---

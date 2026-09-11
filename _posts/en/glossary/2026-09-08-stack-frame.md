@@ -3,6 +3,7 @@ layout: post
 title: "Stack Frame"
 date: 2026-09-08 12:00:00 +0000
 categories: [en, glossary]
+tags: [jvm, memory, concurrency]
 lang: en
 permalink: /en/glossary/stack-frame/
 ---

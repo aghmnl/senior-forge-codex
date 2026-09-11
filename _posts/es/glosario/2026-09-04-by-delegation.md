@@ -3,6 +3,7 @@ layout: post
 title: "by (Delegation)"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [delegation, syntax, compose]
 lang: es
 permalink: /es/glosario/by-delegation/
 ---

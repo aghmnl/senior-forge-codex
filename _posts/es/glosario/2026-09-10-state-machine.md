@@ -3,6 +3,7 @@ layout: post
 title: "State Machine (Coroutines)"
 date: 2026-09-10 12:00:00 +0000
 categories: [es, glosario]
+tags: [coroutines, compiler, jvm]
 lang: es
 permalink: /es/glosario/state-machine/
 ---

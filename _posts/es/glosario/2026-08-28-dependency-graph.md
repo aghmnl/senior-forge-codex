@@ -3,6 +3,7 @@ layout: post
 title: "Grafo de Dependencias"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [di, architecture, compiler]
 lang: es
 permalink: /es/glosario/dependency-graph/
 ---

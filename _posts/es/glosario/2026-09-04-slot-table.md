@@ -3,6 +3,7 @@ layout: post
 title: "Slot Table"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [compose, state-management, memory]
 lang: es
 permalink: /es/glosario/slot-table/
 ---

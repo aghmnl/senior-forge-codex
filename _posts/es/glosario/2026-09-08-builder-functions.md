@@ -3,6 +3,7 @@ layout: post
 title: "Builder Functions"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, immutability, lambdas]
 lang: es
 permalink: /es/glosario/builder-functions/
 ---

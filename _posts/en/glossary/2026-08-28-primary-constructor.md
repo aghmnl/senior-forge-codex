@@ -3,6 +3,7 @@ layout: post
 title: "Primary Constructor"
 date: 2026-08-28 12:00:00 +0000
 categories: [en, glossary]
+tags: [data-classes, oop, syntax]
 lang: en
 permalink: /en/glossary/primary-constructor/
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "@Module"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [di, architecture]
 lang: en
 permalink: /en/glossary/module-annotation/
 ---

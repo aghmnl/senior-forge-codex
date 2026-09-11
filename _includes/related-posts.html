@@ -1,8 +1,8 @@
-<!-- Related posts: random selection, no dates -->
+<!-- Related posts: highest tag overlap first (ties broken randomly), same language only, no dates -->
 
 {% assign TOTAL_SIZE = 6 %}
-{% assign TAG_SCORE = 1 %}
-{% assign CATEGORY_SCORE = 0.5 %}
+{% assign TAG_SCORE = 2 %}
+{% assign CATEGORY_SCORE = 1 %}
 {% assign SEPARATOR = ':' %}
 
 {% assign match_posts = '' | split: '' %}
@@ -21,7 +21,7 @@
 {% for i in (0..last_index) %}
   {% assign post = match_posts[i] %}
 
-  {% if post.url == page.url %}
+  {% if post.url == page.url or post.lang != page.lang %}
     {% continue %}
   {% endif %}
 
@@ -40,7 +40,9 @@
   {% endfor %}
 
   {% if score > 0 %}
-    {% capture score_item %}{{ score }}{{ SEPARATOR }}{{ i }}{% endcapture %}
+    {% comment %} Zero-pad the score so string sort orders numerically ("02" < "10"). {% endcomment %}
+    {% assign padded = score | prepend: '00' | slice: -2, 2 %}
+    {% capture score_item %}{{ padded }}{{ SEPARATOR }}{{ i }}{% endcapture %}
     {% assign score_list = score_list | push: score_item %}
   {% endif %}
 {% endfor %}
@@ -49,20 +51,37 @@
 
 {% if score_list.size > 0 %}
   {% assign sorted_scores = score_list | sort | reverse %}
-  {% assign shuffled = sorted_scores | sort: "none" | sample: 1 %}
-  {% comment %} Liquid has no shuffle, so we take top candidates and let the build randomize via sample loop {% endcomment %}
-  {% assign candidates = '' | split: '' %}
+  {% comment %}
+    Take every entry that scores strictly above the TOTAL_SIZE-th one, then fill the
+    remaining slots with a random sample of the entries tied at that score. This keeps
+    the best matches deterministic while still rotating among equally-related ones.
+  {% endcomment %}
+  {% if sorted_scores.size > TOTAL_SIZE %}
+    {% assign cutoff_index = TOTAL_SIZE | minus: 1 %}
+    {% assign cutoff = sorted_scores[cutoff_index] | split: SEPARATOR | first %}
+  {% else %}
+    {% assign cutoff = '00' %}
+  {% endif %}
+  {% assign above = '' | split: '' %}
+  {% assign tied = '' | split: '' %}
   {% for entry in sorted_scores %}
-    {% assign candidates = candidates | push: entry %}
-  {% endfor %}
-  {% assign picked = '' | split: '' %}
-  {% for i in (1..6) %}
-    {% if candidates.size > 0 %}
-      {% assign pick = candidates | sample %}
-      {% assign picked = picked | push: pick %}
-      {% assign candidates = candidates | where_exp: "item", "item != pick" %}
+    {% assign entry_score = entry | split: SEPARATOR | first %}
+    {% if entry_score > cutoff %}
+      {% assign above = above | push: entry %}
+    {% elsif entry_score == cutoff %}
+      {% assign tied = tied | push: entry %}
     {% endif %}
   {% endfor %}
+  {% assign remaining = TOTAL_SIZE | minus: above.size %}
+  {% assign picked = above %}
+  {% if remaining > 0 and tied.size > 0 %}
+    {% comment %} sample: 1 returns a scalar, so always ask for >= 2 and trim. {% endcomment %}
+    {% assign sample_size = remaining | at_least: 2 %}
+    {% assign filler = tied | sample: sample_size %}
+    {% for entry in filler limit: remaining %}
+      {% assign picked = picked | push: entry %}
+    {% endfor %}
+  {% endif %}
   {% for entry in picked %}
     {% assign index = entry | split: SEPARATOR | last %}
     {% assign index_list = index_list | push: index %}
@@ -81,18 +100,16 @@
     <h3 class="mb-4" id="related-label">
       {{- site.data.locales[include.lang].post.relate_posts -}}
     </h3>
-    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+    <nav class="codex-card-grid mb-4">
       {% for post in relate_posts %}
-        <article class="col">
-          <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
-            <div class="card-body">
-              <h4 class="pt-0 my-2">{{ post.title }}</h4>
-              <div class="text-muted">
-                <p>{% include post-summary.html %}</p>
-              </div>
+        <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
+          <div class="card-body">
+            <h4 class="pt-0 my-2">{{ post.title }}</h4>
+            <div class="text-muted">
+              <p>{% include post-summary.html %}</p>
             </div>
-          </a>
-        </article>
+          </div>
+        </a>
       {% endfor %}
     </nav>
   </aside>

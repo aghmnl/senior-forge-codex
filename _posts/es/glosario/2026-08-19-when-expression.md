@@ -3,6 +3,7 @@ layout: post
 title: "when Expression"
 date: 2026-08-19 12:00:00 +0000
 categories: [es, glosario]
+tags: [syntax, sealed-types]
 lang: es
 permalink: /es/glosario/when-expression/
 ---

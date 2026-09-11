@@ -3,6 +3,7 @@ layout: post
 title: "Inferencia de Tipos"
 date: 2026-08-28 12:00:00 +0000
 categories: [es, glosario]
+tags: [type-system, compiler]
 lang: es
 permalink: /es/glosario/type-inference/
 ---

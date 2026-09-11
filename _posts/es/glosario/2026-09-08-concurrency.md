@@ -3,6 +3,7 @@ layout: post
 title: "Concurrency"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [concurrency, immutability, coroutines]
 lang: es
 permalink: /es/glosario/concurrency/
 ---

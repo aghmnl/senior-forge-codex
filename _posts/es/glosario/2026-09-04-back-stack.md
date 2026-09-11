@@ -3,6 +3,7 @@ layout: post
 title: "Back Stack"
 date: 2026-09-04 12:00:00 +0000
 categories: [es, glosario]
+tags: [navigation, lifecycle, android-framework]
 lang: es
 permalink: /es/glosario/back-stack/
 ---

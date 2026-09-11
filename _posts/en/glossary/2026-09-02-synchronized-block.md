@@ -3,6 +3,7 @@ layout: post
 title: "Synchronized Block"
 date: 2026-09-02 12:00:00 +0000
 categories: [en, glossary]
+tags: [threading, concurrency, performance]
 lang: en
 permalink: /en/glossary/synchronized-block/
 ---

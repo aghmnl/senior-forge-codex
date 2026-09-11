@@ -3,6 +3,7 @@ layout: post
 title: "Function Overloading"
 date: 2026-09-02 12:00:00 +0000
 categories: [es, glosario]
+tags: [dispatch, syntax, interop]
 lang: es
 permalink: /es/glosario/function-overloading/
 ---

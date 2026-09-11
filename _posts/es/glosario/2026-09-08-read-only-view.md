@@ -3,6 +3,7 @@ layout: post
 title: "Read-Only View"
 date: 2026-09-08 12:00:00 +0000
 categories: [es, glosario]
+tags: [collections, immutability, generics]
 lang: es
 permalink: /es/glosario/read-only-view/
 ---

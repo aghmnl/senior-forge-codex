@@ -1,0 +1,22 @@
+---
+layout: page
+# Tag page: lists the glossary entries carrying `page.tag`, in the page's language.
+---
+
+{% include lang.html %}
+
+<div id="page-tag">
+  {% assign posts = site.tags[page.tag] | where: 'lang', page.lang | sort: 'title' %}
+  <h1 class="ps-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted ps-2">{{ posts | size }}</span>
+  </h1>
+  <ul class="content ps-0">
+    {% for post in posts %}
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

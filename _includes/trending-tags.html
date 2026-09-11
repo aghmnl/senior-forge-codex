@@ -1,0 +1,40 @@
+<!-- Trending tags, counted and linked per language. Overrides the theme include. -->
+
+{% assign MAX = 10 %}
+{% assign lang = include.lang | default: 'en' %}
+
+{% assign tag_list = '' | split: '' %}
+{% for tag in site.tags %}
+  {% assign tag_name = tag | first %}
+  {% assign count = 0 %}
+  {% for post in tag[1] %}
+    {% if post.lang == lang %}
+      {% assign count = count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if count > 0 %}
+    {% comment %} Zero-pad so a string sort orders numerically. {% endcomment %}
+    {% assign padded = count | prepend: '000' | slice: -3, 3 %}
+    {% capture item %}{{ padded }}::{{ tag_name }}{% endcapture %}
+    {% assign tag_list = tag_list | push: item %}
+  {% endif %}
+{% endfor %}
+
+{% assign trending = '' | split: '' %}
+{% assign sorted = tag_list | sort | reverse %}
+{% for item in sorted limit: MAX %}
+  {% assign tag_name = item | split: '::' | last %}
+  {% assign trending = trending | push: tag_name %}
+{% endfor %}
+
+{% if trending.size > 0 %}
+  <section>
+    <h2 class="panel-heading">{{- site.data.locales[lang].panel.trending_tags -}}</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      {% for tag_name in trending %}
+        {% include tag-url.html tag=tag_name lang=lang %}
+        <a class="post-tag btn btn-outline-primary" href="{{ tag_url | relative_url }}">{{ tag_label }}</a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

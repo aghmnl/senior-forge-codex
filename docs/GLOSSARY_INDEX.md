@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (215 total)
+## Entries (220 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -47,6 +47,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | by (Delegation) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/by-delegation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/by-delegation/) | None | `delegation`, `syntax`, `compose` |
 | Bytecode | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/bytecode/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/bytecode/) | None | `jvm`, `compiler` |
 | Call Site | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/call-site/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/call-site/) | Full | `compiler`, `inlining`, `generics` |
+| Call Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/call-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/call-stack/) | None | `jvm`, `memory`, `error-handling` |
 | Callback Hell | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/callback-hell/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/callback-hell/) | None | `callbacks`, `coroutines` |
 | Callbacks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/callbacks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/callbacks/) | Full | `callbacks`, `lambdas`, `coroutines` |
 | CancellationException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cancellation-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cancellation-exception/) | Full | `cancellation`, `coroutines`, `error-handling` |
@@ -73,6 +74,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Coroutines | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutines/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutines/) | Full | `coroutines`, `concurrency`, `lifecycle` |
 | coroutineScope (builder) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutine-scope-builder/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutine-scope-builder/) | Full | `coroutines`, `concurrency`, `cancellation` |
 | Covariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/covariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/covariance/) | Full | `generics`, `type-system`, `immutability` |
+| Crashlytics | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/crashlytics/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/crashlytics/) | Full | `error-handling`, `android-framework`, `build-tools` |
 | Crossinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/crossinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/crossinline/) | None | `inlining`, `lambdas` |
 | Dagger | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dagger/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dagger/) | Full | `di`, `compiler`, `architecture` |
 | DAO | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dao/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dao/) | Full | `persistence`, `design-patterns`, `coroutines` |
@@ -110,6 +112,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | IntArray | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/intarray/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/intarray/) | None | `memory`, `performance`, `collections` |
 | Intent Signaling | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/intent-signaling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/intent-signaling/) | None | `design-principles`, `syntax` |
 | Invariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/invariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/invariance/) | Full | `generics`, `type-system` |
+| Invariant | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/invariant/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/invariant/) | Full | `design-principles`, `error-handling`, `type-system` |
 | Jetpack Compose | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jetpack-compose/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jetpack-compose/) | Full | `compose`, `dsl`, `lambdas` |
 | JIT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jit-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jit-compilation/) | None | `runtime`, `performance`, `jvm` |
 | JVM | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm/) | Full | `jvm`, `runtime` |
@@ -144,6 +147,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Navigation Component | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/navigation-component/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/navigation-component/) | None | `navigation`, `android-framework`, `lifecycle` |
 | Noinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/noinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/noinline/) | None | `inlining`, `lambdas`, `memory` |
 | NullPointerException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/null-pointer-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/null-pointer-exception/) | None | `null-safety`, `error-handling`, `interop` |
+| Obfuscation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/obfuscation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/obfuscation/) | Full | `build-tools`, `reflection`, `error-handling` |
 | Object-Oriented Programming | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/object-oriented-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/object-oriented-programming/) | Full | `oop`, `design-principles` |
 | Observable State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/observable-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/observable-state/) | None | `state-management`, `compose`, `flow` |
 | Operator Overloading | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/operator-overloading/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/operator-overloading/) | Full | `syntax`, `dsl`, `dispatch` |
@@ -152,6 +156,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Persistent Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/persistent-collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/persistent-collections/) | None | `collections`, `immutability`, `compose` |
 | PGO | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/pgo/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/pgo/) | None | `runtime`, `performance`, `build-tools` |
 | Pipeline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/pipeline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/pipeline/) | None | `functional`, `architecture`, `collections` |
+| Platform Types | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/platform-types/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/platform-types/) | Full | `null-safety`, `interop`, `type-system` |
 | Polymorphism | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/polymorphism/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/polymorphism/) | None | `oop`, `dispatch`, `generics` |
 | Primary Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primary-constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primary-constructor/) | Full | `data-classes`, `oop`, `syntax` |
 | Primitives | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primitives/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primitives/) | Full | `jvm`, `memory`, `performance` |

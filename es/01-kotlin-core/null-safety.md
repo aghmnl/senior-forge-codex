@@ -21,7 +21,7 @@ Para un Desarrollador Senior, la null safety no es [syntax sugar]({{ "/es/glosar
 
 - **Null Significa Algo**: Un tipo de retorno `String?` es un contrato: "este valor podría estar legítimamente ausente." Un Senior usa tipos nullable para expresar opcionalidad (la URL de foto de un usuario) y tipos no-nullable para expresar garantías (el email de un usuario). Elegir la nullabilidad incorrecta filtra ambigüedad del dominio a cada consumidor.
 - **`!!` No Debería Usarse Nunca**: Cada `!!` es una afirmación de que el desarrollador sabe más que el compilador — y casi siempre es incorrecto o perezoso. Produce una [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) genérica sin contexto, haciendo el [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) inútil para debugging. Siempre existe una alternativa mejor (ver estrategias abajo).
-- **Platform Types**: Los valores de APIs Java llegan como "platform types" (`String!`) — ni nullable ni no-nullable. Un Senior anota los límites de interop con Java usando `@Nullable`/`@NonNull` o los envuelve en funciones Kotlin que declaran nullabilidad explícita, previniendo la propagación silenciosa de NullPointerException.
+- **[Platform Types]({{ "/es/glosario/platform-types/" | relative_url }})**: Los valores de APIs Java llegan como [platform types]({{ "/es/glosario/platform-types/" | relative_url }}) (`String!`) — ni nullable ni no-nullable. Un Senior anota los límites de interop con Java usando `@Nullable`/`@NonNull` o los envuelve en funciones Kotlin que declaran nullabilidad explícita, previniendo la propagación silenciosa de NullPointerException.
 - **Early Return con Elvis**: El patrón `?: return` es la [guard clause]({{ "/es/glosario/guard-clause/" | relative_url }}) idiomática que elimina la nullabilidad del resto del [scope]({{ "/es/glosario/scope/" | relative_url }}) de la función, manteniendo el camino feliz plano y legible.
 
 ### Estrategias para eliminar `!!`
@@ -94,7 +94,13 @@ fun onCascadeConfirmed() {
 
 **Pregunta**: ¿Por qué `!!` nunca debería aparecer en código de producción, y qué hace un Senior en su lugar?
 
-**Respuesta Senior**: El operador `!!` intercambia una garantía de seguridad en tiempo de compilación por un crash en runtime sin contexto. Produce una NullPointerException genérica cuyo stack trace te dice DÓNDE fue el crash pero no POR QUÉ el valor era null. En todos los casos, un Senior elimina el `!!` a través de tres estrategias: (1) rediseñar el flujo de datos para que el valor sea no-nullable desde el inicio — por ejemplo, usando inyección por constructor en lugar de asignación tardía; (2) usar el operador Elvis con una excepción explícita (`?: throw IllegalStateException("razón")`) para que el stack trace explique la invariante que se violó; o (3) usar safe calls con `let`, `run`, o early return (`?: return`) para manejar el caso null explícitamente. El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de assertions.
+**Respuesta Senior**: El operador `!!` intercambia una garantía de seguridad en tiempo de compilación por un crash en runtime sin contexto. Produce una NullPointerException genérica cuyo stack trace te dice DÓNDE fue el crash pero no POR QUÉ el valor era null. En todos los casos, un Senior elimina el `!!` a través de tres estrategias:
+
+   1. Rediseñar el flujo de datos para que el valor sea no-nullable desde el inicio — por ejemplo, usando inyección por constructor en lugar de asignación tardía.
+   2. Usar el operador Elvis con una excepción explícita (`?: throw IllegalStateException("razón")`) para que el stack trace explique la invariante que se violó.
+   3. Usar safe calls con `let`, `run`, o early return (`?: return`) para manejar el caso null explícitamente.
+
+   El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de assertions.
 
 ---
 

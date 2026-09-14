@@ -1,50 +1,61 @@
 # The Senior Forge Codex: Multi-Agent AI Study Workflow
 
-This document outlines the synchronized workflow between Claude and Gemini/NotebookLM for processing, studying, and evaluating the 100 technical topics for Senior Android Engineering interviews. It complements the `DAILY_WORKFLOW.md` by defining the exact responsibilities of each AI agent and the prompts required for the deep-study phase.
+This document outlines the synchronized workflow between Claude and Gemini/NotebookLM for processing, studying, and evaluating the 100 technical topics for Senior Android Engineering interviews. It complements the `DAILY_WORKFLOW.md` by defining the exact responsibilities of each AI agent and where the per-topic prompts live.
+
+**Daily sequence:** Claude drafts the topic (content not shown yet) → Claude diagnostic, cold → learner reads and names extra glossary words → Claude links them and generates the notebook file → PR → Gemini creates the notebook from a single pre-filled prompt → study with the notebook → Claude final evaluation. Step-by-step in `docs/DAILY_WORKFLOW.md` (Steps 4c–4e).
 
 ## Agent Responsibilities
 
 - **Claude:**
   - **Content Creation:** Generates the daily technical articles, glossary entries, and maintains the GitHub repository.
+  - **Notebook Prompt:** Ships, with every new topic, a ready-to-paste study file under `_notebooks/` that contains everything Gemini needs — pre-researched, ordered, with no open research left to do.
+  - **Baseline Diagnostic:** Administers the five diagnostic questions of that file, compares the answers against its rubric, and writes the "Nivel actual" text.
   - **Evaluation:** Conducts the final theoretical and practical technical interview simulations based on the generated content.
 - **Gemini (Chat):**
-  - **Environment Setup:** Orchestrates the creation of the NotebookLM environment, dynamically scrapes glossary links, and fetches official documentation (Kotlin/Android).
+  - **Notebook Setup only:** Creates the NotebookLM notebook, adds the exact list of sources it is given, and pastes the "Nivel actual" text as a source. It does not scrape, search, or judge.
 - **Gemini Notebook (NotebookLM):**
   - **Deep Study:** Utilizes native tools (Audio Overview, Mind Map, Flashcards, Quiz) to fixate terminology and architectural reasoning without consuming conversational context.
 
-## Phase 1: Content Generation (Claude)
+### Why the split
 
-As defined in `DAILY_WORKFLOW.md`, Claude is responsible for drafting the daily article and publishing it to the GitHub pages repository (`aghmnl.github.io/senior-forge-codex/es/`). Once the article is live, proceed to Phase 2.
+The first version of this pipeline asked Gemini to research and orchestrate in one pass: scrape glossary links from the article, search official documentation, extract the "Senior Perspective", judge diagnostic answers, then create the notebook. Gemini lost track of the request. The reliable part of Gemini is the mechanical part — create a notebook, add URLs, paste a text — so everything else moved to Claude and to a per-topic file prepared in advance.
 
-## Phase 2: NotebookLM Initialization (Gemini Chat)
+## Phase 1: Content Generation + Notebook File (Claude)
 
-This phase automates the collection of sources (main article, glossary links, and official documentation) and creates the study workspace. Execute this step in the main Gemini chat.
+As defined in `DAILY_WORKFLOW.md`, Claude drafts the daily article and publishes it to `aghmnl.github.io/senior-forge-codex/es/`. The diagnostic (Phase 2A) runs **before** the learner reads the draft; the learner then reviews it and names the extra glossary words to link; only after that does Claude create the topic's notebook file, so its glossary list is final:
 
-### Initialization Prompt
-
-Copy and execute the following block in Gemini, replacing the `TOPIC_NAME` and `MAIN_ARTICLE_URL` variables.
-
-```text
-**Context:**
-I am preparing for Senior Android Engineering technical interviews. Initialize my NotebookLM study environment for today's topic. Ensure all generated text, documents, and notes are written strictly in Latinamerican Spanish.
-
-**Variables:**
-* TOPIC_NAME: "[Topic Name]"
-* MAIN_ARTICLE_URL: "[Exact URL of the daily article on aghmnl.github.io]"
-
-**Execution Steps:**
-1. Execute the tool to create a new NotebookLM notebook named exactly as TOPIC_NAME.
-2. Browse MAIN_ARTICLE_URL to read its content.
-3. Add MAIN_ARTICLE_URL as a web source to the created notebook.
-4. Parse the content and extract all internal glossary links (URLs containing `/glosario/`). Add each unique glossary link as a separate web source to the notebook.
-5. Identify the distinct core Kotlin or Android framework concepts discussed in the article. For each identified core concept, search the web and add exactly one most relevant official documentation URL (restricted to kotlinlang.org or developer.android.com) as a web source to the notebook.
-6. Extract the core architectural reasoning from the "The Senior Perspective (El Porqué)" section of the article. Use the NotebookLM tool to create a text source directly inside the notebook named "Objetivos de Estudio" containing this extracted reasoning translated to Latinamerican Spanish.
-7. Reply with the notebook URL and a bulleted list of all successfully added sources.
 ```
+_notebooks/<chapter-folder>/<slug>.md      e.g. _notebooks/02-coroutines-flow/suspend-functions.md
+```
+
+The folder is ignored by Jekyll (leading underscore), so it is never published. Everything in it is in Spanish. Each file has three blocks:
+
+| Block | Content | Who uses it |
+|---|---|---|
+| **1 — Diagnóstico de nivel** | Five questions anchored in the article's "The Senior Perspective", a rubric per question (Senior / intermediate / junior answer), and the template for the "Nivel actual" text. | Claude, with the learner |
+| **2 — Prompt para Gemini** | Topic name, article URL, every `/es/glosario/` URL linked from the ES article (extracted from the markdown, so it never drifts), 3–12 verified official sources from `kotlinlang.org` / `developer.android.com` with a one-line purpose each, closed numbered execution steps, and a `[NIVEL ACTUAL]` placeholder. | Learner pastes into Gemini |
+| **3 — Vía alternativa** | The same diagnostic wrapped as a two-prompt flow where Gemini asks the questions and applies the rubric itself. Kept for experimentation; not the default path. | Optional |
+
+Rules for the file:
+- Diagnostic questions must differ from the article's Interview Prep Q&A and from the questions Claude will use in Phase 4. The diagnostic measures concepts; the evaluation measures design decisions and code.
+- Official URLs are verified (HTTP 200) before being listed. Only `kotlinlang.org` and `developer.android.com`.
+- The glossary list is regenerated whenever the article's links change.
+
+## Phase 2: Baseline Diagnostic (Claude) and Notebook Creation (Gemini)
+
+### Step 2A: Diagnostic with Claude — before reading the article
+
+Claude offers it as soon as the draft is ready (or ask: *"Nivelame en <tema>"*). Claude asks the five questions from Block 1, one at a time. Answer **from memory, without having read the article** — the goal is to measure the starting point so the notebook explains what is actually missing. "No sé" is a valid answer. Claude compares the answers against the rubric and returns the "Nivel actual" text (8–12 lines: global level, what is already known, what needs in-depth explanation using the exact glossary terms, misconceptions to correct, and a one-line instruction for the Audio Overview).
+
+Claude then records the outcome in the topic file itself, under Block 1 as a `### Resultado — YYYY-MM-DD` section: a per-question table (level + observation), the global level, and the exact "Nivel actual" text that was handed to Gemini. In the same step, Claude replaces the `[NIVEL ACTUAL]` placeholder in Block 2 with that text, so the Gemini prompt is pasted as-is. The notebook file is therefore the single record of the topic's baseline; the final evaluation result stays in `docs/TOPIC_TRACKER.md`.
+
+### Step 2B: Notebook creation with Gemini — one prompt
+
+Copy Block 2 of the topic file into the Gemini chat, replacing `[NIVEL ACTUAL]` with the text from Step 2A. Gemini creates the notebook, adds each listed URL, creates the "Nivel actual" text source verbatim, and replies with the notebook URL and the list of sources added. Nothing is left for Gemini to research or decide.
 
 ## Phase 3: Deep Study Tools (NotebookLM UI)
 
-Once Gemini provides the notebook link, navigate to the NotebookLM web interface to use the native study tools in the following sequential order. These tools do not consume interactive chat tokens.
+Once Gemini provides the notebook link, read the article, then navigate to the NotebookLM web interface to use the native study tools in the following sequential order. Because the "Nivel actual" text is a source, the Audio Overview will contextualize its debate based on what is already known.
 
 1. **Audio Overview:** Listen to the generated debate based on the sources to internalize high-level concepts and architectural reasoning.
 2. **Mind Map:** Generate the visualization to understand the hierarchical relationship between framework concepts and glossary definitions.
@@ -53,7 +64,7 @@ Once Gemini provides the notebook link, navigate to the NotebookLM web interface
 
 ## Phase 4: Senior Interview Evaluation (Claude)
 
-After completing the deep study in NotebookLM, return to Claude for the technical evaluation. Claude holds the context of the generated article and acts as the strict Senior Android Interviewer.
+After completing the deep study in NotebookLM, return to Claude for the technical evaluation. Claude holds the context of the generated article and acts as the strict Senior Android Interviewer. These questions are not the diagnostic ones from Block 1.
 
 ### Evaluation Prompt
 
@@ -61,10 +72,10 @@ Copy and execute the following block in Claude's interface.
 
 ```text
 **Context:**
-Act as a strict Senior Android Engineering interviewer and technical mentor. I have completed my deep study session on TOPIC_NAME. We will now conduct the evaluation session in Latinamerican Spanish based strictly on the article you generated.
+Act as a strict Senior Android Engineering interviewer and technical mentor. I have just completed my deep study session on today's topic. We will now conduct the evaluation session in Latinamerican Spanish based strictly on the article you generated.
 
 **Execution Steps:**
-1. **Theoretical Evaluation:** Ask me exactly one advanced theoretical question about what is discussed in the article's "The Senior Perspective" section. Wait for my answer, evaluate it strictly, and provide technical feedback.
+1. **Theoretical Evaluation:** Ask me exactly one advanced theoretical question about the architectural decisions discussed in the article's "The Senior Perspective" section. Wait for my answer, evaluate it strictly, and provide technical feedback.
 2. **Practical Evaluation:** After the theoretical feedback, present a real-world Android/Kotlin code scenario related to the topic with a design flaw or compile error. Ask me how to fix it based on the studied concepts. Evaluate my response.
 
 ```

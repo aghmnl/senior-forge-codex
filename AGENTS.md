@@ -18,11 +18,14 @@ Single source of truth for every agent working in this repository. `CLAUDE.md` i
 - `docs/DAILY_WORKFLOW.md` — Defines the daily learning routine, weekly evaluation system, and spaced repetition logic.
 - `evals/` — Weekly evaluation records (one markdown per week, named `YYYY-WNN.md`).
 - `CODEX_GUIDE.md` — Article format, engineering standards, and content creation checklist.
+- `docs/AI_STUDY_PIPELINE.md` — Claude ↔ Gemini/NotebookLM study workflow and the per-topic notebook files under `_notebooks/`.
 
 ## Workflow Reference
 
 - Follow the daily routine defined in `docs/DAILY_WORKFLOW.md`.
 - **ALWAYS use real code examples from FollowApp Suite** (`/Users/agus/Documents/Entorno/FollowApps/Android/Suite`). When writing or updating any article, search FAS for relevant usages FIRST — do not use generic/invented examples unless no match exists in FAS. If a topic is not found there, mark as "Not found in FAS" and use a standalone example. Each code snippet must include a `// From FollowApp Suite — FileName.kt` comment identifying its origin.
+- New-topic sequence: draft the article → announce it is ready without showing the content → run the cold diagnostic → the learner reads it and names extra glossary words → link/create them → generate the notebook file → wait for commit approval. See `docs/DAILY_WORKFLOW.md` Steps 4c–4e.
+- Every new topic ships with a notebook file `_notebooks/<chapter-folder>/<slug>.md` (Spanish) in the same PR — see `docs/AI_STUDY_PIPELINE.md` for its three blocks. Its diagnostic questions must differ from the article's Interview Prep Q&A; official sources are limited to `kotlinlang.org` and `developer.android.com` and verified before listing. After the learner's cold diagnostic, record the result (per-question table, global level, the exact "Nivel actual" text) in that same file under `### Resultado — YYYY-MM-DD` and replace the `[NIVEL ACTUAL]` placeholder in the Gemini prompt with that text.
 - After each topic, the learner answers the Interview Prep Q&A from memory as a daily self-evaluation.
 - Weekly evaluations are cumulative and use spaced repetition (see `docs/DAILY_WORKFLOW.md`).
 

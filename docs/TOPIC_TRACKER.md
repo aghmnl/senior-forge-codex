@@ -17,8 +17,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 15 / 101
-**Last updated:** 2026-09-10
+**Articles written:** 16 / 101
+**Last updated:** 2026-09-14
 **Projected end date:** 10-feb-2027
 
 ---
@@ -46,7 +46,7 @@
 | Topic                                     | Article | Planned | Status                | Article Date | FAS  | Last Eval | Eval Result |
 | ----------------------------------------- | ------- | ------- | --------------------- | ------------ | :--: | --------- | ----------- |
 | Suspend functions                         | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/suspend-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/suspend-functions/) | 10-sep  | :black_square_button: | 2026-09-10   | Full | —         | —           |
-| Context & Dispatchers (Main, IO, Default) | —       | 14-sep  | :black_square_button: | —            | —    | —         | —           |
+| Context & Dispatchers (Main, IO, Default) | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/context-dispatchers/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/context-dispatchers/) | 14-sep  | :black_square_button: | 2026-09-14   | Full | —         | —           |
 | Structured Concurrency                    | —       | 15-sep  | :black_square_button: | —            | —    | —         | —           |
 | Launch vs Async/Await                     | —       | 16-sep  | :black_square_button: | —            | —    | —         | —           |
 | Main-Safety                               | —       | 17-sep  | :black_square_button: | —            | —    | —         | —           |

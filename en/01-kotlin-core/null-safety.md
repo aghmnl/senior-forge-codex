@@ -21,7 +21,7 @@ For a Senior Developer, null safety is not [syntax sugar]({{ "/en/glossary/synta
 
 - **Null Means Something**: A `String?` return type is a contract: "this value might legitimately be absent." A Senior uses nullable types to express optionality (a user's photo URL) and non-nullable types to express guarantees (a user's email). Choosing the wrong nullability leaks domain ambiguity into every consumer.
 - **`!!` Should Never Be Used**: Every `!!` is a claim that the developer knows more than the compiler — and it's almost always wrong or lazy. It produces a generic [NullPointerException]({{ "/en/glossary/null-pointer-exception/" | relative_url }}) with no context, making the [stack trace]({{ "/en/glossary/stack-trace/" | relative_url }}) useless for debugging. There is always a better alternative (see strategies below).
-- **Platform Types**: Values from Java APIs arrive as "platform types" (`String!`) — neither nullable nor non-nullable. A Senior annotates Java interop boundaries with `@Nullable`/`@NonNull` or wraps them in Kotlin functions that declare explicit nullability, preventing silent NullPointerException propagation.
+- **[Platform Types]({{ "/en/glossary/platform-types/" | relative_url }})**: Values from Java APIs arrive as [platform types]({{ "/en/glossary/platform-types/" | relative_url }}) (`String!`) — neither nullable nor non-nullable. A Senior annotates Java interop boundaries with `@Nullable`/`@NonNull` or wraps them in Kotlin functions that declare explicit nullability, preventing silent NullPointerException propagation.
 - **Early Return with Elvis**: The `?: return` pattern is the idiomatic [guard clause]({{ "/en/glossary/guard-clause/" | relative_url }}) that eliminates nullability from the rest of the function [scope]({{ "/en/glossary/scope/" | relative_url }}), keeping the happy path flat and readable.
 
 ### Strategies to eliminate `!!`
@@ -94,7 +94,13 @@ fun onCascadeConfirmed() {
 
 **Question**: Why should `!!` never appear in production code, and what does a Senior do instead?
 
-**Senior Answer**: The `!!` operator trades a compile-time safety guarantee for a runtime crash with no context. It produces a generic NullPointerException whose stack trace tells you WHERE the crash happened but not WHY the value was null. In every case, a Senior eliminates `!!` through three strategies: (1) redesign the data flow so the value is non-nullable from the start — for example, using constructor injection instead of late assignment; (2) use the Elvis operator with an explicit exception (`?: throw IllegalStateException("reason")`) so the stack trace explains the invariant that was violated; or (3) use safe calls with `let`, `run`, or early return (`?: return`) to handle the null case explicitly. The goal is to make nullability decisions visible in the type system, not hidden behind assertions.
+**Senior Answer**: The `!!` operator trades a compile-time safety guarantee for a runtime crash with no context. It produces a generic NullPointerException whose stack trace tells you WHERE the crash happened but not WHY the value was null. In every case, a Senior eliminates `!!` through three strategies:
+
+   1. Redesign the data flow so the value is non-nullable from the start — for example, using constructor injection instead of late assignment.
+   2. Use the Elvis operator with an explicit exception (`?: throw IllegalStateException("reason")`) so the stack trace explains the invariant that was violated.
+   3. Use safe calls with `let`, `run`, or early return (`?: return`) to handle the null case explicitly.
+
+   The goal is to make nullability decisions visible in the type system, not hidden behind assertions.
 
 ---
 

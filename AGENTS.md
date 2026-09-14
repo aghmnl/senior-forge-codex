@@ -24,6 +24,7 @@ Single source of truth for every agent working in this repository. `CLAUDE.md` i
 
 - Follow the daily routine defined in `docs/DAILY_WORKFLOW.md`.
 - **ALWAYS use real code examples from FollowApp Suite** (`/Users/agus/Documents/Entorno/FollowApps/Android/Suite`). When writing or updating any article, search FAS for relevant usages FIRST — do not use generic/invented examples unless no match exists in FAS. If a topic is not found there, mark as "Not found in FAS" and use a standalone example. Each code snippet must include a `// From FollowApp Suite — FileName.kt` comment identifying its origin.
+- **FAS belongs only in `## Code in Action`.** `The Theory` and `The Senior Perspective` must be agnostic of FollowApp Suite: no mention of FAS, its files, classes or decisions. Those sections explain the concept in general; the FAS code and its commentary live exclusively in Code in Action.
 - New-topic sequence: draft the article → announce it is ready without showing the content → run the cold diagnostic → the learner reads it and names extra glossary words → link/create them → generate the notebook file → wait for commit approval. See `docs/DAILY_WORKFLOW.md` Steps 4c–4e.
 - Every new topic ships with a notebook file `_notebooks/<chapter-folder>/<slug>.md` (Spanish) in the same PR — see `docs/AI_STUDY_PIPELINE.md` for its three blocks. Its diagnostic questions must differ from the article's Interview Prep Q&A; official sources are limited to `kotlinlang.org` and `developer.android.com` and verified before listing. After the learner's cold diagnostic, record the result (per-question table, global level, the exact "Nivel actual" text) in that same file under `### Resultado — YYYY-MM-DD` and replace the `[NIVEL ACTUAL]` placeholder in the Gemini prompt with that text.
 - After each topic, the learner answers the Interview Prep Q&A from memory as a daily self-evaluation.
@@ -66,4 +67,5 @@ Concepts that fall outside the 100 main topics are documented as **glossary entr
 ## Git Workflow
 
 - **NEVER push directly to main.** All changes go through a feature branch + Pull Request. Create a branch (`git checkout -b feat/...`), push the branch, and open a PR with `gh pr create`. No exceptions.
+- **Assign every PR to the developer:** `gh pr create --assignee aghmnl ...`. A PR opened without an assignee must be fixed with `gh pr edit <n> --add-assignee aghmnl`.
 - **NEVER commit until the developer explicitly says so.** Prepare changes, show them, and wait for explicit approval ("commit", "commitea", "push it"). A general instruction like "implement this" is NOT commit approval.

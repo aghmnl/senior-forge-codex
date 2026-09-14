@@ -41,6 +41,18 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 - If the concept doesn't have a glossary entry yet but is worth explaining, create one in `_posts/en/glossary/` and `_posts/es/glossary/`.
 - Glossary entries are extra topics outside the 100 — they are not scheduled or tracked, but they enrich the knowledge base.
 
+### Step 4c: Cold Diagnostic (before the learner reads the article)
+- As soon as the article is drafted, Claude reports it is ready **without showing its content**, and asks the five diagnostic questions of the topic's notebook file (Block 1), one at a time.
+- The learner answers from memory; "no sé" is valid. Claude scores against the rubric and records `### Resultado — YYYY-MM-DD` (per-question table, global level, the "Nivel actual" text).
+
+### Step 4d: Learner Review and Extra Glossary Links
+- Only now the learner reads the article and lists the words that must also be linked to the glossary (existing entries or new ones).
+- Claude creates the missing entries, links every occurrence in both languages, and updates `docs/GLOSSARY_INDEX.md`.
+
+### Step 4e: Notebook File
+- Claude generates `_notebooks/<chapter-folder>/<slug>.md` (Spanish) with the three blocks defined in `docs/AI_STUDY_PIPELINE.md`. The glossary URL list is extracted from the ES article **after** Step 4d, so it reflects the final links; the "Nivel actual" text from Step 4c is already pasted into the Gemini prompt.
+- The file ships in the same PR as the article. After the merge, the learner pastes Block 2 into Gemini and studies with the notebook before Step 5.
+
 ### Step 5: Daily Self-Evaluation
 - After studying the topic, the learner must answer the **Interview Prep (The Hot Seat)** question from memory, without reading the article.
 - This tests whether the topic was truly understood, not just read.

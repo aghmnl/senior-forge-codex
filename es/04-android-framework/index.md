@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: false
 title: Android Framework y Ciclo de Vida
 ---
 

@@ -1,0 +1,8 @@
+<!-- The Footer -->
+<footer aria-label="Site Info" class="d-flex justify-content-center text-muted pb-lg-3">
+  <p>
+    {{- '©' }} <time>{{ 'now' | date: '%Y' }}</time>
+    <a href="{{ site.social.links[0] }}">Agustín Minetto</a>.
+    {{- ' ' -}}{{ site.data.locales[include.lang].copyright.brief }}
+  </p>
+</footer>

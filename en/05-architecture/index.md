@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: false
 title: Architecture & Design Patterns
 ---
 

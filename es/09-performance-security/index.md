@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: false
 title: Performance y Seguridad
 ---
 

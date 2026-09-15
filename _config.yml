@@ -27,6 +27,7 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
   - scope:
       path: ""
       type: pages
@@ -40,12 +41,42 @@ defaults:
       path: "es"
     values:
       lang: es
+  # Comments on topic articles only (chapter folders); index pages opt out
+  - scope:
+      path: "en/0*"
+    values:
+      comments: true
+  - scope:
+      path: "en/10-ai"
+    values:
+      comments: true
+  - scope:
+      path: "es/0*"
+    values:
+      comments: true
+  - scope:
+      path: "es/10-ai"
+    values:
+      comments: true
 
 # Chirpy Specific Configuration
 # (Add more as needed, but this is a base start)
 timezone: UTC
 future: true # publish posts dated later today (local preview before 12:00 UTC)
 lang: en # default language
+
+# Comments: giscus (GitHub Discussions). repo_id/category_id from https://giscus.app
+comments:
+  provider: giscus
+  giscus:
+    repo: aghmnl/senior-forge-codex
+    repo_id: R_kgDOSTVjMQ
+    category: Comments
+    category_id: CATEGORY_ID_PENDING
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    input_position: bottom
 
 # Markdown engine
 markdown: kramdown

@@ -17,8 +17,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 17 / 101
-**Last updated:** 2026-09-15
+**Articles written:** 18 / 101
+**Last updated:** 2026-09-16
 **Projected end date:** 10-feb-2027
 
 ---
@@ -48,7 +48,7 @@
 | Suspend functions                         | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/suspend-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/suspend-functions/) | 10-sep  | :black_square_button: | 2026-09-10   | Full | —         | —           |
 | Context & Dispatchers (Main, IO, Default) | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/context-dispatchers/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/context-dispatchers/) | 14-sep  | :black_square_button: | 2026-09-14   | Full | —         | —           |
 | Structured Concurrency                    | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/structured-concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/structured-concurrency/) | 15-sep  | :black_square_button: | 2026-09-15   | Full | —         | —           |
-| Launch vs Async/Await                     | —       | 16-sep  | :black_square_button: | —            | —    | —         | —           |
+| Launch vs Async/Await                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/launch-vs-async-await/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/launch-vs-async-await/) | 16-sep  | :black_square_button: | 2026-09-16   | Full | —         | —           |
 | Main-Safety                               | —       | 17-sep  | :black_square_button: | —            | —    | —         | —           |
 | withContext vs flowOn                     | —       | 21-sep  | :black_square_button: | —            | —    | —         | —           |
 | Flow (Cold Streams)                       | —       | 22-sep  | :black_square_button: | —            | —    | —         | —           |

@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (256 total)
+## Entries (264 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -29,6 +29,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Atomicity | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/atomicity/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/atomicity/) | None | `concurrency`, `state-management`, `immutability` |
 | Autoboxing | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/autoboxing/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/autoboxing/) | None | `memory`, `jvm`, `performance` |
 | await | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/await/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/await/) | None | `coroutines`, `concurrency` |
+| awaitAll | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/await-all/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/await-all/) | None | `coroutines`, `concurrency` |
 | Back Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/back-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/back-stack/) | None | `navigation`, `lifecycle`, `android-framework` |
 | Backing Field | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backing-field/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backing-field/) | None | `syntax`, `delegation`, `state-management` |
 | @Before | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/junit-before/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/junit-before/) | Full | `testing`, `lifecycle` |
@@ -44,6 +45,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Call Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/call-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/call-stack/) | None | `jvm`, `memory`, `error-handling` |
 | Callback Hell | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/callback-hell/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/callback-hell/) | None | `callbacks`, `coroutines` |
 | Callbacks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/callbacks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/callbacks/) | Full | `callbacks`, `lambdas`, `coroutines` |
+| cancel() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cancel/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cancel/) | Full | `cancellation`, `coroutines` |
 | CancellationException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cancellation-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cancellation-exception/) | Full | `cancellation`, `coroutines`, `error-handling` |
 | Cast | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cast/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cast/) | None | `type-system`, `syntax`, `error-handling` |
 | ClassCastException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/class-cast-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/class-cast-exception/) | None | `error-handling`, `type-system`, `generics` |
@@ -56,6 +58,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Companion Object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/companion-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/companion-object/) | Full | `syntax`, `interop`, `design-patterns` |
 | Compare-and-Set (CAS) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compare-and-set/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compare-and-set/) | None | `concurrency`, `threading`, `state-management` |
 | Compile Time | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compile-time/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compile-time/) | None | `compiler`, `type-system` |
+| CompletableDeferred | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/completable-deferred/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/completable-deferred/) | Full | `coroutines`, `testing`, `callbacks` |
 | @Composable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composable/) | None | `compose`, `compiler` |
 | Composition Lifetime | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composition-lifetime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composition-lifetime/) | None | `compose`, `lifecycle`, `state-management` |
 | Concurrency | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/concurrency/) | Full | `concurrency`, `immutability`, `coroutines` |
@@ -73,6 +76,8 @@ Single source of truth for all glossary entries. Each row links to both language
 | Coroutines | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutines/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutines/) | Full | `coroutines`, `concurrency`, `lifecycle` |
 | CoroutineScope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutine-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutine-scope/) | Full | `coroutines`, `lifecycle`, `cancellation` |
 | coroutineScope (builder) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutine-scope-builder/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutine-scope-builder/) | Full | `coroutines`, `concurrency`, `cancellation` |
+| CoroutineStart | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/coroutine-start/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/coroutine-start/) | None | `coroutines`, `syntax` |
+| CountDownLatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/count-down-latch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/count-down-latch/) | None | `threading`, `concurrency`, `testing` |
 | Covariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/covariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/covariance/) | Full | `generics`, `type-system`, `immutability` |
 | Crashlytics | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/crashlytics/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/crashlytics/) | Full | `error-handling`, `android-framework`, `build-tools` |
 | Crossinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/crossinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/crossinline/) | None | `inlining`, `lambdas` |
@@ -132,6 +137,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Jetpack Compose | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jetpack-compose/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jetpack-compose/) | Full | `compose`, `dsl`, `lambdas` |
 | JIT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jit-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jit-compilation/) | None | `runtime`, `performance`, `jvm` |
 | Job | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/job/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/job/) | Full | `coroutines`, `cancellation`, `lifecycle` |
+| join() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/join/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/join/) | None | `coroutines`, `concurrency` |
 | JVM | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm/) | Full | `jvm`, `runtime` |
 | @JvmOverloads | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm-overloads/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm-overloads/) | None | `interop`, `dispatch`, `android-framework` |
 | @JvmStatic | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jvm-static/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jvm-static/) | None | `interop`, `jvm`, `dispatch` |
@@ -203,6 +209,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Room | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/room/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/room/) | Full | `persistence`, `compiler`, `coroutines` |
 | Round-Trip | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/round-trip/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/round-trip/) | None | `performance`, `architecture`, `persistence` |
 | runBlocking | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run-blocking/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run-blocking/) | Full | `coroutines`, `threading`, `testing` |
+| runCatching | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run-catching/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run-catching/) | Full | `error-handling`, `functional`, `syntax` |
 | runTest | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run-test/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run-test/) | None | `testing`, `coroutines` |
 | Runtime | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/runtime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/runtime/) | None | `runtime`, `jvm`, `compiler` |
 | Runtime Reflection | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/runtime-reflection/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/runtime-reflection/) | Full | `reflection`, `runtime`, `performance` |
@@ -228,6 +235,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Stack Trace | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/stack-trace/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/stack-trace/) | None | `error-handling`, `jvm`, `coroutines` |
 | Standard Library | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/standard-library/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/standard-library/) | None | `collections`, `functional`, `inlining` |
 | Star Projection | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/star-projection/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/star-projection/) | None | `generics`, `type-system` |
+| start() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/start/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/start/) | None | `coroutines`, `syntax` |
 | State Emission Patterns | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-emission-patterns/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-emission-patterns/) | Full | `state-management`, `flow`, `concurrency` |
 | State Holder | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-holder/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-holder/) | None | `state-management`, `compose`, `architecture` |
 | State Machine (Coroutines) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/state-machine/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/state-machine/) | None | `coroutines`, `compiler`, `jvm` |

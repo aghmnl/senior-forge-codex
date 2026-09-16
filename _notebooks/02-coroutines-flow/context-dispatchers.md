@@ -71,7 +71,7 @@ Pegar completo en el chat de Gemini. El paso 5 ya contiene el texto "Nivel actua
 
 ```text
 **Contexto**
-Estoy preparando entrevistas técnicas de Senior Android Developer. Necesito que crees mi notebook de estudio en NotebookLM para el tema de hoy. Toda la interacción y todo texto generado debe estar en español latinoamericano. No investigues ni busques nada: todas las fuentes ya están listadas abajo. Tu trabajo es solo crear el notebook, agregar exactamente esas fuentes y crear un documento de texto con el contenido que te doy.
+Estoy preparando entrevistas técnicas de Senior Android Developer. Necesito que crees mi notebook de estudio en Gemini Notebook para el tema de hoy. Toda la interacción y todo texto generado debe estar en español latinoamericano. No investigues ni busques nada: todas las fuentes ya están listadas abajo. Tu trabajo es solo crear el notebook, agregar exactamente esas fuentes y crear un documento de texto con el contenido que te doy.
 
 **Tema**
 Context & Dispatchers (Main, IO, Default)
@@ -140,7 +140,7 @@ https://developer.android.com/training/dependency-injection/hilt-android
 https://developer.android.com/reference/android/os/Looper
 
 **Pasos de ejecución**
-1. Creá un notebook nuevo en NotebookLM llamado exactamente: Context & Dispatchers (Main, IO, Default)
+1. Creá un notebook nuevo en Gemini Notebook llamado exactamente: Context & Dispatchers (Main, IO, Default)
 2. Agregá el artículo principal como fuente web.
 3. Agregá cada una de las fuentes de glosario listadas como fuente web, una por una. No agregues ninguna URL que no esté en esta lista.
 4. Agregá cada una de las fuentes oficiales listadas como fuente web, una por una.

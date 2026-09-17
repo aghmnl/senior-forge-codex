@@ -71,8 +71,8 @@ comments:
   giscus:
     repo: aghmnl/senior-forge-codex
     repo_id: R_kgDOSTVjMQ
-    category: Comments
-    category_id: CATEGORY_ID_PENDING
+    category: Announcements
+    category_id: DIC_kwDOSTVjMc4DFzUx
     mapping: pathname
     strict: 0
     reactions_enabled: 1

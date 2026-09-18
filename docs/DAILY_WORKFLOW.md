@@ -52,6 +52,7 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 ### Step 4e: Notebook File
 - Claude generates `_notebooks/<chapter-folder>/<slug>.md` (Spanish) with the three blocks defined in `docs/AI_STUDY_PIPELINE.md`. The glossary URL list is extracted from the ES article **after** Step 4d, so it reflects the final links; the "Nivel actual" text from Step 4c is already pasted into the Gemini prompt.
 - The file ships in the same PR as the article. After the merge, the learner pastes Block 2 into Gemini and studies with the notebook before Step 5.
+- Mark the topic's **Notebook** column in `docs/TOPIC_TRACKER.md` as :white_check_mark: in the same PR.
 
 ### Step 5: Daily Self-Evaluation
 - After studying the topic, the learner must answer the **Interview Prep (The Hot Seat)** question from memory, without reading the article.

@@ -8,27 +8,27 @@ order: 1
 
 ## The Theory (El Qué)
 
-El sistema de tipos de Kotlin distingue entre tipos nullable (`String?`) y no-nullable (`String`) en [tiempo de compilación]({{ "/es/glosario/compile-time/" | relative_url }}). Esto elimina la mayoría de los crashes por [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) que afectan a las bases de código Java. Los operadores clave son:
+El sistema de tipos de Kotlin distingue entre tipos nullable ([`String?`]({{ "/es/glosario/string/" | relative_url }})) y no-nullable ([`String`]({{ "/es/glosario/string/" | relative_url }})) en [tiempo de compilación]({{ "/es/glosario/compile-time/" | relative_url }}). Esto elimina la mayoría de los crashes por [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) que afectan a las bases de código Java. Los operadores clave son:
 
-- **[Safe call]({{ "/es/glosario/safe-call/" | relative_url }}) (`?.`)**: Accede a un miembro solo si el receptor no es null; devuelve `null` en caso contrario.
-- **Operador Elvis (`?:`)**: Proporciona un valor de respaldo cuando el lado izquierdo es `null`.
-- **[Assertion]({{ "/es/glosario/assertion/" | relative_url }}) de no-null (`!!`)**: Fuerza un tipo nullable a no-nullable, lanzando [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) si es `null`. **No debería usarse nunca en código de producción.**
-- **[Cast]({{ "/es/glosario/cast/" | relative_url }}) seguro (`as?`)**: Intenta un cast y devuelve `null` en caso de fallo en lugar de lanzar [ClassCastException]({{ "/es/glosario/class-cast-exception/" | relative_url }}).
+- **[Safe call]({{ "/es/glosario/safe-call/" | relative_url }}) (`?.`)**: Accede a un miembro solo si el receptor no es null; devuelve [`null`]({{ "/es/glosario/null/" | relative_url }}) en caso contrario.
+- **[Operador Elvis]({{ "/es/glosario/elvis-operator/" | relative_url }}) ([`?:`]({{ "/es/glosario/elvis-operator/" | relative_url }}))**: Proporciona un valor de respaldo cuando el lado izquierdo es [`null`]({{ "/es/glosario/null/" | relative_url }}).
+- **[Assertion]({{ "/es/glosario/assertion/" | relative_url }}) de no-null ([`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}))**: Fuerza un tipo nullable a no-nullable, lanzando [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) si es [`null`]({{ "/es/glosario/null/" | relative_url }}). **No debería usarse nunca en código de producción.**
+- **[Cast]({{ "/es/glosario/cast/" | relative_url }}) seguro ([`as?`]({{ "/es/glosario/as-safe-cast/" | relative_url }}))**: Intenta un cast y devuelve [`null`]({{ "/es/glosario/null/" | relative_url }}) en caso de fallo en lugar de lanzar [ClassCastException]({{ "/es/glosario/class-cast-exception/" | relative_url }}).
 
 ## The Senior Perspective (El Porqué)
 
 Para un Desarrollador Senior, la null safety no es [syntax sugar]({{ "/es/glosario/syntax-sugar/" | relative_url }}) — es una herramienta de diseño que codifica invariantes del dominio en el sistema de tipos.
 
-- **Null Significa Algo**: Un tipo de retorno `String?` es un contrato: "este valor podría estar legítimamente ausente." Un Senior usa tipos nullable para expresar opcionalidad (la URL de foto de un usuario) y tipos no-nullable para expresar garantías (el email de un usuario). Elegir la nullabilidad incorrecta filtra ambigüedad del dominio a cada consumidor.
-- **`!!` No Debería Usarse Nunca**: Cada `!!` es una afirmación de que el desarrollador sabe más que el compilador — y casi siempre es incorrecto o perezoso. Produce una [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) genérica sin contexto, haciendo el [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) inútil para debugging. Siempre existe una alternativa mejor (ver estrategias abajo).
-- **[Platform Types]({{ "/es/glosario/platform-types/" | relative_url }})**: Los valores de APIs Java llegan como [platform types]({{ "/es/glosario/platform-types/" | relative_url }}) (`String!`) — ni nullable ni no-nullable. Un Senior anota los límites de interop con Java usando `@Nullable`/`@NonNull` o los envuelve en funciones Kotlin que declaran nullabilidad explícita, previniendo la propagación silenciosa de NullPointerException.
-- **Early Return con Elvis**: El patrón `?: return` es la [guard clause]({{ "/es/glosario/guard-clause/" | relative_url }}) idiomática que elimina la nullabilidad del resto del [scope]({{ "/es/glosario/scope/" | relative_url }}) de la función, manteniendo el camino feliz plano y legible.
+- **Null Significa Algo**: Un tipo de retorno [`String?`]({{ "/es/glosario/string/" | relative_url }}) es un contrato: "este valor podría estar legítimamente ausente." Un Senior usa tipos nullable para expresar opcionalidad (la URL de foto de un usuario) y tipos no-nullable para expresar garantías (el email de un usuario). Elegir la nullabilidad incorrecta filtra ambigüedad del dominio a cada consumidor.
+- **[`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}) No Debería Usarse Nunca**: Cada [`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}) es una afirmación de que el desarrollador sabe más que el compilador — y casi siempre es incorrecto o perezoso. Produce una [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) genérica sin contexto, haciendo el [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) inútil para debugging. Siempre existe una alternativa mejor (ver estrategias abajo).
+- **[Platform Types]({{ "/es/glosario/platform-types/" | relative_url }})**: Los valores de APIs Java llegan como [platform types]({{ "/es/glosario/platform-types/" | relative_url }}) (`String!`) — ni nullable ni no-nullable. Un Senior anota los límites de interop con Java usando [`@Nullable`]({{ "/es/glosario/nullable-annotation/" | relative_url }})/[`@NonNull`]({{ "/es/glosario/non-null-annotation/" | relative_url }}) o los envuelve en funciones Kotlin que declaran nullabilidad explícita, previniendo la propagación silenciosa de [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}).
+- **Early Return con Elvis**: El patrón [`?: return`]({{ "/es/glosario/elvis-return/" | relative_url }}) es la [guard clause]({{ "/es/glosario/guard-clause/" | relative_url }}) idiomática que elimina la nullabilidad del resto del [scope]({{ "/es/glosario/scope/" | relative_url }}) de la función, manteniendo el camino feliz plano y legible.
 
 ### Estrategias para eliminar `!!`
 
 1. **Rediseñar el flujo de datos** para que el valor sea no-nullable desde el inicio — usar inyección por constructor en lugar de asignación tardía, o mover la verificación de null al llamador.
-2. **Usar Elvis con una excepción explícita** (`?: throw IllegalStateException("razón")`) para que el stack trace explique qué invariante se violó.
-3. **Usar [safe calls]({{ "/es/glosario/safe-call/" | relative_url }}) con `let`, `run`, o early return** (`?: return`) para manejar el caso null explícitamente en el flujo de control.
+2. **Usar Elvis con una excepción explícita** (`?: `[`throw`]({{ "/es/glosario/throw/" | relative_url }}) [`IllegalStateException`]({{ "/es/glosario/illegal-state-exception/" | relative_url }})`("razón")`) para que el [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) explique qué invariante se violó.
+3. **Usar [safe calls]({{ "/es/glosario/safe-call/" | relative_url }}) con [`let`]({{ "/es/glosario/let/" | relative_url }}), [`run`]({{ "/es/glosario/run/" | relative_url }}), o [early return]({{ "/es/glosario/elvis-return/" | relative_url }})** ([`?: return`]({{ "/es/glosario/elvis-return/" | relative_url }})) para manejar el caso null explícitamente en el flujo de control.
 
 El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de [assertions]({{ "/es/glosario/assertion/" | relative_url }}).
 
@@ -92,15 +92,15 @@ fun onCascadeConfirmed() {
 
 ## The Interview (En el banquillo)
 
-**Pregunta**: ¿Por qué `!!` nunca debería aparecer en código de producción, y qué hace un Senior en su lugar?
+**Pregunta**: ¿Por qué [`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}) nunca debería aparecer en código de producción, y qué hace un Senior en su lugar?
 
-**Respuesta Senior**: El operador `!!` intercambia una garantía de seguridad en tiempo de compilación por un crash en runtime sin contexto. Produce una NullPointerException genérica cuyo stack trace te dice DÓNDE fue el crash pero no POR QUÉ el valor era null. En todos los casos, un Senior elimina el `!!` a través de tres estrategias:
+**Respuesta Senior**: El operador [`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}) intercambia una garantía de seguridad en [tiempo de compilación]({{ "/es/glosario/compile-time/" | relative_url }}) por un crash en [runtime]({{ "/es/glosario/runtime/" | relative_url }}) sin contexto. Produce una [NullPointerException]({{ "/es/glosario/null-pointer-exception/" | relative_url }}) genérica cuyo [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) te dice DÓNDE fue el crash pero no POR QUÉ el valor era null. En todos los casos, un Senior elimina el [`!!`]({{ "/es/glosario/non-null-assertion/" | relative_url }}) a través de tres estrategias:
 
    1. Rediseñar el flujo de datos para que el valor sea no-nullable desde el inicio — por ejemplo, usando inyección por constructor en lugar de asignación tardía.
-   2. Usar el operador Elvis con una excepción explícita (`?: throw IllegalStateException("razón")`) para que el stack trace explique la invariante que se violó.
-   3. Usar safe calls con `let`, `run`, o early return (`?: return`) para manejar el caso null explícitamente.
+   2. Usar el [operador Elvis]({{ "/es/glosario/elvis-operator/" | relative_url }}) con una excepción explícita (`?: `[`throw`]({{ "/es/glosario/throw/" | relative_url }}) [`IllegalStateException`]({{ "/es/glosario/illegal-state-exception/" | relative_url }})`("razón")`) para que el [stack trace]({{ "/es/glosario/stack-trace/" | relative_url }}) explique la invariante que se violó.
+   3. Usar [safe calls]({{ "/es/glosario/safe-call/" | relative_url }}) con [`let`]({{ "/es/glosario/let/" | relative_url }}), [`run`]({{ "/es/glosario/run/" | relative_url }}), o [early return]({{ "/es/glosario/elvis-return/" | relative_url }}) ([`?: return`]({{ "/es/glosario/elvis-return/" | relative_url }})) para manejar el caso null explícitamente.
 
-   El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de assertions.
+   El objetivo es hacer las decisiones de nullabilidad visibles en el sistema de tipos, no esconderlas detrás de [assertions]({{ "/es/glosario/assertion/" | relative_url }}).
 
 ---
 

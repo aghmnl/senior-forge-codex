@@ -1,7 +1,15 @@
+---
+topic: "Suspend Functions"
+chapter: 02-coroutines-flow
+slug: suspend-functions
+lang: es
+article: /es/02-coroutines-flow/suspend-functions/
+diagnostic_date: 2026-09-14
+---
+
 # Notebook de estudio — Suspend Functions
 
 > Archivo de apoyo para el flujo descrito en `docs/AI_STUDY_PIPELINE.md`.
-> Capítulo II — Coroutines & Flow · Artículo: https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/suspend-functions/
 
 ---
 

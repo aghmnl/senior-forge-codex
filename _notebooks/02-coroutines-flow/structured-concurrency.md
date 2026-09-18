@@ -1,7 +1,15 @@
+---
+topic: "Structured Concurrency"
+chapter: 02-coroutines-flow
+slug: structured-concurrency
+lang: es
+article: /es/02-coroutines-flow/structured-concurrency/
+diagnostic_date: 2026-09-15
+---
+
 # Notebook de estudio — Structured Concurrency
 
 > Archivo de apoyo para el flujo descrito en `docs/AI_STUDY_PIPELINE.md`.
-> Capítulo II — Coroutines & Flow · Artículo: https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/structured-concurrency/
 
 ---
 

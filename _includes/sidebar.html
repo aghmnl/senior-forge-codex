@@ -131,6 +131,13 @@
           <i class="fa-regular fa-sun" data-theme-mode="light"></i>
           <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
         </button>
+        <!-- Hidden menu: the theme's JS expects "#mode-toggle + .dropdown-menu" and
+             aborts its whole init (back-to-top, TOC) when it is missing. -->
+        <ul class="dropdown-menu d-none" aria-hidden="true">
+          <li><button class="dropdown-item" type="button" data-theme-mode="light"></button></li>
+          <li><button class="dropdown-item" type="button" data-theme-mode="dark"></button></li>
+          <li><button class="dropdown-item" type="button" data-theme-mode="system"></button></li>
+        </ul>
         <script>
           (function() {
             var btn = document.getElementById('mode-toggle');

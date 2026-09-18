@@ -28,6 +28,7 @@ defaults:
     values:
       layout: post
       comments: true
+      toc: true
   - scope:
       path: ""
       type: pages
@@ -41,29 +42,34 @@ defaults:
       path: "es"
     values:
       lang: es
-  # Comments on topic articles only (chapter folders); index pages opt out
+  # Comments and TOC on topic articles only (chapter folders); index pages opt out
   - scope:
       path: "en/0*"
     values:
       comments: true
+      toc: true
   - scope:
       path: "en/10-ai"
     values:
       comments: true
+      toc: true
   - scope:
       path: "es/0*"
     values:
       comments: true
+      toc: true
   - scope:
       path: "es/10-ai"
     values:
       comments: true
+      toc: true
 
 # Chirpy Specific Configuration
 # (Add more as needed, but this is a base start)
 timezone: UTC
 future: true # publish posts dated later today (local preview before 12:00 UTC)
 lang: en # default language
+toc: true # table of contents panel on posts and articles
 
 # Comments: giscus (GitHub Discussions). repo_id/category_id from https://giscus.app
 comments:

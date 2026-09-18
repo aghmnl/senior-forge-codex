@@ -28,7 +28,22 @@ As defined in `DAILY_WORKFLOW.md`, Claude drafts the daily article and publishes
 _notebooks/<chapter-folder>/<slug>.md      e.g. _notebooks/02-coroutines-flow/suspend-functions.md
 ```
 
-The folder is ignored by Jekyll (leading underscore), so it is never published. Everything in it is in Spanish. Each file has three blocks:
+The folder is ignored by Jekyll (leading underscore), so it is never published. Everything in it is in Spanish.
+
+Each file starts with a YAML front matter that mirrors the article it supports, so scripts and future Liquid checks read data instead of parsing the heading:
+
+```yaml
+---
+topic: "Suspend Functions"                       # article title, as in TOPIC_TRACKER.md
+chapter: 02-coroutines-flow                      # chapter folder
+slug: suspend-functions                          # article slug; file name is <slug>.md
+lang: es
+article: /es/02-coroutines-flow/suspend-functions/
+diagnostic_date: 2026-09-14                      # date of the latest "### Resultado", or null
+---
+```
+
+`diagnostic_date` is updated whenever a new `### Resultado — YYYY-MM-DD` section is recorded. Each file then has three blocks:
 
 | Block                        | Content                                                                                                                                                                                                                                                                                                            | Who uses it                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- |

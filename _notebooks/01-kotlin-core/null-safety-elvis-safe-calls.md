@@ -1,7 +1,15 @@
+---
+topic: "Null Safety: Elvis & Safe Calls"
+chapter: 01-kotlin-core
+slug: null-safety-elvis-safe-calls
+lang: es
+article: /es/01-kotlin-core/null-safety-elvis-safe-calls/
+diagnostic_date: 2026-09-18
+---
+
 # Notebook de estudio — Null Safety: Elvis & Safe Calls
 
 > Archivo de apoyo para el flujo descrito en `docs/AI_STUDY_PIPELINE.md`.
-> Capítulo I — Kotlin Core · Artículo: https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/null-safety-elvis-safe-calls/
 
 ---
 

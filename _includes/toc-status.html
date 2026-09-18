@@ -1,0 +1,14 @@
+{% comment %}
+  Determine TOC state and return it through variable "enable_toc".
+  Posts expose rendered HTML in page.content; pages expose raw Markdown,
+  so headings are detected in both forms.
+{% endcomment %}
+
+{% assign enable_toc = false %}
+{% if site.toc and page.toc %}
+  {% if page.content contains '<h2' or page.content contains '<h3' %}
+    {% assign enable_toc = true %}
+  {% elsif page.content contains '## ' or page.content contains '### ' %}
+    {% assign enable_toc = true %}
+  {% endif %}
+{% endif %}

@@ -1,7 +1,15 @@
+---
+topic: "Launch vs Async/Await"
+chapter: 02-coroutines-flow
+slug: launch-vs-async-await
+lang: es
+article: /es/02-coroutines-flow/launch-vs-async-await/
+diagnostic_date: 2026-09-16
+---
+
 # Notebook de estudio — Launch vs Async/Await
 
 > Archivo de apoyo para el flujo descrito en `docs/AI_STUDY_PIPELINE.md`.
-> Capítulo II — Coroutines & Flow · Artículo: https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/launch-vs-async-await/
 
 ---
 

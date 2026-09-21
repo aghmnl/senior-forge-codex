@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (317 total)
+## Entries (319 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -261,7 +261,9 @@ Single source of truth for all glossary entries. Each row links to both language
 | Scope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/scope/) | None | `scoping`, `syntax`, `lifecycle` |
 | scrollBy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/scroll-by/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/scroll-by/) | Full | `compose`, `coroutines`, `cancellation` |
 | SDK | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sdk/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sdk/) | Full | `android-framework`, `callbacks`, `performance` |
+| sealed class | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-class/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-class/) | Full | `sealed-types`, `oop`, `state-management` |
 | Sealed Hierarchy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-hierarchy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-hierarchy/) | Full | `sealed-types`, `oop`, `state-management` |
+| sealed interface | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-interface/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-interface/) | Full | `sealed-types`, `oop`, `architecture` |
 | Sequences | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sequences/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sequences/) | Full | `collections`, `functional`, `performance` |
 | setOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/set-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/set-of/) | Full | `collections`, `immutability`, `compose` |
 | Sets | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sets/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sets/) | Full | `collections`, `data-classes` |

@@ -8,11 +8,13 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (312 total)
+## Entries (317 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
 | !! (Non-Null Assertion) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/non-null-assertion/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/non-null-assertion/) | None | `null-safety`, `error-handling` |
+| == (Structural Equality) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/structural-equality/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/structural-equality/) | None | `type-system`, `data-classes`, `syntax` |
+| === (Referential Equality) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/referential-equality/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/referential-equality/) | None | `type-system`, `jvm`, `syntax` |
 | ?: (Elvis Operator) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/elvis-operator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/elvis-operator/) | Full | `null-safety`, `syntax` |
 | ?: return (Elvis Early Return) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/elvis-return/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/elvis-return/) | Full | `null-safety`, `design-principles`, `syntax` |
 | Abstract Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/abstract-class/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/abstract-class/) | Full | `oop`, `sealed-types` |
@@ -98,6 +100,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Dagger | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dagger/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dagger/) | Full | `di`, `compiler`, `architecture` |
 | DAO | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dao/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dao/) | Full | `persistence`, `design-patterns`, `coroutines` |
 | Data Layer | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-layer/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-layer/) | None | `architecture`, `persistence` |
+| data object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-object/) | Full | `sealed-types`, `state-management`, `oop` |
 | Data Transformation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-transformation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-transformation/) | None | `functional`, `architecture`, `collections` |
 | DataStore | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/datastore/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/datastore/) | Full | `persistence`, `coroutines`, `android-framework` |
 | Decorator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/decorator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/decorator/) | None | `design-patterns`, `oop`, `delegation` |
@@ -145,6 +148,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Heap | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/heap/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/heap/) | None | `memory`, `jvm` |
 | Hilt | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/hilt/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/hilt/) | None | `di`, `android-framework`, `compiler` |
 | Hot Loops | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/hot-loops/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/hot-loops/) | None | `performance`, `memory`, `compose` |
+| Idle (UI State) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/idle-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/idle-state/) | None | `state-management`, `sealed-types`, `architecture` |
 | IllegalStateException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/illegal-state-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/illegal-state-exception/) | None | `error-handling`, `design-principles` |
 | Immutability | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/immutability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/immutability/) | None | `immutability`, `functional`, `concurrency` |
 | Inheritance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/inheritance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/inheritance/) | Full | `oop`, `design-principles` |
@@ -209,6 +213,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | @Nullable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/nullable-annotation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/nullable-annotation/) | None | `interop`, `null-safety` |
 | NullPointerException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/null-pointer-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/null-pointer-exception/) | None | `null-safety`, `error-handling`, `interop` |
 | Obfuscation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/obfuscation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/obfuscation/) | Full | `build-tools`, `reflection`, `error-handling` |
+| object (Declaration) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/object/) | Full | `oop`, `design-patterns`, `syntax` |
 | Object-Oriented Programming | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/object-oriented-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/object-oriented-programming/) | Full | `oop`, `design-principles` |
 | Observable State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/observable-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/observable-state/) | None | `state-management`, `compose`, `flow` |
 | OkHttp | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/okhttp/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/okhttp/) | None | `threading`, `callbacks`, `performance` |

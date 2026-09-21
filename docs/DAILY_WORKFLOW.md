@@ -54,6 +54,11 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 - The file ships in the same PR as the article. After the merge, the learner pastes Block 2 into Gemini and studies with the notebook before Step 5.
 - Mark the topic's **Notebook** column in `docs/TOPIC_TRACKER.md` as :white_check_mark: in the same PR.
 
+### Step 4f: Record the Gemini Notebook URL
+- After pasting Block 2 into Gemini and getting the notebook back, replace that :white_check_mark: with `[:green_book:](<notebook url>)` — the icon links to the notebook.
+- Strip the `?utm_source=...` tracking parameters; keep only `https://notebook.google.com/notebook/<id>`.
+- The tracker is the single source of truth for these URLs; they are not duplicated in the notebook file's front matter. They are personal links and only open for the owner's account.
+
 ### Step 5: Daily Self-Evaluation
 - After studying the topic, the learner must answer the **Interview Prep (The Hot Seat)** question from memory, without reading the article.
 - This tests whether the topic was truly understood, not just read.

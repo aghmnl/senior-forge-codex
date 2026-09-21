@@ -69,6 +69,8 @@ Claude then records the outcome in the topic file itself, under Block 1 as a `##
 
 Copy Block 2 of the topic file into the Gemini chat, replacing `[NIVEL ACTUAL]` with the text from Step 2A. Gemini creates the notebook, adds each listed URL, creates the "Nivel actual" text source verbatim, and replies with the notebook URL and the list of sources added. Nothing is left for Gemini to research or decide.
 
+Record the returned URL in the topic's **Notebook** column in `docs/TOPIC_TRACKER.md` as `[:green_book:](<url>)`, dropping the `?utm_source=...` parameters. That column is the only place these URLs live.
+
 ## Phase 3: Deep Study Tools (Gemini Notebook UI)
 
 Once Gemini provides the notebook link, read the article, then navigate to the Gemini Notebook web interface to use the native study tools in the following sequential order. Because the "Nivel actual" text is a source, the Audio Overview will contextualize its debate based on what is already known.

@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (319 total)
+## Entries (323 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -158,6 +158,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | @InstallIn | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/install-in/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/install-in/) | Full | `di`, `scoping` |
 | IntArray | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/intarray/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/intarray/) | None | `memory`, `performance`, `collections` |
 | Intent Signaling | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/intent-signaling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/intent-signaling/) | None | `design-principles`, `syntax` |
+| internal | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/internal/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/internal/) | None | `scoping`, `build-tools`, `design-principles` |
 | Invariance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/invariance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/invariance/) | Full | `generics`, `type-system` |
 | Invariant | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/invariant/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/invariant/) | Full | `design-principles`, `error-handling`, `type-system` |
 | @IoDispatcher | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/io-dispatcher/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/io-dispatcher/) | None | `di`, `coroutines`, `testing` |
@@ -195,6 +196,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Mapper Function | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mapper-function/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mapper-function/) | Full | `architecture`, `functional` |
 | Mapper Pattern | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mapper-pattern/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mapper-pattern/) | Full | `architecture`, `design-patterns`, `functional` |
 | Maps | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/maps/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/maps/) | Full | `collections`, `data-classes` |
+| Member Function | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/member-function/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/member-function/) | None | `oop`, `dispatch`, `syntax` |
 | Memory Leaks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/memory-leaks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/memory-leaks/) | None | `memory`, `lifecycle`, `android-framework` |
 | Method Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/method-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/method-dispatch/) | Full | `dispatch`, `oop`, `jvm` |
 | @Module | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/module-annotation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/module-annotation/) | Full | `di`, `architecture` |
@@ -206,6 +208,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | mutableStateListOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mutable-state-list-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mutable-state-list-of/) | Full | `compose`, `collections`, `state-management` |
 | Mutation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mutation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mutation/) | Full | `immutability`, `collections`, `state-management` |
 | MVI Pattern | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/mvi-pattern/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/mvi-pattern/) | Full | `architecture`, `state-management`, `sealed-types` |
+| Namespace | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/namespace/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/namespace/) | None | `scoping`, `design-principles` |
 | Navigation Component | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/navigation-component/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/navigation-component/) | None | `navigation`, `android-framework`, `lifecycle` |
 | Noinline | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/noinline/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/noinline/) | None | `inlining`, `lambdas`, `memory` |
 | @NonNull | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/non-null-annotation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/non-null-annotation/) | None | `interop`, `null-safety` |
@@ -229,6 +232,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Polymorphism | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/polymorphism/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/polymorphism/) | None | `oop`, `dispatch`, `generics` |
 | Primary Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primary-constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primary-constructor/) | Full | `data-classes`, `oop`, `syntax` |
 | Primitives | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primitives/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primitives/) | Full | `jvm`, `memory`, `performance` |
+| private | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/private/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/private/) | None | `scoping`, `design-principles`, `syntax` |
 | produceState | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/produce-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/produce-state/) | Full | `compose`, `coroutines`, `state-management` |
 | Profiling | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/profiling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/profiling/) | Full | `performance`, `threading` |
 | ProGuard | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/proguard/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/proguard/) | None | `build-tools`, `reflection` |

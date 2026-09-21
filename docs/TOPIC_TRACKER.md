@@ -19,8 +19,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 19 / 101
-**Last updated:** 2026-09-18
+**Articles written:** 20 / 101
+**Last updated:** 2026-09-21
 **Projected end date:** 10-feb-2027
 
 ---
@@ -52,7 +52,7 @@
 | Structured Concurrency                    | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/structured-concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/structured-concurrency/) | 15-sep  | :black_square_button: | 2026-09-15   | Full | :white_check_mark: | —         | —           |
 | Launch vs Async/Await                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/launch-vs-async-await/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/launch-vs-async-await/) | 16-sep  | :black_square_button: | 2026-09-16   | Full | :white_check_mark: | —         | —           |
 | Main-Safety                               | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/main-safety/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/main-safety/) | 17-sep  | :black_square_button: | 2026-09-17   | Full | :white_check_mark: | —         | —           |
-| withContext vs flowOn                     | —       | 21-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| withContext vs flowOn                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/with-context-vs-flow-on/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/with-context-vs-flow-on/) | 21-sep  | :black_square_button: | 2026-09-21   | Full | :white_check_mark: | —         | —           |
 | Flow (Cold Streams)                       | —       | 22-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | Error Handling: try-catch & .catch        | —       | 23-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —    | —                  | —         | —           |

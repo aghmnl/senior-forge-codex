@@ -40,6 +40,15 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 - If the article references a concept that has a glossary entry (e.g., Garbage Collector, JVM), add a link to it using `{{ "/en/glossary/<slug>/" | relative_url }}`.
 - If the concept doesn't have a glossary entry yet but is worth explaining, create one in `_posts/en/glossary/` and `_posts/es/glossary/`.
 - Glossary entries are extra topics outside the 100 — they are not scheduled or tracked, but they enrich the knowledge base.
+- Use `scripts/link_glossary.py` rather than editing links by hand:
+
+  ```
+  scripts/link_glossary.py link es/<chapter>/<slug>.md --terms "Throwable,onEach,finally"
+  scripts/link_glossary.py check en/<chapter>/<slug>.md es/<chapter>/<slug>.md
+  ```
+
+  The linker puts every term in one regex alternation, so it cannot nest a link inside another link — the failure mode of chained substitutions. Surface forms come from each entry's `title:`; anything a title cannot capture ("jerarquías selladas", "heredar") goes in `_data/glossary_aliases.yml`.
+- `check` must pass before the PR: it looks for malformed links, links to glossary entries that do not exist, and non-idempotent linking.
 
 ### Step 4c: Cold Diagnostic (before the learner reads the article)
 - As soon as the article is drafted, Claude reports it is ready **without showing its content**, and asks the five diagnostic questions of the topic's notebook file (Block 1), one at a time.

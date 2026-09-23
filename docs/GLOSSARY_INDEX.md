@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (334 total)
+## Entries (335 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -59,6 +59,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | cancel() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cancel/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cancel/) | Full | `cancellation`, `coroutines` |
 | CancellationException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cancellation-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cancellation-exception/) | Full | `cancellation`, `coroutines`, `error-handling` |
 | Cast | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cast/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cast/) | None | `type-system`, `syntax`, `error-handling` |
+| catch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/catch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/catch/) | Full | `flow`, `error-handling`, `coroutines` |
 | check | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/check/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/check/) | None | `error-handling`, `design-principles` |
 | checkNotNull | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/check-not-null/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/check-not-null/) | None | `null-safety`, `error-handling` |
 | ClassCastException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/class-cast-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/class-cast-exception/) | None | `error-handling`, `type-system`, `generics` |

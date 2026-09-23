@@ -21,8 +21,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 20 / 101
-**Last updated:** 2026-09-21
+**Articles written:** 21 / 101
+**Last updated:** 2026-09-23
 **Projected end date:** 10-feb-2027
 
 ---
@@ -55,7 +55,7 @@
 | Launch vs Async/Await                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/launch-vs-async-await/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/launch-vs-async-await/) | 16-sep  | :black_square_button: | 2026-09-16   | Full | [:green_book:](https://notebook.google.com/notebook/251d9d0f-34d7-4a10-92be-b585eb0ef302) | —         | —           |
 | Main-Safety                               | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/main-safety/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/main-safety/) | 17-sep  | :black_square_button: | 2026-09-17   | Full | [:green_book:](https://notebook.google.com/notebook/63860824-8580-40fd-be3d-9517de84081f) | —         | —           |
 | withContext vs flowOn                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/with-context-vs-flow-on/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/with-context-vs-flow-on/) | 21-sep  | :black_square_button: | 2026-09-21   | Full | [:green_book:](https://notebook.google.com/notebook/61a0d946-e393-486a-bdda-390e0eaf0595) | —         | —           |
-| Flow (Cold Streams)                       | —       | 22-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| Flow (Cold Streams)                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/flow-cold-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/flow-cold-streams/) | 22-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
 | Error Handling: try-catch & .catch        | —       | 23-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —    | —                  | —         | —           |

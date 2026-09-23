@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (323 total)
+## Entries (327 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -41,6 +41,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | awaitAll | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/await-all/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/await-all/) | None | `coroutines`, `concurrency` |
 | Back Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/back-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/back-stack/) | None | `navigation`, `lifecycle`, `android-framework` |
 | Backing Field | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backing-field/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backing-field/) | None | `syntax`, `delegation`, `state-management` |
+| Backpressure | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backpressure/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backpressure/) | None | `flow`, `coroutines`, `performance` |
 | @Before | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/junit-before/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/junit-before/) | Full | `testing`, `lifecycle` |
 | @Binds | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/binds/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/binds/) | Full | `di`, `compiler` |
 | Blocking Call | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/blocking-call/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/blocking-call/) | None | `threading`, `coroutines`, `performance` |
@@ -63,10 +64,12 @@ Single source of truth for all glossary entries. Each row links to both language
 | ClassCastException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/class-cast-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/class-cast-exception/) | None | `error-handling`, `type-system`, `generics` |
 | clear | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/clear/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/clear/) | Full | `collections`, `state-management`, `concurrency` |
 | Code Bloat | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/code-bloat/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/code-bloat/) | None | `inlining`, `performance`, `build-tools` |
+| Cold Stream | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cold-stream/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cold-stream/) | None | `flow`, `coroutines`, `performance` |
 | collect | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collect/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collect/) | Full | `flow`, `coroutines` |
 | Collection Operators | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collection-operators/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collection-operators/) | None | `collections`, `functional` |
 | Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collections/) | Full | `collections`, `immutability` |
 | Collector | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collector/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collector/) | Full | `flow`, `coroutines` |
+| combine | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/combine/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/combine/) | Full | `flow`, `coroutines`, `state-management` |
 | Companion Object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/companion-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/companion-object/) | Full | `syntax`, `interop`, `design-patterns` |
 | Compare-and-Set (CAS) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compare-and-set/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compare-and-set/) | None | `concurrency`, `threading`, `state-management` |
 | Compile Time | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compile-time/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compile-time/) | None | `compiler`, `type-system` |
@@ -132,6 +135,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | filter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/filter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/filter/) | Full | `collections`, `functional`, `performance` |
 | Final | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/final/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/final/) | None | `oop`, `dispatch`, `performance` |
 | finally | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/finally/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/finally/) | Full | `error-handling`, `syntax`, `cancellation` |
+| first | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/first/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/first/) | Full | `flow`, `coroutines` |
 | Flow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flow/) | Full | `flow`, `coroutines` |
 | flowOn | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flow-on/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flow-on/) | None | `flow`, `coroutines`, `threading` |
 | Function Overloading | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/function-overloading/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/function-overloading/) | None | `dispatch`, `syntax`, `interop` |

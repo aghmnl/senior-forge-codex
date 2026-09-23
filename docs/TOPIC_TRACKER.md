@@ -21,7 +21,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 21 / 101
+**Articles written:** 22 / 101
 **Last updated:** 2026-09-23
 **Projected end date:** 10-feb-2027
 
@@ -56,7 +56,7 @@
 | Main-Safety                               | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/main-safety/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/main-safety/) | 17-sep  | :black_square_button: | 2026-09-17   | Full | [:green_book:](https://notebook.google.com/notebook/63860824-8580-40fd-be3d-9517de84081f) | —         | —           |
 | withContext vs flowOn                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/with-context-vs-flow-on/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/with-context-vs-flow-on/) | 21-sep  | :black_square_button: | 2026-09-21   | Full | [:green_book:](https://notebook.google.com/notebook/61a0d946-e393-486a-bdda-390e0eaf0595) | —         | —           |
 | Flow (Cold Streams)                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/flow-cold-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/flow-cold-streams/) | 22-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
-| Error Handling: try-catch & .catch        | —       | 23-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| Error Handling: try-catch & .catch        | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/error-handling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/error-handling/) | 23-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
 | StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | shareIn & stateIn                         | —       | 29-sep  | :black_square_button: | —            | —    | —                  | —         | —           |

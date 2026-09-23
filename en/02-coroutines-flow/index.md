@@ -12,6 +12,7 @@ title: Coroutines & Flow
 4. **[Launch vs Async/Await]({{ "/en/02-coroutines-flow/launch-vs-async-await/" | relative_url }})**
 5. **[Main-Safety]({{ "/en/02-coroutines-flow/main-safety/" | relative_url }})**
 6. **[withContext vs flowOn]({{ "/en/02-coroutines-flow/with-context-vs-flow-on/" | relative_url }})**
+7. **[Flow (Cold Streams)]({{ "/en/02-coroutines-flow/flow-cold-streams/" | relative_url }})**
 
 ---
 [Back to Chapters]({{ "/" | relative_url }})

@@ -90,3 +90,7 @@ singleton:
 allocations:
   es: ["allocation", "alocar", "aloca"]
   en: ["allocation", "allocate", "allocates"]
+
+hot-stream:
+  es: ["stream hot", "streams hot"]
+  en: ["hot stream", "hot streams"]

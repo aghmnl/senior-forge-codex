@@ -14,6 +14,7 @@ title: Corrutinas y Flow
 6. **[withContext vs flowOn]({{ "/es/02-coroutines-flow/with-context-vs-flow-on/" | relative_url }})**
 7. **[Flow (Cold Streams)]({{ "/es/02-coroutines-flow/flow-cold-streams/" | relative_url }})**
 8. **[Error Handling: try-catch & .catch]({{ "/es/02-coroutines-flow/error-handling/" | relative_url }})**
+9. **[StateFlow]({{ "/es/02-coroutines-flow/stateflow/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

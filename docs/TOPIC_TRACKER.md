@@ -21,8 +21,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 22 / 101
-**Last updated:** 2026-09-23
+**Articles written:** 23 / 101
+**Last updated:** 2026-09-25
 **Projected end date:** 10-feb-2027
 
 ---
@@ -35,7 +35,7 @@
 | Smart Casts                                          | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/smart-casts/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/smart-casts/)                                       | 20-ago  | :black_square_button: | 2026-08-19   | Full | [:green_book:](https://notebook.google.com/notebook/e6c2df6a-d8ed-40fc-b513-78dcfe8b855a) | —         | —           |
 | Data Classes: copy, equals, toString                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-classes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-classes/)                                     | 24-ago  | :black_square_button: | 2026-08-19   | Full | [:green_book:](https://notebook.google.com/notebook/3d9b6c74-6cd1-4a6d-886f-ebf7e83b3ade) | —         | —           |
 | Data Objects: Singleton & Memory Savings             | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/data-objects/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/data-objects/)                                     | 25-ago  | :black_square_button: | 2026-08-19   | Full | [:green_book:](https://notebook.google.com/notebook/5b8f43d9-493b-405a-832c-89d353f53e2b) | —         | —           |
-| Sealed Classes vs Sealed Interfaces                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/sealed-classes-interfaces/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/sealed-classes-interfaces/)           | 26-ago  | :black_square_button: | 2026-08-30   | Full | :white_check_mark: | —         | —           |
+| Sealed Classes vs Sealed Interfaces                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/sealed-classes-interfaces/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/sealed-classes-interfaces/)           | 26-ago  | :black_square_button: | 2026-08-30   | Full | [:green_book:](https://notebook.google.com/notebook/5230c74e-ca25-486a-9f86-dbafaf0ea94f) | —         | —           |
 | Extension Functions                                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/extension-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/extension-functions/)                       | 27-ago  | :black_square_button: | 2026-05-03   | None | :white_check_mark: | —         | —           |
 | Higher-Order Functions & Lambdas                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/higher-order-functions-lambdas/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/higher-order-functions-lambdas/) | 31-ago  | :black_square_button: | 2026-09-02   | Full | :black_square_button: | —         | —           |
 | Scope Functions (let, run, apply, also, with)        | [EN](https://aghmnl.github.io/senior-forge-codex/en/01-kotlin-core/scope-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/01-kotlin-core/scope-functions/)                               | 01-sep  | :black_square_button: | 2026-09-02   | Full | :black_square_button: | —         | —           |
@@ -57,7 +57,7 @@
 | withContext vs flowOn                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/with-context-vs-flow-on/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/with-context-vs-flow-on/) | 21-sep  | :black_square_button: | 2026-09-21   | Full | [:green_book:](https://notebook.google.com/notebook/61a0d946-e393-486a-bdda-390e0eaf0595) | —         | —           |
 | Flow (Cold Streams)                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/flow-cold-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/flow-cold-streams/) | 22-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
 | Error Handling: try-catch & .catch        | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/error-handling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/error-handling/) | 23-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
-| StateFlow                                 | —       | 24-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| StateFlow                                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/stateflow/) | 24-sep  | :black_square_button: | 2026-09-25   | Full | :white_check_mark: | —         | —           |
 | SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | shareIn & stateIn                         | —       | 29-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | MutableStateFlow.update {}                | —       | 30-sep  | :black_square_button: | —            | —    | —                  | —         | —           |

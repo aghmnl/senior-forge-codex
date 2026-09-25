@@ -1,0 +1,42 @@
+name: "Glossary links"
+
+# Validates cross-links in every topic article: malformed links, links to
+# glossary entries that do not exist, and non-idempotent linking (the symptom
+# of a substitution that matched its own output). See scripts/link_glossary.py.
+on:
+  pull_request:
+    paths:
+      - "en/**"
+      - "es/**"
+      - "_posts/**"
+      - "_data/glossary_aliases.yml"
+      - "scripts/link_glossary.py"
+      - ".github/workflows/glossary-links.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "en/**"
+      - "es/**"
+      - "_posts/**"
+      - "_data/glossary_aliases.yml"
+      - "scripts/link_glossary.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check glossary links
+        run: python3 scripts/link_glossary.py check --all

@@ -1,0 +1,92 @@
+# Extra surface forms for glossary cross-linking (see scripts/link_glossary.py).
+#
+# The linker already derives a form from every entry's `title:`, so this file
+# only holds what a title cannot capture: translations, inflections, and the
+# names a concept goes by in prose.
+#
+# Keys are glossary slugs. Every key must match an existing entry — `check`
+# does not verify this file directly, but an unknown slug would produce a link
+# to a missing entry, which it does catch.
+#
+# Keep a form out of this file when it is ambiguous in prose. "scope" and
+# "state" appear constantly in ordinary sentences; linking every occurrence
+# would be noise, so those stay manual.
+
+cast:
+  es: ["casts", "casteo", "casteos"]
+  en: ["casts"]
+
+coroutines:
+  es: ["coroutine", "corrutina", "corrutinas"]
+  en: ["coroutine"]
+
+coroutine-context:
+  es: ["contexto de coroutine"]
+  en: ["coroutine context"]
+
+extension-functions:
+  es: ["extensiones", "extensión", "funciones de extensión"]
+  en: ["extensions", "extension"]
+
+inheritance:
+  es: ["heredar", "herencia"]
+  en: ["inherit", "inheriting", "inherits"]
+
+member-function:
+  es: ["método miembro", "métodos miembros", "función miembro"]
+  en: ["member functions", "member method"]
+
+namespace:
+  es: ["espacio de nombres"]
+
+sealed-hierarchy:
+  es: ["jerarquías selladas", "jerarquía sellada"]
+  en: ["sealed hierarchies", "sealed hierarchy"]
+
+static-dispatch:
+  es: ["resolución estática", "estática", "estáticas"]
+  en: ["static dispatch", "statically", "static"]
+
+virtual-dispatch:
+  es: ["despacho virtual"]
+  en: ["virtually"]
+
+structural-equality:
+  es: ["igualdad estructural"]
+  en: ["structural equality"]
+
+referential-equality:
+  es: ["igualdad referencial"]
+  en: ["referential equality"]
+
+compile-time:
+  es: ["tiempo de compilación"]
+  en: ["compile time"]
+
+cold-stream:
+  es: ["cold streams", "stream frío"]
+  en: ["cold streams", "cold"]
+
+terminal-operations:
+  es: ["operador terminal", "operadores terminales"]
+  en: ["terminal operator", "terminal operators"]
+
+exception-transparency:
+  es: ["transparencia a las excepciones"]
+  en: ["exception transparent"]
+
+cooperative-cancellation:
+  es: ["cancelación cooperativa"]
+  en: ["cooperatively cancelled"]
+
+thread:
+  es: ["hilo", "hilos"]
+  en: ["threads"]
+
+singleton:
+  es: ["singletons"]
+  en: ["singletons"]
+
+allocations:
+  es: ["allocation", "alocar", "aloca"]
+  en: ["allocation", "allocate", "allocates"]

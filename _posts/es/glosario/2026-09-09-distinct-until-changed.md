@@ -10,7 +10,7 @@ permalink: /es/glosario/distinct-until-changed/
 
 ## The Theory (El Qué)
 
-`distinctUntilChanged()` es un operador de `Flow` que suprime una emisión cuando es [igual]({{ "/es/glosario/equals/" | relative_url }}) a la anterior. Convierte un stream de *eventos* en un stream de *cambios*.
+`distinctUntilChanged()` es un operador de `Flow` que suprime una emisión cuando es [igual]({{ "/es/glosario/equals/" | relative_url }}) a la anterior. Convierte un stream de *eventos* en un stream de *cambios*. A esto se lo llama **filtrado por igualdad**, y [`StateFlow`]({{ "/es/glosario/stateflow/" | relative_url }}) lo trae incorporado: escribir un valor igual al actual no emite nada.
 
 ```kotlin
 // De FollowApp Suite — TasksViewModel.kt

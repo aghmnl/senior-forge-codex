@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (358 total)
+## Entries (361 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -129,6 +129,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Downstream | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/downstream/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/downstream/) | None | `flow`, `coroutines` |
 | DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl/) | Full | `dsl`, `lambdas`, `syntax` |
 | @DslMarker | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl-marker/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl-marker/) | None | `dsl`, `scoping`, `compose` |
+| Eager | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/eager/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/eager/) | Full | `performance`, `design-principles` |
 | emit | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/emit/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/emit/) | None | `flow`, `coroutines` |
 | emptyList | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/empty-list/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/empty-list/) | Full | `collections`, `immutability`, `memory` |
 | ensureActive | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/ensure-active/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/ensure-active/) | None | `cancellation`, `coroutines` |
@@ -299,6 +300,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Sets | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sets/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sets/) | Full | `collections`, `data-classes` |
 | SharedFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sharedflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sharedflow/) | None | `flow`, `coroutines`, `concurrency` |
 | shareIn | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/share-in/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/share-in/) | None | `flow`, `performance`, `lifecycle` |
+| SharingStarted | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sharing-started/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sharing-started/) | None | `flow`, `lifecycle`, `performance` |
 | Single Responsibility Principle | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/single-responsibility-principle/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/single-responsibility-principle/) | None | `design-principles`, `architecture`, `testing` |
 | Single Source of Truth | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/single-source-of-truth/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/single-source-of-truth/) | Full | `state-management`, `architecture`, `design-principles` |
 | @Singleton | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/singleton-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/singleton-scope/) | Full | `di`, `lifecycle`, `architecture` |
@@ -363,6 +365,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Value Semantics | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/value-semantics/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/value-semantics/) | Full | `data-classes`, `immutability`, `state-management` |
 | var | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/var/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/var/) | None | `immutability`, `syntax`, `concurrency` |
 | Variance | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/variance/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/variance/) | None | `generics`, `type-system`, `immutability` |
+| ViewModel | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel/) | Full | `architecture`, `lifecycle`, `state-management` |
 | viewModelScope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel-scope/) | Full | `coroutines`, `lifecycle`, `cancellation` |
 | ViewModelStore | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel-store/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel-store/) | None | `lifecycle`, `android-framework`, `navigation` |
 | Virtual Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/virtual-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/virtual-dispatch/) | None | `dispatch`, `oop`, `jvm` |

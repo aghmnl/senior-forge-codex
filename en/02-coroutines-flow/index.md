@@ -16,6 +16,7 @@ title: Coroutines & Flow
 8. **[Error Handling: try-catch & .catch]({{ "/en/02-coroutines-flow/error-handling/" | relative_url }})**
 9. **[StateFlow]({{ "/en/02-coroutines-flow/stateflow/" | relative_url }})**
 10. **[SharedFlow]({{ "/en/02-coroutines-flow/sharedflow/" | relative_url }})**
+11. **[shareIn & stateIn]({{ "/en/02-coroutines-flow/sharein-statein/" | relative_url }})**
 
 ---
 [Back to Chapters]({{ "/" | relative_url }})

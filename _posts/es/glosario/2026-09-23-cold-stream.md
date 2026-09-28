@@ -12,6 +12,8 @@ permalink: /es/glosario/cold-stream/
 
 Un **cold stream** (stream frío) produce sus valores solo cuando alguien lo consume, y los vuelve a producir desde cero para cada consumidor. Un [`Flow`]({{ "/es/glosario/flow/" | relative_url }}) es el ejemplo de Kotlin: construirlo y encadenarle operadores no ejecuta nada; el productor arranca en el [operador terminal]({{ "/es/glosario/terminal-operations/" | relative_url }}) y se detiene cuando se cancela el scope del colector. Lo opuesto es un stream *hot* — [`StateFlow`]({{ "/es/glosario/stateflow/" | relative_url }}), `SharedFlow`, un `Channel` — que está corriendo y manteniendo valores haya o no alguien escuchando.
 
+Como todo [`Flow`]({{ "/es/glosario/flow/" | relative_url }}) común es un cold stream, en la práctica se habla de un **flow cold**.
+
 ```kotlin
 // Not found in FAS — standalone example
 val cold = flow {

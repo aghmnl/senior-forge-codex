@@ -3,6 +3,8 @@ name: "Glossary links"
 # Validates cross-links in every topic article: malformed links, links to
 # glossary entries that do not exist, and non-idempotent linking (the symptom
 # of a substitution that matched its own output). See scripts/link_glossary.py.
+# Also validates glossary tags against the vocabulary in docs/GLOSSARY_TAGS.md
+# (allowed tags, EN/ES parity, per-tag counts). See scripts/check_glossary_tags.py.
 on:
   pull_request:
     paths:
@@ -10,7 +12,11 @@ on:
       - "es/**"
       - "_posts/**"
       - "_data/glossary_aliases.yml"
+      - "_data/glossary_tags.yml"
+      - "docs/GLOSSARY_TAGS.md"
+      - "docs/GLOSSARY_INDEX.md"
       - "scripts/link_glossary.py"
+      - "scripts/check_glossary_tags.py"
       - ".github/workflows/glossary-links.yml"
   push:
     branches:
@@ -20,7 +26,11 @@ on:
       - "es/**"
       - "_posts/**"
       - "_data/glossary_aliases.yml"
+      - "_data/glossary_tags.yml"
+      - "docs/GLOSSARY_TAGS.md"
+      - "docs/GLOSSARY_INDEX.md"
       - "scripts/link_glossary.py"
+      - "scripts/check_glossary_tags.py"
   workflow_dispatch:
 
 permissions:
@@ -40,3 +50,6 @@ jobs:
 
       - name: Check glossary links
         run: python3 scripts/link_glossary.py check --all
+
+      - name: Check glossary tags
+        run: python3 scripts/check_glossary_tags.py

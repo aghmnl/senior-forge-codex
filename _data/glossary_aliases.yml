@@ -17,8 +17,8 @@ cast:
   en: ["casts"]
 
 coroutines:
-  es: ["coroutine", "corrutina", "corrutinas"]
-  en: ["coroutine"]
+  es: ["coroutine", "corrutina", "corrutinas", "kotlin.coroutines"]
+  en: ["coroutine", "kotlin.coroutines"]
 
 coroutine-context:
   es: ["contexto de coroutine"]
@@ -94,3 +94,15 @@ allocations:
 hot-stream:
   es: ["stream hot", "streams hot"]
   en: ["hot stream", "hot streams"]
+
+collector:
+  es: ["collectors"]
+  en: ["collectors"]
+
+state-holder:
+  es: ["state holder", "state holders"]
+  en: ["state holder", "state holders"]
+
+suspend-functions:
+  es: ["suspend function"]
+  en: ["suspend function"]

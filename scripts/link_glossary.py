@@ -46,6 +46,11 @@ ALIASES_FILE = "_data/glossary_aliases.yml"
 # inside it — this is what prevents nesting.
 EXISTING_LINK = r"\[[^\]]*\]\(\{\{[^}]*\}\}\)"
 
+# Any other code span. Tried after the term rules, so a span that is exactly a
+# term (`collect`) still links, while a longer one (`value.copy(...)`) is kept
+# whole instead of getting a link spliced into the middle of it.
+CODE_SPAN = r"`[^`\n]+`"
+
 # Lines that are never linked: front matter delimiters and fields, headings,
 # and the "back to" footer.
 SKIP_LINE = re.compile(r"^(---|#|\[Volver|\[Back|layout:|title:|lang:|permalink:|order:|date:|categories:|tags:)")
@@ -142,7 +147,9 @@ def form_to_regex(form: str) -> str:
         escaped = first + re.escape(form[1:])
     if CODE_LIKE.search(form):
         return rf"`{escaped}`"
-    return rf"`{escaped}`|\b{escaped}\b"
+    # A bare form never matches a segment of a dotted name: "coroutines" in
+    # "kotlinx.coroutines" is the library, not the glossary concept.
+    return rf"`{escaped}`|(?<!\.)\b{escaped}\b(?!\.\w)"
 
 
 # --------------------------------------------------------------------------- #
@@ -157,11 +164,12 @@ def build_linker(terms: list[tuple[str, str]], lang: str):
     """
     parts = [f"(?P<keep>{EXISTING_LINK})"]
     parts += [f"(?P<t{i}>{form_to_regex(form)})" for i, (form, _) in enumerate(terms)]
+    parts.append(f"(?P<span>{CODE_SPAN})")
     pattern = re.compile("|".join(parts))
     base = URL_BASE[lang]
 
     def repl(match: re.Match) -> str:
-        if match.lastgroup == "keep":
+        if match.lastgroup in ("keep", "span"):
             return match.group(0)
         slug = terms[int(match.lastgroup[1:])][1]
         return f'[{match.group(0)}]({{{{ "{base}{slug}/" | relative_url }}}})'

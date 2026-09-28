@@ -21,8 +21,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 23 / 101
-**Last updated:** 2026-09-25
+**Articles written:** 24 / 101
+**Last updated:** 2026-09-28
 **Projected end date:** 10-feb-2027
 
 ---
@@ -58,7 +58,7 @@
 | Flow (Cold Streams)                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/flow-cold-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/flow-cold-streams/) | 22-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
 | Error Handling: try-catch & .catch        | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/error-handling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/error-handling/) | 23-sep  | :black_square_button: | 2026-09-23   | Full | :white_check_mark: | —         | —           |
 | StateFlow                                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/stateflow/) | 24-sep  | :black_square_button: | 2026-09-25   | Full | :white_check_mark: | —         | —           |
-| SharedFlow                                | —       | 28-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| SharedFlow                                | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharedflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharedflow/) | 28-sep  | :black_square_button: | 2026-09-25   | Full | :white_check_mark: | —         | —           |
 | shareIn & stateIn                         | —       | 29-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | MutableStateFlow.update {}                | —       | 30-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
 | Channel (Hot Streams)                     | —       | 01-oct  | :black_square_button: | —            | —    | —                  | —         | —           |

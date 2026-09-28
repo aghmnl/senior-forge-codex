@@ -10,7 +10,7 @@ permalink: /es/glosario/hot-stream/
 
 ## The Theory (El Qué)
 
-Un **hot stream** (stream caliente) existe y produce (o mantiene) valores **independientemente de que alguien los esté consumiendo**. Los suscriptores se suman a un stream que ya está corriendo y ven lo que pasa desde ese momento, más, según el tipo, algunos valores pasados reproducidos. Es lo opuesto de un [cold stream]({{ "/es/glosario/cold-stream/" | relative_url }}), donde cada consumidor dispara su propia ejecución desde cero. En Kotlin los streams hot son [StateFlow]({{ "/es/glosario/stateflow/" | relative_url }}), [SharedFlow]({{ "/es/glosario/sharedflow/" | relative_url }}) y [Channel]({{ "/es/glosario/channel/" | relative_url }}); [stateIn]({{ "/es/glosario/state-in/" | relative_url }}) y `shareIn` convierten un [Flow]({{ "/es/glosario/flow/" | relative_url }}) cold en uno hot.
+Un **hot stream** (stream caliente) existe y produce (o mantiene) valores **independientemente de que alguien los esté consumiendo**. Los suscriptores se suman a un stream que ya está corriendo y ven lo que pasa desde ese momento, más, según el tipo, algunos valores pasados reproducidos. Es lo opuesto de un [cold stream]({{ "/es/glosario/cold-stream/" | relative_url }}), donde cada consumidor dispara su propia ejecución desde cero. En Kotlin los streams hot son [StateFlow]({{ "/es/glosario/stateflow/" | relative_url }}), [SharedFlow]({{ "/es/glosario/sharedflow/" | relative_url }}) y [Channel]({{ "/es/glosario/channel/" | relative_url }}); [stateIn]({{ "/es/glosario/state-in/" | relative_url }}) y [`shareIn`]({{ "/es/glosario/share-in/" | relative_url }}) convierten un [Flow]({{ "/es/glosario/flow/" | relative_url }}) cold en uno hot.
 
 ```kotlin
 // Not found in FAS — standalone example

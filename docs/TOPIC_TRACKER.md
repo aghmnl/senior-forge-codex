@@ -21,7 +21,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 25 / 101
+**Articles written:** 26 / 101
 **Last updated:** 2026-09-28
 **Projected end date:** 10-feb-2027
 
@@ -59,8 +59,8 @@
 | Error Handling: try-catch & .catch        | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/error-handling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/error-handling/) | 23-sep  | :black_square_button: | 2026-09-23   | Full | [:green_book:](https://notebook.google.com/notebook/e60f0dea-401b-4602-8f4a-bf5639fc0512) | —         | —           |
 | StateFlow                                 | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/stateflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/stateflow/) | 24-sep  | :black_square_button: | 2026-09-25   | Full | [:green_book:](https://notebook.google.com/notebook/609402b0-1056-4248-9a56-e63edd1b8841) | —         | —           |
 | SharedFlow                                | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharedflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharedflow/) | 28-sep  | :black_square_button: | 2026-09-25   | Full | [:green_book:](https://notebook.google.com/notebook/83279058-1006-48c8-8084-7f1796c3f692) | —         | —           |
-| shareIn & stateIn                         | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharein-statein/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharein-statein/) | 29-sep  | :black_square_button: | 2026-09-28   | Full | :white_check_mark: | —         | —           |
-| MutableStateFlow.update {}                | —       | 30-sep  | :black_square_button: | —            | —    | —                  | —         | —           |
+| shareIn & stateIn                         | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharein-statein/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharein-statein/) | 29-sep  | :black_square_button: | 2026-09-28   | Full | [:green_book:](https://notebook.google.com/notebook/ee778834-1e0d-4a0e-bea9-b09b57c718f9) | —         | —           |
+| MutableStateFlow.update {}                | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/mutablestateflow-update/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/mutablestateflow-update/) | 30-sep  | :black_square_button: | 2026-09-28   | Full | :white_check_mark: | —         | —           |
 | Channel (Hot Streams)                     | —       | 01-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | trySend() vs send()                       | —       | 05-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | receiveAsFlow()                           | —       | 06-oct  | :black_square_button: | —            | —    | —                  | —         | —           |

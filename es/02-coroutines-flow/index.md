@@ -17,6 +17,7 @@ title: Corrutinas y Flow
 9. **[StateFlow]({{ "/es/02-coroutines-flow/stateflow/" | relative_url }})**
 10. **[SharedFlow]({{ "/es/02-coroutines-flow/sharedflow/" | relative_url }})**
 11. **[shareIn & stateIn]({{ "/es/02-coroutines-flow/sharein-statein/" | relative_url }})**
+12. **[MutableStateFlow.update {}]({{ "/es/02-coroutines-flow/mutablestateflow-update/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

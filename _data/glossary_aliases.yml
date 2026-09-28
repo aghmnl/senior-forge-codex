@@ -64,8 +64,8 @@ compile-time:
   en: ["compile time"]
 
 cold-stream:
-  es: ["cold streams", "stream frío"]
-  en: ["cold streams", "cold"]
+  es: ["cold streams", "stream frío", "flow cold", "flows cold"]
+  en: ["cold streams", "cold", "cold flow", "cold flows"]
 
 terminal-operations:
   es: ["operador terminal", "operadores terminales"]
@@ -96,8 +96,8 @@ hot-stream:
   en: ["hot stream", "hot streams"]
 
 collector:
-  es: ["collectors"]
-  en: ["collectors"]
+  es: ["collectors", "suscriptor", "suscriptores"]
+  en: ["collectors", "subscriber", "subscribers"]
 
 state-holder:
   es: ["state holder", "state holders"]
@@ -106,3 +106,11 @@ state-holder:
 suspend-functions:
   es: ["suspend function"]
   en: ["suspend function"]
+
+distinct-until-changed:
+  es: ["filtrado por igualdad"]
+  en: ["equality filtering"]
+
+eager:
+  es: ["eagerly"]
+  en: ["eagerly"]

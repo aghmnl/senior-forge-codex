@@ -12,6 +12,8 @@ permalink: /es/glosario/collector/
 
 Un **collector** es la coroutine que llama a [`collect`]({{ "/es/glosario/collect/" | relative_url }}) sobre un [`Flow`]({{ "/es/glosario/flow/" | relative_url }}) — el extremo consumidor del stream. Un `Flow` frío no hace nada hasta que llega un collector; cada collector dispara su propia ejecución del bloque productor. El collector es un nodo de coroutine común: vive en el scope que lo lanzó, suspende entre emisiones, y se detiene cuando se cancela su [`Job`]({{ "/es/glosario/job/" | relative_url }}) o el flow completa.
 
+Con un [stream hot]({{ "/es/glosario/hot-stream/" | relative_url }}) como [`StateFlow`]({{ "/es/glosario/stateflow/" | relative_url }}) o [`SharedFlow`]({{ "/es/glosario/sharedflow/" | relative_url }}), a un collector también se lo llama **suscriptor**: el stream ya está corriendo, y colectarlo es *suscribirse* a sus emisiones. Collector y suscriptor son lo mismo; "suscriptor" solo remarca que se suma a un stream compartido en vez de arrancar el suyo.
+
 ```kotlin
 // From FollowApp Suite — TasksViewModel.kt
 subtasksJob = viewModelScope.launch {

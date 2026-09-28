@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (361 total)
+## Entries (367 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -152,6 +152,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Functional Style | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/functional-style/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/functional-style/) | None | `functional`, `immutability`, `collections` |
 | Garbage Collector (GC) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/garbage-collector/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/garbage-collector/) | None | `memory`, `jvm`, `performance` |
 | Generic Type Parameters | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/generic-type-parameters/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/generic-type-parameters/) | Full | `generics`, `type-system`, `jvm` |
+| getAndUpdate | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/get-and-update/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/get-and-update/) | None | `concurrency`, `state-management`, `flow` |
 | Getter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/getter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/getter/) | None | `syntax`, `oop` |
 | GlobalScope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/global-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/global-scope/) | None | `coroutines`, `lifecycle`, `memory` |
 | Gradle Kotlin DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/gradle-kotlin-dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/gradle-kotlin-dsl/) | Full | `build-tools`, `dsl`, `lambdas` |
@@ -179,6 +180,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | @IoDispatcher | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/io-dispatcher/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/io-dispatcher/) | None | `di`, `coroutines`, `testing` |
 | is Operator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/is-operator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/is-operator/) | Full | `type-system`, `syntax`, `sealed-types` |
 | isActive | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/is-active/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/is-active/) | Full | `cancellation`, `coroutines` |
+| it | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/it/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/it/) | Full | `lambdas`, `syntax` |
 | Jank | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jank/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jank/) | None | `performance`, `android-framework`, `threading` |
 | Jetpack Compose | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jetpack-compose/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jetpack-compose/) | Full | `compose`, `dsl`, `lambdas` |
 | JIT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/jit-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/jit-compilation/) | None | `runtime`, `performance`, `jvm` |
@@ -208,6 +210,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | List | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/list/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/list/) | Full | `collections`, `immutability`, `generics` |
 | listOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/list-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/list-of/) | Full | `collections`, `immutability` |
 | LiveData | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/livedata/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/livedata/) | None | `state-management`, `lifecycle`, `android-framework` |
+| Lock | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lock/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lock/) | None | `concurrency`, `threading` |
 | Looper | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/looper/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/looper/) | None | `android-framework`, `threading` |
 | Main Thread | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/main-thread/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/main-thread/) | Full | `threading`, `android-framework`, `performance` |
 | map (Operator) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/map-operator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/map-operator/) | Full | `collections`, `functional`, `architecture` |
@@ -260,7 +263,9 @@ Single source of truth for all glossary entries. Each row links to both language
 | ProGuard | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/proguard/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/proguard/) | None | `build-tools`, `reflection` |
 | Property Delegate | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/property-delegate/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/property-delegate/) | None | `delegation`, `syntax`, `memory` |
 | Protected State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/protected-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/protected-state/) | None | `oop`, `sealed-types`, `scoping` |
+| Pure Function | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/pure-function/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/pure-function/) | Full | `functional`, `design-principles`, `testing` |
 | put | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/put/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/put/) | Full | `collections`, `immutability` |
+| Query | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/query/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/query/) | Full | `persistence`, `performance` |
 | R8 | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/r8/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/r8/) | None | `build-tools`, `reflection`, `performance` |
 | Race Condition | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/race-condition/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/race-condition/) | None | `concurrency`, `state-management`, `coroutines` |
 | Raw Types | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/raw-types/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/raw-types/) | None | `generics`, `interop`, `type-system` |
@@ -359,6 +364,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Type Safety | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/type-safety/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/type-safety/) | Full | `type-system`, `null-safety`, `sealed-types` |
 | Unidirectional Data Flow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/unidirectional-data-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/unidirectional-data-flow/) | Full | `architecture`, `state-management`, `immutability` |
 | update | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/update/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/update/) | Full | `flow`, `concurrency`, `state-management` |
+| updateAndGet | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/update-and-get/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/update-and-get/) | None | `concurrency`, `state-management`, `flow` |
 | Upper Bound | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/upper-bound/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/upper-bound/) | Full | `generics`, `type-system` |
 | Upstream | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/upstream/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/upstream/) | None | `flow`, `coroutines` |
 | val | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/val/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/val/) | Full | `immutability`, `syntax` |

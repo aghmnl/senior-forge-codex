@@ -114,3 +114,35 @@ distinct-until-changed:
 eager:
   es: ["eagerly"]
   en: ["eagerly"]
+
+race-condition:
+  es: ["race condition", "race conditions"]
+  en: ["race condition", "race conditions"]
+
+atomicity:
+  es: ["atómico", "atómica", "atomicidad"]
+  en: ["atomic"]
+
+compare-and-set:
+  es: ["compare-and-set"]
+  en: ["compare-and-set"]
+
+main-thread:
+  es: ["main thread"]
+  en: ["main thread"]
+
+suspension-point:
+  es: ["punto de suspensión"]
+  en: ["suspension point"]
+
+lambdas:
+  es: ["lambda"]
+  en: ["lambda"]
+
+pure-function:
+  es: ["función pura", "funciones puras"]
+  en: ["pure function", "pure functions"]
+
+query:
+  es: ["queries"]
+  en: ["queries"]

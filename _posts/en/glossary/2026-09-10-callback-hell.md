@@ -33,7 +33,7 @@ render(invoice)
 
 - **The problem was never the callbacks — it was composition.** Sequencing, branching, looping and `try/finally` are trivial in straight-line code and hostile inside callbacks. Coroutines restore the language's own control flow to async code.
 - **Bridge once, at the edge.** [suspendCancellableCoroutine]({{ "/en/glossary/suspend-cancellable-coroutine/" | relative_url }}) converts a callback API to a suspend function in one place; everything above it is sequential. Modern Android has little callback hell left because Jetpack already did this.
-- **`Flow` is the multi-shot answer.** A listener that fires repeatedly becomes `callbackFlow`, and its consumers get operators instead of nested handlers.
+- **`Flow` is the multi-shot answer.** A listener that fires repeatedly becomes [`callbackFlow`]({{ "/en/glossary/callback-flow/" | relative_url }}), and its consumers get operators instead of nested handlers.
 - See [Suspend Functions]({{ "/en/02-coroutines-flow/suspend-functions/" | relative_url }}).
 
 ---

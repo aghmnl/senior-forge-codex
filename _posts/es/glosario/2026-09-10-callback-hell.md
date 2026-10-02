@@ -33,7 +33,7 @@ Las [suspend functions]({{ "/es/glosario/suspend-functions/" | relative_url }}) 
 
 - **El problema nunca fueron los callbacks — fue la composición.** Secuenciar, ramificar, iterar y `try/finally` son triviales en código lineal y hostiles dentro de callbacks. Las coroutines devuelven el control de flujo propio del lenguaje al código async.
 - **Puenteá una vez, en el borde.** [suspendCancellableCoroutine]({{ "/es/glosario/suspend-cancellable-coroutine/" | relative_url }}) convierte una API de callbacks en una suspend function en un solo lugar; todo lo que está arriba es secuencial. El Android moderno tiene poco callback hell porque Jetpack ya hizo esto.
-- **`Flow` es la respuesta multi-shot.** Un listener que dispara repetidamente se convierte en `callbackFlow`, y sus consumidores obtienen operadores en lugar de handlers anidados.
+- **`Flow` es la respuesta multi-shot.** Un listener que dispara repetidamente se convierte en [`callbackFlow`]({{ "/es/glosario/callback-flow/" | relative_url }}), y sus consumidores obtienen operadores en lugar de handlers anidados.
 - Ver [Suspend Functions]({{ "/es/02-coroutines-flow/suspend-functions/" | relative_url }}).
 
 ---

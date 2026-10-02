@@ -18,6 +18,7 @@ title: Coroutines & Flow
 10. **[SharedFlow]({{ "/en/02-coroutines-flow/sharedflow/" | relative_url }})**
 11. **[shareIn & stateIn]({{ "/en/02-coroutines-flow/sharein-statein/" | relative_url }})**
 12. **[MutableStateFlow.update {}]({{ "/en/02-coroutines-flow/mutablestateflow-update/" | relative_url }})**
+13. **[Channel (Hot Streams)]({{ "/en/02-coroutines-flow/channel-hot-streams/" | relative_url }})**
 
 ---
 [Back to Chapters]({{ "/" | relative_url }})

@@ -12,7 +12,7 @@ A [`Flow<T>`]({{ "/en/glossary/flow/" | relative_url }}) is an asynchronous stre
 
 Three pieces make up the model:
 
-- **Builders** produce the flow: `flow { emit(x) }` for arbitrary suspending work, `flowOf(a, b)` for fixed values, `asFlow()` over a collection, and `callbackFlow`/`channelFlow` to bridge a [callback]({{ "/en/glossary/callbacks/" | relative_url }})-based API.
+- **Builders** produce the flow: `flow { emit(x) }` for arbitrary suspending work, `flowOf(a, b)` for fixed values, `asFlow()` over a collection, and [`callbackFlow`]({{ "/en/glossary/callback-flow/" | relative_url }})/`channelFlow` to bridge a [callback]({{ "/en/glossary/callbacks/" | relative_url }})-based API.
 - **Intermediate operators** — `map`, `filter`, `onEach`, [`combine`]({{ "/en/glossary/combine/" | relative_url }}), [`flowOn`]({{ "/en/glossary/flow-on/" | relative_url }}) — are *declarative*. Each one returns a new `Flow` that wraps the previous one; none of them runs anything. They are as lazy as [`Sequence`]({{ "/en/glossary/sequences/" | relative_url }}) operators, and for the same reason.
 - **[Terminal operators]({{ "/en/glossary/terminal-operations/" | relative_url }})** — [`collect`]({{ "/en/glossary/collect/" | relative_url }}), [`first`]({{ "/en/glossary/first/" | relative_url }}), `toList`, `single`, `fold` — are [suspend functions]({{ "/en/glossary/suspend-functions/" | relative_url }}). They start the producer, and they need a [coroutine scope]({{ "/en/glossary/coroutine-scope/" | relative_url }}) to run in.
 

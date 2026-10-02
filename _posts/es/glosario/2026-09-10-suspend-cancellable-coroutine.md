@@ -31,7 +31,7 @@ Así es como Jetpack convirtió `CredentialManager`, `Task<T>` (`await()`), `Lis
 
 - **Tres obligaciones.** Reanudar exactamente una vez; propagar fallos con `resumeWithException`; desregistrar en la cancelación. Olvidar la tercera filtra el listener; olvidar la primera cuelga al llamador para siempre.
 - **Preferila sobre `suspendCoroutine`.** La variante no cancelable ignora la [cooperative cancellation]({{ "/es/glosario/cooperative-cancellation/" | relative_url }}): un llamador cancelado queda suspendido hasta que el callback dispara, si es que alguna vez lo hace.
-- **`callbackFlow` es el equivalente multi-shot.** Un callback → `suspendCancellableCoroutine`; un stream de callbacks → `callbackFlow` con `awaitClose`.
+- **[`callbackFlow`]({{ "/es/glosario/callback-flow/" | relative_url }}) es el equivalente multi-shot.** Un callback → `suspendCancellableCoroutine`; un stream de callbacks → [`callbackFlow`]({{ "/es/glosario/callback-flow/" | relative_url }}) con `awaitClose`.
 - **Rara vez la necesitás en código de app.** Room, Retrofit, DataStore, Credential Manager y Play Services ya traen APIs suspendibles. Usala solo al envolver un SDK legacy.
 - Ver [Suspend Functions]({{ "/es/02-coroutines-flow/suspend-functions/" | relative_url }}).
 

@@ -20,6 +20,7 @@ title: Corrutinas y Flow
 12. **[MutableStateFlow.update {}]({{ "/es/02-coroutines-flow/mutablestateflow-update/" | relative_url }})**
 13. **[Channel (Hot Streams)]({{ "/es/02-coroutines-flow/channel-hot-streams/" | relative_url }})**
 14. **[trySend() vs send()]({{ "/es/02-coroutines-flow/trysend-vs-send/" | relative_url }})**
+15. **[receiveAsFlow()]({{ "/es/02-coroutines-flow/receive-as-flow/" | relative_url }})**
 
 ---
 [Volver a Capítulos]({{ "/es/" | relative_url }})

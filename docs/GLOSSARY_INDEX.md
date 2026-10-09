@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (381 total)
+## Entries (386 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -90,6 +90,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Concurrency | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/concurrency/) | Full | `concurrency`, `immutability`, `coroutines` |
 | Conflation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/conflation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/conflation/) | None | `flow`, `state-management` |
 | Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constructor/) | Full | `oop`, `data-classes`, `syntax` |
+| consumeAsFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/consume-as-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/consume-as-flow/) | None | `flow`, `coroutines`, `cancellation` |
 | contains | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/contains/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/contains/) | Full | `collections`, `performance` |
 | ContentResolver | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/content-resolver/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/content-resolver/) | Full | `android-framework`, `persistence` |
 | Context | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/context-programming/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/context-programming/) | None | `scoping`, `android-framework`, `coroutines` |
@@ -116,6 +117,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | data object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-object/) | Full | `sealed-types`, `state-management`, `oop` |
 | Data Transformation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/data-transformation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/data-transformation/) | None | `functional`, `architecture`, `collections` |
 | DataStore | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/datastore/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/datastore/) | Full | `persistence`, `coroutines`, `android-framework` |
+| debounce | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/debounce/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/debounce/) | None | `flow`, `performance` |
 | Decorator | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/decorator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/decorator/) | None | `design-patterns`, `oop`, `delegation` |
 | Defensive Copy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/defensive-copy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/defensive-copy/) | Full | `immutability`, `collections`, `concurrency` |
 | Deferred | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/deferred/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/deferred/) | None | `coroutines`, `concurrency` |
@@ -147,7 +149,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Extension | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/extension/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/extension/) | Full | `syntax`, `oop`, `design-principles` |
 | Extension Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/extension-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/extension-functions/) | Full | `syntax`, `dispatch`, `functional` |
 | Fan-out | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/fan-out/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/fan-out/) | None | `concurrency`, `coroutines` |
-| filter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/filter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/filter/) | Full | `collections`, `functional`, `performance` |
+| filter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/filter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/filter/) | Full | `collections`, `functional`, `performance`, `flow` |
 | Final | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/final/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/final/) | None | `oop`, `dispatch`, `performance` |
 | finally | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/finally/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/finally/) | Full | `error-handling`, `syntax`, `cancellation` |
 | first | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/first/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/first/) | Full | `flow`, `coroutines` |
@@ -253,6 +255,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | offer() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/offer/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/offer/) | None | `coroutines`, `concurrency` |
 | OkHttp | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/okhttp/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/okhttp/) | None | `threading`, `callbacks`, `performance` |
 | onCleared | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/on-cleared/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/on-cleared/) | None | `lifecycle`, `android-framework`, `coroutines` |
+| One-shot Event | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/one-shot-event/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/one-shot-event/) | None | `architecture`, `state-management`, `flow` |
 | onEach | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/on-each/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/on-each/) | None | `flow`, `coroutines`, `syntax` |
 | open | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/open/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/open/) | None | `oop`, `syntax` |
 | Operator Overloading | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/operator-overloading/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/operator-overloading/) | Full | `syntax`, `dsl`, `dispatch` |
@@ -267,6 +270,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Primitives | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/primitives/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/primitives/) | Full | `jvm`, `memory`, `performance` |
 | private | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/private/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/private/) | None | `scoping`, `design-principles`, `syntax` |
 | produce | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/produce/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/produce/) | None | `coroutines`, `concurrency`, `flow` |
+| produceIn | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/produce-in/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/produce-in/) | None | `flow`, `coroutines` |
 | Producer-Consumer | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/producer-consumer/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/producer-consumer/) | None | `concurrency`, `design-patterns`, `coroutines` |
 | produceState | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/produce-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/produce-state/) | Full | `compose`, `coroutines`, `state-management` |
 | Profiling | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/profiling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/profiling/) | Full | `performance`, `threading` |
@@ -282,6 +286,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Read-Only View | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/read-only-view/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/read-only-view/) | Full | `collections`, `immutability`, `generics` |
 | receive | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receive/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receive/) | None | `coroutines`, `concurrency` |
 | receiveAsFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receive-as-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receive-as-flow/) | None | `flow`, `concurrency`, `coroutines` |
+| ReceiveChannel | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receive-channel/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receive-channel/) | None | `concurrency`, `coroutines` |
 | Receiver Type | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/receiver-type/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/receiver-type/) | Full | `lambdas`, `dsl`, `scoping` |
 | Recomposition | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/recomposition/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/recomposition/) | None | `compose`, `state-management`, `immutability` |
 | Reified | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/reified/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/reified/) | None | `generics`, `inlining`, `compiler` |

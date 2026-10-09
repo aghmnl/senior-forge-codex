@@ -182,3 +182,35 @@ on-success-on-failure:
 conflate:
   es: ["conflate"]
   en: ["conflate"]
+
+derived-state:
+  es: ["derivedStateOf"]
+  en: ["derivedStateOf"]
+
+snapshot-system:
+  es: ["snapshot system"]
+  en: ["snapshot system"]
+
+stability:
+  es: ["stable", "unstable", "estabilidad"]
+  en: ["stable", "unstable"]
+
+strong-skipping:
+  es: ["strong skipping"]
+  en: ["strong skipping"]
+
+compose-compiler-reports:
+  es: ["reportes del compilador de Compose", "Compose compiler reports"]
+  en: ["Compose compiler reports"]
+
+composition:
+  es: ["composición"]
+  en: []
+
+modifier-offset:
+  es: ["offset"]
+  en: ["offset"]
+
+sets:
+  es: ["Set"]
+  en: ["Set"]

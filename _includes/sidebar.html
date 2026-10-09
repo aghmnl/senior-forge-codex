@@ -45,37 +45,37 @@
           <span>{{ chapter.title }}</span>
         </a>
         
-        {%- if is_active -%}
-          {%- assign chapter_pages = "" | split: "" -%}
-          {%- for p in site.pages -%}
-            {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
-              {%- assign chapter_pages = chapter_pages | push: p -%}
+        {%- assign chapter_pages = "" | split: "" -%}
+        {%- for p in site.pages -%}
+          {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
+            {%- assign chapter_pages = chapter_pages | push: p -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign chapter_pages = chapter_pages | sort: "order" -%}
+        <ul class="chapter-articles list-unstyled w-100 ms-4 mt-1 mb-0{% unless is_active %} d-none{% endunless %}">
+          {%- for p in chapter_pages -%}
+            {%- if p.url == page.url -%}
+              <li><span class="chapter-article-link active">{{ p.title }}</span></li>
+            {%- else -%}
+              <li><a href="{{ p.url | relative_url }}" class="chapter-article-link">{{ p.title }}</a></li>
             {%- endif -%}
           {%- endfor -%}
-          {%- assign chapter_pages = chapter_pages | sort: "order" -%}
-          <ul class="chapter-articles list-unstyled w-100 ms-4 mt-1 mb-0">
-            {%- for p in chapter_pages -%}
-              {%- if p.url == page.url -%}
-                <li><span class="chapter-article-link active">{{ p.title }}</span></li>
-              {%- else -%}
-                <li><a href="{{ p.url | relative_url }}" class="chapter-article-link">{{ p.title }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+        </ul>
       </li>
     {% endfor %}
 
   </ul><!-- .nav -->
 
   <script>
-    /* Clicking the title of the chapter whose article list is open toggles the list instead of navigating. */
-    document.querySelectorAll('#sidebar li.nav-item.active > a.nav-link').forEach(function(link) {
+    /* Chapter titles only expand their article list (one at a time) or collapse it; they never navigate. */
+    document.querySelectorAll('#sidebar li.nav-item > a.nav-link').forEach(function(link) {
       var list = link.parentElement.querySelector('.chapter-articles');
       if (!list) return;
       link.addEventListener('click', function(e) {
         e.preventDefault();
-        list.classList.toggle('d-none');
+        var wasHidden = list.classList.contains('d-none');
+        document.querySelectorAll('#sidebar .chapter-articles').forEach(function(l) { l.classList.add('d-none'); });
+        if (wasHidden) list.classList.remove('d-none');
       });
     });
   </script>

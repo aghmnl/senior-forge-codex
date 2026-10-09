@@ -170,3 +170,15 @@ one-shot-event:
 dispatchers-main-immediate:
   es: ["Main.immediate"]
   en: ["Main.immediate"]
+
+api:
+  es: ["APIs"]
+  en: ["APIs"]
+
+on-success-on-failure:
+  es: ["onSuccess", "onFailure"]
+  en: ["onSuccess", "onFailure"]
+
+conflate:
+  es: ["conflate"]
+  en: ["conflate"]

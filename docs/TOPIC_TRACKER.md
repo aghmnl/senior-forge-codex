@@ -21,8 +21,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 28 / 101
-**Last updated:** 2026-10-02
+**Articles written:** 29 / 101
+**Last updated:** 2026-10-09
 **Projected end date:** 10-feb-2027
 
 ---
@@ -61,9 +61,9 @@
 | SharedFlow                                | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharedflow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharedflow/) | 28-sep  | :black_square_button: | 2026-09-25   | Full | [:green_book:](https://notebook.google.com/notebook/83279058-1006-48c8-8084-7f1796c3f692) | —         | —           |
 | shareIn & stateIn                         | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/sharein-statein/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/sharein-statein/) | 29-sep  | :black_square_button: | 2026-09-28   | Full | [:green_book:](https://notebook.google.com/notebook/ee778834-1e0d-4a0e-bea9-b09b57c718f9) | —         | —           |
 | MutableStateFlow.update {}                | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/mutablestateflow-update/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/mutablestateflow-update/) | 30-sep  | :black_square_button: | 2026-09-28   | Full | [:green_book:](https://notebook.google.com/notebook/d4117939-f537-4e18-a8f1-05c48e9e8f22) | —         | —           |
-| Channel (Hot Streams)                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/channel-hot-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/channel-hot-streams/) | 01-oct  | :black_square_button: | 2026-09-28   | None | :white_check_mark: | —         | —           |
-| trySend() vs send()                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/trysend-vs-send/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/trysend-vs-send/) | 05-oct  | :black_square_button: | 2026-10-02   | Full | :white_check_mark: | —         | —           |
-| receiveAsFlow()                           | —       | 06-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
+| Channel (Hot Streams)                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/channel-hot-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/channel-hot-streams/) | 01-oct  | :black_square_button: | 2026-09-28   | None | [:green_book:](https://notebook.google.com/notebook/e6346671-31d0-44fe-9721-eb7c98e12d9c) | —         | —           |
+| trySend() vs send()                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/trysend-vs-send/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/trysend-vs-send/) | 05-oct  | :black_square_button: | 2026-10-02   | Full | [:green_book:](https://notebook.google.com/notebook/4cdf8c0e-4596-4502-9069-18672c3441da) | —         | —           |
+| receiveAsFlow()                           | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/receive-as-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/receive-as-flow/) | 06-oct  | :black_square_button: | 2026-10-09   | None | :white_check_mark: | —         | —           |
 | callbackFlow                              | —       | 07-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 
 ## III. Jetpack Compose (0/14)

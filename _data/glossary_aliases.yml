@@ -162,3 +162,11 @@ listener:
 receive:
   es: ["receptor", "receptores"]
   en: ["receiver", "receivers"]
+
+one-shot-event:
+  es: ["eventos one-shot", "evento one-shot", "eventos", "evento"]
+  en: ["one-shot events", "one-shot event", "events", "event"]
+
+dispatchers-main-immediate:
+  es: ["Main.immediate"]
+  en: ["Main.immediate"]

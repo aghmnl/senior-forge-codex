@@ -21,7 +21,7 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 30 / 101
+**Articles written:** 31 / 101
 **Last updated:** 2026-10-09
 **Projected end date:** 10-feb-2027
 
@@ -70,7 +70,7 @@
 
 | Topic                                           | Article | Planned | Status                | Article Date | FAS  | Notebook           | Last Eval | Eval Result |
 | ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | :--: | :----------------: | --------- | ----------- |
-| Recomposition & Stability                       | —       | 08-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
+| Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | :white_check_mark: | —         | —           |
 | remember & rememberSaveable                     | —       | 12-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | Modifiers: Order & Alignment                    | —       | 14-oct  | :black_square_button: | —            | —    | —                  | —         | —           |

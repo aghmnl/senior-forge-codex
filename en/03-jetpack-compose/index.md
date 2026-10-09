@@ -6,6 +6,8 @@ title: Jetpack Compose
 
 # Jetpack Compose
 
-No items are written in this section yet.
+1. **[Recomposition & Stability]({{ "/en/03-jetpack-compose/recomposition-stability/" | relative_url }})**
+
+---
 
 [Back to Chapters]({{ "/" | relative_url }})

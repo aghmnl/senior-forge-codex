@@ -45,7 +45,7 @@
           <span>{{ chapter.title }}</span>
         </a>
         
-        {%- if is_active and page.url != chapter.url -%}
+        {%- if is_active -%}
           {%- assign chapter_pages = "" | split: "" -%}
           {%- for p in site.pages -%}
             {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
@@ -67,6 +67,18 @@
     {% endfor %}
 
   </ul><!-- .nav -->
+
+  <script>
+    /* Clicking the title of the chapter whose article list is open toggles the list instead of navigating. */
+    document.querySelectorAll('#sidebar li.nav-item.active > a.nav-link').forEach(function(link) {
+      var list = link.parentElement.querySelector('.chapter-articles');
+      if (!list) return;
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        list.classList.toggle('d-none');
+      });
+    });
+  </script>
 
   <div class="sidebar-bottom d-flex align-items-center w-100" style="gap: 1rem; padding-left: 3rem !important;">
     <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="sidebar-glossary-link{% if page.url contains '/glossary/' %} active{% endif %}">

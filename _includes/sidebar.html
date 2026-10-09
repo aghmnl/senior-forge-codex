@@ -6,7 +6,7 @@
   <div class="profile-wrapper pt-0">
     {% assign lang = page.lang | default: "en" %}
 
-    <div id="sidebar-search" class="w-100 px-3 mb-4">
+    <div id="sidebar-search" class="w-100 mb-4">
       <div class="sidebar-search-box position-relative">
         <input
           class="form-control sidebar-search-input"
@@ -24,6 +24,10 @@
     </h1>
 
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
+
+    <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="sidebar-byline d-block w-100 text-end text-muted small text-decoration-none">
+      {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
+    </a>
   </div><!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
@@ -45,33 +49,50 @@
           <span>{{ chapter.title }}</span>
         </a>
         
-        {%- if is_active and page.url != chapter.url -%}
-          {%- assign chapter_pages = "" | split: "" -%}
-          {%- for p in site.pages -%}
-            {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
-              {%- assign chapter_pages = chapter_pages | push: p -%}
+        {%- assign chapter_pages = "" | split: "" -%}
+        {%- for p in site.pages -%}
+          {%- if p.url contains chapter.url and p.url != chapter.url and p.title -%}
+            {%- assign chapter_pages = chapter_pages | push: p -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign chapter_pages = chapter_pages | sort: "order" -%}
+        <ul class="chapter-articles list-unstyled w-100 ms-4 mt-1 mb-0{% unless is_active %} d-none{% endunless %}">
+          {%- for p in chapter_pages -%}
+            {%- if p.url == page.url -%}
+              <li><span class="chapter-article-link active">{{ p.title }}</span></li>
+            {%- else -%}
+              <li><a href="{{ p.url | relative_url }}" class="chapter-article-link">{{ p.title }}</a></li>
             {%- endif -%}
           {%- endfor -%}
-          {%- assign chapter_pages = chapter_pages | sort: "order" -%}
-          <ul class="chapter-articles list-unstyled w-100 ms-4 mt-1 mb-0">
-            {%- for p in chapter_pages -%}
-              {%- if p.url == page.url -%}
-                <li><span class="chapter-article-link active">{{ p.title }}</span></li>
-              {%- else -%}
-                <li><a href="{{ p.url | relative_url }}" class="chapter-article-link">{{ p.title }}</a></li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+        </ul>
       </li>
     {% endfor %}
 
   </ul><!-- .nav -->
 
+  <script>
+    /* Chapter titles only expand their article list (one at a time) or collapse it; they never navigate. */
+    document.querySelectorAll('#sidebar li.nav-item > a.nav-link').forEach(function(link) {
+      var list = link.parentElement.querySelector('.chapter-articles');
+      if (!list) return;
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var wasHidden = list.classList.contains('d-none');
+        document.querySelectorAll('#sidebar .chapter-articles').forEach(function(l) { l.classList.add('d-none'); });
+        if (wasHidden) list.classList.remove('d-none');
+      });
+    });
+  </script>
+
   <div class="sidebar-bottom d-flex align-items-center w-100" style="gap: 1rem; padding-left: 3rem !important;">
     <a href="{% if lang == 'en' %}{{ '/en/glossary/' | relative_url }}{% else %}{{ '/es/glosario/' | relative_url }}{% endif %}" class="sidebar-glossary-link{% if page.url contains '/glossary/' %} active{% endif %}">
       <i class="fa-fw fas fa-list-ul"></i>
       <span>{{ site.data.translations[lang].glossary_title }}</span>
+    </a>
+
+    <a href="{% if lang == 'en' %}{{ '/en/tags/' | relative_url }}{% else %}{{ '/es/etiquetas/' | relative_url }}{% endif %}" class="sidebar-glossary-link{% if page.url contains '/tags/' or page.url contains '/etiquetas/' %} active{% endif %}">
+      <i class="fa-fw fas fa-tags"></i>
+      <span>{{ site.data.locales[lang].tabs.tags | default: "Tags" }}</span>
     </a>
 
     {% for entry in site.data.contact %}
@@ -95,75 +116,6 @@
     {% endfor %}
   </div><!-- .sidebar-bottom -->
 
-  <div class="sidebar-meta d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
-      <!-- Language Toggle EN/ES — show only current language -->
-      {%- assign current_url = page.url -%}
-      {%- if page.lang == "en" or current_url == "/" -%}
-        {%- if current_url == "/" -%}
-          {%- assign target_url = "/es/" -%}
-        {%- elsif current_url contains "/en/glossary/" -%}
-          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
-        {%- elsif current_url contains "/en/tags/" -%}
-          {%- assign target_url = current_url | replace: "/en/tags/", "/es/etiquetas/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
-          <span class="lang-active">EN</span>
-        </a>
-      {%- elsif page.lang == "es" -%}
-        {%- if current_url == "/es/" -%}
-          {%- assign target_url = "/" -%}
-        {%- elsif current_url contains "/es/glosario/" -%}
-          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
-        {%- elsif current_url contains "/es/etiquetas/" -%}
-          {%- assign target_url = current_url | replace: "/es/etiquetas/", "/en/tags/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
-          <span class="lang-active">ES</span>
-        </a>
-      {%- endif -%}
-
-      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
-        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
-          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
-        </button>
-        <!-- Hidden menu: the theme's JS expects "#mode-toggle + .dropdown-menu" and
-             aborts its whole init (back-to-top, TOC) when it is missing. -->
-        <ul class="dropdown-menu d-none" aria-hidden="true">
-          <li><button class="dropdown-item" type="button" data-theme-mode="light"></button></li>
-          <li><button class="dropdown-item" type="button" data-theme-mode="dark"></button></li>
-          <li><button class="dropdown-item" type="button" data-theme-mode="system"></button></li>
-        </ul>
-        <script>
-          (function() {
-            var btn = document.getElementById('mode-toggle');
-            function updateIcon() {
-              var icons = btn.querySelectorAll('i');
-              var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
-                || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-              icons[0].style.display = isDark ? 'none' : '';
-              icons[1].style.display = isDark ? '' : 'none';
-            }
-            updateIcon();
-            btn.addEventListener('click', function(e) {
-              e.stopPropagation();
-              Theme.update(Theme.isDark ? 'light' : 'dark');
-              setTimeout(updateIcon, 50);
-            });
-            new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
-          })();
-        </script>
-      {% endunless %}
-
-      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
-        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
-      </a>
-  </div><!-- .sidebar-meta -->
-
 <style>
   #sidebar-search { margin-top: 0; padding-top: 0; }
   .sidebar-search-box {
@@ -179,7 +131,7 @@
     border: 1px solid var(--card-border-color, #dee2e6);
     color: var(--text-color);
   }
-  .sidebar-meta #mode-toggle {
+  #topbar-tools #mode-toggle {
     background: none;
     border: none;
     border-radius: 0;
@@ -188,7 +140,7 @@
     color: var(--text-muted-color, #868e96);
     font-size: 0.85rem;
   }
-  .sidebar-meta #mode-toggle:hover {
+  #topbar-tools #mode-toggle:hover {
     color: var(--sidebar-active-color, #fff);
   }
   .sidebar-glossary-link {

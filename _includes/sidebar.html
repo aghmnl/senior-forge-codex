@@ -90,6 +90,11 @@
       <span>{{ site.data.translations[lang].glossary_title }}</span>
     </a>
 
+    <a href="{% if lang == 'en' %}{{ '/en/tags/' | relative_url }}{% else %}{{ '/es/etiquetas/' | relative_url }}{% endif %}" class="sidebar-glossary-link{% if page.url contains '/tags/' or page.url contains '/etiquetas/' %} active{% endif %}">
+      <i class="fa-fw fas fa-tags"></i>
+      <span>{{ site.data.locales[lang].tabs.tags | default: "Tags" }}</span>
+    </a>
+
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}

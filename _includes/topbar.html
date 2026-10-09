@@ -59,6 +59,72 @@
       <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
         <i class="fas fa-search fa-fw"></i>
       </button>
+
+      <!-- Language and theme toggles: always visible here, unlike the sidebar on mobile -->
+      <div id="topbar-tools" class="d-flex align-items-center" style="gap: 1rem;">
+        <!-- Language Toggle EN/ES — show only current language -->
+        {%- assign current_url = page.url -%}
+        {%- if page.lang == "en" or current_url == "/" -%}
+          {%- if current_url == "/" -%}
+            {%- assign target_url = "/es/" -%}
+          {%- elsif current_url contains "/en/glossary/" -%}
+            {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
+          {%- elsif current_url contains "/en/tags/" -%}
+            {%- assign target_url = current_url | replace: "/en/tags/", "/es/etiquetas/" -%}
+          {%- else -%}
+            {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
+          {%- endif -%}
+          <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
+            <span class="lang-active">EN</span>
+          </a>
+        {%- elsif page.lang == "es" -%}
+          {%- if current_url == "/es/" -%}
+            {%- assign target_url = "/" -%}
+          {%- elsif current_url contains "/es/glosario/" -%}
+            {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
+          {%- elsif current_url contains "/es/etiquetas/" -%}
+            {%- assign target_url = current_url | replace: "/es/etiquetas/", "/en/tags/" -%}
+          {%- else -%}
+            {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
+          {%- endif -%}
+          <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
+            <span class="lang-active">ES</span>
+          </a>
+        {%- endif -%}
+
+        {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+          <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
+            <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+            <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+          </button>
+          <!-- Hidden menu: the theme's JS expects "#mode-toggle + .dropdown-menu" and
+               aborts its whole init (back-to-top, TOC) when it is missing. -->
+          <ul class="dropdown-menu d-none" aria-hidden="true">
+            <li><button class="dropdown-item" type="button" data-theme-mode="light"></button></li>
+            <li><button class="dropdown-item" type="button" data-theme-mode="dark"></button></li>
+            <li><button class="dropdown-item" type="button" data-theme-mode="system"></button></li>
+          </ul>
+          <script>
+            (function() {
+              var btn = document.getElementById('mode-toggle');
+              function updateIcon() {
+                var icons = btn.querySelectorAll('i');
+                var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
+                  || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                icons[0].style.display = isDark ? 'none' : '';
+                icons[1].style.display = isDark ? '' : 'none';
+              }
+              updateIcon();
+              btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                Theme.update(Theme.isDark ? 'light' : 'dark');
+                setTimeout(updateIcon, 50);
+              });
+              new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
+            })();
+          </script>
+        {% endunless %}
+      </div>
     </div>
 
     <search id="search" class="align-items-center ms-3 ms-lg-0">
@@ -76,6 +142,8 @@
     </button>
   </div>
   <style>
+    /* The theme hides the topbar controls while mobile search is open; do the same for the toggles. */
+    #topbar:has(#search.d-flex) #topbar-tools { display: none !important; }
     @media all and (min-width: 850px) {
       #search { display: none !important; }
       #topbar-wrapper { height: auto !important; min-height: 2rem; margin-top: 1.25rem !important; padding-bottom: 1.5rem !important; }
@@ -86,6 +154,11 @@
          `display: contents` lets the post title stick relative to the whole article, not just its header. */
       article > header { display: contents; }
       h1.dynamic-title, article > header > h1 { position: sticky; top: 0; z-index: 10; background: var(--main-bg); padding: 0.5rem 0; }
+    }
+    /* With the right panel visible, end the topbar where the main column ends (col-xl-9),
+       so the toggles line up with the article instead of floating over the panel. */
+    @media all and (min-width: 1200px) {
+      #topbar-wrapper { width: 75%; }
     }
   </style>
 </header>

@@ -24,6 +24,10 @@
     </h1>
 
     <p class="site-subtitle fst-italic mb-0">{{ site.data.translations[lang].tagline }}</p>
+
+    <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="sidebar-byline d-block w-100 text-end text-muted small text-decoration-none">
+      {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
+    </a>
   </div><!-- .profile-wrapper -->
 
   <ul class="nav flex-column flex-nowrap w-100 ps-2">
@@ -107,75 +111,6 @@
     {% endfor %}
   </div><!-- .sidebar-bottom -->
 
-  <div class="sidebar-meta d-flex justify-content-center align-items-center w-100" style="gap: 1.5rem;">
-      <!-- Language Toggle EN/ES — show only current language -->
-      {%- assign current_url = page.url -%}
-      {%- if page.lang == "en" or current_url == "/" -%}
-        {%- if current_url == "/" -%}
-          {%- assign target_url = "/es/" -%}
-        {%- elsif current_url contains "/en/glossary/" -%}
-          {%- assign target_url = current_url | replace: "/en/glossary/", "/es/glosario/" -%}
-        {%- elsif current_url contains "/en/tags/" -%}
-          {%- assign target_url = current_url | replace: "/en/tags/", "/es/etiquetas/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/en/", "/es/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Cambiar a Español">
-          <span class="lang-active">EN</span>
-        </a>
-      {%- elsif page.lang == "es" -%}
-        {%- if current_url == "/es/" -%}
-          {%- assign target_url = "/" -%}
-        {%- elsif current_url contains "/es/glosario/" -%}
-          {%- assign target_url = current_url | replace: "/es/glosario/", "/en/glossary/" -%}
-        {%- elsif current_url contains "/es/etiquetas/" -%}
-          {%- assign target_url = current_url | replace: "/es/etiquetas/", "/en/tags/" -%}
-        {%- else -%}
-          {%- assign target_url = current_url | replace_first: "/es/", "/en/" -%}
-        {%- endif -%}
-        <a href="{{ target_url | relative_url }}" class="lang-toggle" title="Switch to English">
-          <span class="lang-active">ES</span>
-        </a>
-      {%- endif -%}
-
-      {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
-        <button type="button" class="btn btn-link nav-link" id="mode-toggle" aria-label="Switch Mode">
-          <i class="fa-regular fa-sun" data-theme-mode="light"></i>
-          <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
-        </button>
-        <!-- Hidden menu: the theme's JS expects "#mode-toggle + .dropdown-menu" and
-             aborts its whole init (back-to-top, TOC) when it is missing. -->
-        <ul class="dropdown-menu d-none" aria-hidden="true">
-          <li><button class="dropdown-item" type="button" data-theme-mode="light"></button></li>
-          <li><button class="dropdown-item" type="button" data-theme-mode="dark"></button></li>
-          <li><button class="dropdown-item" type="button" data-theme-mode="system"></button></li>
-        </ul>
-        <script>
-          (function() {
-            var btn = document.getElementById('mode-toggle');
-            function updateIcon() {
-              var icons = btn.querySelectorAll('i');
-              var isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark'
-                || (!document.documentElement.hasAttribute('data-bs-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-              icons[0].style.display = isDark ? 'none' : '';
-              icons[1].style.display = isDark ? '' : 'none';
-            }
-            updateIcon();
-            btn.addEventListener('click', function(e) {
-              e.stopPropagation();
-              Theme.update(Theme.isDark ? 'light' : 'dark');
-              setTimeout(updateIcon, 50);
-            });
-            new MutationObserver(updateIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
-          })();
-        </script>
-      {% endunless %}
-
-      <a href="https://github.com/aghmnl" target="_blank" rel="noopener" class="text-muted small text-decoration-none" style="white-space: nowrap;">
-        {{ site.data.translations[lang].by_author | default: "by" }}&nbsp;<strong>aghmnl</strong>
-      </a>
-  </div><!-- .sidebar-meta -->
-
 <style>
   #sidebar-search { margin-top: 0; padding-top: 0; }
   .sidebar-search-box {
@@ -191,7 +126,7 @@
     border: 1px solid var(--card-border-color, #dee2e6);
     color: var(--text-color);
   }
-  .sidebar-meta #mode-toggle {
+  #topbar-tools #mode-toggle {
     background: none;
     border: none;
     border-radius: 0;
@@ -200,7 +135,7 @@
     color: var(--text-muted-color, #868e96);
     font-size: 0.85rem;
   }
-  .sidebar-meta #mode-toggle:hover {
+  #topbar-tools #mode-toggle:hover {
     color: var(--sidebar-active-color, #fff);
   }
   .sidebar-glossary-link {

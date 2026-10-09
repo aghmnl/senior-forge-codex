@@ -146,3 +146,19 @@ pure-function:
 query:
   es: ["queries"]
   en: ["queries"]
+
+callbacks:
+  es: ["callback"]
+  en: ["callback"]
+
+producer-consumer:
+  es: ["productor", "productores", "consumidor", "consumidores"]
+  en: ["producer", "producers", "consumer", "consumers"]
+
+listener:
+  es: ["listeners"]
+  en: ["listeners"]
+
+receive:
+  es: ["receptor", "receptores"]
+  en: ["receiver", "receivers"]

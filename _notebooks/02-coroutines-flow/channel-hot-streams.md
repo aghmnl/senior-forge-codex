@@ -98,7 +98,7 @@ https://aghmnl.github.io/senior-forge-codex/es/glosario/send/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/receive/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/thread/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/hot-stream/
-https://aghmnl.github.io/senior-forge-codex/es/glosario/conflation/
+https://aghmnl.github.io/senior-forge-codex/es/glosario/channel-capacity/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/try-send/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/close/
 https://aghmnl.github.io/senior-forge-codex/es/glosario/produce/

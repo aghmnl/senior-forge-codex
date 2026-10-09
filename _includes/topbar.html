@@ -82,6 +82,10 @@
       #topbar #breadcrumb { margin-bottom: 0; }
       h1.dynamic-title, main > h1:first-child, article > header > h1 { margin-top: 0.25rem !important; margin-bottom: 0.5rem !important; }
       .access { margin-top: 1rem !important; }
+      /* Keep the article/glossary title pinned to the top while scrolling.
+         `display: contents` lets the post title stick relative to the whole article, not just its header. */
+      article > header { display: contents; }
+      h1.dynamic-title, article > header > h1 { position: sticky; top: 0; z-index: 10; background: var(--main-bg); padding: 0.5rem 0; }
     }
   </style>
 </header>

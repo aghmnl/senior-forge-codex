@@ -109,7 +109,7 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 | Single Source of Truth (SSoT)                | —       | 26-nov  | :black_square_button: | —            | —    | —         | —           |
 | MVVM vs MVI                                  | —       | 30-nov  | :black_square_button: | —            | —    | —         | —           |
 | MVI (Unidirectional Data Flow)               | —       | 01-dic  | :black_square_button: | —            | —    | —         | —           |
-| UI State Modeling: Sealed vs Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/05-architecture/ui-state-modeling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/05-architecture/ui-state-modeling/) | 02-dic  | :black_square_button: | 2026-08-19   | Full | —         | —           |
+| UI State Modeling: Sealed vs Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/05-architecture/ui-state-modeling/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/05-architecture/ui-state-modeling/) | 02-dic  | :black_square_button: | 2026-10-12   | Full | —         | —           |
 | Singleton & Factory                          | —       | 03-dic  | :black_square_button: | —            | —    | —         | —           |
 | MVP (Legacy)                                 | —       | 10-feb  | :black_square_button: | —            | —    | —         | —           |
 

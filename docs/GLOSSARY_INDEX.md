@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (423 total)
+## Entries (426 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -163,6 +163,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Final | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/final/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/final/) | None | `oop`, `dispatch`, `performance` |
 | finally | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/finally/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/finally/) | Full | `error-handling`, `syntax`, `cancellation` |
 | first | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/first/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/first/) | Full | `flow`, `coroutines` |
+| Flat Data Class | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flat-data-class/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flat-data-class/) | None | `state-management`, `architecture`, `data-classes` |
 | flatMapLatest | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flat-map-latest/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flat-map-latest/) | Full | `flow`, `cancellation`, `coroutines` |
 | Flow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flow/) | Full | `flow`, `coroutines` |
 | flow { } | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/flow-builder/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/flow-builder/) | None | `flow`, `coroutines` |
@@ -235,6 +236,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | listOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/list-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/list-of/) | Full | `collections`, `immutability` |
 | listSaver | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/list-saver/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/list-saver/) | None | `compose`, `serialization` |
 | LiveData | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/livedata/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/livedata/) | None | `state-management`, `lifecycle`, `android-framework` |
+| Loading (UI State) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/loading-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/loading-state/) | None | `state-management`, `sealed-types`, `architecture` |
 | Lock | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lock/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lock/) | None | `concurrency`, `threading` |
 | Looper | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/looper/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/looper/) | None | `android-framework`, `threading` |
 | Main Thread | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/main-thread/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/main-thread/) | Full | `threading`, `android-framework`, `performance` |
@@ -346,6 +348,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | sealed class | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-class/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-class/) | Full | `sealed-types`, `oop`, `state-management` |
 | Sealed Hierarchy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-hierarchy/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-hierarchy/) | Full | `sealed-types`, `oop`, `state-management` |
 | sealed interface | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-interface/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-interface/) | Full | `sealed-types`, `oop`, `architecture` |
+| Sealed State | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sealed-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sealed-state/) | None | `state-management`, `sealed-types`, `architecture` |
 | send | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/send/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/send/) | None | `coroutines`, `concurrency` |
 | SendChannel | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/send-channel/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/send-channel/) | None | `concurrency`, `coroutines` |
 | Sequences | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/sequences/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/sequences/) | Full | `collections`, `functional`, `performance` |

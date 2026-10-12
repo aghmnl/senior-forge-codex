@@ -21,8 +21,8 @@
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 31 / 101
-**Last updated:** 2026-10-09
+**Articles written:** 32 / 101
+**Last updated:** 2026-10-12
 **Projected end date:** 10-feb-2027
 
 ---
@@ -70,8 +70,8 @@
 
 | Topic                                           | Article | Planned | Status                | Article Date | FAS  | Notebook           | Last Eval | Eval Result |
 | ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | :--: | :----------------: | --------- | ----------- |
-| Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | :white_check_mark: | —         | —           |
-| remember & rememberSaveable                     | —       | 12-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
+| Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | [:green_book:](https://notebook.google.com/notebook/a29fb5a6-6591-45b3-a210-c0b34e80ed32) | —         | —           |
+| remember & rememberSaveable                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/remember-remembersaveable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/remember-remembersaveable/) | 12-oct  | :black_square_button: | 2026-10-09   | Full | :white_check_mark: | —         | —           |
 | State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | Modifiers: Order & Alignment                    | —       | 14-oct  | :black_square_button: | —            | —    | —                  | —         | —           |
 | Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —    | —                  | —         | —           |

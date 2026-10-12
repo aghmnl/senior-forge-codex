@@ -7,6 +7,7 @@ title: Jetpack Compose
 # Jetpack Compose
 
 1. **[Recomposition & Stability]({{ "/es/03-jetpack-compose/recomposition-stability/" | relative_url }})**
+2. **[remember & rememberSaveable]({{ "/es/03-jetpack-compose/remember-remembersaveable/" | relative_url }})**
 
 ---
 

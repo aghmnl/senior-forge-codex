@@ -61,12 +61,13 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
 ### Step 4e: Notebook File
 - Claude generates `_notebooks/<chapter-folder>/<slug>.md` (Spanish) with the three blocks defined in `docs/AI_STUDY_PIPELINE.md`. The glossary URL list is extracted from the ES article **after** Step 4d, so it reflects the final links; the "Nivel actual" text from Step 4c is already pasted into the Gemini prompt.
 - The file ships in the same PR as the article. After the merge, the learner pastes Block 2 into Gemini and studies with the notebook before Step 5.
-- Mark the topic's **Notebook** column in `docs/TOPIC_TRACKER.md` as :white_check_mark: in the same PR.
+- Mark the topic's **Notebook** column in `docs/STUDY_LOG.md` as :white_check_mark: in the same PR.
 
 ### Step 4f: Record the Gemini Notebook URL
 - After pasting Block 2 into Gemini and getting the notebook back, replace that :white_check_mark: with `[:green_book:](<notebook url>)` — the icon links to the notebook.
 - Strip the `?utm_source=...` tracking parameters; keep only `https://notebook.google.com/notebook/<id>`.
-- The tracker is the single source of truth for these URLs; they are not duplicated in the notebook file's front matter. They are personal links and only open for the owner's account.
+- In the same step, set the topic's 8 output columns in `docs/STUDY_LOG.md` to :black_square_button: (generated, not consumed yet).
+- The study log is the single source of truth for these URLs; they are not duplicated in the notebook file's front matter. They are personal links and only open for the owner's account.
 
 ### Step 5: Daily Self-Evaluation
 - After studying the topic, the learner must answer the **Interview Prep (The Hot Seat)** question from memory, without reading the article.

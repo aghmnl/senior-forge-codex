@@ -15,6 +15,7 @@ Single source of truth for every agent working in this repository. `CLAUDE.md` i
 ## Key Documents
 
 - `docs/TOPIC_TRACKER.md` — Master checklist of 100 topics with progress, dates, article links, and evaluation results.
+- `docs/STUDY_LOG.md` — Everything about each topic's Gemini Notebook: notebook file status, notebook link, studied outputs, and the eval-debt rules.
 - `docs/DAILY_WORKFLOW.md` — Defines the daily learning routine, weekly evaluation system, and spaced repetition logic.
 - `evals/` — Weekly evaluation records (one markdown per week, named `YYYY-WNN.md`).
 - `CODEX_GUIDE.md` — Article format, engineering standards, and content creation checklist.

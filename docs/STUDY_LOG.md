@@ -88,4 +88,4 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 
 | Topic | Notebook | A | S | V | R | I | T | F | Q (score) |
 | ----- | :------: | - | - | - | - | - | - | - | --------- |
-| UI State Modeling: Sealed vs Flat Data Class | :black_square_button: | — | — | — | — | — | — | — | — |
+| UI State Modeling: Sealed vs Flat Data Class | :white_check_mark: | — | — | — | — | — | — | — | — |

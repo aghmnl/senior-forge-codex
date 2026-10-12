@@ -234,3 +234,15 @@ activity:
 mutable-state:
   es: ["mutableStateOf"]
   en: ["mutableStateOf"]
+
+unidirectional-data-flow:
+  es: ["unidirectional data flow"]
+  en: ["unidirectional data flow"]
+
+flat-data-class:
+  es: ["flat data class", "flat data classes"]
+  en: ["flat data class", "flat data classes"]
+
+sealed-state:
+  es: ["sealed state"]
+  en: ["sealed state", "sealed states"]

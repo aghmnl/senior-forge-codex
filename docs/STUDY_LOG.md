@@ -33,7 +33,7 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 
 ## Eval Debt
 
-**Debt:** 21 — daily quota: 2 evals/day
+**Debt:** 23 — daily quota: 2 evals/day
 **Last updated:** 2026-10-12
 
 ## Log
@@ -75,6 +75,14 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 | Channel (Hot Streams) | [:green_book:](https://notebook.google.com/notebook/e6346671-31d0-44fe-9721-eb7c98e12d9c) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | trySend() vs send() | [:green_book:](https://notebook.google.com/notebook/4cdf8c0e-4596-4502-9069-18672c3441da) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | receiveAsFlow() | [:green_book:](https://notebook.google.com/notebook/062bc676-e604-4609-9d13-3a66a89985d4) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| callbackFlow | [:green_book:](https://notebook.google.com/notebook/2eaf4386-1ea8-470a-b1fc-fa38723f48bf) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+
+### III. Jetpack Compose
+
+| Topic | Notebook | A | S | V | R | I | T | F | Q (score) |
+| ----- | :------: | - | - | - | - | - | - | - | --------- |
+| Recomposition & Stability | [:green_book:](https://notebook.google.com/notebook/a29fb5a6-6591-45b3-a210-c0b34e80ed32) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| remember & rememberSaveable | :white_check_mark: | — | — | — | — | — | — | — | — |
 
 ### V. Architecture & Patterns
 

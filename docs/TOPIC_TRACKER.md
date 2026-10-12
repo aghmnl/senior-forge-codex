@@ -19,8 +19,8 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 29 / 101
-**Last updated:** 2026-10-09
+**Articles written:** 32 / 101
+**Last updated:** 2026-10-12
 **Projected end date:** 10-feb-2027
 
 ---
@@ -62,14 +62,14 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 | Channel (Hot Streams)                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/channel-hot-streams/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/channel-hot-streams/) | 01-oct  | :black_square_button: | 2026-09-28   | None | —         | —           |
 | trySend() vs send()                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/trysend-vs-send/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/trysend-vs-send/) | 05-oct  | :black_square_button: | 2026-10-02   | Full | —         | —           |
 | receiveAsFlow()                           | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/receive-as-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/receive-as-flow/) | 06-oct  | :black_square_button: | 2026-10-09   | None | —         | —           |
-| callbackFlow                              | —       | 07-oct  | :black_square_button: | —            | —    | —         | —           |
+| callbackFlow                              | [EN](https://aghmnl.github.io/senior-forge-codex/en/02-coroutines-flow/callback-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/02-coroutines-flow/callback-flow/) | 07-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
 
 ## III. Jetpack Compose (0/14)
 
 | Topic                                           | Article | Planned | Status                | Article Date | FAS  | Last Eval | Eval Result |
 | ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | :--: | --------- | ----------- |
-| Recomposition & Stability                       | —       | 08-oct  | :black_square_button: | —            | —    | —         | —           |
-| remember & rememberSaveable                     | —       | 12-oct  | :black_square_button: | —            | —    | —         | —           |
+| Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
+| remember & rememberSaveable                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/remember-remembersaveable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/remember-remembersaveable/) | 12-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
 | State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —    | —         | —           |
 | Modifiers: Order & Alignment                    | —       | 14-oct  | :black_square_button: | —            | —    | —         | —           |
 | Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —    | —         | —           |

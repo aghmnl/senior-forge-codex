@@ -16,6 +16,8 @@ layout: page
 {% endfor %}
 {% assign items = items | sort | reverse %}
 
+<h1 class="dynamic-title">{{ page.title }}</h1>
+
 <div id="page-tags" class="d-flex flex-wrap mx-xl-2">
   {% for item in items %}
     {% assign parts = item | split: '::' %}

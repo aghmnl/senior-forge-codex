@@ -25,6 +25,7 @@ fun locationUpdates(client: LocationClient): Flow<Location> = callbackFlow {
 
 - **`awaitClose` es obligatorio.** Si el bloque termina sin él, `callbackFlow` falla con una `IllegalStateException`; y sin el lambda de limpieza, el callback nunca se desregistra y se fuga.
 - **Convierte una API de "empuje" en un flow cold.** Cada collector registra su propio callback, y dejar de colectar lo desregistra, así que el listener vive exactamente mientras alguien escucha.
+- Ver [callbackFlow]({{ "/es/02-coroutines-flow/callback-flow/" | relative_url }}).
 
 ---
 

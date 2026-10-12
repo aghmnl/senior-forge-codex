@@ -214,3 +214,23 @@ modifier-offset:
 sets:
   es: ["Set"]
   en: ["Set"]
+
+saved-instance-state:
+  es: ["saved instance state", "estado guardado"]
+  en: ["saved instance state", "saved state"]
+
+configuration-change:
+  es: ["cambio de configuración", "cambios de configuración"]
+  en: ["configuration change", "configuration changes"]
+
+process-death:
+  es: ["muerte del proceso"]
+  en: ["process death"]
+
+activity:
+  es: ["Activities"]
+  en: ["Activities"]
+
+mutable-state:
+  es: ["mutableStateOf"]
+  en: ["mutableStateOf"]

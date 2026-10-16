@@ -48,13 +48,13 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 | Data Objects: Singleton & Memory Savings | [:green_book:](https://notebook.google.com/notebook/5b8f43d9-493b-405a-832c-89d353f53e2b) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | Sealed Classes vs Sealed Interfaces | [:green_book:](https://notebook.google.com/notebook/5230c74e-ca25-486a-9f86-dbafaf0ea94f) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | Extension Functions | [:green_book:](https://notebook.google.com/notebook/13da3244-b82b-4d7c-b756-5e837a5a735e) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
-| Higher-Order Functions & Lambdas | :black_square_button: | — | — | — | — | — | — | — | — |
-| Scope Functions (let, run, apply, also, with) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Lateinit vs Lazy | :black_square_button: | — | — | — | — | — | — | — | — |
-| Delegated Properties (by lazy, by viewModels) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Generics: Variance & Reification (in, out, reified) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Collections & Mutability | :black_square_button: | — | — | — | — | — | — | — | — |
-| Immutability & Atomic State for UI | :black_square_button: | — | — | — | — | — | — | — | — |
+| Higher-Order Functions & Lambdas | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Scope Functions (let, run, apply, also, with) | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Lateinit vs Lazy | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Delegated Properties (by lazy, by viewModels) | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Generics: Variance & Reification (in, out, reified) | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Collections & Mutability | :white_check_mark: | — | — | — | — | — | — | — | — |
+| Immutability & Atomic State for UI | :white_check_mark: | — | — | — | — | — | — | — | — |
 
 ### II. Coroutines & Flows
 

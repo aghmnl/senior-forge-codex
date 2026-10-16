@@ -19,8 +19,8 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 32 / 101
-**Last updated:** 2026-10-12
+**Articles written:** 33 / 101
+**Last updated:** 2026-10-16
 **Projected end date:** 10-feb-2027
 
 ---
@@ -70,7 +70,7 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 | ----------------------------------------------- | ------- | ------- | --------------------- | ------------ | :--: | --------- | ----------- |
 | Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
 | remember & rememberSaveable                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/remember-remembersaveable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/remember-remembersaveable/) | 12-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
-| State Hoisting                                  | —       | 13-oct  | :black_square_button: | —            | —    | —         | —           |
+| State Hoisting                                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/state-hoisting/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/state-hoisting/) | 13-oct  | :black_square_button: | 2026-10-16   | Full | —         | —           |
 | Modifiers: Order & Alignment                    | —       | 14-oct  | :black_square_button: | —            | —    | —         | —           |
 | Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —    | —         | —           |
 | innerPadding in Scaffold                        | —       | 19-oct  | :black_square_button: | —            | —    | —         | —           |

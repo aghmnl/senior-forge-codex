@@ -246,3 +246,23 @@ flat-data-class:
 sealed-state:
   es: ["sealed state"]
   en: ["sealed state", "sealed states"]
+
+single-source-of-truth:
+  es: ["single source of truth"]
+  en: ["single source of truth"]
+
+stateful-stateless:
+  es: ["stateful", "stateless"]
+  en: ["stateful", "stateless"]
+
+controlled-uncontrolled:
+  es: ["no controlado", "controlado"]
+  en: ["uncontrolled", "controlled"]
+
+preview:
+  es: ["Previews"]
+  en: ["Previews"]
+
+design-system:
+  es: ["design system"]
+  en: ["design system"]

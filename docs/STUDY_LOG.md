@@ -33,8 +33,8 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 
 ## Eval Debt
 
-**Debt:** 23 — daily quota: 2 evals/day
-**Last updated:** 2026-10-12
+**Debt:** 32 — daily quota: 2 evals/day
+**Last updated:** 2026-10-16
 
 ## Log
 
@@ -48,13 +48,13 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 | Data Objects: Singleton & Memory Savings | [:green_book:](https://notebook.google.com/notebook/5b8f43d9-493b-405a-832c-89d353f53e2b) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | Sealed Classes vs Sealed Interfaces | [:green_book:](https://notebook.google.com/notebook/5230c74e-ca25-486a-9f86-dbafaf0ea94f) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | Extension Functions | [:green_book:](https://notebook.google.com/notebook/13da3244-b82b-4d7c-b756-5e837a5a735e) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
-| Higher-Order Functions & Lambdas | :black_square_button: | — | — | — | — | — | — | — | — |
-| Scope Functions (let, run, apply, also, with) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Lateinit vs Lazy | :black_square_button: | — | — | — | — | — | — | — | — |
-| Delegated Properties (by lazy, by viewModels) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Generics: Variance & Reification (in, out, reified) | :black_square_button: | — | — | — | — | — | — | — | — |
-| Collections & Mutability | :black_square_button: | — | — | — | — | — | — | — | — |
-| Immutability & Atomic State for UI | :black_square_button: | — | — | — | — | — | — | — | — |
+| Higher-Order Functions & Lambdas | [:green_book:](https://notebook.google.com/notebook/4cd330ea-14d6-4a25-a296-94ff9d1ac2e7) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Scope Functions (let, run, apply, also, with) | [:green_book:](https://notebook.google.com/notebook/d334f549-944d-4066-a9a8-f0441e200f4b) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Lateinit vs Lazy | [:green_book:](https://notebook.google.com/notebook/dce92f1a-c9c9-45cc-bcd8-f784002f7aaa) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Delegated Properties (by lazy, by viewModels) | [:green_book:](https://notebook.google.com/notebook/72a95d4f-58c3-4ab7-81af-52b030830515) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Generics: Variance & Reification (in, out, reified) | [:green_book:](https://notebook.google.com/notebook/08c6ad46-9bfb-4486-a186-7de56010e0c1) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Collections & Mutability | [:green_book:](https://notebook.google.com/notebook/751446c6-6fb6-428f-9fc7-4359b047bbc6) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
+| Immutability & Atomic State for UI | [:green_book:](https://notebook.google.com/notebook/8b013a6e-6fe3-407a-a027-3e0c11c2fd04) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 
 ### II. Coroutines & Flows
 
@@ -82,10 +82,10 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 | Topic | Notebook | A | S | V | R | I | T | F | Q (score) |
 | ----- | :------: | - | - | - | - | - | - | - | --------- |
 | Recomposition & Stability | [:green_book:](https://notebook.google.com/notebook/a29fb5a6-6591-45b3-a210-c0b34e80ed32) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
-| remember & rememberSaveable | :white_check_mark: | — | — | — | — | — | — | — | — |
+| remember & rememberSaveable | [:green_book:](https://notebook.google.com/notebook/fc5ceec1-5879-4f8e-82cf-7ee05623f776) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 
 ### V. Architecture & Patterns
 
 | Topic | Notebook | A | S | V | R | I | T | F | Q (score) |
 | ----- | :------: | - | - | - | - | - | - | - | --------- |
-| UI State Modeling: Sealed vs Flat Data Class | :white_check_mark: | — | — | — | — | — | — | — | — |
+| UI State Modeling: Sealed vs Flat Data Class | [:green_book:](https://notebook.google.com/notebook/7457b2e1-1484-4324-8c83-98202c42bbe4) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |

@@ -25,7 +25,7 @@ The reverse — **unboxing** — extracts the primitive value from a wrapper obj
 
 - In Kotlin, `Int` compiles to JVM `int` when used as a non-nullable local or parameter. The moment it becomes nullable (`Int?`), generic (`List<Int>`), or passed to a function expecting `Any`, the compiler boxes it to `java.lang.Integer`. Understanding these triggers is essential for performance-critical code.
 - [`IntArray`]({{ "/en/glossary/intarray/" | relative_url }}), `LongArray`, `FloatArray`, etc., are Kotlin's escape hatch: they compile to JVM primitive arrays (`int[]`, `long[]`, `float[]`) with zero per-element boxing. Use them over `Array<Int>` or `List<Int>` in tight loops or large collections.
-- [Inline classes]({{ "/en/01-kotlin-core/value-classes/" | relative_url }}) (`@JvmInline value class`) wrap a primitive without boxing in most cases — the wrapper is erased at [compile time]({{ "/en/glossary/compile-time/" | relative_url }}). They get boxed only when used as a generic type or nullable.
+- Inline classes (`@JvmInline value class`) wrap a primitive without boxing in most cases — the wrapper is erased at [compile time]({{ "/en/glossary/compile-time/" | relative_url }}). They get boxed only when used as a generic type or nullable.
 - Autoboxing is why identity comparisons (`===`) on boxed values are dangerous: `val a: Int? = 128; val b: Int? = 128; a === b` is `false` because the JVM's `Integer` cache only covers -128 to 127. Use `==` for value equality.
 - In Android UI code, autoboxing inside `onDraw()`, `onMeasure()`, or Compose recomposition lambdas creates GC churn that causes frame drops. The [Garbage Collector]({{ "/en/glossary/garbage-collector/" | relative_url }}) reclaims these short-lived boxes, but the pause cost accumulates.
 

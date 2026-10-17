@@ -48,7 +48,7 @@ Master all 100 topics at a Senior Android Developer level by **March 2027**. Eac
   ```
 
   The linker puts every term in one regex alternation, so it cannot nest a link inside another link — the failure mode of chained substitutions. Surface forms come from each entry's `title:`; anything a title cannot capture ("jerarquías selladas", "heredar") goes in `_data/glossary_aliases.yml`.
-- `check` must pass before the PR: it looks for malformed links, links to glossary entries that do not exist, and non-idempotent linking.
+- `check` must pass before the PR: it looks for malformed links, links to glossary entries or topics that do not exist (topics are matched against their `permalink:`), links to the other language, and non-idempotent linking. CI runs `check --all` over every topic article and glossary entry.
 
 ### Step 4c: Cold Diagnostic (before the learner reads the article)
 - As soon as the article is drafted, Claude reports it is ready **without showing its content**, and asks the five diagnostic questions of the topic's notebook file (Block 1), one at a time.

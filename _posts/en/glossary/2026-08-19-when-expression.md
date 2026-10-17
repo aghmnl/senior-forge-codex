@@ -10,7 +10,7 @@ permalink: /en/glossary/when-expression/
 
 ## The Theory (The What)
 
-The **`when` expression** in Kotlin is a powerful control-flow construct that replaces Java's `switch` statement with a more expressive and safer alternative. Unlike `switch`, `when` can match against arbitrary expressions (not just constants), supports pattern matching with `is` (enabling [smart casts]({{ "/en/glossary/smart-cast/" | relative_url }})), ranges (`in 1..10`), collections (`in listOf(...)`), and multiple conditions per branch. When used as an expression (assigned to a variable or returned), the compiler enforces exhaustiveness — all possible cases must be handled.
+The **`when` expression** in Kotlin is a powerful control-flow construct that replaces Java's `switch` statement with a more expressive and safer alternative. Unlike `switch`, `when` can match against arbitrary expressions (not just constants), supports pattern matching with `is` (enabling [smart casts]({{ "/en/01-kotlin-core/smart-casts/" | relative_url }})), ranges (`in 1..10`), collections (`in listOf(...)`), and multiple conditions per branch. When used as an expression (assigned to a variable or returned), the compiler enforces exhaustiveness — all possible cases must be handled.
 
 ## The Senior Nuance
 

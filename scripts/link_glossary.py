@@ -26,7 +26,10 @@ Usage:
     scripts/link_glossary.py check --all
 
 `link` rewrites the file in place; `--dry-run` prints what it would do instead.
-`check` runs three validations and exits non-zero on failure.
+`check` runs five validations (malformed links, unknown glossary entries, unknown
+topics or chapters, links to the other language, non-idempotent linking) and
+exits non-zero on failure. `check --all` covers every topic article and every
+glossary entry; the idempotency pass runs on topic articles only.
 """
 
 from __future__ import annotations
@@ -177,9 +180,13 @@ def build_linker(terms: list[tuple[str, str]], lang: str):
     return lambda line: pattern.sub(repl, line)
 
 
-def link_text(text: str, terms: list[tuple[str, str]], lang: str) -> tuple[str, int]:
-    """Link every term outside code fences and skipped lines."""
-    link_line = build_linker(terms, lang)
+def link_text(text: str, terms: list[tuple[str, str]], lang: str, link_line=None) -> tuple[str, int]:
+    """Link every term outside code fences and skipped lines.
+
+    `link_line` lets `check` reuse one linker per language instead of rebuilding
+    the full alternation for each of the ~900 files it validates."""
+    if link_line is None:
+        link_line = build_linker(terms, lang)
     out, in_code, changed = [], False, 0
     for line in text.split("\n"):
         if line.startswith("```"):
@@ -231,7 +238,7 @@ MALFORMED = [
 
 
 def all_articles() -> list[str]:
-    """Every topic article, both languages — chapter folders only, no indexes."""
+    """Every topic article and every glossary entry, both languages — no indexes."""
     found: list[str] = []
     for lang in ("en", "es"):
         for chapter in sorted(os.listdir(os.path.join(ROOT, lang))):
@@ -243,11 +250,53 @@ def all_articles() -> list[str]:
                 for name in sorted(os.listdir(directory))
                 if name.endswith(".md") and name != "index.md"
             ]
+        found += [
+            f"{GLOSSARY_DIR[lang]}/{name}"
+            for name in sorted(os.listdir(os.path.join(ROOT, GLOSSARY_DIR[lang])))
+            if name.endswith(".md")
+        ]
     return found
+
+
+# A link to a topic article or a chapter index, e.g. "/en/02-coroutines-flow/sharedflow/".
+TOPIC_LINK = re.compile(r'\{\{ "(/(?:en|es)/\d\d-[a-z0-9-]+/(?:[a-z0-9-]+/)?)" \| relative_url \}\}')
+# Any internal link, to read the language it points to.
+ANY_LINK = re.compile(r'\{\{ "/(en|es)/[^"]*" \| relative_url \}\}')
+
+_PERMALINKS: set[str] | None = None
+
+
+def topic_permalinks() -> set[str]:
+    """Every `permalink:` declared under en/ and es/. File names do not always
+    match the permalink (null-safety.md serves .../null-safety-elvis-safe-calls/),
+    so links are validated against what the site actually publishes."""
+    global _PERMALINKS
+    if _PERMALINKS is None:
+        _PERMALINKS = set()
+        for lang in ("en", "es"):
+            for base, _, names in os.walk(os.path.join(ROOT, lang)):
+                for name in names:
+                    if not name.endswith(".md"):
+                        continue
+                    head = open(os.path.join(base, name), encoding="utf-8").read(600)
+                    match = re.search(r"^permalink:\s*(\S+)", head, re.M)
+                    if match:
+                        _PERMALINKS.add(match.group(1))
+    return _PERMALINKS
 
 
 def lang_of(path: str) -> str:
     return "en" if path.split(os.sep)[0] == "en" or "/en/" in path else "es"
+
+
+_FULL_LINKERS: dict = {}
+
+
+def full_linker(lang: str):
+    """The linker for every known term in `lang`, built once per run."""
+    if lang not in _FULL_LINKERS:
+        _FULL_LINKERS[lang] = build_linker(collect_terms(lang, None), lang)
+    return _FULL_LINKERS[lang]
 
 
 def check_file(path: str) -> list[str]:
@@ -270,13 +319,27 @@ def check_file(path: str) -> list[str]:
         if slug not in known:
             problems.append(f"{path}: link to unknown glossary entry '{slug}'")
 
+    for target in sorted(set(TOPIC_LINK.findall(text))):
+        if target not in topic_permalinks():
+            problems.append(f"{path}: link to unknown topic or chapter '{target}'")
+
+    for number, line in enumerate(text.split("\n"), 1):
+        for target_lang in ANY_LINK.findall(line):
+            if target_lang != lang:
+                problems.append(f"{path}:{number}: link to the other language (/{target_lang}/)")
+
     # Idempotency: linking twice must equal linking once. Comparing against the
     # original would only say "there are still unlinked terms", which is normal;
     # what must never happen is a second pass wrapping its own output, which is
     # exactly how a chained-substitution bug shows up.
-    terms = collect_terms(lang, None)
-    once, _ = link_text(text, terms, lang)
-    twice, _ = link_text(once, terms, lang)
+    # The idempotency pass runs the full linker (~1,500 alternatives) twice per
+    # line, which is too slow for the ~900 glossary entries. It stays on topic
+    # articles, the files the full linker is run on; entries get the cheap checks.
+    if path.startswith("_posts/"):
+        return problems
+    linker = full_linker(lang)
+    once, _ = link_text(text, [], lang, linker)
+    twice, _ = link_text(once, [], lang, linker)
     if once != twice:
         first_diff = next(
             (n for n, (a, b) in enumerate(zip(once.split("\n"), twice.split("\n")), 1) if a != b),
@@ -306,7 +369,7 @@ def main() -> int:
 
     p_check = sub.add_parser("check", help="validate links in an article")
     p_check.add_argument("files", nargs="*")
-    p_check.add_argument("--all", action="store_true", help="check every article in both languages")
+    p_check.add_argument("--all", action="store_true", help="check every article and glossary entry in both languages")
 
     args = parser.parse_args()
 

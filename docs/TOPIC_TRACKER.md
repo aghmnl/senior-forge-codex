@@ -19,7 +19,7 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 ## Progress Summary
 
 **Completed:** 0 / 101 (studied & evaluated)
-**Articles written:** 33 / 101
+**Articles written:** 34 / 101
 **Last updated:** 2026-10-16
 **Projected end date:** 10-feb-2027
 
@@ -71,7 +71,7 @@ Notebook status and links live in `docs/STUDY_LOG.md`.
 | Recomposition & Stability                       | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/recomposition-stability/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/recomposition-stability/) | 08-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
 | remember & rememberSaveable                     | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/remember-remembersaveable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/remember-remembersaveable/) | 12-oct  | :black_square_button: | 2026-10-09   | Full | —         | —           |
 | State Hoisting                                  | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/state-hoisting/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/state-hoisting/) | 13-oct  | :black_square_button: | 2026-10-16   | Full | —         | —           |
-| Modifiers: Order & Alignment                    | —       | 14-oct  | :black_square_button: | —            | —    | —         | —           |
+| Modifiers: Order & Alignment                    | [EN](https://aghmnl.github.io/senior-forge-codex/en/03-jetpack-compose/modifiers-order-alignment/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/03-jetpack-compose/modifiers-order-alignment/) | 14-oct  | :black_square_button: | 2026-10-16   | Full | —         | —           |
 | Lazy Lists (LazyColumn, LazyRow)                | —       | 15-oct  | :black_square_button: | —            | —    | —         | —           |
 | innerPadding in Scaffold                        | —       | 19-oct  | :black_square_button: | —            | —    | —         | —           |
 | LaunchedEffect(Unit)                            | —       | 20-oct  | :black_square_button: | —            | —    | —         | —           |

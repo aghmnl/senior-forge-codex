@@ -78,6 +78,9 @@ jvm:
 lambdas:
   en: "Lambdas"
   es: "Lambdas"
+layout:
+  en: "Layout"
+  es: "Layout"
 lifecycle:
   en: "Lifecycle"
   es: "Lifecycle"

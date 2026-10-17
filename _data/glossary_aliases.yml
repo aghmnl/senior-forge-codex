@@ -266,3 +266,31 @@ preview:
 design-system:
   es: ["design system"]
   en: ["design system"]
+
+modifier:
+  es: ["modifiers"]
+  en: ["modifiers"]
+
+constraints:
+  es: ["constraint"]
+  en: ["constraint"]
+
+touch-target:
+  es: ["área táctil", "minimumInteractiveComponentSize()"]
+  en: ["touch target", "touch area", "minimumInteractiveComponentSize()"]
+
+main-axis-cross-axis:
+  es: ["eje principal", "eje transversal"]
+  en: ["main axis", "cross axis"]
+
+layout-scopes:
+  es: ["BoxScope", "RowScope", "ColumnScope"]
+  en: ["BoxScope", "RowScope", "ColumnScope"]
+
+compose-phases:
+  es: ["fase de layout", "fase de dibujo"]
+  en: ["layout phase", "drawing phase"]
+
+background:
+  es: ["fondo"]
+  en: []

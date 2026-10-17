@@ -8,7 +8,7 @@ Single source of truth for all glossary entries. Each row links to both language
 
 **FAS coverage:** Full = article uses real FAS code examples · None = standalone examples or purely conceptual.
 
-## Entries (434 total)
+## Entries (456 total)
 
 | Entry | Article | FAS | Tags |
 |-------|---------|:---:|------|
@@ -22,6 +22,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | add | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/add/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/add/) | Full | `collections`, `performance` |
 | advanceUntilIdle | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/advance-until-idle/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/advance-until-idle/) | Full | `testing`, `coroutines` |
 | Algebraic Data Types (ADTs) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/algebraic-data-types/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/algebraic-data-types/) | Full | `sealed-types`, `type-system`, `state-management` |
+| Alignment | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/alignment/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/alignment/) | None | `compose`, `layout` |
 | Allocations | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/allocations/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/allocations/) | Full | `memory`, `performance`, `jvm` |
 | Android | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/android/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/android/) | None | `android-framework`, `runtime` |
 | Android Runtime (ART) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/android-runtime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/android-runtime/) | None | `runtime`, `memory`, `performance` |
@@ -31,6 +32,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | AOT Compilation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/aot-compilation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/aot-compilation/) | None | `runtime`, `performance`, `compiler` |
 | API | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/api/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/api/) | None | `architecture`, `android-framework` |
 | Application.onCreate() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/application-on-create/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/application-on-create/) | Full | `android-framework`, `lifecycle`, `performance` |
+| Arrangement | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/arrangement/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/arrangement/) | None | `compose`, `layout` |
 | ArrayList | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/arraylist/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/arraylist/) | Full | `collections`, `performance`, `memory` |
 | as (Unsafe Cast) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/as-cast/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/as-cast/) | None | `type-system`, `error-handling` |
 | as? (Safe Cast) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/as-safe-cast/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/as-safe-cast/) | Full | `type-system`, `null-safety` |
@@ -46,11 +48,13 @@ Single source of truth for all glossary entries. Each row links to both language
 | awaitAll | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/await-all/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/await-all/) | None | `coroutines`, `concurrency` |
 | awaitClose | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/await-close/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/await-close/) | None | `flow`, `callbacks`, `cancellation` |
 | Back Stack | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/back-stack/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/back-stack/) | None | `navigation`, `lifecycle`, `android-framework` |
+| background | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/background/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/background/) | None | `compose`, `layout` |
 | Backing Field | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backing-field/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backing-field/) | None | `syntax`, `delegation`, `state-management` |
 | Backpressure | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/backpressure/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/backpressure/) | None | `flow`, `coroutines`, `performance` |
 | @Before | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/junit-before/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/junit-before/) | Full | `testing`, `lifecycle` |
 | @Binds | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/binds/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/binds/) | Full | `di`, `compiler` |
 | Blocking Call | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/blocking-call/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/blocking-call/) | None | `threading`, `coroutines`, `performance` |
+| Box | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/box/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/box/) | None | `compose`, `layout` |
 | Broadcast Receiver | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/broadcast-receiver/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/broadcast-receiver/) | None | `android-framework`, `callbacks`, `lifecycle` |
 | buffer | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/buffer/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/buffer/) | None | `flow`, `coroutines`, `performance` |
 | Builder Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/builder-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/builder-functions/) | Full | `collections`, `immutability`, `lambdas` |
@@ -77,6 +81,8 @@ Single source of truth for all glossary entries. Each row links to both language
 | checkNotNull | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/check-not-null/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/check-not-null/) | None | `null-safety`, `error-handling` |
 | ClassCastException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/class-cast-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/class-cast-exception/) | None | `error-handling`, `type-system`, `generics` |
 | clear | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/clear/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/clear/) | Full | `collections`, `state-management`, `concurrency` |
+| clickable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/clickable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/clickable/) | None | `compose`, `layout`, `callbacks` |
+| clip | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/clip/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/clip/) | None | `compose`, `layout` |
 | close() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/close/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/close/) | None | `coroutines`, `concurrency` |
 | Code Bloat | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/code-bloat/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/code-bloat/) | None | `inlining`, `performance`, `build-tools` |
 | Cold Stream | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/cold-stream/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/cold-stream/) | None | `flow`, `coroutines`, `performance` |
@@ -85,6 +91,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Collection Operators | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collection-operators/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collection-operators/) | None | `collections`, `functional` |
 | Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collections/) | Full | `collections`, `immutability` |
 | Collector | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/collector/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/collector/) | Full | `flow`, `coroutines` |
+| Column | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/column/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/column/) | None | `compose`, `layout` |
 | combine | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/combine/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/combine/) | Full | `flow`, `coroutines`, `state-management` |
 | Companion Object | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/companion-object/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/companion-object/) | Full | `syntax`, `interop`, `design-patterns` |
 | Compare-and-Set (CAS) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compare-and-set/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compare-and-set/) | None | `concurrency`, `threading`, `state-management` |
@@ -93,12 +100,14 @@ Single source of truth for all glossary entries. Each row links to both language
 | componentN | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/component-n/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/component-n/) | Full | `data-classes`, `syntax`, `compiler` |
 | @Composable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composable/) | None | `compose`, `compiler` |
 | Compose Compiler Reports | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compose-compiler-reports/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compose-compiler-reports/) | None | `compose`, `compiler`, `performance` |
+| Compose Phases | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/compose-phases/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/compose-phases/) | None | `compose`, `layout`, `performance` |
 | Composition | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composition/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composition/) | None | `compose`, `state-management` |
 | Composition Lifetime | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/composition-lifetime/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/composition-lifetime/) | None | `compose`, `lifecycle`, `state-management` |
 | Concurrency | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/concurrency/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/concurrency/) | Full | `concurrency`, `immutability`, `coroutines` |
 | Configuration Change | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/configuration-change/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/configuration-change/) | None | `android-framework`, `lifecycle` |
 | conflate() | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/conflate/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/conflate/) | None | `flow`, `performance` |
 | Conflation | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/conflation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/conflation/) | None | `flow`, `state-management` |
+| Constraints | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constraints/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constraints/) | None | `compose`, `layout`, `performance` |
 | Constructor | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/constructor/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/constructor/) | Full | `oop`, `data-classes`, `syntax` |
 | consumeAsFlow | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/consume-as-flow/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/consume-as-flow/) | None | `flow`, `coroutines`, `cancellation` |
 | contains | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/contains/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/contains/) | Full | `collections`, `performance` |
@@ -147,6 +156,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | DisposableEffect | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/disposable-effect/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/disposable-effect/) | None | `compose`, `lifecycle` |
 | distinctUntilChanged | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/distinct-until-changed/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/distinct-until-changed/) | Full | `flow`, `state-management`, `immutability` |
 | Downstream | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/downstream/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/downstream/) | None | `flow`, `coroutines` |
+| drawBehind | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/draw-behind/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/draw-behind/) | None | `compose`, `layout`, `performance` |
 | DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl/) | Full | `dsl`, `lambdas`, `syntax` |
 | @DslMarker | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/dsl-marker/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/dsl-marker/) | None | `dsl`, `scoping`, `compose` |
 | Eager | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/eager/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/eager/) | Full | `performance`, `design-principles` |
@@ -162,6 +172,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Extension | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/extension/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/extension/) | Full | `syntax`, `oop`, `design-principles` |
 | Extension Functions | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/extension-functions/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/extension-functions/) | Full | `syntax`, `dispatch`, `functional` |
 | Fan-out | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/fan-out/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/fan-out/) | None | `concurrency`, `coroutines` |
+| fillMaxWidth | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/fill-max-width/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/fill-max-width/) | None | `compose`, `layout` |
 | filter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/filter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/filter/) | Full | `collections`, `functional`, `performance`, `flow` |
 | Final | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/final/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/final/) | None | `oop`, `dispatch`, `performance` |
 | finally | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/finally/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/finally/) | Full | `error-handling`, `syntax`, `cancellation` |
@@ -180,6 +191,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Getter | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/getter/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/getter/) | None | `syntax`, `oop` |
 | GlobalScope | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/global-scope/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/global-scope/) | None | `coroutines`, `lifecycle`, `memory` |
 | Gradle Kotlin DSL | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/gradle-kotlin-dsl/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/gradle-kotlin-dsl/) | Full | `build-tools`, `dsl`, `lambdas` |
+| graphicsLayer | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/graphics-layer/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/graphics-layer/) | None | `compose`, `layout`, `performance` |
 | groupBy | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/group-by/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/group-by/) | Full | `collections`, `functional`, `performance` |
 | Guard Clause | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/guard-clause/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/guard-clause/) | None | `design-principles`, `null-safety`, `syntax` |
 | hashCode | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/hash-code/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/hash-code/) | None | `data-classes`, `collections`, `jvm` |
@@ -226,6 +238,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | launch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/launch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/launch/) | Full | `coroutines`, `concurrency` |
 | LaunchedEffect | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/launched-effect/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/launched-effect/) | Full | `compose`, `coroutines`, `lifecycle` |
 | Layout Inspector | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/layout-inspector/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/layout-inspector/) | None | `compose`, `performance`, `testing` |
+| Layout Scopes (BoxScope, RowScope, ColumnScope) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/layout-scopes/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/layout-scopes/) | None | `compose`, `layout`, `dsl` |
 | @LayoutScopeMarker | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/layout-scope-marker/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/layout-scope-marker/) | None | `compose`, `dsl`, `scoping` |
 | LazyColumn | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lazy-column/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lazy-column/) | None | `compose`, `performance` |
 | LazyListState | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lazy-list-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lazy-list-state/) | None | `compose`, `state-management` |
@@ -243,6 +256,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Loading (UI State) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/loading-state/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/loading-state/) | None | `state-management`, `sealed-types`, `architecture` |
 | Lock | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/lock/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/lock/) | None | `concurrency`, `threading` |
 | Looper | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/looper/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/looper/) | None | `android-framework`, `threading` |
+| Main Axis & Cross Axis | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/main-axis-cross-axis/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/main-axis-cross-axis/) | None | `compose`, `layout` |
 | Main Thread | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/main-thread/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/main-thread/) | Full | `threading`, `android-framework`, `performance` |
 | map (Operator) | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/map-operator/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/map-operator/) | Full | `collections`, `functional`, `architecture` |
 | mapOf | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/map-of/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/map-of/) | Full | `collections`, `generics` |
@@ -253,6 +267,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Member Function | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/member-function/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/member-function/) | None | `oop`, `dispatch`, `syntax` |
 | Memory Leaks | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/memory-leaks/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/memory-leaks/) | None | `memory`, `lifecycle`, `android-framework` |
 | Method Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/method-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/method-dispatch/) | Full | `dispatch`, `oop`, `jvm` |
+| Modifier | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/modifier/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/modifier/) | None | `compose`, `layout`, `performance` |
 | Modifier.offset | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/modifier-offset/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/modifier-offset/) | None | `compose`, `performance` |
 | @Module | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/module-annotation/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/module-annotation/) | Full | `di`, `architecture` |
 | Moshi | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/moshi/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/moshi/) | None | `serialization`, `compiler`, `reflection` |
@@ -287,6 +302,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | Operator Overloading | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/operator-overloading/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/operator-overloading/) | Full | `syntax`, `dsl`, `dispatch` |
 | Overhead | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/overhead/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/overhead/) | None | `performance`, `memory` |
 | Overload Resolution | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/overload-resolution/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/overload-resolution/) | None | `dispatch`, `compiler`, `type-system` |
+| padding | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/padding/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/padding/) | None | `compose`, `layout` |
 | Parcelable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/parcelable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/parcelable/) | None | `android-framework`, `serialization` |
 | @Parcelize | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/parcelize/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/parcelize/) | None | `android-framework`, `serialization`, `compiler` |
 | Persistent Collections | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/persistent-collections/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/persistent-collections/) | None | `collections`, `immutability`, `compose` |
@@ -327,14 +343,17 @@ Single source of truth for all glossary entries. Each row links to both language
 | remove | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/remove/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/remove/) | Full | `collections`, `data-classes` |
 | repeatOnLifecycle | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/repeat-on-lifecycle/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/repeat-on-lifecycle/) | None | `lifecycle`, `coroutines`, `flow` |
 | require | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/require/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/require/) | None | `error-handling`, `design-principles` |
+| requiredSize | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/required-size/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/required-size/) | None | `compose`, `layout` |
 | requireNotNull | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/require-not-null/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/require-not-null/) | None | `null-safety`, `error-handling` |
 | resetReplayCache | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/reset-replay-cache/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/reset-replay-cache/) | None | `flow`, `state-management` |
 | Result | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/result/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/result/) | Full | `error-handling`, `type-system`, `functional` |
 | Retrofit | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/retrofit/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/retrofit/) | None | `coroutines`, `callbacks`, `serialization` |
 | retry / retryWhen | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/retry/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/retry/) | None | `flow`, `error-handling`, `coroutines` |
 | Return Type | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/return-type/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/return-type/) | Full | `type-system`, `generics`, `syntax` |
+| Ripple | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/ripple/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/ripple/) | None | `compose`, `layout`, `callbacks` |
 | Room | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/room/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/room/) | Full | `persistence`, `compiler`, `coroutines` |
 | Round-Trip | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/round-trip/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/round-trip/) | None | `performance`, `architecture`, `persistence` |
+| Row | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/row/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/row/) | None | `compose`, `layout` |
 | run | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run/) | None | `scoping`, `lambdas` |
 | runBlocking | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run-blocking/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run-blocking/) | Full | `coroutines`, `threading`, `testing` |
 | runCatching | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/run-catching/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/run-catching/) | Full | `error-handling`, `functional`, `syntax` |
@@ -420,6 +439,7 @@ Single source of truth for all glossary entries. Each row links to both language
 | toMutableList | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/to-mutable-list/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/to-mutable-list/) | Full | `collections`, `immutability` |
 | toSet | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/to-set/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/to-set/) | Full | `collections`, `performance` |
 | toString | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/to-string/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/to-string/) | None | `data-classes`, `syntax` |
+| Touch Target | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/touch-target/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/touch-target/) | None | `compose`, `layout`, `design-principles` |
 | TransactionTooLargeException | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/transaction-too-large-exception/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/transaction-too-large-exception/) | None | `android-framework`, `error-handling`, `memory` |
 | Triple | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/triple/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/triple/) | Full | `data-classes`, `collections`, `syntax` |
 | try/catch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/try-catch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/try-catch/) | Full | `error-handling`, `syntax` |
@@ -443,6 +463,8 @@ Single source of truth for all glossary entries. Each row links to both language
 | ViewModelStore | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/viewmodel-store/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/viewmodel-store/) | None | `lifecycle`, `android-framework`, `navigation` |
 | Virtual Dispatch | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/virtual-dispatch/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/virtual-dispatch/) | None | `dispatch`, `oop`, `jvm` |
 | Vtable | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/vtable/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/vtable/) | None | `dispatch`, `jvm`, `performance` |
+| weight | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/weight/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/weight/) | None | `compose`, `layout` |
 | when Expression | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/when-expression/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/when-expression/) | None | `syntax`, `sealed-types` |
 | WhileSubscribed | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/while-subscribed/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/while-subscribed/) | None | `flow`, `lifecycle`, `performance` |
 | withContext | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/with-context/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/with-context/) | Full | `coroutines`, `threading` |
+| wrapContentSize | [EN](https://aghmnl.github.io/senior-forge-codex/en/glossary/wrap-content-size/) · [ES](https://aghmnl.github.io/senior-forge-codex/es/glosario/wrap-content-size/) | None | `compose`, `layout` |

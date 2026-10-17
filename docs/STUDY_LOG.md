@@ -33,8 +33,8 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 
 ## Eval Debt
 
-**Debt:** 32 — daily quota: 2 evals/day
-**Last updated:** 2026-10-16
+**Debt:** 33 — daily quota: 2 evals/day
+**Last updated:** 2026-10-17
 
 ## Log
 
@@ -83,7 +83,7 @@ Cell values: :white_check_mark: consumed · :black_square_button: generated, not
 | ----- | :------: | - | - | - | - | - | - | - | --------- |
 | Recomposition & Stability | [:green_book:](https://notebook.google.com/notebook/a29fb5a6-6591-45b3-a210-c0b34e80ed32) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | remember & rememberSaveable | [:green_book:](https://notebook.google.com/notebook/fc5ceec1-5879-4f8e-82cf-7ee05623f776) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
-| State Hoisting | :white_check_mark: | — | — | — | — | — | — | — | — |
+| State Hoisting | [:green_book:](https://notebook.google.com/notebook/7eaa566e-4a24-479d-966e-d64b15c31c81) | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: | :black_square_button: |
 | Modifiers: Order & Alignment | :white_check_mark: | — | — | — | — | — | — | — | — |
 
 ### V. Architecture & Patterns

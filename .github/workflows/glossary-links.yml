@@ -1,8 +1,9 @@
 name: "Glossary links"
 
-# Validates cross-links in every topic article: malformed links, links to
-# glossary entries that do not exist, and non-idempotent linking (the symptom
-# of a substitution that matched its own output). See scripts/link_glossary.py.
+# Validates cross-links in every topic article and glossary entry: malformed
+# links, links to glossary entries or topics that do not exist, links to the
+# other language, and non-idempotent linking in topic articles (the symptom of a
+# substitution that matched its own output). See scripts/link_glossary.py.
 # Also validates glossary tags against the vocabulary in docs/GLOSSARY_TAGS.md
 # (allowed tags, EN/ES parity, per-tag counts). See scripts/check_glossary_tags.py.
 on:

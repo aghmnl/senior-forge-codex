@@ -40,7 +40,7 @@ val (titleRes, messageRes) = when (action) {
 }
 ```
 
-- Exhaustiveness also applies to [enum classes]({{ "/en/glossary/enum/" | relative_url }}) and, since Kotlin 1.7, to sealed interfaces — enabling [polymorphism]({{ "/en/glossary/polymorphism/" | relative_url }}) patterns where the type hierarchy spans multiple inheritance trees but the compiler still guarantees completeness.
+- Exhaustiveness also applies to enum classes and, since Kotlin 1.7, to sealed interfaces — enabling [polymorphism]({{ "/en/glossary/polymorphism/" | relative_url }}) patterns where the type hierarchy spans multiple inheritance trees but the compiler still guarantees completeness.
 - In MVI/UDF architectures (common in Android), sealed classes model screen states (`Loading`, `Content`, `Error`) and the `when` in the UI layer is exhaustive — guaranteeing every state has a corresponding rendering. This is a key pattern in [Jetpack Compose]({{ "/en/glossary/jetpack-compose/" | relative_url }}) UI code.
 
 ---
